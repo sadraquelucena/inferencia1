@@ -1,0 +1,47 @@
+---
+title: "Conteúdo"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+---
+
+<style>
+.sumario-decimal ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 2em;
+}
+.sumario-decimal li::before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+  margin-right: 0.5em;
+}
+</style>
+
+::: {.sumario-decimal}
+1. Inferência Estatística
+   1. Conceitos Iniciais: Parâmetros, Estimador e Estatística;
+   2. Distribuição amostral de algumas estatísticas;
+   3. Propriedades dos estimadores:
+      1. Estimador não viesado;
+      2. Viés e Erro quadrático Médio;
+      3. Eficiência de um Estimador;
+   4. Estatística Suficiente.
+2. Métodos de Estimação
+   1. Família Exponencial;
+   2. O Método da Máxima Verossimilhança;
+   3. Propriedades dos Estimadores de Máxima Verossimilhança:
+   4. Família Exponencial e o Método da Máxima Verossimilhança;
+   5. O Método dos Momentos;
+   6. Introdução ao estimador de Bayes.
+3. Estimação por intervalo
+   1. Resultados de amostras de população normal;
+   2. Método da Quantidade Pivotal;
+   3. Intervalos de confiança para populações normais para:
+     1. Uma amostra;
+     2. Duas amostras;
+   4. Intervalos de confiança aproximados.
+:::

@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  bread-crumbs: false
+  page-navigation: true
+  title: "Inferência I"
+  sidebar:
+    style: "docked"
+    search: false
+    border: false
+    logo: img/inferencia1-logo-sem-borda.png
+    contents:
+    - section: "Informações da disciplina"
+      contents: 
+      - href: info/dados_gerais.qmd
+        text: "Dados gerais"
+      - href: info/ementa.qmd
+        text: "Ementa e objetivos"
+      - href: info/conteudo.qmd
+        text: "Conteúdo"
+      - href: info/bibliografia.qmd
+        text: "Bibliografia"
+      - href: info/cronograma.qmd
+        text: "Cronograma"
+    - section: "Material das aulas"
+      contents: 
+      - href: conteudos/1-Apresentacao_da_disciplina.qmd
+        text: "1- Apresentação da Disciplina"
+
+
+
+format:
+  html:
+    theme: styles.scss
+    toc: true
+    grid:
+      sidebar-width: 300px
+resources:
+  - PDFs/**

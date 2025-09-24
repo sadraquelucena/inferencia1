@@ -1,0 +1,27 @@
+---
+title: "Ementa e Objetivos"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Ementa
+
+Amostras e distribuições amostrais. Estimação pontual e por intervalo. Estudo de estimadores mais comumente usados: método dos momentos, máxima verossimilhança, estimador de Bayes. Intervalos de confiança; métodos para construção de intervalos de confiança.
+
+
+## Objetivos
+
+Aprofundar os conhecimentos em estimação pontual e intervalar, bem como a avaliação de estimadores.
+
+## Metodologia
+
+Serão ministradas aulas teóricas expositivas; utilizados recursos visuais; resolução de exercícios em sala de aula; solicitação de atividades extraclasse.
+
+## Habilidades e Competências
+
+Ao final da disciplina, o aluno estará apto a compreender e aplicar a teoria de estimação pontual e intervalar dentro do contexto da inferência estatística.
+
+## Avaliação
+Serão realizadas três avaliações ao longo do semestre. Este plano de ensino permite a vinculação (ou até mesmo substituição) de uma destas avaliações por um trabalho e/ou seminário a critério do professor. Estudantes que perderem uma das provas e/ou trabalho(s), sem justificativa legal (comprovada), terá nota zero de acordo com as normas do sistema acadêmico. A avaliação substitutiva versará sobre todo o conteúdo da disciplina e qualquer estudante poderá fazê-la para substituir a nota da avaliação que faltou ou para substituir a menor nota.

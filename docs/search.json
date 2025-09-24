@@ -1,0 +1,300 @@
+[
+  {
+    "objectID": "conteudos/1-Apresentacao_da_disciplina.html",
+    "href": "conteudos/1-Apresentacao_da_disciplina.html",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Neste primeiro encontro, vamos apresentar os objetivos da disciplina, a forma como as aulas serão conduzidas, os temas que vamos explorar e como será a avaliação ao longo do semestre. Também vamos conversar sobre o papel da Estatística Computacional na formação em Estatísica e Ciência de Dados, bem como sua importância no mundo do trabalho.\nA proposta do componente é dinâmica e baseada em resolução de problemas reais, com atividades que estimulam a autonomia, a criatividade e o uso prático das ferramentas computacionais.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Material das aulas",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "conteudos/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina",
+    "href": "conteudos/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Neste primeiro encontro, vamos apresentar os objetivos da disciplina, a forma como as aulas serão conduzidas, os temas que vamos explorar e como será a avaliação ao longo do semestre. Também vamos conversar sobre o papel da Estatística Computacional na formação em Estatísica e Ciência de Dados, bem como sua importância no mundo do trabalho.\nA proposta do componente é dinâmica e baseada em resolução de problemas reais, com atividades que estimulam a autonomia, a criatividade e o uso prático das ferramentas computacionais.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Material das aulas",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "info/dados_gerais.html",
+    "href": "info/dados_gerais.html",
+    "title": "Dados Gerais da Disciplina",
+    "section": "",
+    "text": "Componente curricular: ESTAT0074 - Inferência I\nCarga Horária: 60 horas (4 créditos)\nUnidade Responsável: Departamento de Estatística e Ciências Atuariais (DECAT)\nDocente Responsável: Prof. Dr. Sadraque E. F. Lucena\nPeríodo Letivo: 2025-2\nPlano de Ensino da Disciplina: pdf\nDisciplina obrigatória para os cursos de Estatística e de Ciências Atuariais da Universidade Federal de Sergipe.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Dados gerais"
+    ]
+  },
+  {
+    "objectID": "info/dados_gerais.html#horários-das-aulas",
+    "href": "info/dados_gerais.html#horários-das-aulas",
+    "title": "Dados Gerais da Disciplina",
+    "section": "Horários das Aulas",
+    "text": "Horários das Aulas\nAs aulas ocorrerão nos seguintes horários:\n\nTerças: 19h00 às 20h30 na DID XXX sala XXX\nQuintas: 20h45 às 22h15 na DID XXX sala XXX",
+    "crumbs": [
+      "Informações da disciplina",
+      "Dados gerais"
+    ]
+  },
+  {
+    "objectID": "info/dados_gerais.html#avaliações",
+    "href": "info/dados_gerais.html#avaliações",
+    "title": "Dados Gerais da Disciplina",
+    "section": "Avaliações",
+    "text": "Avaliações\nA disciplina contará com 3 avaliações distribuídas ao longo do semestre nas seguintes datas:\n\nAvaliação 1: 17/06/2025 (quinta)\nAvaliação 2: 29/07/2025 (quinta)\nAvaliação 3: 02/09/2025 (quinta)\nAvaliação Repositiva: 02/09/2025 (quinta)",
+    "crumbs": [
+      "Informações da disciplina",
+      "Dados gerais"
+    ]
+  },
+  {
+    "objectID": "info/dados_gerais.html#não-haverá-aula",
+    "href": "info/dados_gerais.html#não-haverá-aula",
+    "title": "Dados Gerais da Disciplina",
+    "section": "Não haverá aula",
+    "text": "Não haverá aula\n\n19/06/2025: Corpus Christi (ponto facultativo)\n24/06/2025: Sâo João (feriado municipal)\n08/07/2025: Independência de Sergipe (feriado estadual)",
+    "crumbs": [
+      "Informações da disciplina",
+      "Dados gerais"
+    ]
+  },
+  {
+    "objectID": "info/cronograma.html",
+    "href": "info/cronograma.html",
+    "title": "Cronograma de Aulas",
+    "section": "",
+    "text": "Cronograma de aulas seguindo o calendário acadêmico do período 2025-2.\n\n\n\n\n\n\n\n\nAula\nData\nAssunto Previsto\n\n\n\n\n1\nTerça, 13 de maio de 2025\nRecepção dos alunos\n\n\n2\nQuinta, 15 de maio de 2025\nRecepção dos alunos\n\n\n3\nTerça, 20 de maio de 2025\nApresentação da disciplina\n\n\n4\nQuinta, 22 de maio de 2025\nIntrodução ao RStudio + GitHub\n\n\n5\nTerça, 27 de maio de 2025\nIntrodução ao LaTeX\n\n\n6\nQuinta, 29 de maio de 2025\nEstrutura básico do LaTeX\n\n\n7\nTerça, 03 de junho de 2025\nAmbiente matemático no LaTeX\n\n\n8\nQuinta, 05 de junho de 2025\nTabelas no LaTeX\n\n\n9\nTerça, 10 de junho de 2025\nFiguras no LaTeX\n\n\n10\nQuinta, 12 de junho de 2025\nBibliografia no LaTeX\n\n\n11\nQuinta, 17 de junho de 2025\nAvaliação 1\n\n\n12\nTerça, 01 de julho de 2025\nQuarto\n\n\n13\nQuinta, 03 de julho de 2025\nGeração de Números aleatórios\n\n\n14\nQuinta, 10 de julho de 2025\nGeração de Variáveis Aleatórias Discretas\n\n\n15\nTerça, 15 de julho de 2025\nGeração de Variáveis Aleatórias Contínuas\n\n\n16\nTerça, 17 de julho de 2025\nGeração de Variáveis Aleatórias Contínuas\n\n\n17\nTerça, 22 de julho de 2025\nGeração de Variáveis Aleatórias Contínuas\n\n\n18\nTerça, 24 de julho de 2025\nGeração de um processo de Poisson Homogêneo\n\n\n19\nTerça, 29 de julho de 2025\nGeração de um processo de Poisson Não Homogêneo\n\n\n20\nTerça, 31 de julho de 2025\nAvaliação 2\n\n\n21\nTerça, 05 de agosto de 2025\nO Método de Integração de Monte Carlo\n\n\n22\nTerça, 12 de agosto de 2025\nO Método de Monte Carlo para Estimação\n\n\n23\nTerça, 14 de agosto de 2025\nMétodo de Reamostragem Bootstrap\n\n\n24\nTerça, 19 de agosto de 2025\nAplicações do Método Bootstrap",
+    "crumbs": [
+      "Informações da disciplina",
+      "Cronograma"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html",
+    "href": "info/ementa.html",
+    "title": "Ementa e Objetivos",
+    "section": "",
+    "text": "Amostras e distribuições amostrais. Estimação pontual e por intervalo. Estudo de estimadores mais comumente usados: método dos momentos, máxima verossimilhança, estimador de Bayes. Intervalos de confiança; métodos para construção de intervalos de confiança.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#ementa",
+    "href": "info/ementa.html#ementa",
+    "title": "Ementa e Objetivos",
+    "section": "",
+    "text": "Amostras e distribuições amostrais. Estimação pontual e por intervalo. Estudo de estimadores mais comumente usados: método dos momentos, máxima verossimilhança, estimador de Bayes. Intervalos de confiança; métodos para construção de intervalos de confiança.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#objetivos",
+    "href": "info/ementa.html#objetivos",
+    "title": "Ementa e Objetivos",
+    "section": "Objetivos",
+    "text": "Objetivos\nAprofundar os conhecimentos em estimação pontual e intervalar, bem como a avaliação de estimadores.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#metodologia",
+    "href": "info/ementa.html#metodologia",
+    "title": "Ementa e Objetivos",
+    "section": "Metodologia",
+    "text": "Metodologia\nSerão ministradas aulas teóricas expositivas; utilizados recursos visuais; resolução de exercícios em sala de aula; solicitação de atividades extraclasse.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#habilidades-e-competências",
+    "href": "info/ementa.html#habilidades-e-competências",
+    "title": "Ementa e Objetivos",
+    "section": "Habilidades e Competências",
+    "text": "Habilidades e Competências\nAo final da disciplina, o aluno estará apto a compreender e aplicar a teoria de estimação pontual e intervalar dentro do contexto da inferência estatística.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#avaliação",
+    "href": "info/ementa.html#avaliação",
+    "title": "Ementa e Objetivos",
+    "section": "Avaliação",
+    "text": "Avaliação\nSerão realizadas três avaliações ao longo do semestre. Este plano de ensino permite a vinculação (ou até mesmo substituição) de uma destas avaliações por um trabalho e/ou seminário a critério do professor. Estudantes que perderem uma das provas e/ou trabalho(s), sem justificativa legal (comprovada), terá nota zero de acordo com as normas do sistema acadêmico. A avaliação substitutiva versará sobre todo o conteúdo da disciplina e qualquer estudante poderá fazê-la para substituir a nota da avaliação que faltou ou para substituir a menor nota.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#section",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#section",
+    "title": "Apresentação da Disciplina",
+    "section": "",
+    "text": "Material da disciplina: https://sadraquelucena.github.io/EstComp/\nGrupo no WhatsApp: http://tiny.cc/EstCompWpp"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#informações-da-disciplina",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#informações-da-disciplina",
+    "title": "Apresentação da Disciplina",
+    "section": "Informações da disciplina",
+    "text": "Informações da disciplina\n\nComponente curricular: ESTAT0090 – Estatística Computacional\nPeríodo: 7º semestre\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças - 19h00 às 20h30\nQuintas - 20h45 às 22h15\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#objetivos",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#objetivos",
+    "title": "Apresentação da Disciplina",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nAplicar métodos de simulação, como Monte Carlo e Bootstrap, na resolução de problemas estatísticos.\nUtilizar ferramentas computacionais (R, LaTeX, Quarto e GitHub) para realizar análises estatísticas avançadas e criar relatórios reprodutíveis.\nCriar documentos de alta qualidade com notação matemática precisa, formatação profissional e relatórios interativos, utilizando LaTeX e Quarto.\nDesenvolver um portfólio online profissional, utilizando GitHub Pages, para documentar e compartilhar projetos, simulações e resultados de análises."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ementa",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ementa",
+    "title": "Apresentação da Disciplina",
+    "section": "Ementa",
+    "text": "Ementa\n\nEditor de textos .\nEstruturas de repetições e funções no software R.\nGeração de Variáveis Aleatórias.\nMétodo de Monte Carlo.\nBootstrap."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#editor-de-textos",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#editor-de-textos",
+    "title": "Apresentação da Disciplina",
+    "section": "Editor de textos ",
+    "text": "Editor de textos \n\nLaTeX é o padrão para documentos acadêmicos e científicos (artigos, teses, relatórios técnicos).\nOferece formatação profissional automática, especialmente para fórmulas matemáticas.\nFacilita a colaboração e a padronização em projetos."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#estruturas-de-repetições-e-funções-no-software-r",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#estruturas-de-repetições-e-funções-no-software-r",
+    "title": "Apresentação da Disciplina",
+    "section": "Estruturas de repetições e funções no software R",
+    "text": "Estruturas de repetições e funções no software R\n\nAutomatiza tarefas repetitivas (ex.: simulações, análises de dados).\n\nAutomatizar limpeza de dados: aplicar a mesma transformação em 100 arquivos de clientes.\nSimular cenários: testar 1.000 combinações de hiperparâmetros para um modelo de ML.\nCriar funções personalizadas: calcular métricas de negócio específicas (ex.: Lifetime Value de usuários)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#geração-de-variáveis-aleatórias",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#geração-de-variáveis-aleatórias",
+    "title": "Apresentação da Disciplina",
+    "section": "Geração de Variáveis Aleatórias",
+    "text": "Geração de Variáveis Aleatórias\n\nTestar modelos sob diferentes distribuições (ex.: simular falhas em equipamentos com distribuição Poisson).\nGerar dados sintéticos para treinar modelos quando os dados reais são escassos (ex.: dados médicos anônimos).\nPrever cenários extremos (ex.: perdas financeiras usando distribuição Pareto).\nExemplo:\n\nSimular tempos de atendimento em um call center com distribuição exponencial para otimizar escalas."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#método-de-monte-carlo",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#método-de-monte-carlo",
+    "title": "Apresentação da Disciplina",
+    "section": "Método de Monte Carlo",
+    "text": "Método de Monte Carlo\n\nAvaliar risco financeiro: calcular o Value at Risk (VaR) de uma carteira de investimentos.\nOtimizar recursos: estimar o número ideal de caixas em um supermercado para minimizar filas.\nCalibrar modelos complexos: inferir parâmetros em epidemilogia (ex.: propagação de uma doença).\nExemplo:\n\nSimular 10.000 cenários de preços de ações para decidir se um derivativo é viável."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bootstrap",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bootstrap",
+    "title": "Apresentação da Disciplina",
+    "section": "Bootstrap",
+    "text": "Bootstrap\n\nValidar modelos quando a distribuição é desconhecida (ex.: intervalos de confiança para árvores de decisão).\nComparar algoritmos: testar se a diferença entre dois modelos de ML é significativa.\nEstimar incerteza em métricas de negócio (ex.: margem de erro da receita prevista).\nExemplo:\n\nUsar bootstrap para estimar a variação do ROI de uma campanha de marketing com dados limitados."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático",
+    "title": "Apresentação da Disciplina",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nLaTeX\n1.1. Introdução ao LATEX.\n1.2. Partes de um documento: Títulos, sumários, cabeçalho e rodapés.\n1.3. Fórmulas diversas, estrutura de um texto.\n1.4. Matrizes e equações alinhadas.\n1.5. Tabelas e Imagens. Bibtex. Criação de apresentações e pôster"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-1",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-1",
+    "title": "Apresentação da Disciplina",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nTécnicas de Geração de Números Aleatórios\n2.1. Gerador de números aleatórios.\n2.2. Método da Transformada inversa.\n2.3. Método da Aceitação-Rejeição.\n2.4. Outros métodos de geração de v.a’s"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-2",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-2",
+    "title": "Apresentação da Disciplina",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nSimulação, Testes e Reamostragem\n3.1. Métodos de Simulação.\n3.2. Método de Monte Carlo.\n3.3. Testes de hipóteses e erros.\n3.4. Viés e Erro quadrático médio.\n3.5. Métodos de Reamostragem: Bootstrap e Jackknife."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada",
+    "title": "Apresentação da Disciplina",
+    "section": "Bibliografia Recomendada",
+    "text": "Bibliografia Recomendada"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada-1",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada-1",
+    "title": "Apresentação da Disciplina",
+    "section": "Bibliografia Recomendada",
+    "text": "Bibliografia Recomendada"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#metodologia",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#metodologia",
+    "title": "Apresentação da Disciplina",
+    "section": "Metodologia",
+    "text": "Metodologia\n\n2 encontros semanais, com 90 minutos de aula presencial cada\n30 minutos de atividades extraclasse (hora-trabalho) para cada aula, indicadas pelo docente\nAulas organizadas com base em Aprendizado Baseado em Problemas (PBL)\nÊnfase em situações reais da prática profissional em Estatística"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ferramentas-que-iremos-usar",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ferramentas-que-iremos-usar",
+    "title": "Apresentação da Disciplina",
+    "section": "Ferramentas que iremos usar",
+    "text": "Ferramentas que iremos usar\n\nR + RStudio\nQuarto\nLaTeX\nGitHub e GitHub Pages"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#datas-importantes",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#datas-importantes",
+    "title": "Apresentação da Disciplina",
+    "section": "Datas Importantes",
+    "text": "Datas Importantes\nAvaliações\n\nAvaliação 1: 17/06/2025 (terça)\nAvaliação 2: 29/07/2025 (quinta)\nAvaliação 3: 26/08/2025 (quinta)\nAvaliação Repositiva: 02/09/2025 (terça)\n\nNão haverá aula\n\n19/06/2025: Corpus Christi (ponto facultativo)\n24/06/2025: Sâo João (feriado municipal)\n08/07/2025: Independência de Sergipe (feriado estadual)"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#para-a-pŕoxima-aula",
+    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#para-a-pŕoxima-aula",
+    "title": "Apresentação da Disciplina",
+    "section": "Para a pŕoxima aula…",
+    "text": "Para a pŕoxima aula…\n\nCriar uma conta no : https://github.com/\nInstale na sua máquina:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bem-vindo(a)!",
+    "section": "",
+    "text": "Bem-vindo(a)!\nEste espaço foi criado pelo Prof. Dr. Sadraque E. F. Lucena para centralizar todos os conteúdos, atividades e o cronograma da disciplina ESTAT0078 – Inferência I, ofertado pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe.\nAo longo do semestre, vamos construir juntos uma base sólida nos conceitos fundamentais da Inferência Estatística, explorando métodos para obter e avaliar estimadores pontuais e para construir de intervalos de confiança."
+  },
+  {
+    "objectID": "info/conteudo.html",
+    "href": "info/conteudo.html",
+    "title": "Conteúdo",
+    "section": "",
+    "text": "Inferência Estatística\n\nConceitos Iniciais: Parâmetros, Estimador e Estatística;\nDistribuição amostral de algumas estatísticas;\nPropriedades dos estimadores:\n\nEstimador não viesado;\nViés e Erro quadrático Médio;\nEficiência de um Estimador;\n\nEstatística Suficiente.\n\nMétodos de Estimação\n\nFamília Exponencial;\nO Método da Máxima Verossimilhança;\nPropriedades dos Estimadores de Máxima Verossimilhança:\nFamília Exponencial e o Método da Máxima Verossimilhança;\nO Método dos Momentos;\nIntrodução ao estimador de Bayes.\n\nEstimação por intervalo\n\nResultados de amostras de população normal;\nMétodo da Quantidade Pivotal;\nIntervalos de confiança para populações normais para:\nUma amostra;\nDuas amostras;\nIntervalos de confiança aproximados.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Conteúdo"
+    ]
+  },
+  {
+    "objectID": "info/bibliografia.html",
+    "href": "info/bibliografia.html",
+    "title": "Bibliografia",
+    "section": "",
+    "text": "Básica\n\n\n\n\n\n\n\n \n\n\n\nTítulo\n\n\n\n\n\n\n\n\n\n\n\nBOLFARINE, Heleno; SANDOVAL, Mônica C. Introdução a Inferência Estatística. 2. ed. Sociedade Brasileira de Matemática, 2010.\n\n\n\n\n\n\n\n\n\nCASELLA, George; BERGER, Roger L. Inferência Estatística. Cengage Learning, 2010.\n\n\n\n\n\n\n\n\n\nMOOD, Alexander McFarlane; GRAYBILL, Franklin A; BOES, Duane C. Introduction to the theory of statistics. 3rd ed. Singapore: McGraw-Hill, 1974.\n\n\n\n\n\n\n\n\n\nMORETTIN, Luiz Gonzaga. Estatística básica: probabilidade e inferência. São Paulo: Pearson, 2010.\n\n\n\n\n\n\nNenhum item correspondente\n\n\n\nComplementar\n\n\n\n\n\n\n \n\n\n\nTítulo\n\n\n\n\n\n\n\n\n\n\n\nMAGALHÃES, Marcos Nascimento; Probabilidade e Variáveis Aleatórias. 2. ed. São Paulo, SP: EDUSP, 2024.\n\n\n\n\n\n\n\n\n\nJAMES, Barry R. Probabilidade: um curso em nível intermediário. 5. ed. Rio de Janeiro: IMPA, 2023.\n\n\n\n\n\n\n\n\n\nROSS, Sheldon M. Introduction to probability models. 8th. ed. United States of America: Academic Press, 2003.\n\n\n\n\n\n\n\n\n\nYOUNG, G. A.; SMITH, R. L. Essentials of statistical inference. New York: Cambridge University Press, 2005.\n\n\n\n\n\n\nNenhum item correspondente",
+    "crumbs": [
+      "Informações da disciplina",
+      "Bibliografia"
+    ]
+  }
+]

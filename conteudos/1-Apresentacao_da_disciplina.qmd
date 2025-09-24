@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 1"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Apresentação da Disciplina
+
+Neste primeiro encontro, vamos apresentar os objetivos da disciplina, a forma como as aulas serão conduzidas, os temas que vamos explorar e como será a avaliação ao longo do semestre. Também vamos conversar sobre o papel da Estatística Computacional na formação em Estatísica e Ciência de Dados, bem como sua importância no mundo do trabalho.
+
+A proposta do componente é dinâmica e baseada em resolução de problemas reais, com atividades que estimulam a autonomia, a criatividade e o uso prático das ferramentas computacionais.
+
+Slides:
+
+- [Versão html](/slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html){target="_blank"}
+
+- [Versão pdf](/PDF_slides/01-Apresentacao_da_disciplina.pdf){target="_blank"}
+
