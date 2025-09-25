@@ -24,10 +24,16 @@ website:
         text: "Bibliografia"
       - href: info/cronograma.qmd
         text: "Cronograma"
-    - section: "Material das aulas"
+    
+    - section: "Aulas"
       contents: 
-      - href: conteudos/1-Apresentacao_da_disciplina.qmd
-        text: "1- Apresentação da Disciplina"
+      - section: "Inferência Estatística"
+        contents:
+          - href: aulas/1-Apresentacao_da_disciplina.qmd
+            text: "1- Apresentação da Disciplina e Conceitos Iniciais"
+    
+    - href: PDFs/listas/listas_de_exercicio.qmd
+      text: "Listas de Exercício"
 
 
 

@@ -1,27 +1,5 @@
 [
   {
-    "objectID": "conteudos/1-Apresentacao_da_disciplina.html",
-    "href": "conteudos/1-Apresentacao_da_disciplina.html",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Neste primeiro encontro, vamos apresentar os objetivos da disciplina, a forma como as aulas serão conduzidas, os temas que vamos explorar e como será a avaliação ao longo do semestre. Também vamos conversar sobre o papel da Estatística Computacional na formação em Estatísica e Ciência de Dados, bem como sua importância no mundo do trabalho.\nA proposta do componente é dinâmica e baseada em resolução de problemas reais, com atividades que estimulam a autonomia, a criatividade e o uso prático das ferramentas computacionais.\nSlides:\n\nVersão html\nVersão pdf",
-    "crumbs": [
-      "Material das aulas",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
-    "objectID": "conteudos/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina",
-    "href": "conteudos/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Neste primeiro encontro, vamos apresentar os objetivos da disciplina, a forma como as aulas serão conduzidas, os temas que vamos explorar e como será a avaliação ao longo do semestre. Também vamos conversar sobre o papel da Estatística Computacional na formação em Estatísica e Ciência de Dados, bem como sua importância no mundo do trabalho.\nA proposta do componente é dinâmica e baseada em resolução de problemas reais, com atividades que estimulam a autonomia, a criatividade e o uso prático das ferramentas computacionais.\nSlides:\n\nVersão html\nVersão pdf",
-    "crumbs": [
-      "Material das aulas",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
     "objectID": "info/dados_gerais.html",
     "href": "info/dados_gerais.html",
     "title": "Dados Gerais da Disciplina",
@@ -267,6 +245,30 @@
     "title": "Apresentação da Disciplina",
     "section": "Para a pŕoxima aula…",
     "text": "Para a pŕoxima aula…\n\nCriar uma conta no : https://github.com/\nInstale na sua máquina:"
+  },
+  {
+    "objectID": "aulas/1-Apresentacao_da_disciplina.html",
+    "href": "aulas/1-Apresentacao_da_disciplina.html",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade, demonstrando não apenas suas propriedades teóricas, mas também como dar vida a elas com simulações e cálculos práticos no R, preparando o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Inferência Estatística",
+      "1- Apresentação da Disciplina e Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "aulas/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina-e-revisão-de-algumas-distribuições-de-probabilidade",
+    "href": "aulas/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina-e-revisão-de-algumas-distribuições-de-probabilidade",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade, demonstrando não apenas suas propriedades teóricas, mas também como dar vida a elas com simulações e cálculos práticos no R, preparando o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Inferência Estatística",
+      "1- Apresentação da Disciplina e Conceitos Iniciais"
+    ]
   },
   {
     "objectID": "index.html",
