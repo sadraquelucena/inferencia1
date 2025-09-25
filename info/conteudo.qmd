@@ -6,6 +6,8 @@ format:
     anchor-sections: false
 ---
 
+O conteúdo programático detalhado da disciplina é apresentado a seguir. Ele está organizado em três grandes eixos que abordaremos ao longo do semestre.
+
 ---
 
 <style>
@@ -20,6 +22,7 @@ format:
   margin-right: 0.5em;
 }
 </style>
+
 
 ::: {.sumario-decimal}
 1. Inferência Estatística

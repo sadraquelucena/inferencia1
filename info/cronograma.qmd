@@ -6,7 +6,7 @@ format:
     anchor-sections: false
 ---
 
-Cronograma de aulas seguindo o [calendário acadêmico do período 2025-2](/PDFs/calendario_academico-2025-1-2.pdf){target="_blank"}.
+Confira abaixo o cronograma de aulas do semestre, baseado no [calendário acadêmico do período 2025-2](/PDFs/calendario_academico-2025-1-2.pdf){target="_blank"}.
 
 
 | Aula   | Data                        | Assunto Previsto                 |

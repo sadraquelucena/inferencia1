@@ -27,13 +27,25 @@ website:
     
     - section: "Aulas"
       contents: 
-      - section: "Inferência Estatística"
+      - section: "Parte 1: Inferência Estatística"
+        contents:
+          - href: aulas/1-Apresentacao_da_disciplina.qmd
+            text: "1- Apresentação da Disciplina e Conceitos Iniciais"
+      
+      - section: "Parte 2: Métodos de Estimação"
+        contents:
+          - href: aulas/1-Apresentacao_da_disciplina.qmd
+            text: "1- Apresentação da Disciplina e Conceitos Iniciais"
+      
+      - section: "Parte 3: Estimação por intervalo"
         contents:
           - href: aulas/1-Apresentacao_da_disciplina.qmd
             text: "1- Apresentação da Disciplina e Conceitos Iniciais"
     
     - href: PDFs/listas/listas_de_exercicio.qmd
       text: "Listas de Exercício"
+    - href: PDFs/tabelas/tabelas.qmd
+      text: "Tabelas"
 
 
 

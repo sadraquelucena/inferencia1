@@ -1,5 +1,9 @@
 ---
 title: "Listas de Exercício"
-format: html
+format:
+  html:
+    toc: false
+    anchor-sections: false
 ---
 
+A prática é a chave para o domínio da Inferência. Aqui estão as listas de exercícios, organizadas para acompanhar o conteúdo da disciplina e ajudar você a consolidar o conhecimento. Utilize-as como sua principal ferramenta de estudo; elas são o melhor caminho para o sucesso nas avaliações.

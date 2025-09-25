@@ -23,6 +23,8 @@ listing:
 lang: pt
 ---
 
+Abaixo, você encontra a bibliografia básica e complementar da disciplina.
+
 ### Básica
 
 <style>
