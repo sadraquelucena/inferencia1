@@ -34,14 +34,16 @@ As aulas ocorrerão nos seguintes horários:
 
 A disciplina contará com **3 avaliações** distribuídas ao longo do semestre nas seguintes datas:
 
-- **Avaliação 1:** 17/06/2025 (quinta)
-- **Avaliação 2:** 29/07/2025 (quinta)
-- **Avaliação 3:** 02/09/2025 (quinta)
-- **Avaliação Repositiva:** 02/09/2025 (quinta)
+- **Avaliação 1:** 13/11/2025 (quinta)
+- **Avaliação 2:** 18/12/2025 (quinta)
+- **Avaliação 3:** 10/02/2026 (terça)
+- **Avaliação Substitutiva:** 12/02/2026 (quinta)
 
 
 ## Não haverá aula
 
-- **19/06/2025:** Corpus Christi (ponto facultativo)
-- **24/06/2025:** Sâo João (feriado municipal)
-- **08/07/2025:** Independência de Sergipe (feriado estadual)
+- **20/11/2025:** Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)
+- **25 e 27/06/2025:** XI SEMAC
+- **22 a 31/12/2025:** Recesso de final de ano
+- **01/01/2026:** Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)
+- **02 a 10/01/2026:** Férias coletivas para docentes
