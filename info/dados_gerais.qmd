@@ -16,7 +16,7 @@ Esta seção centraliza todas as informações essenciais sobre nosso componente
 - **Unidade Responsável:** Departamento de Estatística e Ciências Atuariais (DECAT)
 - **Docente Responsável:** Prof. Dr. Sadraque E. F. Lucena
 - **Período Letivo:** 2025-2
-- **Plano de Ensino da Disciplina:**  [**pdf**](/PDFs/plano_de_ensino_Inferencia1.pdf){target="_blank"}
+- **Plano de Ensino da Disciplina:**  [pdf](/PDFs/plano_de_ensino_Inferencia1.pdf){target="_blank"}
 
 *Disciplina obrigatória para os cursos de Estatística e de Ciências Atuariais da Universidade Federal de Sergipe.*
 
