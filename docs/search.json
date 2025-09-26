@@ -25,7 +25,7 @@
     "href": "info/conteudo.html",
     "title": "Conteúdo",
     "section": "",
-    "text": "O conteúdo programático detalhado da disciplina é apresentado a seguir. Ele está organizado em três grandes eixos que abordaremos ao longo do semestre.\n\n\n\n\nPrincípios da Estimação Pontual\n\nConceitos Iniciais: Parâmetros, Estimador e Estatística;\nDistribuição amostral de algumas estatísticas;\nPropriedades dos estimadores:\n\nEstimador não viesado;\nViés e Erro quadrático Médio;\nEficiência de um Estimador;\n\nEstatística Suficiente.\n\nMétodos de Estimação\n\nFamília Exponencial;\nO Método da Máxima Verossimilhança;\nPropriedades dos Estimadores de Máxima Verossimilhança:\nFamília Exponencial e o Método da Máxima Verossimilhança;\nO Método dos Momentos;\nIntrodução ao estimador de Bayes.\n\nEstimação por intervalo\n\nResultados de amostras de população normal;\nMétodo da Quantidade Pivotal;\nIntervalos de confiança para populações normais para:\nUma amostra;\nDuas amostras;\nIntervalos de confiança aproximados.",
+    "text": "O conteúdo programático detalhado da disciplina é apresentado a seguir. Ele está organizado em três grandes eixos que abordaremos ao longo do semestre.\n\nParte 1: Princípios da Estimação Pontual   1.1. Conceitos Iniciais: Parâmetros, Estimador e Estatística   1.2. Distribuição amostral de algumas estatísticas   1.3. Propriedades dos estimadores:      1.3.1. Estimador não viesado      1.3.2. Viés e Erro quadrático Médio      1.3.3. Eficiência de um Estimador   1.4. Estatística Suficiente\nParte 2: Métodos de Estimação   2.1. Família Exponencial   2.2. O Método da Máxima Verossimilhança   2.3. Propriedades dos Estimadores de Máxima Verossimilhança   2.4. Família Exponencial e o Método da Máxima Verossimilhança   2.5. O Método dos Momentos   2.6. Introdução ao estimador de Bayes\nParte 3: Estimação por intervalo   3.1. Resultados de amostras de população normal   3.2. Método da Quantidade Pivotal   3.3. Intervalos de confiança para populações normais para:      3.3.1. Uma amostra      3.3.2. Duas amostras   3.4. Intervalos de confiança aproximados",
     "crumbs": [
       "Informações da disciplina",
       "Conteúdo"
@@ -303,7 +303,7 @@
     "href": "info/dados_gerais.html#avaliações",
     "title": "Dados Gerais da Disciplina",
     "section": "Avaliações",
-    "text": "Avaliações\nA disciplina contará com 3 avaliações distribuídas ao longo do semestre nas seguintes datas:\n\nAvaliação 1: 13/11/2025 (quinta)\nAvaliação 2: 18/12/2025 (quinta)\nAvaliação 3: 10/02/2026 (terça)\nAvaliação Substitutiva: 12/02/2026 (quinta)",
+    "text": "Avaliações\nA disciplina terá 3 avaliações principais ao longo do semestre.\nAo final do período, haverá uma Avaliação Substitutiva, que funciona como uma recuperação e segue duas regras:\n\nSe você faltou a uma das três provas, poderá fazer a substitutiva para repor essa nota.\nSe você fez todas as provas, mas não atingiu a média para ser aprovado(a), também poderá fazer a substitutiva. Nesse caso, a prova servirá para substituir a sua menor nota.\n\nAtenção: A possibilidade de substituir a menor nota é um recurso exclusivo para quem ainda não alcançou a aprovação. Estudantes já aprovados não poderão realizar a prova para aumentar a média.\nEm ambas as situações, o conteúdo da avaliação substitutiva cobre toda a matéria do semestre.\nAs datas previstas para as avaliações são:\n\nAvaliação 1: 13/11/2025 (quinta)\nAvaliação 2: 18/12/2025 (quinta)\nAvaliação 3: 10/02/2026 (terça)\nAvaliação Substitutiva: 12/02/2026 (quinta)",
     "crumbs": [
       "Informações da disciplina",
       "Dados gerais"
@@ -314,7 +314,7 @@
     "href": "info/dados_gerais.html#não-haverá-aula",
     "title": "Dados Gerais da Disciplina",
     "section": "Não haverá aula",
-    "text": "Não haverá aula\n\n20/11/2025: Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)\n25 e 27/06/2025: XI SEMAC\n22 a 31/12/2025: Recesso de final de ano\n01/01/2026: Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)\n02 a 10/01/2026: Férias coletivas para docentes",
+    "text": "Não haverá aula\n\n20/11/2025: Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)\n25 e 27/06/2025: XI SEMAC (uspensão das atividades de aula para participação nos eventos da XI SEMAC)\n22 a 31/12/2025: Recesso de final de ano\n01/01/2026: Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)\n02 a 10/01/2026: Férias coletivas para docentes",
     "crumbs": [
       "Informações da disciplina",
       "Dados gerais"

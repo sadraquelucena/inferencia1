@@ -10,41 +10,28 @@ O conteúdo programático detalhado da disciplina é apresentado a seguir. Ele e
 
 ---
 
-<style>
-.sumario-decimal ol {
-  list-style-type: none;
-  counter-reset: item;
-  padding-left: 2em;
-}
-.sumario-decimal li::before {
-  content: counters(item, ".") ". ";
-  counter-increment: item;
-  margin-right: 0.5em;
-}
-</style>
 
+Parte 1: Princípios da Estimação Pontual<br>
+&ensp;&ensp;1.1. Conceitos Iniciais: Parâmetros, Estimador e Estatística<br>
+&ensp;&ensp;1.2. Distribuição amostral de algumas estatísticas<br>
+&ensp;&ensp;1.3. Propriedades dos estimadores:<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;1.3.1. Estimador não viesado<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;1.3.2. Viés e Erro quadrático Médio<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;1.3.3. Eficiência de um Estimador<br>
+&ensp;&ensp;1.4. Estatística Suficiente<br>
 
-::: {.sumario-decimal}
-1. Princípios da Estimação Pontual
-   1. Conceitos Iniciais: Parâmetros, Estimador e Estatística;
-   2. Distribuição amostral de algumas estatísticas;
-   3. Propriedades dos estimadores:
-      1. Estimador não viesado;
-      2. Viés e Erro quadrático Médio;
-      3. Eficiência de um Estimador;
-   4. Estatística Suficiente.
-2. Métodos de Estimação
-   1. Família Exponencial;
-   2. O Método da Máxima Verossimilhança;
-   3. Propriedades dos Estimadores de Máxima Verossimilhança:
-   4. Família Exponencial e o Método da Máxima Verossimilhança;
-   5. O Método dos Momentos;
-   6. Introdução ao estimador de Bayes.
-3. Estimação por intervalo
-   1. Resultados de amostras de população normal;
-   2. Método da Quantidade Pivotal;
-   3. Intervalos de confiança para populações normais para:
-     1. Uma amostra;
-     2. Duas amostras;
-   4. Intervalos de confiança aproximados.
-:::
+Parte 2: Métodos de Estimação<br>
+&ensp;&ensp;2.1. Família Exponencial<br>
+&ensp;&ensp;2.2. O Método da Máxima Verossimilhança<br>
+&ensp;&ensp;2.3. Propriedades dos Estimadores de Máxima Verossimilhança<br>
+&ensp;&ensp;2.4. Família Exponencial e o Método da Máxima Verossimilhança<br>
+&ensp;&ensp;2.5. O Método dos Momentos<br>
+&ensp;&ensp;2.6. Introdução ao estimador de Bayes<br>
+
+Parte 3: Estimação por intervalo<br>
+&ensp;&ensp;3.1. Resultados de amostras de população normal<br>
+&ensp;&ensp;3.2. Método da Quantidade Pivotal<br>
+&ensp;&ensp;3.3. Intervalos de confiança para populações normais para:<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;3.3.1. Uma amostra<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;3.3.2. Duas amostras<br>
+&ensp;&ensp;3.4. Intervalos de confiança aproximados
