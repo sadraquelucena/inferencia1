@@ -11,7 +11,7 @@ Esta seção centraliza todas as informações essenciais sobre nosso componente
 
 ## Informações
 
-- **Componente curricular:** ESTAT0074 - Inferência I
+- **Componente curricular:** ESTAT0078 - Inferência I
 - **Carga Horária:** 60 horas (4 créditos)
 - **Unidade Responsável:** Departamento de Estatística e Ciências Atuariais (DECAT)
 - **Docente Responsável:** Prof. Dr. Sadraque E. F. Lucena

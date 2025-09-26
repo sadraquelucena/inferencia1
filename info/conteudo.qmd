@@ -25,7 +25,7 @@ O conteúdo programático detalhado da disciplina é apresentado a seguir. Ele e
 
 
 ::: {.sumario-decimal}
-1. Inferência Estatística
+1. Princípios da Estimação Pontual
    1. Conceitos Iniciais: Parâmetros, Estimador e Estatística;
    2. Distribuição amostral de algumas estatísticas;
    3. Propriedades dos estimadores:
