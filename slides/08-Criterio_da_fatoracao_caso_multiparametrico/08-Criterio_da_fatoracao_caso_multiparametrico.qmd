@@ -1,0 +1,90 @@
+---
+title: "Critério da Fatoração: Caso Multiparamétrico"
+subtitle: "ESTAT0078 -- Inferência I"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+
+---
+
+## Teorema 8.1: Critério da Fatoração de Neyman
+
+Sejam $X_1, \ldots, X_n$ uma amostra aleatória da distribuição da variável aleatória $X$ com função de densidade (ou de probabilidade) $f(x)$. Temos, então, que a estatística $T = (T_1, \ldots, T_r)$ é conjuntamente suficiente para $\theta$, se
+$$
+  L(\theta; \underset{\widetilde{\phantom{a}}}{x}) = h(x_1,\ldots,x_n) g_\theta(T_1(\underset{\widetilde{\phantom{a}}}{x}),\ldots,T_n(\underset{\widetilde{\phantom{a}}}{x})),
+$$
+em que
+
+-   $h(x_1,\ldots,x_n)$ só envolve $x_1,\ldots,x_n$ (não envolve $\theta$);
+-   $g_\theta(T(x_1,\ldots,x_n))$ envolve $\theta$ e $T_1(\underset{\widetilde{\phantom{a}}}{x}),\ldots,T_n(\underset{\widetilde{\phantom{a}}}{x})$.
+
+
+## Exemplo 8.1
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim N(\mu,\sigma^2)$. Use o critério da fatoração para determinar duas estatísticas conjuntamente suficientes $(\mu,\sigma^2)$.
+			
+<br>
+
+::: {.callout-note title="Lembrete"}
+
+$X\sim N(\mu,\sigma^2)$: $f(x)=\frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} ,~ -\infty<x<\infty$
+
+:::
+
+
+
+
+## Exemplo 8.2
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da variável aleatória $X$ com distribuição Gama$(\alpha,\beta)$. Encontre uma estatística conjuntamente suficiente para $(\alpha,\beta)$.
+			
+<br>
+
+::: {.callout-note title="Lembrete"}
+$X\sim$ Gama$(\alpha,\beta)$: $f(x) = \frac{\beta^\alpha x^{\alpha-1} e^{-\beta x}}{\Gamma(\alpha)}$, $x>0$, $\alpha,\beta>0$
+
+:::
+
+
+
+
+## Definição 8.1
+
+Dizemos que duas estatísticas $T_1$ e $T_2$ são equivalentes se existir uma relação 1:1 entre elas.
+
+-   Em outra palavras, $T_1$ e $T_2$ são equivalentes se $T_1$ puder ser obtida a partir de $T_2$ e vice-versa.
+
+-   Nesse caso, temos que, se $T_1$ é suficiente para $\theta$, então $T_2$ também é suficiente para $\theta$. Esse resultado vale também para o caso multidimensional.
+
+
+
+
+## Exemplo 8.3
+
+Considerando o Exemplo 8.1, $\overline{X} = \frac{\sum\limits_{i=1}^n X_i}{n}$ é suficiente para $\mu$?
+
+
+
+
+# Fim

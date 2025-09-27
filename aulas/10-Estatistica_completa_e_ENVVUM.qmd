@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 10"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Estatística Completa e Estimador Não Viesado de Variância Uniformemente Mínima
+
+Chegamos a um dos pontos altos da Inferência Estatística. Nas aulas anteriores, definimos e buscamos propriedades de "bons" estimadores: ausência de viés, menor variância e suficiência. Nesta aula, unimos esses conceitos para responder à pergunta final: como podemos construir o melhor estimador não viesado possível?
+
+Para isso, introduzimos uma nova propriedade teórica, a Estatística Completa, e a combinamos com a suficiência que já estudamos. O resultado é o poderoso Teorema de Lehmann-Scheffé, que nos dá uma receita para encontrar o Estimador Não Viesado de Variância Uniformemente Mínima (ENVVUM) – o "santo graal" dos estimadores não viesados.
+
+Slides:
+
+- [Versão html](/slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/10-Estatistica_completa_e_ENVVUM.pdf){target="_blank"}
+

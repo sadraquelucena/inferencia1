@@ -39,30 +39,6 @@
     "text": "Bem-vindo(a)!\nEste espaço foi criado pelo Prof. Dr. Sadraque E. F. Lucena para centralizar todos os conteúdos, atividades e o cronograma da disciplina ESTAT0078 – Inferência I, ofertado pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe.\nAo longo do semestre, vamos construir juntos uma base sólida nos conceitos fundamentais da Inferência Estatística, explorando métodos para obter e avaliar estimadores pontuais e para construir de intervalos de confiança."
   },
   {
-    "objectID": "aulas/1-Apresentacao_da_disciplina.html",
-    "href": "aulas/1-Apresentacao_da_disciplina.html",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\nVersão html\nVersão pdf",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Princípios da Estimação Pontual",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
-    "objectID": "aulas/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina-e-revisão-de-algumas-distribuições-de-probabilidade",
-    "href": "aulas/1-Apresentacao_da_disciplina.html#apresentação-da-disciplina-e-revisão-de-algumas-distribuições-de-probabilidade",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\nVersão html\nVersão pdf",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Princípios da Estimação Pontual",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#canais-de-comunicação-e-materiais-da-disciplina",
     "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#canais-de-comunicação-e-materiais-da-disciplina",
     "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
@@ -355,6 +331,858 @@
     "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
     "section": "Distribuição Exponencial",
     "text": "Distribuição Exponencial\nGráfico da distibuição de \\(X\\sim\\) Exponencial(\\(\\alpha=2\\)):\n\nalpha &lt;- 2\ncurve(dexp(x, rate=alpha), from = 0, to = 5,\n      main = \"Exponencial(2)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#section",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#section",
+    "title": "Viés de um Estimador",
+    "section": "",
+    "text": "Em inferência estatística, desejamos, a partir de uma amostra, obter conclusões sobre a população.\nMais especificamente, desejamos estimar um parâmetro \\(\\theta\\) que desconhecemos a partir de um estimador \\(\\widehat{\\theta}\\), que é uma função da amostra.\nDada uma população, existem muitas e muitas amostras aleatórias simples (a.a.s) de tamanho \\(n\\) que podem ser sorteadas.\nCada uma dessas amostras pode resultar em um valor diferente da estatística de interesse (\\(\\overline{X}\\) e \\(S^2\\), por exemplo).\nVejamos um exemplo."
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#section-1",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#section-1",
+    "title": "Viés de um Estimador",
+    "section": "",
+    "text": "Fonte: BUSSAB, Wilton de O.; MORETTIN, Pedro A. Estatística básica. Saraiva, 2010, capítulo 11.\n\n\n\n\nO alvo representa o valor do parâmetro e os “tiros” representam os diferentes valores amostrais da estatística de interesse.\n(A\\(\\,\\!\\)) e (C) fornecem valores distribuídos em torno do verdadeiro valor do parâmetro, embora em (A) os valores estejam mais dispersos.\nEm (B) e (D) as estimativas estão centradas em torno de um valor diferente do parâmetro de interesse e na parte (D), a dispersão é maior."
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#section-2",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#section-2",
+    "title": "Viés de um Estimador",
+    "section": "",
+    "text": "O nosso interesse então é obter estimadores que forneçam estimativas centradas em torno do verdadeiro valor do parâmetro.\nQueremos também que a dispersão das estimativas seja a menor possível.\nEssas duas propriedades estão associadas à esperança e à variância do estimador, que são medidas de centro e dispersão, respectivamente.\nVejamos o conceito de viés de um estimador."
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#definição-3.1-viés-de-um-estimador",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#definição-3.1-viés-de-um-estimador",
+    "title": "Viés de um Estimador",
+    "section": "Definição 3.1: Viés de um estimador",
+    "text": "Definição 3.1: Viés de um estimador\nO viés (ou vício) de um estimador \\[\n  B(\\widehat{\\theta}) = E[\\widehat{\\theta}] - \\theta.\n\\]\n\nDizemos que um estimador \\(\\widehat{\\theta}\\) é para \\(\\theta\\) se \\[\n  E[\\widehat{\\theta}] = \\theta\n\\] para todo \\(\\theta\\in\\Theta\\).\nNote que se \\(\\widehat{\\theta}\\) é não viesado, \\(B(\\widehat{\\theta})=0\\)."
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#revisão-esperança-matemática",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#revisão-esperança-matemática",
+    "title": "Viés de um Estimador",
+    "section": "Revisão: Esperança Matemática",
+    "text": "Revisão: Esperança Matemática\n\nSe \\(X\\) é uma v.a. discreta e \\(Y\\) é uma v.a. contínua, a esperança é dada por \\[\n  E(X) = \\sum_{i} x_i P(X=x_i) \\quad \\text{e} \\quad E(Y) = \\int\\limits_{-\\infty}^{\\infty} y f(y) \\, dy.\n\\] Para variáveis aleatórias \\(X\\) e \\(Y\\) e constantes \\(a\\) e \\(b\\):\n\\(E(a+bX) = a + b E(X)\\)\n\\(E(X+Y) = E(X) + E(Y)\\)\nSe \\(X\\) e \\(Y\\) forem independentes, \\(E(XY) = E(X)E(Y)\\).\n\nEssas propriedades valem para mais de duas variáveis aleatórias."
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#revisão-variância",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#revisão-variância",
+    "title": "Viés de um Estimador",
+    "section": "Revisão: Variância",
+    "text": "Revisão: Variância\n\\[\n  \\begin{aligned}\n    Var(X) &= E[(X-E(X))^2] = E(X^2) - [E(X)]^2.\n  \\end{aligned}\n\\]\nPara variáveis aleatórias \\(X\\) e \\(Y\\) e constantes \\(a\\) e \\(b\\):\n\n\\(Var(bX) = b^2 Var(X)\\)\nSe \\(X\\) e \\(Y\\) são independentes, \\[Var(X+Y) = Var(X)+Var(Y)\\]\n\nEssas propriedades valem para mais de duas variáveis aleatórias."
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#exemplo-3.1",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#exemplo-3.1",
+    "title": "Viés de um Estimador",
+    "section": "Exemplo 3.1",
+    "text": "Exemplo 3.1\nSeja \\(X_1, X_2, \\ldots, X_n\\) uma amostra aleatória independente e identicamente distribuída de uma população com \\(E(X)=\\mu\\) e \\(Var(X)=\\sigma^2&gt;0\\).\n\n\\(\\overline{X}\\) é viesado para \\(\\mu\\)?\n\\(\\widehat{\\sigma}^2 = \\frac{1}{n} \\sum\\limits_{i=1}^n (X_i-\\overline{X})^2  = \\frac{\\sum\\limits_{i=1}^{n} X_i^2 - n\\overline{X}^2}{n}\\) é viesado para \\(\\sigma^2\\)?\n\\(S^2 = \\frac{1}{n-1} \\sum\\limits_{i=1}^n (X_i-\\overline{X})^2 = \\frac{\\sum\\limits_{i=1}^{n} X_i^2 - n\\overline{X}^2}{n-1}\\) é viesado para \\(\\sigma^2\\)?"
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#definição-3.2-estimador-assintoticamente-não-viesado",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#definição-3.2-estimador-assintoticamente-não-viesado",
+    "title": "Viés de um Estimador",
+    "section": "Definição 3.2: Estimador Assintoticamente Não Viesado",
+    "text": "Definição 3.2: Estimador Assintoticamente Não Viesado\nSeja \\(\\widehat{\\theta}\\) um estimador de um parâmetro desconhecido \\(\\theta\\). Diz-se que \\(\\widehat{\\theta}\\) é um estimador assintoticamente não viesado de \\(\\theta\\) se \\[\n  \\lim_{n\\rightarrow\\infty} E(\\widehat{\\theta}) = \\theta,\n\\] ou, de forma equivalente, \\[\n  \\lim_{n\\rightarrow\\infty} B(\\widehat{\\theta}) = \\lim_{n\\rightarrow\\infty} \\left[ E(\\widehat{\\theta}) - \\theta \\right] = 0.\n\\]"
+  },
+  {
+    "objectID": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#exemplo-3.2",
+    "href": "slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html#exemplo-3.2",
+    "title": "Viés de um Estimador",
+    "section": "Exemplo 3.2",
+    "text": "Exemplo 3.2\nSeja \\(X_1, X_2, \\ldots, X_n\\) uma amostra aleatória independente e identicamente distribuída de uma população com \\(E(X)=\\mu\\) e \\(Var(X)=\\sigma^2&gt;0\\).\n\n\\(\\overline{X}\\) é assintoticamente não viesado para \\(\\mu\\)?\n\\(\\widehat{\\sigma}^2\\) é assintoticamente viesado para \\(\\sigma^2\\)?\n\\(S^2\\) é assintoticamente viesado para \\(\\sigma^2\\)?"
+  },
+  {
+    "objectID": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#teorema-7.1-critério-da-fatoração-de-neyman",
+    "href": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#teorema-7.1-critério-da-fatoração-de-neyman",
+    "title": "Critério da Fatoração de Neyman",
+    "section": "Teorema 7.1: Critério da Fatoração de Neyman",
+    "text": "Teorema 7.1: Critério da Fatoração de Neyman\nSejam \\(X_1, \\ldots, X_n\\) uma amostra aleatória da distribuição da variável aleatória \\(X\\) com função de densidade (ou de probabilidade) \\(f(x)\\) e função de verossimilhança \\(L(\\theta; \\underset{\\widetilde{\\phantom{a}}}{x})\\). Temos, então, que a estatística \\(T = T(X_1, \\ldots, X_n)\\) é suficiente para \\(\\theta\\), se e somente se pudermos escrever\n\\[\n  L(\\theta; \\underset{\\widetilde{\\phantom{a}}}{x}) = h(x_1,\\ldots,x_n) g_\\theta(T(x_1,\\ldots,x_n)),\n\\]\n\n\nem que\n\n\n\\(h(x_1,\\ldots,x_n)\\) só envolve \\(x_1,\\ldots,x_n\\) (não envolve \\(\\theta\\));\n\\(g_\\theta(T(x_1,\\ldots,x_n))\\) envolve \\(\\theta\\) e \\(T(x_1,\\ldots,x_n)\\).\nProva: Livro do Bolfarine, pág. 22."
+  },
+  {
+    "objectID": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.1",
+    "href": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.1",
+    "title": "Critério da Fatoração de Neyman",
+    "section": "Exemplo 7.1",
+    "text": "Exemplo 7.1\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória da distribuição de Poisson com parâmetro \\(\\theta\\). Use o critério da fatoração para mostrar que \\(T(\\underset{\\widetilde{\\phantom{a}}}{x})=\\sum\\limits_{i=1}^n X_i\\) é suficiente para \\(\\theta\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim\\) Poisson(\\(\\theta\\)): \\(f(x)=\\frac{e^{-\\theta}\\theta^x}{x!}\\), \\(x=0,1,2,\\ldots\\)"
+  },
+  {
+    "objectID": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.2",
+    "href": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.2",
+    "title": "Critério da Fatoração de Neyman",
+    "section": "Exemplo 7.2",
+    "text": "Exemplo 7.2\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória da variável \\(X\\sim U(0,\\theta)\\). Encontre uma estatística suficiente para \\(\\theta\\) usando o critério da fatoração.\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim U(a,b)\\): \\[\n  f(x)=\\frac{1}{b-a} I_{(a,b)}(x) \\quad \\text{em que} \\quad I_{(a,b)}(x) = \\begin{cases}\n                1, & a&lt;x&lt;b,\\\\\n                0, & \\text{caso contrário}.\n                \\end{cases}\n\\]"
+  },
+  {
+    "objectID": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.3",
+    "href": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.3",
+    "title": "Critério da Fatoração de Neyman",
+    "section": "Exemplo 7.3",
+    "text": "Exemplo 7.3\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória da distribuição \\(N(\\mu,1)\\). Encontre uma estatística suficiente para \\(\\mu\\) usando o critério da fatoração.\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim N(\\mu,\\sigma^2)\\): \\(f(x)=\\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} ,~ -\\infty&lt;x&lt;\\infty\\)"
+  },
+  {
+    "objectID": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.4",
+    "href": "slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html#exemplo-7.4",
+    "title": "Critério da Fatoração de Neyman",
+    "section": "Exemplo 7.4",
+    "text": "Exemplo 7.4\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória da distribuição Bernoulli\\((\\theta)\\). Encontre uma estatística suficiente para \\(\\theta\\) usando o critério da fatoração.\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim \\text{Bernoulli}(\\theta)\\): \\(f(x)=\\theta^x (1-\\theta)^{1-x}, ~ x = 0,1\\)"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#section",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#section",
+    "title": "Distribuições Amostrais",
+    "section": "",
+    "text": "Cramér (1945):\n\nO objetivo fundamental da Teoria Estatística consiste em investigar a possibilidade de extrair dos dados inferências válidas."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.1-inferência-estatística",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.1-inferência-estatística",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.1: Inferência Estatística",
+    "text": "Definição 2.1: Inferência Estatística\n\nSeja \\(X\\) uma variável aleatória com função de densidade (ou de probabilidade) de parâmetro \\(\\theta\\), denotada por \\(f(x|\\theta)\\), e que não conhecemos o valor de \\(\\theta\\) que representa a distribuição de \\(X\\).\nChamamos de inferência estatística o problema que consiste em especificar um ou mais valores para \\(\\theta\\), com base em uma amostra de valores observados de \\(X\\)."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#tipos-de-problemas",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#tipos-de-problemas",
+    "title": "Distribuições Amostrais",
+    "section": "Tipos de problemas",
+    "text": "Tipos de problemas\n\nProblema de estimação: o objetivo é procurar, segundo algum critério especificado, valores que representem adequadamente os parâmetros desconhecidos.\n\nExemplo: Estimar a idade média \\(\\mu\\) da população de estudantes matriculados na UFS."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#tipos-de-problemas-1",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#tipos-de-problemas-1",
+    "title": "Distribuições Amostrais",
+    "section": "Tipos de problemas",
+    "text": "Tipos de problemas\n\nTeste de hipóteses: o objetivo é verificar a validade de afirmações sobre o valor de um ou mais parâmetros desconhecidos.\n\nExemplo: Verificar se a proporção \\(p\\) de eleitores em determinada candidata é maior que 50% (ou 1/2) na população.\n\nHipóteses: \\(H_0 : p \\leq 1/2\\) contra \\(H_1 : p &gt; 1/2\\).\n\nExemplo: Verificar se o peso médio, \\(\\mu\\), de pacotes de 1 kg empacotados por determinada máquina realmente é 1 kg.\n\nHipóteses: \\(H_0 : \\mu = 1\\) contra \\(H_1 : \\mu \\neq 1\\)."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.2-população",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.2-população",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.2: População",
+    "text": "Definição 2.2: População\nO conjunto de valores de uma característica observável associada a uma coleção de indivíduos ou objetos de interesse é dito ser uma população.\n\nA população é representada por uma variável aleatória \\(X\\) que descreve a característica de interesse.\n\nExemplos:\n\nTodas as transações de cartão de crédito realizadas em um país durante o ano de 2023.\nTodos os segurados de uma companhia de seguros de saúde."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.3-amostra",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.3-amostra",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.3: Amostra",
+    "text": "Definição 2.3: Amostra\nQualquer parte (ou subconjunto) de uma população. A amostra é composta por \\(n\\) valores observados de uma característica de interesse, representados por variáveis aleatórias \\(X_1, \\ldots, X_n\\). Ela é utilizada para fazer inferências sobre a população da qual foi retirada.\nExemplos:\n\nUm conjunto de 1.000 transações de cartão de crédito realizadas em um país durante o ano de 2023.\nUma amostra de 500 segurados de uma companhia de seguros de saúde."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.4-parâmetro",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.4-parâmetro",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.4: Parâmetro",
+    "text": "Definição 2.4: Parâmetro\nQuantidade numérica que caracteriza uma determinada população.\n\nEm estatística, parâmetros são valores desconhecidos que descrevem as distribuições de variáveis aleatórias. Exemplos comuns de parâmetros incluem a média (\\(\\mu\\)), a variância (\\(\\sigma^2\\)) e a proporção (\\(p\\)).\n\nExemplo: Na distribuição normal \\(N(\\mu, \\sigma^2)\\), os parâmetros são\n\n\\(\\mu\\) (média)\n\\(\\sigma^2\\) (variância)."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.5-espaço-paramétrico",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.5-espaço-paramétrico",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.5: Espaço Paramétrico",
+    "text": "Definição 2.5: Espaço Paramétrico\nConjunto de todos os valores possíveis que os parâmetros de um modelo estatístico podem assumir.\n\nEle define as restrições e o domínio dos parâmetros que são utilizados na modelagem de distribuições de probabilidades.\nGeralmente denota-se por \\(\\Theta\\).\n\nExemplo: Para a distribuição \\(N(\\mu, \\sigma^2)\\), o espaço paramétrico é dado por \\[\n  \\Theta = \\{(\\mu,\\sigma^2): -\\infty&lt;\\mu&lt;\\infty, \\sigma^2&gt;0\\}.\n\\]"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.6-estatística",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.6-estatística",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.6: Estatística",
+    "text": "Definição 2.6: Estatística\nQualquer função \\(\\widehat{\\theta} = T(X_1, \\ldots,X_n)\\) da amostra que não depende de parâmetros desconhecidos é denominada uma .\nExemplos:\n\n\\(X_{(1)} = \\min(X_1,\\ldots,X_n)\\)\n\\(X_{(n)} = \\max(X_1,\\ldots,X_n)\\)\n\\(\\widetilde{X} = \\text{med}(X_1,\\ldots,X_n)\\)\n\\(\\overline{X} = \\frac{1}{n}\\sum\\limits_{i=1}^n X_i\\)\n\\(\\widehat{\\sigma}^2 = \\frac{1}{n} \\sum\\limits_{i=1}^n (X_i - \\overline{X})^2\\)"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.7-estimador",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.7-estimador",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.7: Estimador",
+    "text": "Definição 2.7: Estimador\nSe \\(\\theta\\) é um parâmetro de interesse e \\(\\Theta\\) é o espaço paramétrico que define todos os valores possíveis que \\(\\theta\\) pode assumir, então qualquer estatística que assuma valores dentro de \\(\\Theta\\) pode ser considerada um estimador para o parâmetro \\(\\theta\\).\n\nGeralmente o estimador é denotado por uma letra grega com um chapéu (^) em cima, como em \\(\\hat{\\theta}\\).\nA ideia por trás de um estimador é que ele fornece uma aproximação do valor verdadeiro do parâmetro com base nas observações da amostra."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.7-estimador-1",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.7-estimador-1",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.7: Estimador",
+    "text": "Definição 2.7: Estimador\nExemplos:\n\nSe \\(\\mu\\) é a média de uma população, um estimador comum para \\(\\mu\\) é a média amostral \\(\\hat{\\mu} = \\frac{1}{n} \\sum_{i=1}^{n} X_i\\).\nSe \\(\\sigma^2\\) é a variância de uma população, um estimador para \\(\\sigma^2\\) é a variância amostral \\(s^2 = \\frac{1}{n-1} \\sum_{i=1}^{n} (X_i - \\hat{\\mu})^2\\)."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.8",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.8",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.8",
+    "text": "Definição 2.8\nQualquer estatística que assuma valores no conjunto dos possíveis valores de \\(g(\\theta)\\) é um estimador para \\(g(\\theta)\\).\nExemplo:\nConsidere que \\(\\theta\\) seja a média de uma população, e queremos estimar uma função dessa média, especificamente \\(g(\\theta)=\\theta^2\\).\n\nSe \\(\\widehat{\\theta}\\) é o estimador da média \\(\\theta\\), então o estimador para \\(g(\\theta)\\) é dado por \\[\\widehat{g}(\\theta) = g(\\widehat{\\theta}).\\]"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#section-1",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#section-1",
+    "title": "Distribuições Amostrais",
+    "section": "",
+    "text": "Fonte: https://slideplayer.com.br/slide/10934372/"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.9-função-de-verossimilhança",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#definição-2.9-função-de-verossimilhança",
+    "title": "Distribuições Amostrais",
+    "section": "Definição 2.9: Função de Verossimilhança",
+    "text": "Definição 2.9: Função de Verossimilhança\nUma amostra aleatória de tamanho \\(n\\) obtida de uma população \\(X\\) pode ser entendida como um conjunto de variáveis aleatórias, \\(X_1, \\ldots, X_n\\), independentes e identicamente distribuídas com a mesma distribuição de \\(X\\).\n\nSe \\(X\\) tem uma distribuição com parâmetro \\(\\theta\\), a função de densidade (ou função de probabilidade) conjunta de \\(X_1,\\ldots,X_n\\) é chamada de e é dada por \\[\n   L(\\theta;\\underset{\\widetilde{\\phantom{a}}}{x}) = f(x_1;\\theta) f(x_2;\\theta) \\cdots f(x_n;\\theta) = \\prod_{i=1}^n f(x_i;\\theta).\n\\]"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.1",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.1",
+    "title": "Distribuições Amostrais",
+    "section": "Exemplo 2.1",
+    "text": "Exemplo 2.1\nSuponha que estamos interessados no número de mortes por acidente de trânsito em um fim de semana comum, que pode ser modelado por uma variável aleatória \\(X\\) com distribuição de Poisson e parâmetro \\(\\lambda\\). A função de probabilidade da Poisson(\\(\\lambda\\)) é \\[\n  f(x;\\lambda) = \\frac{e^{-\\lambda}\\lambda^x}{x!}, ~x = 0, 1, 2, \\ldots\n\\]\nAgora, considere que temos uma amostra aleatória de tamanho \\(n\\), \\(X_1,\\ldots,X_n\\), obtida dessa distribuição de Poisson. Encontre a função de verossimilhança, \\(L(\\lambda;\\underset{\\widetilde{\\phantom{a}}}{x})\\), dessa amostra aleatória."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.1-1",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.1-1",
+    "title": "Distribuições Amostrais",
+    "section": "Exemplo 2.1",
+    "text": "Exemplo 2.1"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.2",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.2",
+    "title": "Distribuições Amostrais",
+    "section": "Exemplo 2.2",
+    "text": "Exemplo 2.2\nImagine que uma empresa quer entender o cancelamento de assinaturas do seu serviço. A equipe de ciência de dados modela se um cliente cancela a assinatura como uma variável aleatória \\(X\\) com distribuição de Bernoulli de parâmetro \\(p\\), onde \\(p\\) é a probabilidade de um cliente manter a assinatura. A função de probabilidade da Bernoulli(\\(p\\)) é: \\[\n  f(x;p) = p^x (1-p)^{1-x}, \\quad x = 0, 1.\n\\] Aqui, \\(X=1\\) indica que o cliente manteve a assinatura, e \\(X=0\\) indica que o cliente cancelou. Considere uma amostra aleatória de tamanho \\(n\\), \\(X_1,\\ldots,X_n\\), obtida dessa distribuição de Bernoulli. Determine a função de verossimilhança, \\(L(p;\\underset{\\widetilde{\\phantom{a}}}{x})\\), dessa amostra aleatória."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.2-1",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.2-1",
+    "title": "Distribuições Amostrais",
+    "section": "Exemplo 2.2",
+    "text": "Exemplo 2.2"
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.3",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.3",
+    "title": "Distribuições Amostrais",
+    "section": "Exemplo 2.3",
+    "text": "Exemplo 2.3\nPressuponha que o tempo de vida de um certo tipo de componente eletrônico, representado pela variável aleatória \\(X\\), tem distribuição Exponencial com parâmetro \\(\\alpha\\). A função de densidade da Exponencial(\\(\\alpha\\)) é: \\[\n  f(x;\\alpha) = \\alpha e^{-\\alpha x}, \\quad x\\geq 0.\n\\]\nAdmita que uma amostra aleatória de tamanho \\(n\\), \\(X_1,\\ldots,X_n\\), foi obtida dessa distribuição Exponencial. Determine a função de verossimilhança, \\(L(p;\\underset{\\widetilde{\\phantom{a}}}{x})\\), para essa amostra aleatória."
+  },
+  {
+    "objectID": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.3-1",
+    "href": "slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html#exemplo-2.3-1",
+    "title": "Distribuições Amostrais",
+    "section": "Exemplo 2.3",
+    "text": "Exemplo 2.3"
+  },
+  {
+    "objectID": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#teorema-8.1-critério-da-fatoração-de-neyman",
+    "href": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#teorema-8.1-critério-da-fatoração-de-neyman",
+    "title": "Critério da Fatoração: Caso Multiparamétrico",
+    "section": "Teorema 8.1: Critério da Fatoração de Neyman",
+    "text": "Teorema 8.1: Critério da Fatoração de Neyman\nSejam \\(X_1, \\ldots, X_n\\) uma amostra aleatória da distribuição da variável aleatória \\(X\\) com função de densidade (ou de probabilidade) \\(f(x)\\). Temos, então, que a estatística \\(T = (T_1, \\ldots, T_r)\\) é conjuntamente suficiente para \\(\\theta\\), se \\[\n  L(\\theta; \\underset{\\widetilde{\\phantom{a}}}{x}) = h(x_1,\\ldots,x_n) g_\\theta(T_1(\\underset{\\widetilde{\\phantom{a}}}{x}),\\ldots,T_n(\\underset{\\widetilde{\\phantom{a}}}{x})),\n\\] em que\n\n\\(h(x_1,\\ldots,x_n)\\) só envolve \\(x_1,\\ldots,x_n\\) (não envolve \\(\\theta\\));\n\\(g_\\theta(T(x_1,\\ldots,x_n))\\) envolve \\(\\theta\\) e \\(T_1(\\underset{\\widetilde{\\phantom{a}}}{x}),\\ldots,T_n(\\underset{\\widetilde{\\phantom{a}}}{x})\\)."
+  },
+  {
+    "objectID": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#exemplo-8.1",
+    "href": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#exemplo-8.1",
+    "title": "Critério da Fatoração: Caso Multiparamétrico",
+    "section": "Exemplo 8.1",
+    "text": "Exemplo 8.1\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória de tamanho \\(n\\) da variável aleatória \\(X\\sim N(\\mu,\\sigma^2)\\). Use o critério da fatoração para determinar duas estatísticas conjuntamente suficientes \\((\\mu,\\sigma^2)\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim N(\\mu,\\sigma^2)\\): \\(f(x)=\\frac{1}{\\sqrt{2\\pi\\sigma^2}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} ,~ -\\infty&lt;x&lt;\\infty\\)"
+  },
+  {
+    "objectID": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#exemplo-8.2",
+    "href": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#exemplo-8.2",
+    "title": "Critério da Fatoração: Caso Multiparamétrico",
+    "section": "Exemplo 8.2",
+    "text": "Exemplo 8.2\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória da variável aleatória \\(X\\) com distribuição Gama\\((\\alpha,\\beta)\\). Encontre uma estatística conjuntamente suficiente para \\((\\alpha,\\beta)\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim\\) Gama\\((\\alpha,\\beta)\\): \\(f(x) = \\frac{\\beta^\\alpha x^{\\alpha-1} e^{-\\beta x}}{\\Gamma(\\alpha)}\\), \\(x&gt;0\\), \\(\\alpha,\\beta&gt;0\\)"
+  },
+  {
+    "objectID": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#definição-8.1",
+    "href": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#definição-8.1",
+    "title": "Critério da Fatoração: Caso Multiparamétrico",
+    "section": "Definição 8.1",
+    "text": "Definição 8.1\nDizemos que duas estatísticas \\(T_1\\) e \\(T_2\\) são equivalentes se existir uma relação 1:1 entre elas.\n\nEm outra palavras, \\(T_1\\) e \\(T_2\\) são equivalentes se \\(T_1\\) puder ser obtida a partir de \\(T_2\\) e vice-versa.\nNesse caso, temos que, se \\(T_1\\) é suficiente para \\(\\theta\\), então \\(T_2\\) também é suficiente para \\(\\theta\\). Esse resultado vale também para o caso multidimensional."
+  },
+  {
+    "objectID": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#exemplo-8.3",
+    "href": "slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html#exemplo-8.3",
+    "title": "Critério da Fatoração: Caso Multiparamétrico",
+    "section": "Exemplo 8.3",
+    "text": "Exemplo 8.3\nConsiderando o Exemplo 8.1, \\(\\overline{X} = \\frac{\\sum\\limits_{i=1}^n X_i}{n}\\) é suficiente para \\(\\mu\\)?"
+  },
+  {
+    "objectID": "aulas/09-Familia_exponencial.html",
+    "href": "aulas/09-Familia_exponencial.html",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Até agora, analisamos várias distribuições e suas propriedades de forma individual. Nesta aula, damos um passo em direção a uma teoria unificada, apresentando uma “superfamília” que engloba muitas das distribuições mais importantes da estatística: a Família Exponencial.\nO objetivo é aprender a reconhecer uma estrutura matemática comum por trás de distribuições aparentemente distintas como a Bernoulli, a Normal, a Poisson e a Gama. Mostramos como a função de densidade (ou probabilidade) de muitas delas pode ser reescrita em uma forma exponencial padrão. Reconhecer que uma distribuição pertence a esta família nos dá acesso a uma série de propriedades teóricas poderosas, simplificando enormemente problemas de inferência, como a busca por estatísticas suficientes.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "9- Família Exponencial"
+    ]
+  },
+  {
+    "objectID": "aulas/09-Familia_exponencial.html#família-exponencial",
+    "href": "aulas/09-Familia_exponencial.html#família-exponencial",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Até agora, analisamos várias distribuições e suas propriedades de forma individual. Nesta aula, damos um passo em direção a uma teoria unificada, apresentando uma “superfamília” que engloba muitas das distribuições mais importantes da estatística: a Família Exponencial.\nO objetivo é aprender a reconhecer uma estrutura matemática comum por trás de distribuições aparentemente distintas como a Bernoulli, a Normal, a Poisson e a Gama. Mostramos como a função de densidade (ou probabilidade) de muitas delas pode ser reescrita em uma forma exponencial padrão. Reconhecer que uma distribuição pertence a esta família nos dá acesso a uma série de propriedades teóricas poderosas, simplificando enormemente problemas de inferência, como a busca por estatísticas suficientes.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "9- Família Exponencial"
+    ]
+  },
+  {
+    "objectID": "aulas/04-EQM_de_um_estimador.html",
+    "href": "aulas/04-EQM_de_um_estimador.html",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Continuando nossa jornada para avaliar a qualidade de estimadores, vamos além do conceito de viés. Nesta aula, introduzimos uma medida mais completa e poderosa: o Erro Quadrático Médio (EQM).\nO ponto central desta aula é a revelação de que o EQM pode ser decomposto em duas componentes cruciais: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso “trade-off” (troca) entre viés e variância na escolha de um bom estimador.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "4- Erro Quadrático Médio de Um Estimador"
+    ]
+  },
+  {
+    "objectID": "aulas/04-EQM_de_um_estimador.html#erro-quadrático-médio-de-um-estimador",
+    "href": "aulas/04-EQM_de_um_estimador.html#erro-quadrático-médio-de-um-estimador",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Continuando nossa jornada para avaliar a qualidade de estimadores, vamos além do conceito de viés. Nesta aula, introduzimos uma medida mais completa e poderosa: o Erro Quadrático Médio (EQM).\nO ponto central desta aula é a revelação de que o EQM pode ser decomposto em duas componentes cruciais: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso “trade-off” (troca) entre viés e variância na escolha de um bom estimador.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "4- Erro Quadrático Médio de Um Estimador"
+    ]
+  },
+  {
+    "objectID": "aulas/05-Eficiencia_de_um_estimador.html",
+    "href": "aulas/05-Eficiencia_de_um_estimador.html",
+    "title": "Conteúdo 5",
+    "section": "",
+    "text": "Após estudarmos o viés e o Erro Quadrático Médio, agora focamos em uma questão crucial: dentre todos os estimadores não viesados para um parâmetro, como podemos identificar o “melhor”?\nA resposta está no conceito de eficiência. Um estimador é considerado mais eficiente quanto menor for a sua variância (ou seja, mais preciso ele é). Nesta aula, apresentamos uma das ferramentas mais importantes da inferência clássica: o Limite Inferior de Cramér-Rao (LICR). Este limite nos dá um piso teórico para a variância, uma meta de “perfeição” que um estimador pode ou não alcançar. Um estimador que atinge esse limite é dito eficiente.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "5- Eficiência de Um Estimador"
+    ]
+  },
+  {
+    "objectID": "aulas/05-Eficiencia_de_um_estimador.html#efiiência-de-um-estimador",
+    "href": "aulas/05-Eficiencia_de_um_estimador.html#efiiência-de-um-estimador",
+    "title": "Conteúdo 5",
+    "section": "",
+    "text": "Após estudarmos o viés e o Erro Quadrático Médio, agora focamos em uma questão crucial: dentre todos os estimadores não viesados para um parâmetro, como podemos identificar o “melhor”?\nA resposta está no conceito de eficiência. Um estimador é considerado mais eficiente quanto menor for a sua variância (ou seja, mais preciso ele é). Nesta aula, apresentamos uma das ferramentas mais importantes da inferência clássica: o Limite Inferior de Cramér-Rao (LICR). Este limite nos dá um piso teórico para a variância, uma meta de “perfeição” que um estimador pode ou não alcançar. Um estimador que atinge esse limite é dito eficiente.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "5- Eficiência de Um Estimador"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Distribuicoes_amostrais.html",
+    "href": "aulas/02-Distribuicoes_amostrais.html",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Nesta aula, mergulhamos nos conceitos fundamentais que formam a base da Inferência Estatística. Abordamos a transição crucial de uma população teórica para uma amostra concreta, estabelecendo o vocabulário essencial que nos acompanhará durante todo o curso.\nO conceito central desta aula é a Função de Verossimilhança, uma ferramenta poderosa que nos permite avaliar a plausibilidade de diferentes valores para os parâmetros de um modelo com base nos dados observados.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "2- Distribuições Amostrais"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Distribuicoes_amostrais.html#distribuições-amostrais",
+    "href": "aulas/02-Distribuicoes_amostrais.html#distribuições-amostrais",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Nesta aula, mergulhamos nos conceitos fundamentais que formam a base da Inferência Estatística. Abordamos a transição crucial de uma população teórica para uma amostra concreta, estabelecendo o vocabulário essencial que nos acompanhará durante todo o curso.\nO conceito central desta aula é a Função de Verossimilhança, uma ferramenta poderosa que nos permite avaliar a plausibilidade de diferentes valores para os parâmetros de um modelo com base nos dados observados.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "2- Distribuições Amostrais"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresentacao_da_disciplina.html",
+    "href": "aulas/01-Apresentacao_da_disciplina.html",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresentacao_da_disciplina.html#apresentação-da-disciplina-e-revisão-de-algumas-distribuições-de-probabilidade",
+    "href": "aulas/01-Apresentacao_da_disciplina.html#apresentação-da-disciplina-e-revisão-de-algumas-distribuições-de-probabilidade",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "aulas/06-Estatisticas_suficientes.html",
+    "href": "aulas/06-Estatisticas_suficientes.html",
+    "title": "Conteúdo 6",
+    "section": "",
+    "text": "Nesta aula, exploramos uma ideia poderosa e fundamental na estatística: o princípio da suficiência. A pergunta central que guiou nossa discussão foi: é possível resumir toda a informação relevante sobre um parâmetro desconhecido, contida em uma amostra completa, em uma única estatística (ou em um pequeno conjunto delas) sem nenhuma perda?\nA resposta está no conceito de Estatística Suficiente. Uma estatística com essa propriedade captura toda a “essência” da amostra no que diz respeito ao parâmetro de interesse, permitindo uma enorme redução na complexidade dos dados. Este é um dos pilares para a construção de estimadores ótimos.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "6- Estatísticas Suficientes"
+    ]
+  },
+  {
+    "objectID": "aulas/06-Estatisticas_suficientes.html#estatísticas-suficientes",
+    "href": "aulas/06-Estatisticas_suficientes.html#estatísticas-suficientes",
+    "title": "Conteúdo 6",
+    "section": "",
+    "text": "Nesta aula, exploramos uma ideia poderosa e fundamental na estatística: o princípio da suficiência. A pergunta central que guiou nossa discussão foi: é possível resumir toda a informação relevante sobre um parâmetro desconhecido, contida em uma amostra completa, em uma única estatística (ou em um pequeno conjunto delas) sem nenhuma perda?\nA resposta está no conceito de Estatística Suficiente. Uma estatística com essa propriedade captura toda a “essência” da amostra no que diz respeito ao parâmetro de interesse, permitindo uma enorme redução na complexidade dos dados. Este é um dos pilares para a construção de estimadores ótimos.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "6- Estatísticas Suficientes"
+    ]
+  },
+  {
+    "objectID": "aulas/07-Criterio_da_fatoração_de_Neyman.html",
+    "href": "aulas/07-Criterio_da_fatoração_de_Neyman.html",
+    "title": "Conteúdo 7",
+    "section": "",
+    "text": "Na aula anterior, introduzimos o conceito fundamental de Estatística Suficiente através de sua definição formal. Embora poderosa, a aplicação direta dessa definição pode ser complexa e pouco intuitiva.\nNesta aula, apresentamos uma ferramenta que simplifica drasticamente esse processo: o Critério da Fatoração de Neyman. Este elegante teorema nos fornece um método prático e direto para encontrar e verificar estatísticas suficientes. A técnica consiste em fatorar a função de verossimilhança em duas partes: uma que depende apenas dos dados e outra que conecta o parâmetro aos dados exclusivamente através da estatística de interesse. Dominar esta técnica é essencial para a prática da inferência.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "7- Critério da Fatoração de Neyman"
+    ]
+  },
+  {
+    "objectID": "aulas/07-Criterio_da_fatoração_de_Neyman.html#critério-da-fatoração-de-neyman",
+    "href": "aulas/07-Criterio_da_fatoração_de_Neyman.html#critério-da-fatoração-de-neyman",
+    "title": "Conteúdo 7",
+    "section": "",
+    "text": "Na aula anterior, introduzimos o conceito fundamental de Estatística Suficiente através de sua definição formal. Embora poderosa, a aplicação direta dessa definição pode ser complexa e pouco intuitiva.\nNesta aula, apresentamos uma ferramenta que simplifica drasticamente esse processo: o Critério da Fatoração de Neyman. Este elegante teorema nos fornece um método prático e direto para encontrar e verificar estatísticas suficientes. A técnica consiste em fatorar a função de verossimilhança em duas partes: uma que depende apenas dos dados e outra que conecta o parâmetro aos dados exclusivamente através da estatística de interesse. Dominar esta técnica é essencial para a prática da inferência.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "7- Critério da Fatoração de Neyman"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Criterio_da_fatoracao_caso_multiparametrico.html",
+    "href": "aulas/08-Criterio_da_fatoracao_caso_multiparametrico.html",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Na aula anterior, dominamos o Critério da Fatoração de Neyman para o caso de um único parâmetro. Agora, expandimos essa poderosa ferramenta para cenários mais realistas, onde as distribuições são caracterizadas por múltiplos parâmetros desconhecidos, como a média e a variância em uma distribuição Normal.\nO princípio permanece o mesmo: fatorar a função de verossimilhança. No entanto, agora buscamos um vetor de estatísticas que seja conjuntamente suficiente para o vetor de parâmetros. Além disso, introduzimos o conceito prático de estatísticas equivalentes, que nos dá flexibilidade na escolha do resumo dos dados sem perda de informação.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "8- Critério da Fatoração: Caso Multiparametrico"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Criterio_da_fatoracao_caso_multiparametrico.html#critério-da-fatoração-de-neyman-caso-multiparamétrico",
+    "href": "aulas/08-Criterio_da_fatoracao_caso_multiparametrico.html#critério-da-fatoração-de-neyman-caso-multiparamétrico",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Na aula anterior, dominamos o Critério da Fatoração de Neyman para o caso de um único parâmetro. Agora, expandimos essa poderosa ferramenta para cenários mais realistas, onde as distribuições são caracterizadas por múltiplos parâmetros desconhecidos, como a média e a variância em uma distribuição Normal.\nO princípio permanece o mesmo: fatorar a função de verossimilhança. No entanto, agora buscamos um vetor de estatísticas que seja conjuntamente suficiente para o vetor de parâmetros. Além disso, introduzimos o conceito prático de estatísticas equivalentes, que nos dá flexibilidade na escolha do resumo dos dados sem perda de informação.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "8- Critério da Fatoração: Caso Multiparametrico"
+    ]
+  },
+  {
+    "objectID": "aulas/11-Metodo_dos_momentos.html",
+    "href": "aulas/11-Metodo_dos_momentos.html",
+    "title": "Conteúdo 11",
+    "section": "",
+    "text": "Até o momento, nosso foco foi em avaliar as propriedades de estimadores que já conhecíamos (viés, eficiência, suficiência). Agora, iniciamos uma nova fase em nosso curso, respondendo a uma pergunta mais fundamental: como encontramos bons estimadores em primeiro lugar?\nNesta aula, apresentamos o primeiro método construtivo para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é notavelmente intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite “resolver” para os parâmetros desconhecidos.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Métodos de Estimação",
+      "11- Método dos Momentos"
+    ]
+  },
+  {
+    "objectID": "aulas/11-Metodo_dos_momentos.html#o-método-dos-momentos",
+    "href": "aulas/11-Metodo_dos_momentos.html#o-método-dos-momentos",
+    "title": "Conteúdo 11",
+    "section": "",
+    "text": "Até o momento, nosso foco foi em avaliar as propriedades de estimadores que já conhecíamos (viés, eficiência, suficiência). Agora, iniciamos uma nova fase em nosso curso, respondendo a uma pergunta mais fundamental: como encontramos bons estimadores em primeiro lugar?\nNesta aula, apresentamos o primeiro método construtivo para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é notavelmente intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite “resolver” para os parâmetros desconhecidos.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Métodos de Estimação",
+      "11- Método dos Momentos"
+    ]
+  },
+  {
+    "objectID": "aulas/10-Estatistica_completa_e_ENVVUM.html",
+    "href": "aulas/10-Estatistica_completa_e_ENVVUM.html",
+    "title": "Conteúdo 10",
+    "section": "",
+    "text": "Chegamos a um dos pontos altos da Inferência Estatística. Nas aulas anteriores, definimos e buscamos propriedades de “bons” estimadores: ausência de viés, menor variância e suficiência. Nesta aula, unimos esses conceitos para responder à pergunta final: como podemos construir o melhor estimador não viesado possível?\nPara isso, introduzimos uma nova propriedade teórica, a Estatística Completa, e a combinamos com a suficiência que já estudamos. O resultado é o poderoso Teorema de Lehmann-Scheffé, que nos dá uma receita para encontrar o Estimador Não Viesado de Variância Uniformemente Mínima (ENVVUM) – o “santo graal” dos estimadores não viesados.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "10- Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima"
+    ]
+  },
+  {
+    "objectID": "aulas/10-Estatistica_completa_e_ENVVUM.html#estatística-completa-e-estimador-não-viesado-de-variância-uniformemente-mínima",
+    "href": "aulas/10-Estatistica_completa_e_ENVVUM.html#estatística-completa-e-estimador-não-viesado-de-variância-uniformemente-mínima",
+    "title": "Conteúdo 10",
+    "section": "",
+    "text": "Chegamos a um dos pontos altos da Inferência Estatística. Nas aulas anteriores, definimos e buscamos propriedades de “bons” estimadores: ausência de viés, menor variância e suficiência. Nesta aula, unimos esses conceitos para responder à pergunta final: como podemos construir o melhor estimador não viesado possível?\nPara isso, introduzimos uma nova propriedade teórica, a Estatística Completa, e a combinamos com a suficiência que já estudamos. O resultado é o poderoso Teorema de Lehmann-Scheffé, que nos dá uma receita para encontrar o Estimador Não Viesado de Variância Uniformemente Mínima (ENVVUM) – o “santo graal” dos estimadores não viesados.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "10- Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Vies_de_um_estimador.html",
+    "href": "aulas/03-Vies_de_um_estimador.html",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Nesta aula, investigamos a primeira e mais intuitiva propriedade de um bom estimador: a ausência de viés (ou vício). Utilizando a analogia do “tiro ao alvo”, exploramos o que significa para as estimativas de um estimador serem, em média, precisas e certeiras.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "3- Viés de Um Estimador"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Vies_de_um_estimador.html#viés-de-um-estimador",
+    "href": "aulas/03-Vies_de_um_estimador.html#viés-de-um-estimador",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Nesta aula, investigamos a primeira e mais intuitiva propriedade de um bom estimador: a ausência de viés (ou vício). Utilizando a analogia do “tiro ao alvo”, exploramos o que significa para as estimativas de um estimador serem, em média, precisas e certeiras.\nSlides:\n\nVersão html\nVersão pdf",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Princípios da Estimação Pontual",
+      "3- Viés de Um Estimador"
+    ]
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#section",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#section",
+    "title": "Eficiência de um Estimador",
+    "section": "",
+    "text": "Nesta aula, exploraremos o conceito de estimador eficiente e aprenderemos a avaliar a eficiência de diferentes estimadores.\nUm estimador é considerado mais eficiente quando possui uma variância menor em comparação com outros estimadores não viesados.\nExiste, ainda, um método para determinar o menor limite possível para a variância de um estimador de um parâmetro \\(\\theta\\). Caso um estimador atinja esse limite, ele será considerado o mais eficiente, pois nenhum outro terá uma variância menor do que a dele."
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#definição-5.1-eficiência-de-um-estimador",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#definição-5.1-eficiência-de-um-estimador",
+    "title": "Eficiência de um Estimador",
+    "section": "Definição 5.1: Eficiência de um estimador",
+    "text": "Definição 5.1: Eficiência de um estimador\nSuponha que \\(\\widehat{\\theta}\\) seja não viesado para o parâmetro \\(\\theta\\). Chamamos de eficiência do estimador \\(\\widehat{\\theta}\\) o quociente \\[\n  e(\\widehat{\\theta}) = \\frac{LI(\\theta)}{Var(\\widehat{\\theta})},\n\\] em que \\(LI(\\theta)\\) é o limite inferior da variância dos estimadores não viesados de \\(\\theta\\).\n\nNote que \\(e(\\widehat{\\theta})=1\\) quando \\(LI(\\theta)=Var(\\widehat{\\theta})\\). Nesse caso \\(\\widehat{\\theta}\\) é chamado eficiente."
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#section-2",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#section-2",
+    "title": "Eficiência de um Estimador",
+    "section": "",
+    "text": "Sob certas condições de regularidade (basicamente, o suporte não depende de \\(\\theta\\) e é possível trocar a ordem das operações de derivação e integração) temos \\[\n  LI(\\theta) = \\frac{1}{n\\, E\\left[ \\left( \\frac{\\partial\\log f(X|\\theta)}{\\partial \\theta} \\right)^{\\!2} \\right]}\n\\] e \\[\n  E\\left[ \\left( \\frac{\\partial \\log f(X)}{\\partial \\theta} \\right)^{\\!2} \\right] = -E\\left[ \\frac{\\partial^2 \\log f(X)}{\\partial\\theta^2.} \\right].\n\\]"
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#section-3",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#section-3",
+    "title": "Eficiência de um Estimador",
+    "section": "",
+    "text": "Para verificarmos se \\(\\widehat{\\theta}\\) é eficiente (de acordo com a Definição 5.1), seguimos os passos (sob certas condições de regularidade):\n\nobtemos \\(\\ell = \\log f(x)\\);\nderivamos \\(\\ell\\) duas vezes, isto é, obtemos \\(\\ell''\\);\ncalculamos \\(E[\\ell'']\\);\nobtemos \\(LI(\\theta)=\\frac{1}{-nE[\\ell'']}\\);\ncalculamos \\(Var(\\widehat{\\theta})\\);\nobtemos \\(e(\\widehat{\\theta}) = \\frac{LI(\\theta)}{Var(\\widehat{\\theta})}\\)."
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.1",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.1",
+    "title": "Eficiência de um Estimador",
+    "section": "Exemplo 5.1",
+    "text": "Exemplo 5.1\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória de \\(X\\sim N(\\mu,\\sigma^2)\\), em que \\(\\sigma^2\\) é conhecido. Verifique se \\(\\overline{X}\\) é eficiente para \\(\\mu\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\nSe \\(X\\sim N(\\mu,\\sigma^2)\\), então \\[f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}, ~ -\\infty&lt;x&lt;\\infty\\]"
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.2",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.2",
+    "title": "Eficiência de um Estimador",
+    "section": "Exemplo 5.2",
+    "text": "Exemplo 5.2\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória de tamanho \\(n\\) da variável aleatória \\(X\\sim \\text{Poisson}(\\theta)\\). Verifique se \\(\\overline{X}\\) é eficiente para \\(\\theta\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\nSe \\(X\\sim \\text{Poisson}(\\theta)\\), então \\[f(x) = \\frac{e^{-\\lambda}\\lambda^x}{x!}, ~ x=0,1,2,\\ldots\\]"
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#definição-5.2-informação-de-fisher",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#definição-5.2-informação-de-fisher",
+    "title": "Eficiência de um Estimador",
+    "section": "Definição 5.2: Informação de Fisher",
+    "text": "Definição 5.2: Informação de Fisher\nA quantidade \\[\n  I_F(\\theta) = E\\left[ \\left( \\frac{\\partial \\log f(X)}{\\partial \\theta} \\right)^{\\!2} \\right]\n\\] é denominada informação de Fisher de \\(\\theta\\)."
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#teorema-5.1-desigualdade-da-informação",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#teorema-5.1-desigualdade-da-informação",
+    "title": "Eficiência de um Estimador",
+    "section": "Teorema 5.1: Desigualdade da Informação",
+    "text": "Teorema 5.1: Desigualdade da Informação\nQuando as condições de regularidade estão satisfeitas, a variância de qualquer estimador não viciado \\(\\widehat{\\theta}\\) do parâmetro \\(\\theta\\) satisfaz a desigualdade \\[\n  Var(\\widehat{\\theta}) \\geq \\frac{1}{n\\,I_F(\\theta)}.\n\\]\n\nÉ importante ressaltar que a desigualdade da informação não é um método para obter estimadores.\nEla apenas possibilita verificar se determinado estimador é ou não eficiente."
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.3",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.3",
+    "title": "Eficiência de um Estimador",
+    "section": "Exemplo 5.3",
+    "text": "Exemplo 5.3\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória de tamanho \\(n\\) da variável aleatória \\(X\\sim \\text{Bernoulli}(p)\\). Verifique se \\(\\overline{X}\\) é eficiente para \\(p\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\nSe \\(X\\sim \\text{Bernoulli}(p)\\), então\n\n\\(f(x) = p^x (1-p)^{1-x}, ~ x=0,1\\)\n\\(E(X) = p\\)\n\\(Var(X)=p(1-p)\\)"
+  },
+  {
+    "objectID": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.4",
+    "href": "slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html#exemplo-5.4",
+    "title": "Eficiência de um Estimador",
+    "section": "Exemplo 5.4",
+    "text": "Exemplo 5.4\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória de tamanho \\(n\\) da variável aleatória \\(X\\sim \\text{Geométrica}(p)\\). Verifique se \\(\\overline{X}\\) é eficiente para \\(p\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\nSe \\(X\\sim \\text{Geométrica}(p)\\), então\n\n\\(f(x) = (1-p)^{x} p, ~ x=0,1, 2, 3\\ldots\\)\n\\(E(X) = \\frac{1-p}{p}\\)\n\\(Var(X)=\\frac{1-p}{p^2}\\)"
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#section",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#section",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "",
+    "text": "A definição de estatística completa junto com a definição de suficiência, possibilita a obtenção do estimador ótimo, isto é, o estimador não viciado de variância uniformemente mínima."
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#definição-10.1-estatística-completa",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#definição-10.1-estatística-completa",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "Definição 10.1: Estatística Completa",
+    "text": "Definição 10.1: Estatística Completa\nUma estatística \\(T\\) é dita completa em relação à família \\(f(x)\\) se, dada uma função \\(g(T)\\), \\[\n  E\\left(g(T)\\right) = 0 \\quad \\text{apenas se } g(T)=0\n\\] com probabilidade 1."
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.1",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.1",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "Exemplo 10.1",
+    "text": "Exemplo 10.1\nSeja \\(X_1,\\ldots,X_n\\) uma amostra aleatória obtida de \\(X\\) com distribuição de Poisson com parâmetro \\(\\lambda&gt;0\\), desconhecido. Mostre que \\(T=\\sum\\limits_{i=1}^n X_i\\sim\\) Poisson(\\(n\\lambda\\)) é uma estatística completa em relação à Poisson.\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim\\) Poisson(\\(\\theta\\)): \\(P(X=x)=\\frac{e^{-\\theta}\\theta^x}{x!}\\), \\(x=0,1, 2,\\ldots\\)"
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.2",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.2",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "Exemplo 10.2",
+    "text": "Exemplo 10.2\nSeja \\(X_1\\), \\(X_2\\) uma amostra aleatória da variável \\(X\\sim\\) Bernoulli(\\(p\\)). Verifique que \\(T = X_1-X_2\\) não é uma estatística completa.\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim\\) Bernoulli(\\(p\\)): \\(P(X=x)=p^x (1-p)^{1-x}\\), \\(x=0,1\\)"
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.3",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.3",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "Exemplo 10.3",
+    "text": "Exemplo 10.3\nSeja \\(X_1,\\ldots,X_n\\) uma amostra aleatória obtida de \\(X\\) com distribuição de Bernoulli com parâmetro \\(p\\), \\(0&lt;p&lt;1\\). Mostre que \\(T=\\sum\\limits_{i=1}^n X_i\\) é uma estatística completa.\n\n\n\n\n\n\n\n\nLembretes\n\n\n\n\\(X\\sim\\) Bernoulli(\\(p\\)): \\(P(X=x)=p^x (1-p)^{1-x}\\), \\(x=0,1\\)\n\\(T\\sim\\) Binomial(\\(n,p\\)): \\(P(T=t) = \\binom{n}{t} p^t (1-p)^{n-t}\\), \\(x=0,1,2,\\ldots,n\\)"
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#teorema-10.1",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#teorema-10.1",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "Teorema 10.1",
+    "text": "Teorema 10.1\nSuponha que \\(X\\) tenha distribuição pertencente à família exponencial, ou seja, podemos escrever \\[\n  f(x) = \\exp\\left\\{c(\\theta)T(x) + d(\\theta) + S(x)\\right\\},\n\\] então \\(T(x)\\) é suficiente para \\(\\theta\\).\n\n\\(T(x)\\) também será completa se o domínio de \\(c(\\theta)\\) contiver um intervalo da reta."
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#teorema-10.2-teorema-de-lehmann-scheffé",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#teorema-10.2-teorema-de-lehmann-scheffé",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "Teorema 10.2: Teorema de Lehmann-Scheffé",
+    "text": "Teorema 10.2: Teorema de Lehmann-Scheffé\nSejam \\(X_1,\\ldots,X_n\\) uma amostra aleatória de \\(X\\) com f.d.p. (ou f.p.) \\(f(x)\\). Seja \\(T\\) uma estatística suficiente e completa. Seja \\(S\\) um estimador não viciado de \\(\\theta\\). Então \\(\\widehat{\\theta}=E(S|T)\\) é o para \\(\\theta\\).\n - Prova no livro do Bolfarine, pág. 31."
+  },
+  {
+    "objectID": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.4",
+    "href": "slides/10-Estatistica_completa_e_ENVVUM/10-Estatistica_completa_e_ENVVUM.html#exemplo-10.4",
+    "title": "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima",
+    "section": "Exemplo 10.4",
+    "text": "Exemplo 10.4\nSejam \\(X_1,\\ldots,X_n\\) uma amostra aleatória da distribuição de Poisson com parâmetro \\(\\theta\\). Verifique que \\(\\overline{X}\\) é o ENVVUM para \\(\\theta\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim\\) Poisson(\\(\\theta\\)): \\(P(X=x)=\\frac{e^{-\\theta}\\theta^x}{x!}\\), \\(x=0,1, 2,\\ldots\\)"
+  },
+  {
+    "objectID": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#section",
+    "href": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#section",
+    "title": "Erro Quadrático Médio de um Estimador",
+    "section": "",
+    "text": "Na aula anterior, aprendemos a verificar se um estimador é viesado.\nEm geral, dado um parâmetro desconhecido, pode existir uma infinidade de funções da amostra que podem ser usadas para determinar estimadores para esse parâmetro.\nPrecisamos então definir um critério para selecionar um deles.\nUm bom estimador deve estar próximo do verdadeiro valor do parâmetro que ele estima.\nUma medida de proximidade do estimador \\(\\widehat{\\theta}\\) em relação ao parâmetro \\(\\theta\\), que ele estima, é dada pelo erro quadrático médio do estimador."
+  },
+  {
+    "objectID": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#definição-4.1-erro-quadrático-médio-de-um-estimador",
+    "href": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#definição-4.1-erro-quadrático-médio-de-um-estimador",
+    "title": "Erro Quadrático Médio de um Estimador",
+    "section": "Definição 4.1: Erro Quadrático Médio de um estimador",
+    "text": "Definição 4.1: Erro Quadrático Médio de um estimador\nO erro quadrático médio de um estimador \\(\\widehat{\\theta}\\) do parâmetro \\(\\theta\\) é dado por \\[\n    EQM(\\widehat{\\theta}) = E\\left[ \\left( \\widehat{\\theta} - \\theta \\right)^2 \\right].\n\\]\n\nÉ possível mostrar que \\[\nEQM(\\widehat{\\theta}) = \\text{Var}(\\widehat{\\theta}) + B^2(\\widehat{\\theta}).\n\\]\nNo caso em que \\(\\widehat{\\theta}\\) é não viesado para \\(\\theta\\), temos que \\[\nEQM(\\widehat{\\theta}) = \\text{Var}(\\widehat{\\theta}).\n\\]"
+  },
+  {
+    "objectID": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#section-1",
+    "href": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#section-1",
+    "title": "Erro Quadrático Médio de um Estimador",
+    "section": "",
+    "text": "Dizemos que \\(\\widehat{\\theta}_1\\) é melhor que \\(\\widehat{\\theta}_2\\) se \\[\nEQM(\\widehat{\\theta}_1) \\leq EQM(\\widehat{\\theta}_2),\n\\] para todo \\(\\theta\\), em que podemos substituir “\\(\\leq\\)” por “\\(&lt;\\)” para pelo menos um valor de \\(\\theta\\).\nNesse caso, o estimador \\(\\widehat{\\theta}_2\\) é dito ser inadmissível, visto que há outro com menor erro quadrático médio."
+  },
+  {
+    "objectID": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#section-2",
+    "href": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#section-2",
+    "title": "Erro Quadrático Médio de um Estimador",
+    "section": "",
+    "text": "Se existir um estimador \\(\\widehat{\\theta}^*\\) tal que, para todo estimador \\(\\widehat{\\theta}\\) de \\(\\theta\\) com \\(\\widehat{\\theta}\\neq\\widehat{\\theta}^*\\), \\[\nEQM(\\widehat{\\theta}^*) \\leq EQM(\\widehat{\\theta}),\n\\] para todo \\(\\theta\\), em que podemos substituir “\\(\\leq\\)” por “\\(&lt;\\)” para pelo menos um \\(\\theta\\), então \\(\\widehat{\\theta}^*\\) é dito ser ótimo para \\(\\theta\\).\nSe os estimadores são não viesados, então \\(\\widehat{\\theta}^*\\) é dito ser o estimador não viesado de variância uniformemente mínima, se \\[\n  \\text{Var}(\\widehat{\\theta}^*) \\leq \\text{Var}(\\widehat{\\theta}),\n\\] para todo \\(\\theta\\), com “\\(\\leq\\)” substituídos por “\\(&lt;\\)” para pelo menos um \\(\\theta\\)."
+  },
+  {
+    "objectID": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#exemplo-4.1",
+    "href": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#exemplo-4.1",
+    "title": "Erro Quadrático Médio de um Estimador",
+    "section": "Exemplo 4.1",
+    "text": "Exemplo 4.1\nSejam \\(X_1,\\ldots,X_n\\) uma amostra aleatória de uma variável aleatória com média \\(\\mu\\) e variância \\(\\sigma^2\\). Temos os seguintes estimadores para a média populacional \\(\\mu\\): \\[\n  \\overline{X} = \\frac{X_1+\\cdots+X_n}{n} \\quad \\text{e} \\quad \\widetilde{X} = \\frac{2X_1+X_2+\\cdots+X_n}{n+1}.\n\\] Qual estimador tem menor erro quadrático médio?"
+  },
+  {
+    "objectID": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#exemplo-4.2",
+    "href": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#exemplo-4.2",
+    "title": "Erro Quadrático Médio de um Estimador",
+    "section": "Exemplo 4.2",
+    "text": "Exemplo 4.2\nSeja \\(\\widehat{\\mu} = X_1\\) um etimador para a média populacional \\(\\mu\\). Ele é melhor que \\(\\overline{X}\\) quando comparados os erros quadráticos médios?"
+  },
+  {
+    "objectID": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#exemplo-4.3",
+    "href": "slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html#exemplo-4.3",
+    "title": "Erro Quadrático Médio de um Estimador",
+    "section": "Exemplo 4.3",
+    "text": "Exemplo 4.3\nSeja \\(X_1, X_2, X_3\\) uma amostra aleatória obtida de \\(X\\) com distribuição de Poisson(\\(\\lambda\\)). Determine o melhor estimador entre \\[\\widehat{\\lambda}_1 = \\frac{X_1+X_2+X_3}{3} \\quad \\text{e}\\quad \\widehat{\\lambda}_2=\\frac{X_1+X_2+2X_3}{4}.\\]"
+  },
+  {
+    "objectID": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#definição-6.1-estatística-suficiente",
+    "href": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#definição-6.1-estatística-suficiente",
+    "title": "Estatísticas Suficientes",
+    "section": "Definição 6.1: Estatística Suficiente",
+    "text": "Definição 6.1: Estatística Suficiente\nDizemos que a estatística \\(T = T(X_1, \\ldots, X_n)\\) é suficiente para \\(\\theta\\), quando a distribuição condicional de \\(X_1, \\ldots, X_n\\) dado \\(T\\) for independente de \\(\\theta\\).\n\nEm outras palavras, uma estatística suficiente contém todas a informação sobre \\(\\theta\\) presente na amostra."
+  },
+  {
+    "objectID": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#section",
+    "href": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#section",
+    "title": "Estatísticas Suficientes",
+    "section": "",
+    "text": "Para verificarmos se \\(T\\) é uma estatística suficiente para \\(\\theta\\):\n\nCalculamos \\[\n\\begin{aligned}\n  P(X_1=x_1,\\ldots,X_n=x_n | T=t) =&\\\\\n  &\\hspace{-7cm}\\frac{P(X_1=x_1,\\ldots,X_n=x_n, T=t)}{P(T=t)}\n\\end{aligned}\n\\]\nSe \\(P(X_1=x_1,\\ldots,X_n=x_n | T=t)\\) não envolve \\(\\theta\\), dizemos que \\(T\\) é suficiente para \\(\\theta\\)."
+  },
+  {
+    "objectID": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#exemplo-6.1",
+    "href": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#exemplo-6.1",
+    "title": "Estatísticas Suficientes",
+    "section": "Exemplo 6.1",
+    "text": "Exemplo 6.1\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória da distribuição de Bernoulli (\\(\\theta\\)). Verifique se \\(T = \\sum\\limits_{i=1}^n X_i\\) é suficiente para \\(\\theta\\).\n\n\n\n\n\n\n\n\nLembretes\n\n\n\n\\(X\\sim \\text{Bernoulli}(p)\\): \\(P(X=x)=p^x(1-p)^{1-x}\\), \\(x=0,1\\).\nA soma de \\(n\\) v.a. de Bernoulli(\\(p\\)) tem distribuição Binomial(\\(n,p\\)).\n\\(Y\\sim\\text{Binomial}(n,p)\\): \\(P(Y=y)=\\binom{n}{y} p^y (1-p)^{n-y}\\), \\(y=0,1,2,\\ldots,n\\)."
+  },
+  {
+    "objectID": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#exemplo-6.2",
+    "href": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#exemplo-6.2",
+    "title": "Estatísticas Suficientes",
+    "section": "Exemplo 6.2",
+    "text": "Exemplo 6.2\nConsidere o exemplo anterior, com \\(n=3\\) e \\(T = X_1 + 2 X_2 + X_3\\). Verifique que \\(T\\) não é suficiente para \\(\\theta\\).\n Dica: Considere \\(X_1=1\\), \\(X_2=0\\) e \\(X_3=1\\)."
+  },
+  {
+    "objectID": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#exemplo-6.3",
+    "href": "slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html#exemplo-6.3",
+    "title": "Estatísticas Suficientes",
+    "section": "Exemplo 6.3",
+    "text": "Exemplo 6.3\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória da distribuição de Poisson com parâmetro \\(\\theta\\). Verifique se \\(T=\\sum\\limits_{i=1}^n X_i\\) é suficiente para \\(\\theta\\).\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim\\) Poisson(\\(\\theta\\)): \\(P(X=x)=\\frac{e^{-\\theta}\\theta^x}{x!}\\), \\(x=0,1,2,\\ldots\\)"
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#section",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#section",
+    "title": "O Método dos Momentos",
+    "section": "",
+    "text": "Anteriormente consideramos um critério para verificar se determinado estimador é ou não eficiente.\nContudo, tal procedimento não é um método que possibilita, em geral, a obtenção de estimadores em situações específicas.\nAgora vamos considerar alguns métodos que possibilitam a obtenção de estimadores em situações específicas.\nVeremos o Método dos Momentos e o Método da Máxima Verossimilhança."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#método-dos-momentos",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#método-dos-momentos",
+    "title": "O Método dos Momentos",
+    "section": "Método dos Momentos",
+    "text": "Método dos Momentos\n\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória de \\(X\\) com distribuição de probabilidade com \\(k\\) parâmetros desconhecidos a serem estimados \\((\\theta_1, \\ldots, \\theta_k)\\).\nO método dos momentos para obter os estimadores \\(\\widehat{\\theta}_1, \\ldots, \\widehat{\\theta}_k\\) de \\(\\theta_1, \\ldots, \\theta_k\\), respectivamente, consiste em igualar os momentos teóricos populacionais aos correspondentes momentos amostrais e solucionar as equações para os parâmetros envolvidos."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.1-momentos-populacionais",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.1-momentos-populacionais",
+    "title": "O Método dos Momentos",
+    "section": "Definição 11.1: Momentos Populacionais",
+    "text": "Definição 11.1: Momentos Populacionais\nChama-se momento (populacional) de ordem \\(k\\) (\\(k \\geq 1\\) inteiro positivo) da variável aleatória \\(X\\) em relação a 0, a esperança matemática de \\(X^k\\), ou seja, \\[\n  \\mu'_k = E(X^k) = \\begin{cases}\n    \\int\\limits_{-\\infty}^{+\\infty} x^k \\,f(x)\\,dx, & \\text{no caso contínuo},\\\\\n        \\sum\\limits_i x_i^k \\,P(X=x_i), & \\text{no caso discreto}.\n    \\end{cases}\n\\]\n\nEm particular, se \\(k=1\\), temos o valor esperado de \\(X\\), \\(\\mu = E(X)\\)."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.2-momento-centrado",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.2-momento-centrado",
+    "title": "O Método dos Momentos",
+    "section": "Definição 11.2: Momento Centrado",
+    "text": "Definição 11.2: Momento Centrado\nO momento (populacional) de ordem \\(k\\) em relação à média da variável aleatória \\(X\\) (momento centrado na média) é definido por \\[\n  \\mu_k = E\\left[(X-\\mu)^k\\right] = \\begin{cases}\n      \\int\\limits_{-\\infty}^{+\\infty} (x-\\mu)^k \\,f(x)\\,dx, & \\text{no caso contínuo},\\\\\n        \\sum\\limits_i (x_i-\\mu)^k \\,P(X=x_i), & \\text{no caso discreto}.\n    \\end{cases}\n\\]\n\nEm particular, se \\(k=2\\), temos a variância da variável aleatória \\(X\\), \\(\\mu = E(X)\\)."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.3-momentos-amostrais",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.3-momentos-amostrais",
+    "title": "O Método dos Momentos",
+    "section": "Definição 11.3: Momentos Amostrais",
+    "text": "Definição 11.3: Momentos Amostrais\nChama-se momento amostral de ordem \\(k\\) (\\(k\\geq 1\\) inteiro positivo) em relação a 0 a estatística \\[\n  M_k = \\frac{1}{n} \\sum\\limits_{i=1}^n X_i^k.\n\\]\n\nO primeiro momento amostral (\\(k=1\\)) em relação à origem é a média amostral, \\(\\overline{X} = \\frac{1}{n} \\sum\\limits_{i=1}^n X_i\\)."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.4-momento-amostral-centrado",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#definição-11.4-momento-amostral-centrado",
+    "title": "O Método dos Momentos",
+    "section": "Definição 11.4: Momento Amostral Centrado",
+    "text": "Definição 11.4: Momento Amostral Centrado\nO momento amostral de ordem \\(k\\) em relação à média (centrado na média) \\(\\overline{x}\\) é definido por \\[\n    M_k = \\frac{1}{n} \\sum\\limits_{i=1}^n (X_i-\\overline{X})^k.\n\\]\n\nO segundo momento amostral (\\(k=2\\)) em relação à média costuma ser representado por \\(\\widehat{\\sigma}^2 = \\frac{1}{n} \\sum\\limits_{i=1}^n (X_i-\\overline{X})^2\\)."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#section-1",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#section-1",
+    "title": "O Método dos Momentos",
+    "section": "",
+    "text": "De acordo com o método dos momentos, os estimadores \\(\\widehat{\\theta}_1, \\ldots, \\widehat{\\theta}_k\\) de \\(\\theta_1, \\ldots, \\theta_k\\), dos parâmetros \\(\\theta_1, \\ldots, \\theta_k\\) são obtidos igualando os momentos populacionais aos correspondentes momentos amostrais baseados em uma amostra aleatória \\(X_1, \\ldots, X_n\\).\nOu seja, consideramos os momentos ordinários (centrados na origem) e resolvemos o sistema de equações \\[\nE(X^r) = \\frac{1}{n} \\sum\\limits_{i=1}^n X_i^r, \\quad r=1,2\\ldots,k,\n\\] em que \\(E(X^r)\\) são fórmulas envolvendo os parâmetros a serem estimados."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#section-2",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#section-2",
+    "title": "O Método dos Momentos",
+    "section": "",
+    "text": "A utilização do método dos momentos depende da existência de solução única para a equação acima e da existência dos momentos teóricos."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#exemplo-11.1",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#exemplo-11.1",
+    "title": "O Método dos Momentos",
+    "section": "Exemplo 11.1",
+    "text": "Exemplo 11.1\nObtenha através do método dos momentos e, a partir de uma amostra aleatória de tamanho \\(n\\) (\\(X_1, \\ldots, X_n\\)) os estimadores para os parâmetros:\n\n\\(p\\), de uma distribuição de Bernoulli;\n\\(\\lambda\\), de uma distribuição Poisson;\n\\(p\\), de uma distribuição Binomial com \\(n\\) conhecido."
+  },
+  {
+    "objectID": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#exemplo-11.2",
+    "href": "slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html#exemplo-11.2",
+    "title": "O Método dos Momentos",
+    "section": "Exemplo 11.2",
+    "text": "Exemplo 11.2\nSeja \\(X_1, \\ldots, X_n\\) uma amostra aleatória de \\(X \\sim\\) Exponencial com valor esperado \\(1/\\alpha\\). Obtenha através do método dos momentos o estimador para o parâmetro \\(\\alpha\\)."
+  },
+  {
+    "objectID": "slides/09-Familia_exponencial/09-Familia_exponencial.html#definição-9.1-família-exponencial",
+    "href": "slides/09-Familia_exponencial/09-Familia_exponencial.html#definição-9.1-família-exponencial",
+    "title": "Família Exponencial",
+    "section": "Definição 9.1: Família Exponencial",
+    "text": "Definição 9.1: Família Exponencial\nDizemos que a distribuição da variável aleatória \\(X\\) pertence à família exponencial unidimensional se pudermos escrever sua densidade (ou função de probabilidade), \\(f(x)\\), na forma \\[\n  f(x) = \\exp\\{ c(\\theta)T(x) + d(\\theta) + S(x) \\},\n\\] \\(x\\in A\\), em que\n\n\\(c\\), \\(T\\), \\(d\\) e \\(S\\) são funções reais,\n\\(A\\) não envolve \\(\\theta\\)."
+  },
+  {
+    "objectID": "slides/09-Familia_exponencial/09-Familia_exponencial.html#exemplo-9.1",
+    "href": "slides/09-Familia_exponencial/09-Familia_exponencial.html#exemplo-9.1",
+    "title": "Família Exponencial",
+    "section": "Exemplo 9.1",
+    "text": "Exemplo 9.1\nA distribuição Bernoulli\\((\\theta)\\) pertence à família exponencial unidimensional?\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim \\text{Bernoulli}(\\theta)\\): \\(f(x)=\\theta^x (1-\\theta)^{1-x} ,~ x=0,1.\\)"
+  },
+  {
+    "objectID": "slides/09-Familia_exponencial/09-Familia_exponencial.html#exemplo-9.2",
+    "href": "slides/09-Familia_exponencial/09-Familia_exponencial.html#exemplo-9.2",
+    "title": "Família Exponencial",
+    "section": "Exemplo 9.2",
+    "text": "Exemplo 9.2\nA distribuição \\(N(\\mu,1)\\) pertence à família exponencial unidimensional?\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim N(\\mu,\\sigma^2)\\): \\(f(x)=\\frac{1}{\\sqrt{2\\pi\\sigma^2}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} ,~ -\\infty&lt;x&lt;\\infty\\)"
+  },
+  {
+    "objectID": "slides/09-Familia_exponencial/09-Familia_exponencial.html#definição-9.2",
+    "href": "slides/09-Familia_exponencial/09-Familia_exponencial.html#definição-9.2",
+    "title": "Família Exponencial",
+    "section": "Definição 9.2",
+    "text": "Definição 9.2\nDizemos que a distribuição da variável aleatória \\(X\\) pertence à família exponencial de dimensão \\(k\\) se sua f.p. ou f.d.p. é dada por \\[\n  f(x) = \\exp\\left\\{ \\sum\\limits_{j=1}^n c_j(\\theta)T_j(x) + d(\\theta) + S(x) \\right\\},\n\\] \\(x\\in A\\),em que\n\n\\(c_j\\), \\(T_j\\), \\(d\\) e \\(S\\) são funções reais, \\(j=1,\\ldots,k\\);\n\\(A\\) não envolve \\(\\theta\\)."
+  },
+  {
+    "objectID": "slides/09-Familia_exponencial/09-Familia_exponencial.html#exemplo-9.3",
+    "href": "slides/09-Familia_exponencial/09-Familia_exponencial.html#exemplo-9.3",
+    "title": "Família Exponencial",
+    "section": "Exemplo 9.3",
+    "text": "Exemplo 9.3\nVerifique se a distribuição \\(N(\\mu,\\sigma^2)\\) pertence à família exponencial bidimensional.\n\n\n\n\n\n\n\n\nLembrete\n\n\n\\(X\\sim N(\\mu,\\sigma^2)\\): \\(f(x)=\\frac{1}{\\sqrt{2\\pi\\sigma^2}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} ,~ -\\infty&lt;x&lt;\\infty\\)"
   },
   {
     "objectID": "info/ementa.html",

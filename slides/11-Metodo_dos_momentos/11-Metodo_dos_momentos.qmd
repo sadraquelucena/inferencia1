@@ -1,0 +1,141 @@
+---
+title: "O Método dos Momentos"
+subtitle: "ESTAT0078 -- Inferência I"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+
+---
+
+## 
+
+-   Anteriormente consideramos um critério para verificar se determinado estimador é ou não eficiente.
+-   Contudo, tal procedimento não é um método que possibilita, em geral, a obtenção de estimadores em situações específicas.
+-   Agora vamos considerar alguns métodos que possibilitam a obtenção de estimadores em situações específicas.
+-   Veremos o Método dos Momentos e o Método da Máxima Verossimilhança.
+
+
+
+
+## Método dos Momentos
+
+-   Seja $X_1, \ldots, X_n$ uma amostra aleatória de $X$ com distribuição de probabilidade com $k$ parâmetros desconhecidos a serem estimados $(\theta_1, \ldots, \theta_k)$.
+
+-   O método dos momentos para obter os estimadores $\widehat{\theta}_1, \ldots, \widehat{\theta}_k$ de $\theta_1, \ldots, \theta_k$, respectivamente, consiste em igualar os momentos teóricos populacionais aos correspondentes momentos amostrais e solucionar as equações para os parâmetros envolvidos.
+
+
+
+
+## Definição 11.1: Momentos Populacionais
+
+Chama-se momento (populacional) de ordem $k$ ($k \geq 1$ inteiro positivo) da variável aleatória $X$ em relação a 0, a esperança matemática de $X^k$, ou seja,
+$$
+  \mu'_k = E(X^k) = \begin{cases}
+    \int\limits_{-\infty}^{+\infty} x^k \,f(x)\,dx, & \text{no caso contínuo},\\
+		\sum\limits_i x_i^k \,P(X=x_i), & \text{no caso discreto}.
+	\end{cases}
+$$
+
+-   Em particular, se $k=1$, temos o valor esperado de $X$, $\mu = E(X)$.
+
+
+
+
+## Definição 11.2: Momento Centrado
+
+O momento (populacional) de ordem $k$ em relação à média da variável aleatória $X$ (momento centrado na média) é definido por
+$$
+  \mu_k = E\left[(X-\mu)^k\right] = \begin{cases}
+	  \int\limits_{-\infty}^{+\infty} (x-\mu)^k \,f(x)\,dx, & \text{no caso contínuo},\\
+		\sum\limits_i (x_i-\mu)^k \,P(X=x_i), & \text{no caso discreto}.
+	\end{cases}
+$$
+
+-   Em particular, se $k=2$, temos a variância da variável aleatória $X$, $\mu = E(X)$.
+
+
+
+
+## Definição 11.3: Momentos Amostrais
+
+Chama-se momento amostral de ordem $k$ ($k\geq 1$ inteiro positivo) em relação a 0 a estatística
+$$
+  M_k = \frac{1}{n} \sum\limits_{i=1}^n X_i^k.
+$$
+
+-   O primeiro momento amostral ($k=1$) em relação à origem é a média amostral, $\overline{X} = \frac{1}{n} \sum\limits_{i=1}^n X_i$.
+
+
+
+
+## Definição 11.4: Momento Amostral Centrado
+
+O momento amostral de ordem $k$ em relação à média (centrado na média) $\overline{x}$ é definido por
+$$
+	M_k = \frac{1}{n} \sum\limits_{i=1}^n (X_i-\overline{X})^k.
+$$
+
+-   O segundo momento amostral ($k=2$) em relação à média costuma ser representado por $\widehat{\sigma}^2 = \frac{1}{n} \sum\limits_{i=1}^n (X_i-\overline{X})^2$.
+
+
+
+
+##
+
+-   De acordo com o método dos momentos, os estimadores $\widehat{\theta}_1, \ldots, \widehat{\theta}_k$ de $\theta_1, \ldots, \theta_k$, dos parâmetros $\theta_1, \ldots, \theta_k$ são obtidos igualando os momentos populacionais aos correspondentes momentos amostrais baseados em uma amostra aleatória $X_1, \ldots, X_n$.
+
+-   Ou seja, consideramos os momentos ordinários (centrados na origem) e resolvemos o sistema de equações
+$$
+	E(X^r) = \frac{1}{n} \sum\limits_{i=1}^n X_i^r, \quad r=1,2\ldots,k,
+$$
+em que $E(X^r)$ são fórmulas envolvendo os parâmetros a serem estimados.
+
+
+
+
+##
+
+-   \textcolor{red}{\bf Atenção!} A utilização do método dos momentos depende da existência de solução única para a equação acima e da existência dos momentos teóricos.
+
+
+
+
+## Exemplo 11.1
+
+Obtenha através do método dos momentos e, a partir de uma amostra aleatória de tamanho $n$ ($X_1, \ldots, X_n$) os estimadores para os parâmetros:
+
+a)    $p$, de uma distribuição de Bernoulli;
+b)    $\lambda$, de uma distribuição Poisson;
+c)    $p$, de uma distribuição Binomial com $n$ conhecido.
+
+
+
+
+## Exemplo 11.2
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de $X \sim$ Exponencial com valor esperado $1/\alpha$. Obtenha através do método dos momentos o estimador para o parâmetro $\alpha$.
+
+
+
+
+# Fim

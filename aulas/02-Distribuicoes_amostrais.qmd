@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 2"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Distribuições Amostrais
+
+Nesta aula, mergulhamos nos conceitos fundamentais que formam a base da Inferência Estatística. Abordamos a transição crucial de uma população teórica para uma amostra concreta, estabelecendo o vocabulário essencial que nos acompanhará durante todo o curso.
+
+O conceito central desta aula é a Função de Verossimilhança, uma ferramenta poderosa que nos permite avaliar a plausibilidade de diferentes valores para os parâmetros de um modelo com base nos dados observados.
+
+Slides:
+
+- [Versão html](/slides/02-Distribuicoes_amostrais/02-Distribuicoes_amostrais.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/02-Distribuicoes_amostrais.pdf){target="_blank"}
+

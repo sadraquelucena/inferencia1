@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 6"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Estatísticas Suficientes
+
+Nesta aula, exploramos uma ideia poderosa e fundamental na estatística: o princípio da suficiência. A pergunta central que guiou nossa discussão foi: é possível resumir toda a informação relevante sobre um parâmetro desconhecido, contida em uma amostra completa, em uma única estatística (ou em um pequeno conjunto delas) sem nenhuma perda?
+
+A resposta está no conceito de Estatística Suficiente. Uma estatística com essa propriedade captura toda a "essência" da amostra no que diz respeito ao parâmetro de interesse, permitindo uma enorme redução na complexidade dos dados. Este é um dos pilares para a construção de estimadores ótimos.
+
+Slides:
+
+- [Versão html](/slides/06-Estatisticas_suficientes/06-Estatisticas_suficientes.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/06-Estatisticas_suficientes.pdf){target="_blank"}
+

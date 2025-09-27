@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 8"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Critério da Fatoração de Neyman: Caso Multiparamétrico
+
+Na aula anterior, dominamos o Critério da Fatoração de Neyman para o caso de um único parâmetro. Agora, expandimos essa poderosa ferramenta para cenários mais realistas, onde as distribuições são caracterizadas por múltiplos parâmetros desconhecidos, como a média e a variância em uma distribuição Normal.
+
+O princípio permanece o mesmo: fatorar a função de verossimilhança. No entanto, agora buscamos um vetor de estatísticas que seja conjuntamente suficiente para o vetor de parâmetros. Além disso, introduzimos o conceito prático de estatísticas equivalentes, que nos dá flexibilidade na escolha do resumo dos dados sem perda de informação.
+
+Slides:
+
+- [Versão html](/slides/08-Criterio_da_fatoracao_caso_multiparametrico/08-Criterio_da_fatoracao_caso_multiparametrico.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/08-Criterio_da_fatoracao_caso_multiparametrico.pdf){target="_blank"}
+

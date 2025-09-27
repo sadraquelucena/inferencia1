@@ -1,0 +1,130 @@
+---
+title: "Estatística Completa e Estimador Não Viciado de Variância Uniformemente Mínima"
+subtitle: "ESTAT0078 -- Inferência I"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+
+---
+
+## 
+
+-   A definição de estatística completa junto com a definição de suficiência, possibilita a obtenção do estimador ótimo, isto é, o estimador não viciado de variância uniformemente mínima.
+
+
+
+
+## Definição 10.1: Estatística Completa
+
+Uma estatística $T$ é dita completa em relação à família $f(x)$ se, dada uma função $g(T)$, 
+$$
+  E\left(g(T)\right) = 0 \quad \text{apenas se } g(T)=0
+$$
+com probabilidade 1.
+
+
+
+
+## Exemplo 10.1
+
+Seja $X_1,\ldots,X_n$ uma amostra aleatória obtida de $X$ com distribuição de Poisson com parâmetro $\lambda>0$, desconhecido. Mostre que $T=\sum\limits_{i=1}^n X_i\sim$ Poisson($n\lambda$) é uma estatística completa em relação à Poisson.
+			
+<br>
+
+::: {.callout-note title="Lembrete"}
+$X\sim$ Poisson($\theta$): $P(X=x)=\frac{e^{-\theta}\theta^x}{x!}$, $x=0,1, 2,\ldots$
+
+:::
+
+
+
+
+## Exemplo 10.2
+
+Seja $X_1$, $X_2$ uma amostra aleatória da variável $X\sim$ Bernoulli($p$). Verifique que $T = X_1-X_2$ não é uma estatística completa.
+
+<br>
+
+::: {.callout-note title="Lembrete"}
+$X\sim$ Bernoulli($p$): $P(X=x)=p^x (1-p)^{1-x}$, $x=0,1$
+
+:::
+
+
+
+
+## Exemplo 10.3
+
+Seja $X_1,\ldots,X_n$ uma amostra aleatória obtida de $X$ com distribuição de Bernoulli com parâmetro $p$, $0<p<1$. Mostre que $T=\sum\limits_{i=1}^n X_i$ é uma estatística completa.
+
+<br>
+
+::: {.callout-note title="Lembretes"}
+
+1.  $X\sim$ Bernoulli($p$): $P(X=x)=p^x (1-p)^{1-x}$, $x=0,1$
+
+2.  $T\sim$ Binomial($n,p$): $P(T=t) = \binom{n}{t} p^t (1-p)^{n-t}$, $x=0,1,2,\ldots,n$
+:::
+
+
+
+
+## Teorema 10.1
+
+Suponha que $X$ tenha distribuição pertencente à família exponencial, ou seja, podemos escrever
+$$
+  f(x) = \exp\left\{c(\theta)T(x) + d(\theta) + S(x)\right\},
+$$
+então $T(x)$ é suficiente para $\theta$.
+
+-   $T(x)$ também será completa se o domínio de $c(\theta)$ contiver um intervalo da reta.
+
+
+
+
+## Teorema 10.2: Teorema de Lehmann-Scheffé
+
+Sejam $X_1,\ldots,X_n$ uma amostra aleatória de $X$ com f.d.p. (ou f.p.) $f(x)$. Seja $T$ uma estatística suficiente e completa. Seja $S$ um estimador não viciado de $\theta$. Então $\widehat{\theta}=E(S|T)$ é o \textcolor{bluep}{estimador não viciado de variância uniformemente mínima (ENVVUM)} para $\theta$.
+			
+<br>
+-   Prova no livro do Bolfarine, pág. 31.
+				
+
+
+
+## Exemplo 10.4
+
+Sejam $X_1,\ldots,X_n$ uma amostra aleatória da distribuição de Poisson com parâmetro $\theta$. Verifique que $\overline{X}$ é o ENVVUM para $\theta$.
+
+<br>
+
+::: {.callout-note title="Lembrete"}
+$X\sim$ Poisson($\theta$): $P(X=x)=\frac{e^{-\theta}\theta^x}{x!}$, $x=0,1, 2,\ldots$
+
+:::
+
+
+
+
+# Fim

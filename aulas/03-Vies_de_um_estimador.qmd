@@ -1,0 +1,18 @@
+---
+title: "Conteúdo 3"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Viés de Um Estimador
+
+Nesta aula, investigamos a primeira e mais intuitiva propriedade de um bom estimador: a ausência de viés (ou vício). Utilizando a analogia do "tiro ao alvo", exploramos o que significa para as estimativas de um estimador serem, em média, precisas e certeiras.
+
+Slides:
+
+- [Versão html](/slides/03-Vies_de_um_estimador/03-Vies_de_um_estimador.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/03-Vies_de_um_estimador.pdf){target="_blank"}
+

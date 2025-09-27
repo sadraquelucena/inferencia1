@@ -1,0 +1,100 @@
+---
+title: "Estatísticas Suficientes"
+subtitle: "ESTAT0078 -- Inferência I"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+
+---
+
+## Definição 6.1: Estatística Suficiente
+
+Dizemos que a estatística $T = T(X_1, \ldots, X_n)$ é suficiente para $\theta$, quando a distribuição condicional de $X_1, \ldots, X_n$ dado $T$ for independente de $\theta$.
+
+-   Em outras palavras, uma estatística suficiente contém todas a informação sobre $\theta$ presente na amostra.
+
+
+
+## 
+
+Para verificarmos se $T$ é uma estatística suficiente para $\theta$:
+
+1.    Calculamos
+$$
+\begin{aligned}
+  P(X_1=x_1,\ldots,X_n=x_n | T=t) =&\\
+  &\hspace{-7cm}\frac{P(X_1=x_1,\ldots,X_n=x_n, T=t)}{P(T=t)}
+\end{aligned}
+$$
+    
+2.    Se $P(X_1=x_1,\ldots,X_n=x_n | T=t)$ não envolve $\theta$, dizemos que $T$ é suficiente para $\theta$.
+
+
+
+
+## Exemplo 6.1
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição de Bernoulli ($\theta$). Verifique se $T = \sum\limits_{i=1}^n X_i$ é suficiente para $\theta$.
+			
+<br><br>
+
+::: {.callout-note title="Lembretes"}
+
+1.  $X\sim \text{Bernoulli}(p)$: $P(X=x)=p^x(1-p)^{1-x}$, $x=0,1$.
+
+2.  A soma de $n$ v.a. de Bernoulli($p$) tem distribuição Binomial($n,p$).
+			
+3.  $Y\sim\text{Binomial}(n,p)$: $P(Y=y)=\binom{n}{y} p^y (1-p)^{n-y}$, $y=0,1,2,\ldots,n$.
+
+:::
+
+
+
+
+## Exemplo 6.2
+
+Considere o exemplo anterior, com $n=3$ e $T = X_1 + 2 X_2 + X_3$. Verifique que $T$ não é suficiente para $\theta$.
+		
+<br><br>
+**Dica:** Considere $X_1=1$, $X_2=0$ e $X_3=1$.
+
+
+
+
+## Exemplo 6.3
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição de Poisson com parâmetro $\theta$. Verifique se $T=\sum\limits_{i=1}^n X_i$ é suficiente para $\theta$.
+			
+<br><br>
+
+::: {.callout-note title="Lembrete"}
+
+$X\sim$ Poisson($\theta$): $P(X=x)=\frac{e^{-\theta}\theta^x}{x!}$, $x=0,1,2,\ldots$
+
+:::
+
+
+
+
+# Fim

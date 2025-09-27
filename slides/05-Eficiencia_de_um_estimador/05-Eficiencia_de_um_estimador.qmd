@@ -1,0 +1,206 @@
+---
+title: "Eficiência de um Estimador"
+subtitle: "ESTAT0078 -- Inferência I"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+
+---
+
+##
+
+-   Nesta aula, exploraremos o conceito de estimador eficiente e aprenderemos a avaliar a eficiência de diferentes estimadores.
+
+-   Um estimador é considerado mais eficiente quando possui uma variância menor em comparação com outros estimadores não viesados.
+
+-   Existe, ainda, um método para determinar o menor limite possível para a variância de um estimador de um parâmetro $\theta$. Caso um estimador atinja esse limite, ele será considerado o mais eficiente, pois nenhum outro terá uma variância menor do que a dele.
+
+
+
+
+##
+
+```{r}
+#| echo: false
+#| eval: true
+#| fig-height: 8
+
+set.seed(123)
+
+theta1 <- rnorm(50, 5, 3)
+theta2 <- rnorm(50, 8, 3)
+theta3 <- rnorm(50, 5, 1)
+theta4 <- rnorm(50, 5, 5)
+
+thetas_nome <- rep(c("theta1","theta2","theta3","theta4"), times = c(length(theta1),length(theta2),length(theta3),length(theta4)))
+thetas_valores <- c(theta1,theta2,theta3,theta4)
+
+est <- data.frame(thetas=thetas_nome, valores=thetas_valores)
+
+library(ggplot2)
+
+ggplot(est, aes(x = thetas, y = valores)) +
+  stat_boxplot(geom = "errorbar", width = 0.5, size = 1.2) +
+  geom_boxplot(aes(fill = thetas), outlier.shape = NA, size = 1.2) +
+  geom_jitter(color = "black", aes(fill = thetas), size = 1.5, width = 0.2) +
+  labs(
+    x = "Estimadores",
+    y = "Valores"
+  ) +
+  theme(legend.position = "none") +
+  theme_minimal() +
+  theme(
+    axis.title.x = element_text(size = 16),
+    axis.title.y = element_text(size = 16)
+  ) +
+  scale_fill_brewer(palette = "Pastel1")
+```
+
+
+
+
+## Definição 5.1: Eficiência de um estimador
+
+Suponha que $\widehat{\theta}$ seja não viesado para o parâmetro $\theta$. Chamamos de **eficiência do estimador** $\widehat{\theta}$ o quociente
+$$
+  e(\widehat{\theta}) = \frac{LI(\theta)}{Var(\widehat{\theta})},
+$$
+em que $LI(\theta)$ é o limite inferior da variância dos estimadores não viesados de $\theta$.
+
+-   Note que $e(\widehat{\theta})=1$ quando $LI(\theta)=Var(\widehat{\theta})$. Nesse caso $\widehat{\theta}$ é chamado **eficiente**.
+
+
+##
+
+Sob certas condições de regularidade (basicamente, o suporte não depende de $\theta$ e é possível trocar a ordem das operações de derivação e integração) temos
+$$
+  LI(\theta) = \frac{1}{n\, E\left[ \left( \frac{\partial\log f(X|\theta)}{\partial \theta} \right)^{\!2} \right]}
+$$
+e
+$$
+  E\left[ \left( \frac{\partial \log f(X)}{\partial \theta} \right)^{\!2} \right] = -E\left[ \frac{\partial^2 \log f(X)}{\partial\theta^2.} \right].
+$$
+
+##
+
+-   Para verificarmos se $\widehat{\theta}$ é eficiente (de acordo com a Definição 5.1), seguimos os passos (sob certas condições de regularidade):
+
+    1.    obtemos $\ell = \log f(x)$;
+
+    2.    derivamos $\ell$ duas vezes, isto é, obtemos $\ell''$;
+
+    3.    calculamos $E[\ell'']$;
+    
+    4.    obtemos $LI(\theta)=\frac{1}{-nE[\ell'']}$;
+    
+    5.    calculamos $Var(\widehat{\theta})$;
+    
+    6.    obtemos $e(\widehat{\theta}) = \frac{LI(\theta)}{Var(\widehat{\theta})}$.
+
+
+
+## Exemplo 5.1
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de $X\sim N(\mu,\sigma^2)$, em que $\sigma^2$ é conhecido. Verifique se $\overline{X}$ é eficiente para $\mu$.
+
+<br><br>
+
+::: {.callout-note title="Lembrete"}
+Se $X\sim N(\mu,\sigma^2)$, então
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}, ~ -\infty<x<\infty$$
+:::
+
+
+
+
+## Exemplo 5.2
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim \text{Poisson}(\theta)$. Verifique se $\overline{X}$ é eficiente para $\theta$.
+
+<br><br>
+
+::: {.callout-note title="Lembrete"}
+Se $X\sim \text{Poisson}(\theta)$, então
+$$f(x) = \frac{e^{-\lambda}\lambda^x}{x!}, ~ x=0,1,2,\ldots$$
+:::
+
+
+
+
+## Definição 5.2: Informação de Fisher
+
+A quantidade
+$$
+  I_F(\theta) = E\left[ \left( \frac{\partial \log f(X)}{\partial \theta} \right)^{\!2} \right]
+$$
+é denominada **informação de Fisher** de $\theta$.
+
+
+## Teorema 5.1: Desigualdade da Informação
+
+Quando as condições de regularidade estão satisfeitas, a variância de qualquer estimador não viciado $\widehat{\theta}$ do parâmetro $\theta$ satisfaz a desigualdade
+$$
+  Var(\widehat{\theta}) \geq \frac{1}{n\,I_F(\theta)}.
+$$
+
+-   É importante ressaltar que a desigualdade da informação não é um método para obter estimadores.
+
+-   Ela apenas possibilita verificar se determinado estimador é ou não eficiente.
+
+
+## Exemplo 5.3
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim \text{Bernoulli}(p)$. Verifique se $\overline{X}$ é eficiente para $p$.
+
+<br><br>
+
+::: {.callout-note title="Lembrete"}
+Se $X\sim \text{Bernoulli}(p)$, então
+
+- $f(x) = p^x (1-p)^{1-x}, ~ x=0,1$
+- $E(X) = p$
+- $Var(X)=p(1-p)$
+:::
+
+
+
+
+## Exemplo 5.4
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim \text{Geométrica}(p)$. Verifique se $\overline{X}$ é eficiente para $p$.
+
+<br><br>
+
+::: {.callout-note title="Lembrete"}
+Se $X\sim \text{Geométrica}(p)$, então
+
+- $f(x) = (1-p)^{x} p, ~ x=0,1, 2, 3\ldots$
+- $E(X) = \frac{1-p}{p}$
+- $Var(X)=\frac{1-p}{p^2}$
+:::
+
+
+
+
+# Fim

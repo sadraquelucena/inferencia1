@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 7"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Critério da Fatoração de Neyman
+
+Na aula anterior, introduzimos o conceito fundamental de Estatística Suficiente através de sua definição formal. Embora poderosa, a aplicação direta dessa definição pode ser complexa e pouco intuitiva.
+
+Nesta aula, apresentamos uma ferramenta que simplifica drasticamente esse processo: o Critério da Fatoração de Neyman. Este elegante teorema nos fornece um método prático e direto para encontrar e verificar estatísticas suficientes. A técnica consiste em fatorar a função de verossimilhança em duas partes: uma que depende apenas dos dados e outra que conecta o parâmetro aos dados exclusivamente através da estatística de interesse. Dominar esta técnica é essencial para a prática da inferência.
+
+Slides:
+
+- [Versão html](/slides/07-Criterio_da_fatoração_de_Neyman/07-Criterio_da_fatoração_de_Neyman.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/07-Criterio_da_fatoração_de_Neyman.pdf){target="_blank"}
+

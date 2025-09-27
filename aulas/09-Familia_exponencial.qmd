@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 9"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Família Exponencial
+
+Até agora, analisamos várias distribuições e suas propriedades de forma individual. Nesta aula, damos um passo em direção a uma teoria unificada, apresentando uma "superfamília" que engloba muitas das distribuições mais importantes da estatística: a Família Exponencial.
+
+O objetivo é aprender a reconhecer uma estrutura matemática comum por trás de distribuições aparentemente distintas como a Bernoulli, a Normal, a Poisson e a Gama. Mostramos como a função de densidade (ou probabilidade) de muitas delas pode ser reescrita em uma forma exponencial padrão. Reconhecer que uma distribuição pertence a esta família nos dá acesso a uma série de propriedades teóricas poderosas, simplificando enormemente problemas de inferência, como a busca por estatísticas suficientes.
+
+Slides:
+
+- [Versão html](/slides/09-Familia_exponencial/09-Familia_exponencial.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/09-Familia_exponencial.pdf){target="_blank"}
+

@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 11"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## O Método dos Momentos
+
+Até o momento, nosso foco foi em avaliar as propriedades de estimadores que já conhecíamos (viés, eficiência, suficiência). Agora, iniciamos uma nova fase em nosso curso, respondendo a uma pergunta mais fundamental: como encontramos bons estimadores em primeiro lugar?
+
+Nesta aula, apresentamos o primeiro método construtivo para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é notavelmente intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite "resolver" para os parâmetros desconhecidos.
+
+Slides:
+
+- [Versão html](/slides/11-Metodo_dos_momentos/11-Metodo_dos_momentos.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/11-Metodo_dos_momentos.pdf){target="_blank"}
+

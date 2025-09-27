@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 4"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Erro Quadrático Médio de Um Estimador
+
+Continuando nossa jornada para avaliar a qualidade de estimadores, vamos além do conceito de viés. Nesta aula, introduzimos uma medida mais completa e poderosa: o Erro Quadrático Médio (EQM).
+
+O ponto central desta aula é a revelação de que o EQM pode ser decomposto em duas componentes cruciais: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso "trade-off" (troca) entre viés e variância na escolha de um bom estimador.
+
+Slides:
+
+- [Versão html](/slides/04-EQM_de_um_estimador/04-EQM_de_um_estimador.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/04-EQM_de_um_estimador.pdf){target="_blank"}
+

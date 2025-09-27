@@ -1,0 +1,117 @@
+---
+title: "Erro Quadrático Médio de um Estimador"
+subtitle: "ESTAT0078 -- Inferência I"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+
+---
+
+## 
+
+- Na aula anterior, aprendemos a verificar se um estimador é viesado.
+- Em geral, dado um parâmetro desconhecido, pode existir uma infinidade de funções da amostra que podem ser usadas para determinar estimadores para esse parâmetro.
+- Precisamos então definir um critério para selecionar um deles.
+- Um bom estimador deve estar próximo do verdadeiro valor do parâmetro que ele estima.
+- Uma medida de proximidade do estimador $\widehat{\theta}$ em relação ao parâmetro $\theta$, que ele estima, é dada pelo **erro quadrático médio** do estimador.
+
+
+
+
+## Definição 4.1: Erro Quadrático Médio de um estimador
+
+O erro quadrático médio de um estimador $\widehat{\theta}$ do parâmetro $\theta$ é dado por
+$$
+	EQM(\widehat{\theta}) = E\left[ \left( \widehat{\theta} - \theta \right)^2 \right].
+$$
+
+-   É possível mostrar que
+$$
+	EQM(\widehat{\theta}) = \text{Var}(\widehat{\theta}) + B^2(\widehat{\theta}).
+$$
+
+-   No caso em que $\widehat{\theta}$ é não viesado para $\theta$, temos que
+$$
+	EQM(\widehat{\theta}) = \text{Var}(\widehat{\theta}).
+$$
+
+
+
+
+## 
+
+-   Dizemos que $\widehat{\theta}_1$ é melhor que $\widehat{\theta}_2$ se
+$$
+	EQM(\widehat{\theta}_1) \leq EQM(\widehat{\theta}_2),
+$$
+para todo $\theta$, em que podemos substituir "$\leq$" por "$<$" para pelo menos um valor de $\theta$.
+
+-   Nesse caso, o estimador $\widehat{\theta}_2$ é dito ser **inadmissível**, visto que há outro com menor erro quadrático médio.
+
+
+
+
+##
+
+-   Se existir um estimador $\widehat{\theta}^*$ tal que, para todo estimador $\widehat{\theta}$ de $\theta$ com $\widehat{\theta}\neq\widehat{\theta}^*$,
+$$
+	EQM(\widehat{\theta}^*) \leq EQM(\widehat{\theta}),
+$$
+para todo $\theta$, em que podemos substituir "$\leq$" por "$<$" para pelo menos um $\theta$, então $\widehat{\theta}^*$ é dito ser ótimo para $\theta$.
+
+-   Se os estimadores são não viesados, então $\widehat{\theta}^*$ é dito ser o estimador não viesado de variância uniformemente mínima, se
+$$
+  \text{Var}(\widehat{\theta}^*) \leq \text{Var}(\widehat{\theta}),
+$$
+para todo $\theta$, com "$\leq$" substituídos por "$<$" para pelo menos um $\theta$.
+
+
+
+## Exemplo 4.1
+
+Sejam $X_1,\ldots,X_n$ uma amostra aleatória de uma variável aleatória com média $\mu$ e variância $\sigma^2$. Temos os seguintes estimadores para a média populacional $\mu$:
+$$
+  \overline{X} = \frac{X_1+\cdots+X_n}{n} \quad \text{e} \quad \widetilde{X} = \frac{2X_1+X_2+\cdots+X_n}{n+1}.
+$$
+Qual estimador tem menor erro quadrático médio?
+
+
+
+
+## Exemplo 4.2
+
+Seja $\widehat{\mu} = X_1$ um etimador para a média populacional $\mu$. Ele é melhor que $\overline{X}$ quando comparados os erros quadráticos médios?
+
+
+
+
+## Exemplo 4.3
+
+Seja $X_1, X_2, X_3$ uma amostra aleatória obtida de $X$ com distribuição de Poisson($\lambda$). Determine o melhor estimador entre
+$$\widehat{\lambda}_1 = \frac{X_1+X_2+X_3}{3} \quad \text{e}\quad \widehat{\lambda}_2=\frac{X_1+X_2+2X_3}{4}.$$
+
+
+
+
+# Fim

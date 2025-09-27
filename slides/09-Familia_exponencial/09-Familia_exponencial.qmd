@@ -1,0 +1,97 @@
+---
+title: "Família Exponencial"
+subtitle: "ESTAT0078 -- Inferência I"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+
+---
+
+## Definição 9.1: Família Exponencial
+
+Dizemos que a distribuição da variável aleatória $X$ pertence à família exponencial unidimensional se pudermos escrever sua densidade (ou função de probabilidade), $f(x)$, na forma
+$$
+  f(x) = \exp\{ c(\theta)T(x) + d(\theta) + S(x) \},
+$$
+$x\in A$, em que
+
+-   $c$, $T$, $d$ e $S$ são funções reais,
+-   $A$ não envolve $\theta$.
+
+
+## Exemplo 9.1
+
+A distribuição Bernoulli$(\theta)$ pertence à família exponencial unidimensional?
+			
+<br>
+
+::: {.callout-note title="Lembrete"}
+$X\sim \text{Bernoulli}(\theta)$: $f(x)=\theta^x (1-\theta)^{1-x} ,~ x=0,1.$
+
+:::
+
+
+
+
+## Exemplo 9.2
+
+A distribuição $N(\mu,1)$ pertence à família exponencial unidimensional?
+
+<br>
+
+::: {.callout-note title="Lembrete"}
+$X\sim N(\mu,\sigma^2)$: $f(x)=\frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} ,~ -\infty<x<\infty$
+
+:::
+
+
+
+
+## Definição 9.2
+
+Dizemos que a distribuição da variável aleatória $X$ pertence à família exponencial de dimensão $k$ se sua f.p. ou f.d.p. é dada por
+$$
+  f(x) = \exp\left\{ \sum\limits_{j=1}^n c_j(\theta)T_j(x) + d(\theta) + S(x) \right\}, 
+$$
+$x\in A$,em que
+
+-   $c_j$, $T_j$, $d$ e $S$ são funções reais, $j=1,\ldots,k$;
+-   $A$ não envolve $\theta$.
+
+
+## Exemplo 9.3
+
+Verifique se a distribuição $N(\mu,\sigma^2)$ pertence à família exponencial bidimensional.
+
+<br>
+
+::: {.callout-note title="Lembrete"}
+$X\sim N(\mu,\sigma^2)$: $f(x)=\frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} ,~ -\infty<x<\infty$
+
+:::
+
+
+
+
+# Fim

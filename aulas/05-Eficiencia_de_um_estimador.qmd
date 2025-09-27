@@ -1,0 +1,20 @@
+---
+title: "Conteúdo 5"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Efiiência de Um Estimador
+
+Após estudarmos o viés e o Erro Quadrático Médio, agora focamos em uma questão crucial: dentre todos os estimadores não viesados para um parâmetro, como podemos identificar o "melhor"?
+
+A resposta está no conceito de eficiência. Um estimador é considerado mais eficiente quanto menor for a sua variância (ou seja, mais preciso ele é). Nesta aula, apresentamos uma das ferramentas mais importantes da inferência clássica: o Limite Inferior de Cramér-Rao (LICR). Este limite nos dá um piso teórico para a variância, uma meta de "perfeição" que um estimador pode ou não alcançar. Um estimador que atinge esse limite é dito eficiente.
+
+Slides:
+
+- [Versão html](/slides/05-Eficiencia_de_um_estimador/05-Eficiencia_de_um_estimador.html){target="_blank"}
+
+- [Versão pdf](/PDFs/slides/05-Eficiencia_de_um_estimador.pdf){target="_blank"}
+
