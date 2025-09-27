@@ -4,7 +4,7 @@
     "href": "PDFs/tabelas/tabelas.html",
     "title": "Tabelas",
     "section": "",
-    "text": "Acesse aqui as tabelas estatísticas mais importantes para o nosso curso de Inferência. Elas serão ferramentas essenciais para a resolução de exercícios e para as avaliações da disciplina.\n\nTabela Normal\nTabela t\nTabela Qui-Quadrado",
+    "text": "Acesse aqui as tabelas estatísticas mais importantes para o nosso curso de Inferência. Elas serão ferramentas essenciais para a resolução de exercícios e para as avaliações da disciplina.\n\n\n  Tabela Normal \n\n\n  Tabela t \n\n\n  Tabela Qui-quadrado",
     "crumbs": [
       "Tabelas"
     ]
@@ -47,7 +47,7 @@
     "crumbs": [
       "Aulas",
       "Parte 1: Princípios da Estimação Pontual",
-      "1- Apresentação da Disciplina e Conceitos Iniciais"
+      "1- Apresentação da Disciplina"
     ]
   },
   {
@@ -59,134 +59,302 @@
     "crumbs": [
       "Aulas",
       "Parte 1: Princípios da Estimação Pontual",
-      "1- Apresentação da Disciplina e Conceitos Iniciais"
+      "1- Apresentação da Disciplina"
     ]
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#section",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#section",
-    "title": "Apresentação da Disciplina",
-    "section": "",
-    "text": "Material da disciplina: https://sadraquelucena.github.io/EstComp/\nGrupo no WhatsApp: http://tiny.cc/EstCompWpp"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#canais-de-comunicação-e-materiais-da-disciplina",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#canais-de-comunicação-e-materiais-da-disciplina",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Canais de Comunicação e Materiais da Disciplina",
+    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1wpp"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#informações-da-disciplina",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#informações-da-disciplina",
-    "title": "Apresentação da Disciplina",
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#informações-da-disciplina",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#informações-da-disciplina",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
     "section": "Informações da disciplina",
-    "text": "Informações da disciplina\n\nComponente curricular: ESTAT0090 – Estatística Computacional\nPeríodo: 7º semestre\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças - 19h00 às 20h30\nQuintas - 20h45 às 22h15\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
+    "text": "Informações da disciplina\n\nComponente curricular: ESTAT0078 – Inferência I\nPeríodo: 7º semestre\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças - 19h00 às 20h30\nQuintas - 20h45 às 22h15\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#objetivos",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#objetivos",
-    "title": "Apresentação da Disciplina",
-    "section": "Objetivos",
-    "text": "Objetivos\n\nAplicar métodos de simulação, como Monte Carlo e Bootstrap, na resolução de problemas estatísticos.\nUtilizar ferramentas computacionais (R, LaTeX, Quarto e GitHub) para realizar análises estatísticas avançadas e criar relatórios reprodutíveis.\nCriar documentos de alta qualidade com notação matemática precisa, formatação profissional e relatórios interativos, utilizando LaTeX e Quarto.\nDesenvolver um portfólio online profissional, utilizando GitHub Pages, para documentar e compartilhar projetos, simulações e resultados de análises."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#objetivo-da-disciplina",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#objetivo-da-disciplina",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Objetivo da Disciplina",
+    "text": "Objetivo da Disciplina\n\nIntroduzir fundamentos da inferência estatística;\nDesenvolver habilidades de análise e interpretação de estimadores;\nCompreender a aplicabilidade da inferência na análise de dados."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ementa",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ementa",
-    "title": "Apresentação da Disciplina",
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#ementa",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#ementa",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
     "section": "Ementa",
-    "text": "Ementa\n\nEditor de textos .\nEstruturas de repetições e funções no software R.\nGeração de Variáveis Aleatórias.\nMétodo de Monte Carlo.\nBootstrap."
+    "text": "Ementa\n\nAmostras e distribuições amostrais.\nEstimação pontual e por intervalo.\nEstudo de estimadores mais comumente usados: método dos momentos, máxima verossimilhança, estimador de Bayes.\nIntervalos de confiança; métodos para construção de intervalos de confiança."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#editor-de-textos",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#editor-de-textos",
-    "title": "Apresentação da Disciplina",
-    "section": "Editor de textos ",
-    "text": "Editor de textos \n\nLaTeX é o padrão para documentos acadêmicos e científicos (artigos, teses, relatórios técnicos).\nOferece formatação profissional automática, especialmente para fórmulas matemáticas.\nFacilita a colaboração e a padronização em projetos."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#conteúdo-programático",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#conteúdo-programático",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Conteúdo Programático",
+    "text": "Conteúdo Programático\nParte 1. Princípios da Estimação Pontual  1.1. Conceitos Iniciais: Parâmetros, Estimador e Estatística  1.2. Distribuição amostral de algumas estatísticas  1.3. Propriedades dos estimadores:     1.3.1. Estimador não viesado     1.3.2. Viés e Erro quadrático Médio     1.3.3. Eficiência de um Estimador  1.4. Estatística Suficiente"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#estruturas-de-repetições-e-funções-no-software-r",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#estruturas-de-repetições-e-funções-no-software-r",
-    "title": "Apresentação da Disciplina",
-    "section": "Estruturas de repetições e funções no software R",
-    "text": "Estruturas de repetições e funções no software R\n\nAutomatiza tarefas repetitivas (ex.: simulações, análises de dados).\n\nAutomatizar limpeza de dados: aplicar a mesma transformação em 100 arquivos de clientes.\nSimular cenários: testar 1.000 combinações de hiperparâmetros para um modelo de ML.\nCriar funções personalizadas: calcular métricas de negócio específicas (ex.: Lifetime Value de usuários)."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#conteúdo-programático-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#conteúdo-programático-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Conteúdo Programático",
+    "text": "Conteúdo Programático\nParte 2. Métodos de Estimação  2.1. Família Exponencial  2.2. O Método da Máxima Verossimilhança  2.3. Propriedades dos Estimadores de Máxima Verossimilhança  2.4. Família Exponencial e o Método da Máxima Verossimilhança  2.5. O Método dos Momentos  2.6. Introdução ao estimador de Bayes"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#geração-de-variáveis-aleatórias",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#geração-de-variáveis-aleatórias",
-    "title": "Apresentação da Disciplina",
-    "section": "Geração de Variáveis Aleatórias",
-    "text": "Geração de Variáveis Aleatórias\n\nTestar modelos sob diferentes distribuições (ex.: simular falhas em equipamentos com distribuição Poisson).\nGerar dados sintéticos para treinar modelos quando os dados reais são escassos (ex.: dados médicos anônimos).\nPrever cenários extremos (ex.: perdas financeiras usando distribuição Pareto).\nExemplo:\n\nSimular tempos de atendimento em um call center com distribuição exponencial para otimizar escalas."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#conteúdo-programático-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#conteúdo-programático-2",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Conteúdo Programático",
+    "text": "Conteúdo Programático\nParte 3. Estimação por intervalo  3.1. Resultados de amostras de população normal  3.2. Método da Quantidade Pivotal  3.3. Intervalos de confiança para populações normais para:     3.3.1. Uma amostra     3.3.2. Duas amostras  3.4. Intervalos de confiança aproximados"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#método-de-monte-carlo",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#método-de-monte-carlo",
-    "title": "Apresentação da Disciplina",
-    "section": "Método de Monte Carlo",
-    "text": "Método de Monte Carlo\n\nAvaliar risco financeiro: calcular o Value at Risk (VaR) de uma carteira de investimentos.\nOtimizar recursos: estimar o número ideal de caixas em um supermercado para minimizar filas.\nCalibrar modelos complexos: inferir parâmetros em epidemilogia (ex.: propagação de uma doença).\nExemplo:\n\nSimular 10.000 cenários de preços de ações para decidir se um derivativo é viável."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#avaliação",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#avaliação",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Avaliação",
+    "text": "Avaliação\n\nSerão realizadas 3 avaliações.\nA aprovação requer uma média maior ou igual a 5,0.\nUma avaliação substitutiva será realizada ao final do período. Esta prova abrange todo o conteúdo, substitui apenas uma nota e é permitida em dois casos:\n\nPara repor falta em alguma das avaliações.\nPara substituir a menor nota (apenas para quem tiver média inferior a 5,0)."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bootstrap",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bootstrap",
-    "title": "Apresentação da Disciplina",
-    "section": "Bootstrap",
-    "text": "Bootstrap\n\nValidar modelos quando a distribuição é desconhecida (ex.: intervalos de confiança para árvores de decisão).\nComparar algoritmos: testar se a diferença entre dois modelos de ML é significativa.\nEstimar incerteza em métricas de negócio (ex.: margem de erro da receita prevista).\nExemplo:\n\nUsar bootstrap para estimar a variação do ROI de uma campanha de marketing com dados limitados."
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático",
-    "title": "Apresentação da Disciplina",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nLaTeX\n1.1. Introdução ao LATEX.\n1.2. Partes de um documento: Títulos, sumários, cabeçalho e rodapés.\n1.3. Fórmulas diversas, estrutura de um texto.\n1.4. Matrizes e equações alinhadas.\n1.5. Tabelas e Imagens. Bibtex. Criação de apresentações e pôster"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-1",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-1",
-    "title": "Apresentação da Disciplina",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nTécnicas de Geração de Números Aleatórios\n2.1. Gerador de números aleatórios.\n2.2. Método da Transformada inversa.\n2.3. Método da Aceitação-Rejeição.\n2.4. Outros métodos de geração de v.a’s"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-2",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#conteúdo-programático-2",
-    "title": "Apresentação da Disciplina",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nSimulação, Testes e Reamostragem\n3.1. Métodos de Simulação.\n3.2. Método de Monte Carlo.\n3.3. Testes de hipóteses e erros.\n3.4. Viés e Erro quadrático médio.\n3.5. Métodos de Reamostragem: Bootstrap e Jackknife."
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada",
-    "title": "Apresentação da Disciplina",
-    "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada-1",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#bibliografia-recomendada-1",
-    "title": "Apresentação da Disciplina",
-    "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#metodologia",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#metodologia",
-    "title": "Apresentação da Disciplina",
-    "section": "Metodologia",
-    "text": "Metodologia\n\n2 encontros semanais, com 90 minutos de aula presencial cada\n30 minutos de atividades extraclasse (hora-trabalho) para cada aula, indicadas pelo docente\nAulas organizadas com base em Aprendizado Baseado em Problemas (PBL)\nÊnfase em situações reais da prática profissional em Estatística"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ferramentas-que-iremos-usar",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#ferramentas-que-iremos-usar",
-    "title": "Apresentação da Disciplina",
-    "section": "Ferramentas que iremos usar",
-    "text": "Ferramentas que iremos usar\n\nR + RStudio\nQuarto\nLaTeX\nGitHub e GitHub Pages"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#datas-importantes",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#datas-importantes",
-    "title": "Apresentação da Disciplina",
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#datas-importantes",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#datas-importantes",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
     "section": "Datas Importantes",
-    "text": "Datas Importantes\nAvaliações\n\nAvaliação 1: 17/06/2025 (terça)\nAvaliação 2: 29/07/2025 (quinta)\nAvaliação 3: 26/08/2025 (quinta)\nAvaliação Repositiva: 02/09/2025 (terça)\n\nNão haverá aula\n\n19/06/2025: Corpus Christi (ponto facultativo)\n24/06/2025: Sâo João (feriado municipal)\n08/07/2025: Independência de Sergipe (feriado estadual)"
+    "text": "Datas Importantes\n\n\n\n\n\n\n\nAvaliações (previsão):\n\n\n\n13/Nov/25 (quinta): Avaliação 1\n18/Dez/25 (quinta): Avaliação 2\n10/Fev/26 (terça): Avaliação 3\n12/Fev/26 (quinta): Avaliação Substitutiva\n\n\n\n\n\n\n\n\n\n\n\n\nNão haverá aula:\n\n\n\n20/Nov/25: Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)\n25 e 27/Nov/25: XI SEMAC\n22 a 31/12/2025: Recesso de final de ano\n01/01/2026: Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)\n02 a 10/01/2026: Férias coletivas para docentes"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#para-a-pŕoxima-aula",
-    "href": "slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html#para-a-pŕoxima-aula",
-    "title": "Apresentação da Disciplina",
-    "section": "Para a pŕoxima aula…",
-    "text": "Para a pŕoxima aula…\n\nCriar uma conta no : https://github.com/\nInstale na sua máquina:"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#bibliografia-recomendada",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#bibliografia-recomendada",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Bibliografia Recomendada",
+    "text": "Bibliografia Recomendada\nBásica"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#bibliografia-recomendada-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#bibliografia-recomendada-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Bibliografia Recomendada",
+    "text": "Bibliografia Recomendada\nComplementar"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Inferência: transformando dados em conhecimento",
+    "text": "Inferência: transformando dados em conhecimento\n\nAs distribuições de probabilidade possuem parâmetros.\nExemplos:\n\nNormal(\\(\\mu, \\sigma^2\\))\nPoisson(\\(\\lambda\\))\nExponencial(\\(\\alpha\\))\n\nEssas distribuições são usadas para representar dados (e assim entender sua variabilidade e quantificar probabilidades)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Inferência: transformando dados em conhecimento",
+    "text": "Inferência: transformando dados em conhecimento\n\nNormal(\\(\\mu, \\sigma^2\\))"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-2",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Inferência: transformando dados em conhecimento",
+    "text": "Inferência: transformando dados em conhecimento\n\nPoisson(\\(\\lambda\\))"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-3",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-3",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Inferência: transformando dados em conhecimento",
+    "text": "Inferência: transformando dados em conhecimento\n\nExponencial(\\(\\alpha\\))"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-4",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-4",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Inferência: transformando dados em conhecimento",
+    "text": "Inferência: transformando dados em conhecimento\n\nO objetivo da inferência estatística é estimar os parâmetros das distribuições com base nos dados observados.\n\nIsso permite fazer afirmações sobre a população e quantificar a probabilidade de estarmos certos (ou errados)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-5",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#inferência-transformando-dados-em-conhecimento-5",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Inferência: transformando dados em conhecimento",
+    "text": "Inferência: transformando dados em conhecimento\n\nFonte: Adaptado de https://stats.libretexts.org/Courses/Lumen_Learning/Concepts_in_Statistics_(Lumen)/06%3A_Probability_and_Probability_Distributions/6.01%3A_Why_It_Matters-_Probability_and_Probability_Distributions"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Binomial",
+    "text": "Distribuição Binomial\n\nDescreve o número de sucessos em uma sequência fixa de tentativas independentes.\nNotação: \\(X\\sim\\) Binomial(\\(n,p\\))\nParâmetros da distribuição:\n\n\\(n\\): número de tentativas\n\\(p\\): probabilidade de sucesso em cada tentativa, \\(0&lt;p&lt;1\\)\n\nFunção de probabilidade: \\[\nP(X=x) = \\binom{n}{p}p^x (1-p)^{n-x}, \\quad x=0,1,2,\\ldots,n\n\\]"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Binomial",
+    "text": "Distribuição Binomial\n\nPropriedades importantes:\n\nMédia: \\(E(X) = n p\\)\nVariância: \\(Var(X)=np(1-p)\\)\n\nModela pesquisas eleitorais (favorável ou não a um candidato), número de sinistros em uma carteira, etc."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-no-r",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-no-r",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Binomial no R ",
+    "text": "Distribuição Binomial no R \nConsidere \\(X\\sim\\) Binomial(\\(n,p\\)). Para calcular:\n\n\\(P(X=x)\\) use o comando dbinom(x, n, p).\n\\(P(X\\leq x)\\) use o comando pbinom(x, n, p).\nPara simular \\(r\\) ocorrências de uma binomial use rbinom(r, n, p)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-2",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Binomial",
+    "text": "Distribuição Binomial\nExemplo 1.1\nSeja \\(X\\sim\\) Binomial(\\(n=10; p=0,\\!3\\)).\n\n\\(P(X=4) \\color{blue}{= \\binom{n}{p}p^x (1-p)^{n-x} = \\binom{10}{4}0,\\!3^4 (1-0,\\!3)^{10-4}}\\) \\(\\qquad\\qquad\\!\\color{blue}{= 0,\\!2001}\\)\n\nCálculo no R:\n\ndbinom(4, 10, 0.3)\n\n[1] 0.2001209\n\n\n\n\n\\(E(X)\\color{blue}{= 10\\cdot 0,\\!3=3}\\)\n\\(Var(X)\\color{blue}{= 10\\cdot 0,\\!3(1-0,\\!3)= 2,\\!1}\\)"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-3",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-binomial-3",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Binomial",
+    "text": "Distribuição Binomial\nGráfico de \\(X\\sim\\) Binomial(\\(n=10; p=0,\\!3\\)):\n\nn &lt;- 10; p &lt;- 0.3\nprobabilidades &lt;- dbinom(0:n, n, p)\nbarplot(probabilidades, names.arg = 0:n,\n        xlab = \"Número de Sucessos\", ylab = \"Probabilidade\",\n        col = \"blue\", border = \"blue\", ylim = c(0,.25))"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição de Poisson",
+    "text": "Distribuição de Poisson\n\nExpressa a probabilidade de um número fixo de eventos ocorrer em um intervalo de tempo ou espaço, com uma taxa média conhecida e de forma independente.\nNotação: \\(X\\sim\\) Poisson(\\(\\lambda\\))\nParâmetro da distribuição:\n\n\\(\\lambda\\): taxa média de eventos por unidade de tempo ou espaço\n\nFunção de probabilidade: \\[\nP(X=x) = \\frac{e^{-\\lambda}\\lambda^x}{x!}, \\quad x=0,1,2,\\ldots\n\\]"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição de Poisson",
+    "text": "Distribuição de Poisson\n\nPropriedade importante:\n\n\\(E(X) = Var(X) = \\lambda\\) (média e variância iguais)"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-no-r",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-no-r",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição de Poisson no R ",
+    "text": "Distribuição de Poisson no R \nConsidere \\(X\\sim\\) Poisson(\\(\\lambda\\)). Para calcular:\n\n\\(P(X=x)\\) use o comando dpois(x, lambda).\n\\(P(X\\leq x)\\) use o comando pbinom(x, lambda).\nPara simular \\(r\\) ocorrências de uma Poisson use rpois(r, lambda)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-2",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição de Poisson",
+    "text": "Distribuição de Poisson\nExemplo 1.2\nSeja \\(X\\sim\\) Poisson(\\(\\lambda=6\\)).\n\n\\(P(X=4) \\color{blue}{= \\frac{e^{-\\lambda}\\lambda^x}{x!} = \\frac{e^{-6} 6^4}{4!} = 0,\\!1339}\\)\n\nCálculo no R:\n\ndpois(4, 6)\n\n[1] 0.1338526"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-3",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-de-poisson-3",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição de Poisson",
+    "text": "Distribuição de Poisson\nGráfico da distibuição de \\(X\\sim\\) Poisson(\\(\\lambda=6\\)):\n\nn &lt;- 20; lambda &lt;- 6\nprobabilidades &lt;- dpois(0:n, lambda)\nbarplot(probabilidades, names.arg = 0:n,\n        xlab = \"Número de Sucessos\", ylab = \"Probabilidade\",\n        col = \"blue\", border = \"blue\", ylim = c(0,.25))"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Uniforme",
+    "text": "Distribuição Uniforme\n\nDescreve uma situação onde todos os resultados possíveis de uma variável aleatória têm a mesma probabilidade de ocorrer.\nNotação: \\(X\\sim\\) Uniforme(\\(a, b\\))\nParâmetros da distribuição:\n\n\\(a\\): limite inferior (mínimo)\n\n\\(b\\): limite superior (máximo)\n\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\frac{1}{b-a}, \\quad a\\leq x\\leq b\n\\]"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Uniforme",
+    "text": "Distribuição Uniforme\n\nPropriedades importantes:\n\nMédia: \\(E(X)=\\frac{a+b}{2}\\)\n\nVariância: \\(Var(X)=\\frac{(b-a)^2}{12}\\)\nA distribuição é simétrica em torno da média.\nA variável aleatória pode assumir qualquer valor entre \\(a\\) e \\(b\\)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-no-r",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-no-r",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Uniforme no R ",
+    "text": "Distribuição Uniforme no R \nConsidere \\(X\\sim\\) Uniforme(\\(a, b\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando punif(x, min=a, max=b).\nPara simular \\(r\\) ocorrências de uma uniforme use runif(r, min=a, max=b)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-2",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Uniforme",
+    "text": "Distribuição Uniforme\nExemplo 1.3\nSeja \\(X\\sim\\) Uniforme(\\(a=1, b=7\\)).\n\n\\(P(X\\leq 6) \\color{blue}{= \\int_a^x\\frac{1}{b-a} dx = \\int_1^6 \\frac{1}{7-1} dx = \\int_1^6 \\frac{1}{6} dx}\\) \\(\\qquad\\qquad\\!\\color{blue}{= \\left[ \\frac{x}{6} \\right]_1^6 = 1 - \\frac{1}{6} =0,\\!8333}\\)\n\nCálculo no R:\n\npunif(6, min=1, max=7)\n\n[1] 0.8333333"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-3",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-uniforme-3",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Uniforme",
+    "text": "Distribuição Uniforme\nGráfico da distibuição de \\(X\\sim\\) Uniforme(\\(a=1, b=7\\)):\n\na &lt;- 1; b &lt;- 7\ncurve(dunif(x, min=a, max=b), from = -10, to = 10,\n      main = \"Uniforme(1, 7)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Normal",
+    "text": "Distribuição Normal\n\nDistribuição contínua, simétrica, e em forma de sino.\nRepresenta muitas variáveis naturais e mensuráveis, como altura, peso, e notas de testes.\nNotação: \\(X\\sim\\) Normal(\\(\\mu, \\sigma^2\\))\nParâmetros da distribuição:\n\n\\(\\mu\\): média\n\n\\(\\sigma^2\\): variância\n\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}, \\quad -\\infty&lt;x&lt;\\infty, -\\infty&lt;\\mu&lt;\\infty, \\sigma^2&gt;0\n\\]"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Normal",
+    "text": "Distribuição Normal\n\nPropriedades importantes:\n\nÉ perfeitamente simétrica em torno da média.\n\nA maior parte dos dados está concentrada ao redor da média, com a probabilidade de eventos extremos diminuindo conforme a distância da média.\n68% dos dados estão dentro de \\(\\mu \\pm 1\\sigma^2\\).\n95% dos dados estão dentro de \\(\\mu \\pm 2\\sigma^2\\).\n99,7% dos dados estão dentro de \\(\\mu \\pm 3\\sigma^2\\)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-no-r",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-no-r",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Normal no R ",
+    "text": "Distribuição Normal no R \nConsidere \\(X\\sim\\) Normal(\\(\\mu, \\sigma^2\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando pnorm(x, mean=\\(\\color{slateblue}{\\mu}\\), sd=\\(\\color{slateblue}{\\sigma}\\)).\nPara simular \\(r\\) ocorrências de uma normal use rnorm(r, mean=\\(\\color{slateblue}{\\mu}\\), sd=\\(\\color{slateblue}{\\sigma}\\))."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-2",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Normal",
+    "text": "Distribuição Normal\nExemplo 1.4\nSeja \\(X\\sim\\) Normal(\\(\\mu=0, \\sigma^2=4\\)).\n\n\\(P(X\\leq 1) \\color{blue}{= \\int_{-\\infty}^1 \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} dx}\\)\n\nCálculo no R:\n\npnorm(1, mean=0, sd=sqrt(4))\n\n[1] 0.6914625"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-3",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-normal-3",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Normal",
+    "text": "Distribuição Normal\nGráfico da distibuição de \\(X\\sim\\) Normal(\\(\\mu=0, \\sigma^2=4\\)):\n\nmu &lt;- 0; sigma &lt;- sqrt(4)\ncurve(dnorm(x, mean=mu, sd=sigma), from = -8, to = 8,\n      main = \"Normal(0, 4)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Exponencial",
+    "text": "Distribuição Exponencial\n\nDistribuição contínua que é frequentemente usada para modelar o tempo de vida de equipamentos.\nNotação: \\(X\\sim\\) Exponencial(\\(\\alpha\\))\nParâmetro da distribuição:\n\n\\(\\alpha\\): taxa média de ocorrências de um evento por unidade de tempo.\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\alpha e^{-\\alpha x}, \\quad x\\geq 0, \\alpha&gt;0\n\\]"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-1",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Exponencial",
+    "text": "Distribuição Exponencial\n\nPropriedades importantes:\n\nMédia: \\(E(X)=\\frac{1}{\\alpha}\\)\nVariância: \\(Var(X)=\\frac{1}{\\alpha^2}\\)\nA distribuição exponencial tem a propriedade de falta de memória, ou seja, a probabilidade de um evento futuro não depende do tempo já decorrido.\nO tempo entre eventos em um processo de Poisson é exponencialmente distribuído."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-no-r",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-no-r",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Exponencial no R ",
+    "text": "Distribuição Exponencial no R \nConsidere \\(X\\sim\\) Exponencial(\\(\\alpha\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando pexp(x, rate=\\(\\color{slateblue}{\\alpha}\\)).\nPara simular \\(r\\) ocorrências de uma Exponencial use rexp(r, rate=\\(\\color{slateblue}{\\alpha}\\))."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-2",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Exponencial",
+    "text": "Distribuição Exponencial\nExemplo 1.4\nSeja \\(X\\sim\\) Exponencial(\\(\\alpha=2\\)).\n\n\\(P(X\\leq 1) \\color{blue}{= \\int_0^x \\alpha e^{-\\alpha x} dx = \\int_0^1 2 e^{-2 x} dx = \\left. - e^{-2x}\\right|_0^1}\\) \\(\\qquad\\qquad\\!\\color{blue}{= 1-e^{-2} = 0,\\!8647}\\)\n\nCálculo no R:\n\npexp(1, rate=2)\n\n[1] 0.8646647"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-3",
+    "href": "slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html#distribuição-exponencial-3",
+    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "section": "Distribuição Exponencial",
+    "text": "Distribuição Exponencial\nGráfico da distibuição de \\(X\\sim\\) Exponencial(\\(\\alpha=2\\)):\n\nalpha &lt;- 2\ncurve(dexp(x, rate=alpha), from = 0, to = 5,\n      main = \"Exponencial(2)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
   },
   {
     "objectID": "info/ementa.html",
@@ -303,7 +471,7 @@
     "href": "info/dados_gerais.html#avaliações",
     "title": "Dados Gerais da Disciplina",
     "section": "Avaliações",
-    "text": "Avaliações\nA disciplina terá 3 avaliações principais ao longo do semestre.\nAo final do período, haverá uma Avaliação Substitutiva, que funciona como uma recuperação e segue duas regras:\n\nSe você faltou a uma das três provas, poderá fazer a substitutiva para repor essa nota.\nSe você fez todas as provas, mas não atingiu a média para ser aprovado(a), também poderá fazer a substitutiva. Nesse caso, a prova servirá para substituir a sua menor nota.\n\nAtenção: A possibilidade de substituir a menor nota é um recurso exclusivo para quem ainda não alcançou a aprovação. Estudantes já aprovados não poderão realizar a prova para aumentar a média.\nEm ambas as situações, o conteúdo da avaliação substitutiva cobre toda a matéria do semestre.\nAs datas previstas para as avaliações são:\n\nAvaliação 1: 13/11/2025 (quinta)\nAvaliação 2: 18/12/2025 (quinta)\nAvaliação 3: 10/02/2026 (terça)\nAvaliação Substitutiva: 12/02/2026 (quinta)",
+    "text": "Avaliações\nA disciplina terá 3 avaliações principais ao longo do semestre. A aprovação na disciplina requer uma média maior ou igual a 5,0.\nAo final do período, haverá uma Avaliação Substitutiva, que funciona como uma recuperação e segue duas regras:\n\nSe você faltou a uma das três provas, poderá fazer a substitutiva para repor essa nota.\nSe você fez todas as provas, mas não atingiu a média para ser aprovado(a), também poderá fazer a substitutiva. Nesse caso, a prova servirá para substituir a sua menor nota.\n\nAtenção: A possibilidade de substituir a menor nota é um recurso exclusivo para quem ainda não alcançou a aprovação. Estudantes já aprovados não poderão realizar a prova para aumentar a média.\nEm ambas as situações, o conteúdo da avaliação substitutiva cobre toda a matéria do semestre.\nAs datas previstas para as avaliações são:\n\nAvaliação 1: 13/11/2025 (quinta)\nAvaliação 2: 18/12/2025 (quinta)\nAvaliação 3: 10/02/2026 (terça)\nAvaliação Substitutiva: 12/02/2026 (quinta)",
     "crumbs": [
       "Informações da disciplina",
       "Dados gerais"
@@ -314,7 +482,7 @@
     "href": "info/dados_gerais.html#não-haverá-aula",
     "title": "Dados Gerais da Disciplina",
     "section": "Não haverá aula",
-    "text": "Não haverá aula\n\n20/11/2025: Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)\n25 e 27/06/2025: XI SEMAC (uspensão das atividades de aula para participação nos eventos da XI SEMAC)\n22 a 31/12/2025: Recesso de final de ano\n01/01/2026: Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)\n02 a 10/01/2026: Férias coletivas para docentes",
+    "text": "Não haverá aula\n\n20/11/2025: Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)\n25 e 27/11/2025: XI SEMAC (suspensão das atividades de aula para participação nos eventos da XI SEMAC)\n22 a 31/12/2025: Recesso de final de ano\n01/01/2026: Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)\n02 a 10/01/2026: Férias coletivas para docentes",
     "crumbs": [
       "Informações da disciplina",
       "Dados gerais"

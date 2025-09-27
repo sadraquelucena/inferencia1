@@ -14,7 +14,7 @@ Na primeira aula, traçamos nosso "plano de voo" para o semestre: conversamos so
 
 Slides:
 
-- [Versão html](/slides/01-Apresentacao_da_disciplina/01-Apresentacao_da_disciplina.html){target="_blank"}
+- [Versão html](/slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.html){target="_blank"}
 
-- [Versão pdf](/PDF_slides/01-Apresentacao_da_disciplina.pdf){target="_blank"}
+- [Versão pdf](/PDFs/slides/01-Apresentacao_da_disciplina_e_revisao_de_algumas_distribuicoes_de_probabilidade.pdf){target="_blank"}
 

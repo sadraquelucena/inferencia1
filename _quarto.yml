@@ -30,17 +30,17 @@ website:
       - section: "Parte 1: Princípios da Estimação Pontual"
         contents:
           - href: aulas/1-Apresentacao_da_disciplina.qmd
-            text: "1- Apresentação da Disciplina e Conceitos Iniciais"
+            text: "1- Apresentação da Disciplina"
       
-      - section: "Parte 2: Métodos de Estimação"
-        contents:
-          - href: aulas/1-Apresentacao_da_disciplina.qmd
-            text: "1- Apresentação da Disciplina e Conceitos Iniciais"
+      #- section: "Parte 2: Métodos de Estimação"
+      #  contents:
+      #    - href: aulas/1-Apresentacao_da_disciplina.qmd
+      #      text: "1- Apresentação da Disciplina e Conceitos Iniciais"
       
-      - section: "Parte 3: Estimação por intervalo"
-        contents:
-          - href: aulas/1-Apresentacao_da_disciplina.qmd
-            text: "1- Apresentação da Disciplina e Conceitos Iniciais"
+      #- section: "Parte 3: Estimação por intervalo"
+      #  contents:
+      #    - href: aulas/1-Apresentacao_da_disciplina.qmd
+      #      text: "1- Apresentação da Disciplina e Conceitos Iniciais"
     
     - href: PDFs/listas/listas_de_exercicio.qmd
       text: "Listas de Exercício"

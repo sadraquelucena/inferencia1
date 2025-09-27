@@ -32,7 +32,7 @@ As aulas ocorrerão nos seguintes horários:
 
 ## Avaliações
 
-A disciplina terá **3 avaliações** principais ao longo do semestre.
+A disciplina terá **3 avaliações** principais ao longo do semestre. A aprovação na disciplina requer uma média maior ou igual a 5,0.
 
 Ao final do período, haverá uma Avaliação Substitutiva, que funciona como uma recuperação e segue duas regras:
 
@@ -55,7 +55,7 @@ As datas previstas para as avaliações são:
 ## Não haverá aula
 
 - **20/11/2025:** Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)
-- **25 e 27/06/2025:** XI SEMAC (uspensão das atividades de aula para participação nos eventos da XI SEMAC)
+- **25 e 27/11/2025:** XI SEMAC (suspensão das atividades de aula para participação nos eventos da XI SEMAC)
 - **22 a 31/12/2025:** Recesso de final de ano
 - **01/01/2026:** Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)
 - **02 a 10/01/2026:** Férias coletivas para docentes

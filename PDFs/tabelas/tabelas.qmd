@@ -8,8 +8,28 @@ format:
 
 Acesse aqui as tabelas estatísticas mais importantes para o nosso curso de Inferência. Elas serão ferramentas essenciais para a resolução de exercícios e para as avaliações da disciplina.
 
-- [Tabela Normal](tabela_normal.pdf){target="_blank"}
+::: {.grid}
 
-- [Tabela t](tabela_t.pdf){target="_blank"}
+::: {.g-col-12 .g-col-md-4}
+<a href="tabela_normal.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![Tabela Normal](tabela_normal.png)
+Tabela Normal
+</a>
+:::
 
-- [Tabela Qui-Quadrado](tabela_qui_quadrado.pdf){target="_blank"}
+::: {.g-col-12 .g-col-md-4}
+<a href="tabela_t.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![Tabela Normal](tabela_t.png)
+Tabela t
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="tabela_qui_quadrado.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![Tabela Qui-quadrado](tabela_qui_quadrado.png)
+Tabela Qui-quadrado
+</a>
+:::
+
+:::
+
