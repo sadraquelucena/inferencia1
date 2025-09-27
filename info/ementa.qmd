@@ -24,4 +24,15 @@ Serão ministradas aulas teóricas expositivas; utilizados recursos visuais; res
 Ao final da disciplina, o aluno estará apto a compreender e aplicar a teoria de estimação pontual e intervalar dentro do contexto da inferência estatística.
 
 ## Avaliação
-Serão realizadas três avaliações ao longo do semestre. Este plano de ensino permite a vinculação (ou até mesmo substituição) de uma destas avaliações por um trabalho e/ou seminário a critério do professor. Estudantes que perderem uma das provas e/ou trabalho(s), sem justificativa legal (comprovada), terá nota zero de acordo com as normas do sistema acadêmico. A avaliação substitutiva versará sobre todo o conteúdo da disciplina e qualquer estudante poderá fazê-la para substituir a nota da avaliação que faltou ou para substituir a menor nota.
+
+A disciplina terá **3 avaliações** principais ao longo do semestre. A aprovação na disciplina requer uma média maior ou igual a 5,0.
+
+Ao final do período haverá uma Avaliação Substitutiva que segue duas regras:
+
+- Se você faltou a uma das três provas, poderá fazer a substitutiva para repor essa nota.
+
+- Se você fez todas as provas, mas não atingiu a média para ser aprovado(a), também poderá fazer a substitutiva. Nesse caso, a prova servirá para substituir a sua menor nota.
+
+Atenção: A possibilidade de substituir a menor nota é um recurso exclusivo para quem ainda não alcançou a aprovação. Alunos(as) já aprovados(as) não poderão realizar a prova para aumentar a média.
+
+Em ambas as situações, o conteúdo da avaliação substitutiva cobre toda a matéria do semestre.
