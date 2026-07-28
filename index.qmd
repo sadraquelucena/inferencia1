@@ -1,0 +1,18 @@
+---
+title: "Bem-vindo(a)!"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+
+Este espaço reúne todo o material da disciplina **ESTAT0078 — Inferência I**, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe e ministrada pelo [Prof. Dr. Sadraque E. F. Lucena](http://sadraquelucena.github.io){target="_blank"}.
+
+A Inferência Estatística busca responder a uma pergunta fundamental da ciência:
+
+> **Como aprender sobre uma população utilizando apenas uma amostra?**
+
+Ao longo do semestre, construiremos uma resposta para essa pergunta. Estudaremos como construir estimadores para parâmetros desconhecidos, como avaliar sua qualidade, compreender os limites teóricos da estimação e quantificar a incerteza das conclusões por meio de intervalos de confiança. Mais do que aprender técnicas, o objetivo da disciplina é desenvolver o raciocínio inferencial que sustenta pesquisas científicas, experimentos, estudos clínicos, aprendizado de máquina e a tomada de decisões baseada em dados.
+
+Neste ambiente você encontrará o cronograma da disciplina, notas de aula, listas de exercícios, materiais complementares, avisos e demais recursos utilizados ao longo do semestre.
