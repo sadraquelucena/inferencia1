@@ -25,14 +25,15 @@ website:                  # Configurações específicas do website
       contents: 
       - section: "Parte 1: Fundamentos da Inferência Estatística"
         contents:
-          - href: aulas/01-Apresentacao_da_disciplina/conteudo.qmd
+          - href: aulas/01-O_problema_da_inferencia_estatistica/conteudo.qmd
+          - href: aulas/02-Metodo_dos_momentos/conteudo.qmd
 
 format:                      # Configurações do formato HTML
   html:
     theme: styles.scss       # Arquivo SCSS responsável por toda a aparência do site
     toc: true                # Exibe automaticamente um Sumário baseado nos títulos da página
     grid:                    # Configura o sistema de grid da página
-      sidebar-width: 300px   # Define a largura da sidebar
+      sidebar-width: 320px   # Define a largura da sidebar
 
 
 

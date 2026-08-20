@@ -1,0 +1,70 @@
+---
+title: "2. O Método dos Momentos"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+
+---
+
+Nesta aula, apresentamos o primeiro método para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite encontrar estimadores para os parâmetros desconhecidos.
+
+
+
+Slides:
+
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+
+<a href="slides/02-Metodo_dos_momentos.html"
+   target="_blank"
+   class="thumb html-slide">
+<img
+  src="slides/02-Metodo_dos_momentos.png"
+  alt="Versão PDF"
+  class="img-fluid">
+</a>
+<p class="text-center">Versão HTML</p>
+
+:::
+
+::: {.g-col-12 .g-col-md-4}
+
+<a href="slides/02-Metodo_dos_momentos.pdf"
+   target="_blank"
+   class="thumb pdf-slide">
+<img
+  src="slides/02-Metodo_dos_momentos.png"
+  alt="Versão PDF"
+  class="img-fluid">
+</a>
+<p class="text-center">Versão PDF</p>
+
+:::
+
+
+::::
+
+---
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-3}
+
+<a href="lista_de_exercicios/Inferencia1_Lista2.pdf"
+   target="_blank"
+   class="thumb pdf-lista">
+<img
+  src="lista_de_exercicios/lista1.png"
+  class="img-fluid">
+</a>
+
+:::
+
+::::
