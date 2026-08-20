@@ -1,9 +1,9 @@
 project:            # Configurações gerais do projeto Quarto
   type: website     # Define que o projeto será um website
   output-dir: docs  # Diretório onde os arquivos serão gravados após renderizar
+  pre-render: ./gerar_thumbnails.sh
   resources:
     - img/**
-    - listas_de_exercicios/**
 
 website:                  # Configurações específicas do website
   bread-crumbs: false     # Oculta: Início > Aula 01 > Distribuições

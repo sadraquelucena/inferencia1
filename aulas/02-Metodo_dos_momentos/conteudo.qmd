@@ -24,11 +24,11 @@ Slides:
    target="_blank"
    class="thumb html-slide">
 <img
-  src="slides/02-Metodo_dos_momentos.png"
-  alt="Versão PDF"
+  src="slides/thumb.png"
+  alt="Slides da aula em PDF"
   class="img-fluid">
 </a>
-<p class="text-center">Versão HTML</p>
+<p class="text-center">Slides da aula em HTML</p>
 
 :::
 
@@ -38,11 +38,11 @@ Slides:
    target="_blank"
    class="thumb pdf-slide">
 <img
-  src="slides/02-Metodo_dos_momentos.png"
-  alt="Versão PDF"
+  src="slides/thumb.png"
+  alt="Slides da aula em PDF"
   class="img-fluid">
 </a>
-<p class="text-center">Versão PDF</p>
+<p class="text-center">Slides da aula em PDF</p>
 
 :::
 
@@ -61,7 +61,7 @@ Lista de Exercícios:
    target="_blank"
    class="thumb pdf-lista">
 <img
-  src="lista_de_exercicios/Inferencia1_Lista2.png"
+  src="lista_de_exercicios/thumb.png"
   class="img-fluid">
 </a>
 

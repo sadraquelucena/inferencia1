@@ -23,6 +23,7 @@ format:
     transition: fade
     transition-speed: fast
     scss: meutema.scss
+    pdf-separate-fragments: false # 'false' gera 1 página por slide. Se usar 'true', cada animação/fragmento vira uma página no PDF.
 
 lang: pt-BR
 ---

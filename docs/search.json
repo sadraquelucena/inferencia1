@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bem-vindo(a)!",
-    "section": "",
-    "text": "Este espaço reúne todo o material da disciplina ESTAT0078 — Inferência I, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe e ministrada pelo Prof. Dr. Sadraque E. F. Lucena.\nA Inferência Estatística busca responder a uma pergunta fundamental da ciência:\n\nComo aprender sobre uma população utilizando apenas uma amostra?\n\nAo longo do semestre, construiremos uma resposta para essa pergunta. Estudaremos como construir estimadores para parâmetros desconhecidos, como avaliar sua qualidade, compreender os limites teóricos da estimação e quantificar a incerteza das conclusões por meio de intervalos de confiança. Mais do que aprender técnicas, o objetivo da disciplina é desenvolver o raciocínio inferencial que sustenta pesquisas científicas, experimentos, estudos clínicos, aprendizado de máquina e a tomada de decisões baseada em dados.\nNeste ambiente você encontrará o cronograma da disciplina, notas de aula, listas de exercícios, materiais complementares, avisos e demais recursos utilizados ao longo do semestre."
-  },
-  {
     "objectID": "info.html",
     "href": "info.html",
     "title": "Inferência I",
@@ -41,7 +34,7 @@
     "href": "aulas/02-Metodo_dos_momentos/conteudo.html",
     "title": "2. O Método dos Momentos",
     "section": "",
-    "text": "Nesta aula, apresentamos o primeiro método para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite encontrar estimadores para os parâmetros desconhecidos.\nSlides:\n\n\n  \n\nVersão HTML\n\n\n\n  \n\nVersão PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Nesta aula, apresentamos o primeiro método para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite encontrar estimadores para os parâmetros desconhecidos.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 1: Fundamentos da Inferência Estatística",
@@ -53,7 +46,7 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
     "title": "1. O Problema da Inferência Estatística",
     "section": "",
-    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\n\n  \n\nVersão HTML\n\n\n\n  \n\nVersão PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 1: Fundamentos da Inferência Estatística",
@@ -61,18 +54,18 @@
     ]
   },
   {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html",
-    "title": "O problema da inferência estatística",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bem-vindo(a)!",
     "section": "",
-    "text": "Site: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1262"
+    "text": "Este espaço reúne todo o material da disciplina ESTAT0078 — Inferência I, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe e ministrada pelo Prof. Dr. Sadraque E. F. Lucena.\nA Inferência Estatística busca responder a uma pergunta fundamental da ciência:\n\nComo aprender sobre uma população utilizando apenas uma amostra?\n\nAo longo do semestre, construiremos uma resposta para essa pergunta. Estudaremos como construir estimadores para parâmetros desconhecidos, como avaliar sua qualidade, compreender os limites teóricos da estimação e quantificar a incerteza das conclusões por meio de intervalos de confiança. Mais do que aprender técnicas, o objetivo da disciplina é desenvolver o raciocínio inferencial que sustenta pesquisas científicas, experimentos, estudos clínicos, aprendizado de máquina e a tomada de decisões baseada em dados.\nNeste ambiente você encontrará o cronograma da disciplina, notas de aula, listas de exercícios, materiais complementares, avisos e demais recursos utilizados ao longo do semestre."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#canais-de-comunicação-e-materiais-da-disciplina",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#canais-de-comunicação-e-materiais-da-disciplina",
     "title": "O problema da inferência estatística",
-    "section": "",
-    "text": "Site: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1262"
+    "section": "Canais de Comunicação e Materiais da Disciplina",
+    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1262"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#informações-da-disciplina",
@@ -107,35 +100,35 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\n\nParte 1. Fundamentos da Inferência Estatística\nComo os dados chegam até nós?\n\nInferência estatística e tomada de decisão\nPopulação, amostra, parâmetro e estatística\nVariabilidade amostral\nDistribuições amostrais\nIntrodução ao problema da estimação"
+    "text": "Conteúdo Programático\nParte 1. Fundamentos da Inferência Estatística\nComo os dados chegam até nós?\n\nInferência estatística e tomada de decisão\nPopulação, amostra, parâmetro e estatística\nVariabilidade amostral\nDistribuições amostrais\nIntrodução ao problema da estimação"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-1",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-1",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\n\nParte 2. Construção de Estimadores\nComo obter um estimador?\n\nConceitos de estimador e estimativa\nMétodo dos Momentos\nMétodo da Máxima Verossimilhança\nIntrodução à Inferência Bayesiana"
+    "text": "Conteúdo Programático\nParte 2. Construção de Estimadores\nComo obter um estimador?\n\nConceitos de estimador e estimativa\nMétodo dos Momentos\nMétodo da Máxima Verossimilhança\nIntrodução à Inferência Bayesiana"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-2",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-2",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\n\nParte 3. Avaliação de Estimadores\nComo saber se um estimador é bom?\n\nViés\nVariância\nErro Quadrático Médio\nConsistência\nEficiência\nInformação de Fisher\nLimite de Cramér–Rao"
+    "text": "Conteúdo Programático\nParte 3. Avaliação de Estimadores\nComo saber se um estimador é bom?\n\nViés\nVariância\nErro Quadrático Médio\nConsistência\nEficiência\nInformação de Fisher\nLimite de Cramér–Rao"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-3",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-3",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\n\nParte 4. Estrutura Teórica da Estimação\nQual é o melhor estimador possível?\n\nEstatísticas suficientes\nCritério da fatoração de Neyman–Fisher\nFamília exponencial\nCompletude\nEstimadores de Variância Uniformemente Mínima"
+    "text": "Conteúdo Programático\nParte 4. Estrutura Teórica da Estimação\nQual é o melhor estimador possível?\n\nEstatísticas suficientes\nCritério da fatoração de Neyman–Fisher\nFamília exponencial\nCompletude\nEstimadores de Variância Uniformemente Mínima"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-4",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-4",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\n\nParte 5. Estimação por Intervalos\nComo quantificar a incerteza da estimação?\n\nQuantidades pivotais\nIntervalos de confiança exatos\nIntervalos de confiança assintóticos\nIntrodução aos métodos computacionais de construção de intervalos (Bootstrap)"
+    "text": "Conteúdo Programático\nParte 5. Estimação por Intervalos\nComo quantificar a incerteza da estimação?\n\nQuantidades pivotais\nIntervalos de confiança exatos\nIntervalos de confiança assintóticos\nIntrodução aos métodos computacionais de construção de intervalos (Bootstrap)"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#avaliação",
@@ -149,21 +142,21 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#datas-importantes",
     "title": "O problema da inferência estatística",
     "section": "Datas Importantes",
-    "text": "Datas Importantes\n\n\n\n\n\n\nNotaAvaliações (previsão):\n\n\n\n\n13/Nov/25 (quinta): Avaliação 1\n18/Dez/25 (quinta): Avaliação 2\n10/Fev/26 (terça): Avaliação 3\n12/Fev/26 (quinta): Avaliação Substitutiva\n\n\n\n\n\n\n\n\n\nImportanteNão haverá aula:\n\n\n\n\n08/Set/2026: Dia de N. Sra. da Vitória, padroeira de São Cristóvão (feriado municipal)\n25 e 27/Nov/25: XII SEMAC"
+    "text": "Datas Importantes\n\n\n\n\n\n\n\nAvaliações (previsão):\n\n\n\n13/Nov/25 (quinta): Avaliação 1\n18/Dez/25 (quinta): Avaliação 2\n10/Fev/26 (terça): Avaliação 3\n12/Fev/26 (quinta): Avaliação Substitutiva\n\n\n\n\n\n\n\n\n\n\n\n\nNão haverá aula:\n\n\n\n08/Set/2026: Dia de N. Sra. da Vitória, padroeira de São Cristóvão (feriado municipal)\n25 e 27/Nov/25: XII SEMAC"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada",
     "title": "O problema da inferência estatística",
     "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada\n\nBásica"
+    "text": "Bibliografia Recomendada\nBásica"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada-1",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada-1",
     "title": "O problema da inferência estatística",
     "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada\n\nComplementar"
+    "text": "Bibliografia Recomendada\nComplementar"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade",
@@ -177,35 +170,35 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-1",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\n\nExemplo: Ocorrência de Sinistros\n\nAssume-se que o número anual de sinistros de uma apólice segue uma distribuição de Poisson com média λ = 0,25 sinistros por ano, \\(X\\sim \\text{Poisson}(\\lambda=0{,}25)\\).\nA partir desse modelo, é possível calcular:\n\na probabilidade de uma apólice não registrar sinistros: \\(P(X=0)\\);\na probabilidade de ocorrer pelo menos um sinistro: \\(P(X\\geq 1)\\);\na probabilidade de uma carteira com milhares de apólices registrar mais de determinado número de sinistros.\n\nEm todos esses casos, a distribuição de probabilidade é conhecida e o objetivo é prever o comportamento de perdas futuras."
+    "text": "O Paradigma da Probabilidade\nExemplo: Ocorrência de Sinistros\n\nAssume-se que o número anual de sinistros de uma apólice segue uma distribuição de Poisson com média λ = 0,25 sinistros por ano, \\(X\\sim \\text{Poisson}(\\lambda=0{,}25)\\).\nA partir desse modelo, é possível calcular:\n\na probabilidade de uma apólice não registrar sinistros: \\(P(X=0)\\);\na probabilidade de ocorrer pelo menos um sinistro: \\(P(X\\geq 1)\\);\na probabilidade de uma carteira com milhares de apólices registrar mais de determinado número de sinistros.\n\nEm todos esses casos, a distribuição de probabilidade é conhecida e o objetivo é prever o comportamento de perdas futuras."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-2",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-2",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\n\nExemplo: Predição de Internações\n\nUma equipe resolve prever o tempo de permanência hospitalar de pacientes internados por complicações do diabetes usando a distribuição Lognormal, \\(T \\sim \\text{Lognormal}(\\mu,\\sigma^2)\\).\nEsse modelo permite determinar:\n\na probabilidade de uma internação durar mais de 15 dias;\no tempo médio esperado de ocupação dos leitos;\na proporção de pacientes com internações prolongadas;\na capacidade hospitalar necessária para atender à demanda prevista.\n\nComo a distribuição de probabilidade é completamente conhecida, é possível prever a utilização futura dos recursos hospitalares."
+    "text": "O Paradigma da Probabilidade\nExemplo: Predição de Internações\n\nUma equipe resolve prever o tempo de permanência hospitalar de pacientes internados por complicações do diabetes usando a distribuição Lognormal, \\(T \\sim \\text{Lognormal}(\\mu,\\sigma^2)\\).\nEsse modelo permite determinar:\n\na probabilidade de uma internação durar mais de 15 dias;\no tempo médio esperado de ocupação dos leitos;\na proporção de pacientes com internações prolongadas;\na capacidade hospitalar necessária para atender à demanda prevista.\n\nComo a distribuição de probabilidade é completamente conhecida, é possível prever a utilização futura dos recursos hospitalares."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-1",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-1",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Inferência Estatística",
-    "text": "O Paradigma da Inferência Estatística\n\nExemplo: Estimativa da Ocorrência de Sinistros\n\nUma seguradora deseja estimar a frequência anual de sinistros de uma nova carteira de seguros, assumindo a distribuição de Poisson, \\(X\\sim \\text{Poisson}(\\lambda)\\), mas o parâmetro \\(\\lambda\\) é desconhecido.\nObserva-se milhares de apólices e obtém-se uma amostra histórica de sinistros.\nA partir dessa amostra, é possível:\n\nestimar a frequência média de sinistros (estimativa de \\(\\lambda\\));\nconstruir intervalos de confiança para a estimativa de \\(\\lambda\\);\ntestar hipóteses sobre mudanças na frequência;\ndefinir um prêmio compatível com o risco observado.\n\nAgora os dados vêm primeiro e o modelo é aprendido posteriormente."
+    "text": "O Paradigma da Inferência Estatística\nExemplo: Estimativa da Ocorrência de Sinistros\n\nUma seguradora deseja estimar a frequência anual de sinistros de uma nova carteira de seguros, assumindo a distribuição de Poisson, \\(X\\sim \\text{Poisson}(\\lambda)\\), mas o parâmetro \\(\\lambda\\) é desconhecido.\nObserva-se milhares de apólices e obtém-se uma amostra histórica de sinistros.\nA partir dessa amostra, é possível:\n\nestimar a frequência média de sinistros (estimativa de \\(\\lambda\\));\nconstruir intervalos de confiança para a estimativa de \\(\\lambda\\);\ntestar hipóteses sobre mudanças na frequência;\ndefinir um prêmio compatível com o risco observado.\n\nAgora os dados vêm primeiro e o modelo é aprendido posteriormente."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-2",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-2",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Inferência Estatística",
-    "text": "O Paradigma da Inferência Estatística\n\nExemplo: Predição de Internações\n\nUm hospital deseja conhecer o tempo médio de permanência de pacientes internados por diabetes. Assume-se \\(T\\sim \\text{Lognormal}(\\mu,\\sigma^2)\\), mas os parâmetros \\(\\mu\\) e \\(\\sigma^2\\) são desconhecidos.\nApós coletar uma amostra de pacientes internados, torna-se possível\n\nestimar o tempo médio de permanência \\(\\mu\\);\nestimar a variabilidade entre pacientes \\(\\sigma^2\\);\nconstruir intervalos de confiança para essas estimativas;\navaliar se houve mudança após uma intervenção clínica.\n\nPerceba que o modelo que busca replicar o comportamento da população é ajustado utilizando os dados observados."
+    "text": "O Paradigma da Inferência Estatística\nExemplo: Predição de Internações\n\nUm hospital deseja conhecer o tempo médio de permanência de pacientes internados por diabetes. Assume-se \\(T\\sim \\text{Lognormal}(\\mu,\\sigma^2)\\), mas os parâmetros \\(\\mu\\) e \\(\\sigma^2\\) são desconhecidos.\nApós coletar uma amostra de pacientes internados, torna-se possível\n\nestimar o tempo médio de permanência \\(\\mu\\);\nestimar a variabilidade entre pacientes \\(\\sigma^2\\);\nconstruir intervalos de confiança para essas estimativas;\navaliar se houve mudança após uma intervenção clínica.\n\nPerceba que o modelo que busca replicar o comportamento da população é ajustado utilizando os dados observados."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#paradigmas",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#paradigmas",
     "title": "O problema da inferência estatística",
     "section": "Paradigmas",
-    "text": "Paradigmas\n\nProbabilidade\n\n\n\n\n\nInferência Estatística"
+    "text": "Paradigmas\nProbabilidade\n\n\n\nInferência Estatística"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#os-elementos-da-inferência-estatística",
@@ -240,7 +233,7 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#estatísticas",
     "title": "O problema da inferência estatística",
     "section": "Estatísticas",
-    "text": "Estatísticas\n\nAs informações contidas na amostra são resumidas por funções matemáticas denominadas estatísticas.\nUma estatística é qualquer função da amostra que não depende de parâmetros desconhecidos, \\(T=T(X_1​, \\ldots,X_n​)\\).\nEntre as estatísticas mais utilizadas, temos:\n\n\n\n\n\n\nMédia amostral;\nVariância amostral;\nMediana;\n\n\n\nMínimo e máximo;\nProporções amostrais.\n\n\n\n\nEssas quantidades são a base para praticamente todos os procedimentos inferenciais desenvolvidos ao longo da disciplina."
+    "text": "Estatísticas\n\nAs informações contidas na amostra são resumidas por funções matemáticas denominadas estatísticas.\nUma estatística é qualquer função da amostra que não depende de parâmetros desconhecidos, \\(T=T(X_1​, \\ldots,X_n​)\\).\nEntre as estatísticas mais utilizadas, temos:\n\n\n\n\n\n\nMédia amostral;\nVariância amostral;\nMediana;\n\n\n\nMínimo e máximo;\nProporções amostrais.\n\n\n\nEssas quantidades são a base para praticamente todos os procedimentos inferenciais desenvolvidos ao longo da disciplina."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#estimadores-e-estimativas",
@@ -264,18 +257,11 @@
     "text": "Síntese\n\nO processo inferencial pode ser resumido pela sequência lógica:"
   },
   {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html",
-    "title": "O Método dos Momentos",
-    "section": "",
-    "text": "Considere duas situações:\n\nUm atuário precisa modelar o valor dos sinistros de uma seguradora e decide ajustar uma distribuição Gama ou Pareto.\nUm estatístico precisa modelar o número de pacientes que chegam ao pronto-socorro por hora por meio de uma distribuição Poisson.\n\nEm ambos os problemas, conhecemos o modelo probabilístico, mas desconhecemos seus parâmetros.\nComo podemos usar os dados observados para estimar esses parâmetros?\n\nPara isso podemos usar o Método dos Momentos."
-  },
-  {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#estimação-de-parâmetros",
     "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#estimação-de-parâmetros",
     "title": "O Método dos Momentos",
-    "section": "",
-    "text": "Considere duas situações:\n\nUm atuário precisa modelar o valor dos sinistros de uma seguradora e decide ajustar uma distribuição Gama ou Pareto.\nUm estatístico precisa modelar o número de pacientes que chegam ao pronto-socorro por hora por meio de uma distribuição Poisson.\n\nEm ambos os problemas, conhecemos o modelo probabilístico, mas desconhecemos seus parâmetros.\nComo podemos usar os dados observados para estimar esses parâmetros?\n\nPara isso podemos usar o Método dos Momentos."
+    "section": "Estimação de Parâmetros",
+    "text": "Estimação de Parâmetros\n\nConsidere duas situações:\n\nUm atuário precisa modelar o valor dos sinistros de uma seguradora e decide ajustar uma distribuição Gama ou Pareto.\nUm estatístico precisa modelar o número de pacientes que chegam ao pronto-socorro por hora por meio de uma distribuição Poisson.\n\nEm ambos os problemas, conhecemos o modelo probabilístico, mas desconhecemos seus parâmetros.\nComo podemos usar os dados observados para estimar esses parâmetros?\n\nPara isso podemos usar o Método dos Momentos."
   },
   {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#a-ideia-do-método-dos-momentos",
@@ -338,14 +324,14 @@
     "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#quando-o-1º-momento-falha",
     "title": "O Método dos Momentos",
     "section": "Quando o 1º Momento Falha",
-    "text": "Quando o 1º Momento Falha\n\nSe um momento falhar, podemos tentar usar outro.\n\n\nExemplo 2.4\nConsidere \\(X \\sim \\text{Uniforme}(-\\theta, \\theta)\\). Obtenha o estimador pelo método dos momentos.\n\nTemos apenas um parâmetro (\\(\\theta\\)). O primeiro momento é \\[E[X] = \\frac{-\\theta + \\theta}{2} = 0\\]\nIgualar \\(0 = \\overline{X}\\) não nos ajuda a encontrar \\(\\theta\\).\n\nSolução: Vamos usar o próximo momento, \\(E[X^2]\\)."
+    "text": "Quando o 1º Momento Falha\n\nSe um momento falhar, podemos tentar usar outro.\n\nExemplo 2.4\nConsidere \\(X \\sim \\text{Uniforme}(-\\theta, \\theta)\\). Obtenha o estimador pelo método dos momentos.\n\nTemos apenas um parâmetro (\\(\\theta\\)). O primeiro momento é \\[E[X] = \\frac{-\\theta + \\theta}{2} = 0\\]\nIgualar \\(0 = \\overline{X}\\) não nos ajuda a encontrar \\(\\theta\\).\n\nSolução: Vamos usar o próximo momento, \\(E[X^2]\\)."
   },
   {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.4",
     "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.4",
     "title": "O Método dos Momentos",
     "section": "Exemplo 11.4",
-    "text": "Exemplo 11.4\nO valor dos sinistros de uma carteira de seguros segue uma distribuição de Pareto com parâmetro de forma \\(\\alpha &gt; 1\\) e parâmetro de escala (sinistro mínimo) conhecido \\(x_m = 1000\\). A densidade é \\(f(x) = \\frac{\\alpha x_m^\\alpha}{x^{\\alpha+1}}\\) para \\(x \\ge x_m\\). Estime \\(\\alpha\\) pelo método dos momentos.\n\n\n\n\n\n\nDicaDica\n\n\n\nSe \\(X\\sim\\) Pareto(\\(\\alpha, x_m\\)), então \\(E(X) = \\alpha x_m/(\\alpha - 1)\\)."
+    "text": "Exemplo 11.4\nO valor dos sinistros de uma carteira de seguros segue uma distribuição de Pareto com parâmetro de forma \\(\\alpha &gt; 1\\) e parâmetro de escala (sinistro mínimo) conhecido \\(x_m = 1000\\). A densidade é \\(f(x) = \\frac{\\alpha x_m^\\alpha}{x^{\\alpha+1}}\\) para \\(x \\ge x_m\\). Estime \\(\\alpha\\) pelo método dos momentos.\n\n\n\n\n\n\nDica\n\n\nSe \\(X\\sim\\) Pareto(\\(\\alpha, x_m\\)), então \\(E(X) = \\alpha x_m/(\\alpha - 1)\\)."
   },
   {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes",
@@ -360,5 +346,12 @@
     "title": "O Método dos Momentos",
     "section": "Propriedades Importantes",
     "text": "Propriedades Importantes\n\nSuficiência: O Método dos Momentos nem sempre gera estimadores suficientes.\n\nIsto é: O estimador pode “desperdiçar” informação. Nesses casos, ele não resume tudo o que a amostra tem a dizer sobre o parâmetro; houve perda de informação no processo.\n\nCusto Computacional: Por produzir equações geralmente simples, o custo computacional do método é baixo.\n\nÉ um ótimo valor inicial para algoritmos numéricos.\n\nExistencia: Se os momentos não existirem, não é possível obter um estimador por esse método."
+  },
+  {
+    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html",
+    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html",
+    "title": "O problema da inferência estatística",
+    "section": "",
+    "text": "Site: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1262"
   }
 ]

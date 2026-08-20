@@ -18,19 +18,28 @@ Na primeira aula, traçamos nosso "plano de voo" para o semestre: conversamos so
 Slides:
 
 
+```{r}
+#| echo: false
+#| eval: true
+
+# Pega o nome do arquivos html e pdf automaticamente
+html_slide <- list.files("slides", pattern = "\\.html$", full.names = FALSE)
+pdf_slide  <- list.files("slides", pattern = "\\.pdf$", full.names = FALSE)
+```
+
 :::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4}
 
-<a href="slides/01-O_problema_da_inferencia_estatistica.html"
+<a href="slides/`r html_slide`"
    target="_blank"
    class="thumb html-slide">
 <img
-  src="slides/01-O_problema_da_inferencia_estatistica.png"
-  alt="Versão PDF"
+  src="slides/thumb.png"
+  alt="Slides da aula em HTML"
   class="img-fluid">
 </a>
-<p class="text-center">Versão HTML</p>
+<p class="text-center">Slides da aula em HTML</p>
 
 :::
 
@@ -40,11 +49,11 @@ Slides:
    target="_blank"
    class="thumb pdf-slide">
 <img
-  src="slides/01-O_problema_da_inferencia_estatistica.png"
-  alt="Versão PDF"
+  src="slides/thumb.png"
+  alt="Slides da aula em PDF"
   class="img-fluid">
 </a>
-<p class="text-center">Versão PDF</p>
+<p class="text-center">Slides da aula em PDF</p>
 
 :::
 
@@ -63,7 +72,7 @@ Lista de Exercícios:
    target="_blank"
    class="thumb pdf-lista">
 <img
-  src="lista_de_exercicios/Inferencia1_Lista1.png"
+  src="lista_de_exercicios/thumb.png"
   class="img-fluid">
 </a>
 

@@ -1,0 +1,3 @@
+project:
+  post-render:
+    - "bash gerar_slides_em_pdf.sh"
