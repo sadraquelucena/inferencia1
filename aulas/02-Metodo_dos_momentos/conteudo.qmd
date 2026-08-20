@@ -61,7 +61,7 @@ Lista de Exercícios:
    target="_blank"
    class="thumb pdf-lista">
 <img
-  src="lista_de_exercicios/lista1.png"
+  src="lista_de_exercicios/Inferencia1_Lista2.png"
   class="img-fluid">
 </a>
 

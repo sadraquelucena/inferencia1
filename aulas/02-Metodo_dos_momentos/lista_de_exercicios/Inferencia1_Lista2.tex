@@ -1,0 +1,168 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts}
+\usepackage{enumitem}
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{Universidade Federal de Sergipe}\\
+	       \textsc{Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: Inferência I\\
+	       Professor: Sadraque E.F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 2} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=2.\arabic*)]
+		
+		% Questão 1: Rayleigh
+		\item Sejam $X_1,\ldots,X_n$ uma amostra aleatória da distribuição Rayleigh com parâmetro de escala $\sigma > 0$. A função de densidade de probabilidade é dada por:
+		$$ f(x; \sigma) = \frac{x}{\sigma^2} e^{-\frac{x^2}{2\sigma^2}}, \quad x > 0. $$
+		Sabendo que o valor esperado dessa distribuição é $E(X) = \sigma \sqrt{\frac{\pi}{2}}$, obtenha o estimador de $\sigma$ pelo Método dos Momentos.
+		
+		% Questão 2: Uniforme Numérica
+		\item Uma amostra aleatória da distribuição Uniforme$(0,\theta)$ foi obtida, sendo observados os valores: 
+		$$3,05 \quad 2,03 \quad 3,63 \quad 0,18 \quad 4,57 \quad 0,66 \quad 4,51 \quad 0,83 \quad 1,70 \quad 4,80$$
+		Estime o valor de $\theta$ pelo método dos momentos. Com base nesse resultado, a estimativa faz sentido considerando que o máximo valor observado foi 4,80?
+		
+		% Questão 3: Poisson (Interpretação)
+		\item Em sete segundas-feiras consecutivas foram registrados $0, 1, 3, 4, 5, 2$ e $1$ acidentes em um cruzamento de duas vias. Assumindo que o número de acidentes segue uma distribuição de Poisson:
+		\begin{enumerate}
+			\item Estime o parâmetro $\lambda$ pelo método dos momentos.
+			\item Qual a probabilidade estimada de ocorrerem entre 2 e 3 acidentes (inclusive) neste cruzamento na próxima segunda-feira?
+		\end{enumerate}
+		
+		% Questão 4: Geométrica
+		\item Obtenha o estimador pelo método dos momentos para o parâmetro $p$ da distribuição Geométrica, cuja função de probabilidade é dada por $P(X=x) = (1-p)^{x-1}p$, para $x=1, 2, \ldots$.
+		
+		% Questão 5: Pareto (Caso simples)
+		\item Sejam $X_1,\ldots,X_n$ uma amostra aleatória a partir da f.d.p. $f(x)=\theta x^{-2}$, para $0<\theta\leq x<\infty$. Encontre o estimador do método dos momentos para $\theta$.
+		
+		% Questão 6: Uniforme Simétrica (O caso da média zero)
+		\item Seja $X \sim \text{Uniforme}(-\theta, \theta)$, com $\theta > 0$. 
+		\begin{enumerate}
+			\item Mostre que o primeiro momento populacional $E(X)$ não fornece informações sobre $\theta$.
+			\item Obtenha o estimador de momentos para $\theta$ utilizando o segundo momento $E(X^2)$.
+		\end{enumerate}
+		
+		% Questão 7: Gama (Sistema de Equações)
+		\item Considere uma amostra aleatória de uma distribuição Gama com parâmetros $\alpha$ e $\beta$, onde $E(X) = \alpha/\beta$ e $Var(X) = \alpha/\beta^2$. Demonstre que os estimadores de momentos são dados por:
+		$$ \widehat{\alpha}_{MM} = \frac{\overline{X}^2}{S^2} \quad \text{e} \quad \widehat{\beta}_{MM} = \frac{\overline{X}}{S^2} $$
+		onde $S^2 = \frac{1}{n}\sum (X_i - \overline{X})^2$ é a variância amostral (denominador $n$).
+		
+		% Questão 8: Distribuição de Potência
+		\item Seja $X$ uma variável aleatória com função de densidade dada por $f(x) = \theta x^{\theta-1}$, para $0 < x < 1$ e $\theta > 0$. Obtenha o estimador de $\theta$ pelo método dos momentos.
+		
+		% Questão 9: Normal Inversa (Aplicação Atuarial)
+		\item A distribuição Normal Inversa é frequentemente utilizada em Ciências Atuariais para modelar o tempo até a ocorrência de um evento ou modeloar os valores de sinistros. Sejam $X_1,\ldots,X_n$ uma amostra aleatória com f.d.p. dada por:
+		$$ f(x; \mu, \lambda) = \sqrt{\frac{\lambda}{2\pi x^3}} \exp\left( -\frac{\lambda(x-\mu)^2}{2\mu^2 x} \right), \quad x > 0. $$
+		Sabendo que os momentos populacionais são dados por
+		$$ E(X) = \mu \quad \text{e} \quad Var(X) = \frac{\mu^3}{\lambda}, $$
+		obtenha os estimadores de $\mu$ e $\lambda$ pelo Método dos Momentos.
+		
+		% Questão 10: Exponencial Deslocada (2 parâmetros)
+		\item Considere a distribuição Exponencial Deslocada com f.d.p. dada por:
+		$$ f(x) = \lambda e^{-\lambda(x - \mu)}, \quad x \geq \mu, \quad \lambda > 0. $$
+		Sabendo que $E(X) = \mu + \frac{1}{\lambda}$ e $Var(X) = \frac{1}{\lambda^2}$, obtenha os estimadores de momentos para $\mu$ e $\lambda$.
+		
+		% Questão 11: Definição Básica
+		\item Explique, com suas palavras, a lógica fundamental do Princípio da Analogia (Substituição) utilizado no Método dos Momentos. Por que a Lei dos Grandes Números justifica esse procedimento?
+		
+		% Questão 12: Comparação MM vs MV
+		\item Frequentemente, em provas do IBA e concursos públicos, compara-se o Método dos Momentos (MM) com o Método da Máxima Verossimilhança (MV). Julgue as afirmações abaixo como Verdadeiras ou Falsas e justifique:
+		\begin{enumerate}
+			\item Os estimadores de momentos são sempre não-viesados.
+			\item Sob condições de regularidade, os estimadores de momentos são consistentes.
+			\item Em geral, os estimadores de momentos são mais eficientes (menor variância) que os estimadores de máxima verossimilhança.
+			\item Os estimadores obtidos pelo Método dos Momentos baseiam-se necessariamente em estatísticas suficientes, garantindo que nenhuma informação da amostra seja desperdiçada.
+			\item Devido à simplicidade das equações resultantes, os estimadores de momentos são frequentemente utilizados como ``chute inicial'' para algoritmos numéricos de Máxima Verossimilhança.
+			\item O Método dos Momentos garante matematicamente que a estimativa obtida estará sempre dentro do espaço paramétrico válido (ex: garante que uma probabilidade estimada estará sempre entre 0 e 1).
+		\end{enumerate}
+		
+		% Questão 13: Existência
+		\item Considere a distribuição de Cauchy, cuja f.d.p. é $f(x) = \frac{1}{\pi(1+x^2)}$, para $x \in \mathbb{R}$. É possível estimar o parâmetro de localização desta distribuição utilizando o Método dos Momentos tradicional? Justifique sua resposta baseando-se na definição de esperança matemática.
+		
+		% Questão 14: Falha do Método (Binomial Numérica)
+		\item Considere uma amostra simples de tamanho $n=4$ contendo os valores $x = \{0, 0, 10, 10\}$. Um analista propõe ajustar uma distribuição Binomial$(m, p)$ para esses dados, onde ambos os parâmetros são desconhecidos.
+		\begin{enumerate}
+			\item Calcule a média amostral ($\overline{X}$) e a variância amostral $\widehat{\sigma}^2=\sum_{i=1}^n(X_i-\overline{X})/n$.
+			\item Tente estimar $m$ e $p$ pelo Método dos Momentos.
+			\item O resultado faz sentido estatístico? O que isso prova sobre a confiabilidade do Método dos Momentos em relação ao espaço paramétrico?
+		\end{enumerate}
+	\end{enumerate}
+	
+	\newpage
+	
+	\begin{enumerate}[label=2.\arabic*)]
+		% Questão 1
+		\item $\widehat{\sigma}_{\!M\!M} = \frac{\overline{X}}{\sqrt{\frac{\pi}{2}}}$
+		
+		% Questão 2
+		\item $\widehat{\theta}_{\!M\!M} = 5,192$
+		
+		% Questão 3
+		\item \begin{enumerate}
+			\item $\widehat{\lambda}_{\!M\!M} = 2\!,29$
+			\item 0,4682
+		\end{enumerate}
+		
+		% Questão 4
+		\item $\widehat{p}_{\!M\!M}=1/\overline{X}$
+		
+		% Questão 5
+		\item Não há.
+		
+		% Questão 6
+		\item \begin{enumerate}[start=2]
+			\item $\widehat{\theta}_{\!M\!M} = \sqrt{\frac{3\sum_{i=1}^n X_i^2}{n}}$
+		\end{enumerate}
+	\end{enumerate}
+	
+	\begin{enumerate}[label=2.\arabic*), start=8]
+		% Questão 8
+		\item $\widehat{\theta}_{\!M\!M} = \frac{\overline{X}}{1-\overline{X}}$
+		
+		% Questão 9
+		\item $\widehat{\mu}_{\!M\!M} = \overline{X}$ e $\widehat{\lambda}_{\!M\!M} = \frac{n\overline{X}^3}{\sum_{i=1}^n (X_i - \overline{X})^2}$
+		
+		% Questão 10
+		\item $\widehat{\mu}_{\!M\!M} = \overline{X} - \sqrt{\frac{\sum_{i=1}^n (X_i-\overline{X})^2}{n}}$ e $\widehat{\lambda}_{\!M\!M} = \sqrt{\frac{n}{\sum_{i=1}^n (X_i-\overline{X})^2}}$
+	\end{enumerate}
+	
+	\begin{enumerate}[label=2.\arabic*), start=12]
+		% Questão 12
+		\item \begin{enumerate}
+			\item Falso
+			\item Verdadeiro
+			\item Falso
+			\item Falso
+			\item Verdadeiro
+			\item Falso
+		\end{enumerate}
+		
+		% Questão 13
+		\item Não
+		
+		% Questão 14
+		\item \begin{enumerate}
+			\item $\overline{x} = 5$ e $\widehat{\sigma}^2 = 25$
+			\item $\widehat{p}_{\!M\!M} = -4$ e $\widehat{m}_{\!M\!M} = -5/4$
+			\item Não faz sentido. O Método dos Momentos não garante que as estimativas caiam dentro do espaço paramétrico válido.
+		\end{enumerate}
+	\end{enumerate}
+	
+\end{document}

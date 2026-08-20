@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.15)  27 JUL 2026 14:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.15)  20 AUG 2026 10:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -381,32 +381,17 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 3769) in paragraph at lines 153--154
-[]|\OT1/ppl/m/n/10.95 Apresenta[][]ao da dis-ci-plina. Re-vis[]ao das prin-ci-p
-ais
+Underfull \hbox (badness 6944) in paragraph at lines 171--172
+[]|\OT1/ppl/m/n/10.95 Estimador n[]ao vi-e-sado de vari[]ancia uni-for-me-mente
+
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 171--172
-[]|\OT1/ppl/m/n/10.95 O m[]etodo da m[]axima verossimilhan[]a: caso mul-ti-pa-
- []
-
-
-Underfull \hbox (badness 5091) in paragraph at lines 177--178
-[]|[]\OT1/ppl/m/n/10.95 Confraterniza[][]ao Uni-ver-sal (fe-ri-ado na-ci-o-nal)
- e Ani-
- []
-
-
-Overfull \hbox (28.00401pt too wide) in paragraph at lines 148--192
+Overfull \hbox (28.00401pt too wide) in paragraph at lines 148--188
 [][] 
  []
 
-[4]
-Overfull \vbox (41.87231pt too high) has occurred while \output is active []
-
-
-[5] (./plano_de_ensino_Inferencia1.aux)
+[4] [5] (./plano_de_ensino_Inferencia1.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -415,7 +400,7 @@ L3 programming layer <2026-01-19>
 Here is how much of TeX's memory you used:
  5816 strings out of 467533
  99901 string characters out of 5422138
- 568683 words of memory out of 5000000
+ 563683 words of memory out of 5000000
  34659 multiletter control sequences out of 15000+600000
  636540 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -423,7 +408,7 @@ Here is how much of TeX's memory you used:
 </usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on plano_de_ensino_Inferencia1.pdf (5 pages, 142927 bytes).
+Output written on plano_de_ensino_Inferencia1.pdf (5 pages, 142096 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream

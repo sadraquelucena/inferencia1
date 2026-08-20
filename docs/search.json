@@ -1,15 +1,10 @@
 [
   {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/conteudo.html",
-    "href": "aulas/01-Apresentacao_da_disciplina/conteudo.html",
-    "title": "1. Apresentação da Disciplina",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bem-vindo(a)!",
     "section": "",
-    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\n\n  \n\nVersão HTML\n\n\n\n  \n\nVersão PDF\n\n\n\n\nLista de Exercícios:",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Fundamentos da Inferência Estatística",
-      "1. Apresentação da Disciplina"
-    ]
+    "text": "Este espaço reúne todo o material da disciplina ESTAT0078 — Inferência I, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe e ministrada pelo Prof. Dr. Sadraque E. F. Lucena.\nA Inferência Estatística busca responder a uma pergunta fundamental da ciência:\n\nComo aprender sobre uma população utilizando apenas uma amostra?\n\nAo longo do semestre, construiremos uma resposta para essa pergunta. Estudaremos como construir estimadores para parâmetros desconhecidos, como avaliar sua qualidade, compreender os limites teóricos da estimação e quantificar a incerteza das conclusões por meio de intervalos de confiança. Mais do que aprender técnicas, o objetivo da disciplina é desenvolver o raciocínio inferencial que sustenta pesquisas científicas, experimentos, estudos clínicos, aprendizado de máquina e a tomada de decisões baseada em dados.\nNeste ambiente você encontrará o cronograma da disciplina, notas de aula, listas de exercícios, materiais complementares, avisos e demais recursos utilizados ao longo do semestre."
   },
   {
     "objectID": "info.html",
@@ -42,326 +37,42 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bem-vindo(a)!",
+    "objectID": "aulas/02-Metodo_dos_momentos/conteudo.html",
+    "href": "aulas/02-Metodo_dos_momentos/conteudo.html",
+    "title": "2. O Método dos Momentos",
     "section": "",
-    "text": "Este espaço reúne todo o material da disciplina ESTAT0078 — Inferência I, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe e ministrada pelo Prof. Dr. Sadraque E. F. Lucena.\nA Inferência Estatística busca responder a uma pergunta fundamental da ciência:\n\nComo aprender sobre uma população utilizando apenas uma amostra?\n\nAo longo do semestre, construiremos uma resposta para essa pergunta. Estudaremos como construir estimadores para parâmetros desconhecidos, como avaliar sua qualidade, compreender os limites teóricos da estimação e quantificar a incerteza das conclusões por meio de intervalos de confiança. Mais do que aprender técnicas, o objetivo da disciplina é desenvolver o raciocínio inferencial que sustenta pesquisas científicas, experimentos, estudos clínicos, aprendizado de máquina e a tomada de decisões baseada em dados.\nNeste ambiente você encontrará o cronograma da disciplina, notas de aula, listas de exercícios, materiais complementares, avisos e demais recursos utilizados ao longo do semestre."
+    "text": "Nesta aula, apresentamos o primeiro método para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite encontrar estimadores para os parâmetros desconhecidos.\nSlides:\n\n\n  \n\nVersão HTML\n\n\n\n  \n\nVersão PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Fundamentos da Inferência Estatística",
+      "2. O Método dos Momentos"
+    ]
   },
   {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
+    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
+    "href": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
+    "title": "1. O Problema da Inferência Estatística",
     "section": "",
-    "text": "Site: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1wpp"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#canais-de-comunicação-e-materiais-da-disciplina",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#canais-de-comunicação-e-materiais-da-disciplina",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Canais de Comunicação e Materiais da Disciplina",
-    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1wpp"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#informações-da-disciplina",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#informações-da-disciplina",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Informações da disciplina",
-    "text": "Informações da disciplina\n\nComponente curricular: ESTAT0078 – Inferência I\nPeríodo: 4º semestre\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças - 19h00 às 20h30\nQuintas - 20h45 às 22h15\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#objetivo-da-disciplina",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#objetivo-da-disciplina",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Objetivo da Disciplina",
-    "text": "Objetivo da Disciplina\n\nIntroduzir fundamentos da inferência estatística;\nDesenvolver habilidades de análise e interpretação de estimadores;\nCompreender a aplicabilidade da inferência na análise de dados."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#ementa",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#ementa",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Ementa",
-    "text": "Ementa\n\nAmostras e distribuições amostrais.\nEstimação pontual e por intervalo.\nEstudo de estimadores mais comumente usados: método dos momentos, máxima verossimilhança, estimador de Bayes.\nIntervalos de confiança; métodos para construção de intervalos de confiança."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#conteúdo-programático",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#conteúdo-programático",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 1. Princípios da Estimação Pontual  1.1. Conceitos Iniciais: Parâmetros, Estimador e Estatística  1.2. Distribuição amostral de algumas estatísticas  1.3. Propriedades dos estimadores:     1.3.1. Estimador não viesado     1.3.2. Viés e Erro quadrático Médio     1.3.3. Eficiência de um Estimador  1.4. Estatística Suficiente"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#conteúdo-programático-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#conteúdo-programático-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 2. Métodos de Estimação  2.1. Família Exponencial  2.2. O Método da Máxima Verossimilhança  2.3. Propriedades dos Estimadores de Máxima Verossimilhança  2.4. Família Exponencial e o Método da Máxima Verossimilhança  2.5. O Método dos Momentos  2.6. Introdução ao estimador de Bayes"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#conteúdo-programático-2",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#conteúdo-programático-2",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 3. Estimação por intervalo  3.1. Resultados de amostras de população normal  3.2. Método da Quantidade Pivotal  3.3. Intervalos de confiança para populações normais para:     3.3.1. Uma amostra     3.3.2. Duas amostras  3.4. Intervalos de confiança aproximados"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#avaliação",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#avaliação",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Avaliação",
-    "text": "Avaliação\n\nSerão realizadas 3 avaliações.\nA aprovação requer uma média maior ou igual a 5,0.\nUma avaliação substitutiva será realizada ao final do período. Esta prova abrange todo o conteúdo, substitui apenas uma nota e é permitida em dois casos:\n\nPara repor falta em alguma das avaliações.\nPara substituir a menor nota (apenas para quem tiver média inferior a 5,0)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#datas-importantes",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#datas-importantes",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Datas Importantes",
-    "text": "Datas Importantes\n\n\n\n\n\n\n\nAvaliações (previsão):\n\n\n\n13/Nov/25 (quinta): Avaliação 1\n18/Dez/25 (quinta): Avaliação 2\n10/Fev/26 (terça): Avaliação 3\n12/Fev/26 (quinta): Avaliação Substitutiva\n\n\n\n\n\n\n\n\n\n\n\n\nNão haverá aula:\n\n\n\n20/Nov/25: Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)\n25 e 27/Nov/25: XI SEMAC\n22 a 31/12/2025: Recesso de final de ano\n01/01/2026: Confraternização Universal (feriado nacional) e Aniversário de São Cristóvão (feriado municipal)\n02 a 10/01/2026: Férias coletivas para docentes"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#bibliografia-recomendada",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#bibliografia-recomendada",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada\nBásica"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#bibliografia-recomendada-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#bibliografia-recomendada-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada\nComplementar"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nAs distribuições de probabilidade possuem parâmetros.\nExemplos:\n\nNormal(\\(\\mu, \\sigma^2\\))\nPoisson(\\(\\lambda\\))\nExponencial(\\(\\alpha\\))\n\nEssas distribuições são usadas para representar dados (e assim entender sua variabilidade e quantificar probabilidades)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nNormal(\\(\\mu, \\sigma^2\\))"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-2",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-2",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nPoisson(\\(\\lambda\\))"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-3",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-3",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nExponencial(\\(\\alpha\\))"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-4",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-4",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nO objetivo da inferência estatística é estimar os parâmetros das distribuições com base nos dados observados.\nIsso permite fazer afirmações sobre a população e quantificar a probabilidade de estarmos certos (ou errados)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-5",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#inferência-transformando-dados-em-conhecimento-5",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nFonte: Adaptado de https://stats.libretexts.org/Courses/Lumen_Learning/Concepts_in_Statistics_(Lumen)/06%3A_Probability_and_Probability_Distributions/6.01%3A_Why_It_Matters-_Probability_and_Probability_Distributions"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\n\nDescreve o número de sucessos em uma sequência fixa de tentativas independentes.\nNotação: \\(X\\sim\\) Binomial(\\(n,p\\))\nParâmetros da distribuição:\n\n\\(n\\): número de tentativas\n\\(p\\): probabilidade de sucesso em cada tentativa, \\(0&lt;p&lt;1\\)\n\nFunção de probabilidade: \\[\nP(X=x) = \\binom{n}{p}p^x (1-p)^{n-x}, \\quad x=0,1,2,\\ldots,n\n\\]"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\n\nPropriedades importantes:\n\nMédia: \\(E(X) = n p\\)\nVariância: \\(Var(X)=np(1-p)\\)\n\nModela pesquisas eleitorais (favorável ou não a um candidato), número de sinistros em uma carteira, etc."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-no-r",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-no-r",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Binomial no R ",
-    "text": "Distribuição Binomial no R \nConsidere \\(X\\sim\\) Binomial(\\(n,p\\)). Para calcular:\n\n\\(P(X=x)\\) use o comando dbinom(x, n, p).\n\\(P(X\\leq x)\\) use o comando pbinom(x, n, p).\nPara simular \\(r\\) ocorrências de uma binomial use rbinom(r, n, p)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-2",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-2",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\nExemplo 1.1\nSeja \\(X\\sim\\) Binomial(\\(n=10; p=0,\\!3\\)).\n\n\\(P(X=4) \\color{blue}{= \\binom{n}{p}p^x (1-p)^{n-x} = \\binom{10}{4}0,\\!3^4 (1-0,\\!3)^{10-4}}\\) \\(\\qquad\\qquad\\!\\color{blue}{= 0,\\!2001}\\)\n\nCálculo no R:\n\ndbinom(4, 10, 0.3)\n\n[1] 0.2001209\n\n\n\n\n\\(E(X)\\color{blue}{= 10\\cdot 0,\\!3=3}\\)\n\\(Var(X)\\color{blue}{= 10\\cdot 0,\\!3(1-0,\\!3)= 2,\\!1}\\)"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-3",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-binomial-3",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\nGráfico de \\(X\\sim\\) Binomial(\\(n=10; p=0,\\!3\\)):\n\nn &lt;- 10; p &lt;- 0.3\nprobabilidades &lt;- dbinom(0:n, n, p)\nbarplot(probabilidades, names.arg = 0:n,\n        xlab = \"Número de Sucessos\", ylab = \"Probabilidade\",\n        col = \"blue\", border = \"blue\", ylim = c(0,.25))"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\n\nExpressa a probabilidade de um número fixo de eventos ocorrer em um intervalo de tempo ou espaço, com uma taxa média conhecida e de forma independente.\nNotação: \\(X\\sim\\) Poisson(\\(\\lambda\\))\nParâmetro da distribuição:\n\n\\(\\lambda\\): taxa média de eventos por unidade de tempo ou espaço\n\nFunção de probabilidade: \\[\nP(X=x) = \\frac{e^{-\\lambda}\\lambda^x}{x!}, \\quad x=0,1,2,\\ldots\n\\]"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\n\nPropriedade importante:\n\n\\(E(X) = Var(X) = \\lambda\\) (média e variância iguais)"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-no-r",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-no-r",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição de Poisson no R ",
-    "text": "Distribuição de Poisson no R \nConsidere \\(X\\sim\\) Poisson(\\(\\lambda\\)). Para calcular:\n\n\\(P(X=x)\\) use o comando dpois(x, lambda).\n\\(P(X\\leq x)\\) use o comando ppois(x, lambda).\nPara simular \\(r\\) ocorrências de uma Poisson use rpois(r, lambda)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-2",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-2",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\nExemplo 1.2\nSeja \\(X\\sim\\) Poisson(\\(\\lambda=6\\)).\n\n\\(P(X=4) \\color{blue}{= \\frac{e^{-\\lambda}\\lambda^x}{x!} = \\frac{e^{-6} 6^4}{4!} = 0,\\!1339}\\)\n\nCálculo no R:\n\ndpois(4, 6)\n\n[1] 0.1338526"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-3",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-de-poisson-3",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\nGráfico da distibuição de \\(X\\sim\\) Poisson(\\(\\lambda=6\\)):\n\nn &lt;- 20; lambda &lt;- 6\nprobabilidades &lt;- dpois(0:n, lambda)\nbarplot(probabilidades, names.arg = 0:n,\n        xlab = \"Número de Sucessos\", ylab = \"Probabilidade\",\n        col = \"blue\", border = \"blue\", ylim = c(0,.25))"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\n\nDescreve uma situação onde todos os resultados possíveis de uma variável aleatória têm a mesma probabilidade de ocorrer.\nNotação: \\(X\\sim\\) Uniforme(\\(a, b\\))\nParâmetros da distribuição:\n\n\\(a\\): limite inferior (mínimo)\n\\(b\\): limite superior (máximo)\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\frac{1}{b-a}, \\quad a\\leq x\\leq b\n\\]"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\n\nPropriedades importantes:\n\nMédia: \\(E(X)=\\frac{a+b}{2}\\)\nVariância: \\(Var(X)=\\frac{(b-a)^2}{12}\\)\nA distribuição é simétrica em torno da média.\nA variável aleatória pode assumir qualquer valor entre \\(a\\) e \\(b\\)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-no-r",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-no-r",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Uniforme no R ",
-    "text": "Distribuição Uniforme no R \nConsidere \\(X\\sim\\) Uniforme(\\(a, b\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando punif(x, min=a, max=b).\nPara simular \\(r\\) ocorrências de uma uniforme use runif(r, min=a, max=b)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-2",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-2",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\nExemplo 1.3\nSeja \\(X\\sim\\) Uniforme(\\(a=1, b=7\\)).\n\n\\(P(X\\leq 6) \\color{blue}{= \\int_a^x\\frac{1}{b-a} dx = \\int_1^6 \\frac{1}{7-1} dx = \\int_1^6 \\frac{1}{6} dx}\\) \\(\\qquad\\qquad\\!\\color{blue}{= \\left[ \\frac{x}{6} \\right]_1^6 = 1 - \\frac{1}{6} =0,\\!8333}\\)\n\nCálculo no R:\n\npunif(6, min=1, max=7)\n\n[1] 0.8333333"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-3",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-uniforme-3",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\nGráfico da distibuição de \\(X\\sim\\) Uniforme(\\(a=1, b=7\\)):\n\na &lt;- 1; b &lt;- 7\ncurve(dunif(x, min=a, max=b), from = -10, to = 10,\n      main = \"Uniforme(1, 7)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\n\nDistribuição contínua, simétrica, e em forma de sino.\nRepresenta muitas variáveis naturais e mensuráveis, como altura, peso, e notas de testes.\nNotação: \\(X\\sim\\) Normal(\\(\\mu, \\sigma^2\\))\nParâmetros da distribuição:\n\n\\(\\mu\\): média\n\\(\\sigma^2\\): variância\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}, \\quad -\\infty&lt;x&lt;\\infty, -\\infty&lt;\\mu&lt;\\infty, \\sigma^2&gt;0\n\\]"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\n\nPropriedades importantes:\n\nÉ perfeitamente simétrica em torno da média.\nA maior parte dos dados está concentrada ao redor da média, com a probabilidade de eventos extremos diminuindo conforme a distância da média.\n68% dos dados estão dentro de \\(\\mu \\pm 1\\sigma^2\\).\n95% dos dados estão dentro de \\(\\mu \\pm 2\\sigma^2\\).\n99,7% dos dados estão dentro de \\(\\mu \\pm 3\\sigma^2\\)."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-no-r",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-no-r",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Normal no R ",
-    "text": "Distribuição Normal no R \nConsidere \\(X\\sim\\) Normal(\\(\\mu, \\sigma^2\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando pnorm(x, mean=\\(\\color{slateblue}{\\mu}\\), sd=\\(\\color{slateblue}{\\sigma}\\)).\nPara simular \\(r\\) ocorrências de uma normal use rnorm(r, mean=\\(\\color{slateblue}{\\mu}\\), sd=\\(\\color{slateblue}{\\sigma}\\))."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-2",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-2",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\nExemplo 1.4\nSeja \\(X\\sim\\) Normal(\\(\\mu=0, \\sigma^2=4\\)).\n\n\\(P(X\\leq 1) \\color{blue}{= \\int_{-\\infty}^1 \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} dx}\\)\n\nCálculo no R:\n\npnorm(1, mean=0, sd=sqrt(4))\n\n[1] 0.6914625"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-3",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-normal-3",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\nGráfico da distibuição de \\(X\\sim\\) Normal(\\(\\mu=0, \\sigma^2=4\\)):\n\nmu &lt;- 0; sigma &lt;- sqrt(4)\ncurve(dnorm(x, mean=mu, sd=sigma), from = -8, to = 8,\n      main = \"Normal(0, 4)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\n\nDistribuição contínua que é frequentemente usada para modelar o tempo de vida de equipamentos.\nNotação: \\(X\\sim\\) Exponencial(\\(\\alpha\\))\nParâmetro da distribuição:\n\n\\(\\alpha\\): taxa média de ocorrências de um evento por unidade de tempo.\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\alpha e^{-\\alpha x}, \\quad x\\geq 0, \\alpha&gt;0\n\\]"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-1",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-1",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\n\nPropriedades importantes:\n\nMédia: \\(E(X)=\\frac{1}{\\alpha}\\)\nVariância: \\(Var(X)=\\frac{1}{\\alpha^2}\\)\nA distribuição exponencial tem a propriedade de falta de memória, ou seja, a probabilidade de um evento futuro não depende do tempo já decorrido.\nO tempo entre eventos em um processo de Poisson é exponencialmente distribuído."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-no-r",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-no-r",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Exponencial no R ",
-    "text": "Distribuição Exponencial no R \nConsidere \\(X\\sim\\) Exponencial(\\(\\alpha\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando pexp(x, rate=\\(\\color{slateblue}{\\alpha}\\)).\nPara simular \\(r\\) ocorrências de uma Exponencial use rexp(r, rate=\\(\\color{slateblue}{\\alpha}\\))."
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-2",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-2",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\nExemplo 1.4\nSeja \\(X\\sim\\) Exponencial(\\(\\alpha=2\\)).\n\n\\(P(X\\leq 1) \\color{blue}{= \\int_0^x \\alpha e^{-\\alpha x} dx = \\int_0^1 2 e^{-2 x} dx = \\left. - e^{-2x}\\right|_0^1}\\) \\(\\qquad\\qquad\\!\\color{blue}{= 1-e^{-2} = 0,\\!8647}\\)\n\nCálculo no R:\n\npexp(1, rate=2)\n\n[1] 0.8646647"
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-3",
-    "href": "aulas/01-Apresentacao_da_disciplina/slides/01-Apresentacao_da_disciplina.html#distribuição-exponencial-3",
-    "title": "Apresentação da Disciplina e Revisão de Algumas Distribuições de Probabilidade",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\nGráfico da distibuição de \\(X\\sim\\) Exponencial(\\(\\alpha=2\\)):\n\nalpha &lt;- 2\ncurve(dexp(x, rate=alpha), from = 0, to = 5,\n      main = \"Exponencial(2)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
+    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\n\n  \n\nVersão HTML\n\n\n\n  \n\nVersão PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Fundamentos da Inferência Estatística",
+      "1. O Problema da Inferência Estatística"
+    ]
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html",
-    "title": "O problema da Inferência Estatística",
+    "title": "O problema da inferência estatística",
     "section": "",
-    "text": "Site: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1wpp"
+    "text": "Site: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1262"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#canais-de-comunicação-e-materiais-da-disciplina",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#canais-de-comunicação-e-materiais-da-disciplina",
     "title": "O problema da inferência estatística",
-    "section": "Canais de Comunicação e Materiais da Disciplina",
-    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1262"
+    "section": "",
+    "text": "Site: http://sadraquelucena.github.io/inferencia1\nGrupo no WhatsApp: http://tiny.cc/inf1262"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#informações-da-disciplina",
@@ -369,6 +80,13 @@
     "title": "O problema da inferência estatística",
     "section": "Informações da disciplina",
     "text": "Informações da disciplina\n\nComponente curricular: ESTAT0078 – Inferência I\nPeríodo: 4º semestre\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças - 19h00 às 20h30\nQuintas - 20h45 às 22h15\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
+  },
+  {
+    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#mapa-da-disciplina-para-onde-vamos",
+    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#mapa-da-disciplina-para-onde-vamos",
+    "title": "O problema da inferência estatística",
+    "section": "Mapa da Disciplina: Para Onde Vamos?",
+    "text": "Mapa da Disciplina: Para Onde Vamos?\n\n\n\n\n\nComo os dados chegam até nós?\nComo obter um estimador?\nComo saber se um estimador é bom?\nQual é o melhor estimador possível?\nComo quantificar a incerteza da estimação?"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#objetivo-da-disciplina",
@@ -389,21 +107,35 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 1. Fundamentos da Inferência Estatística\nComo os dados chegam até nós?\n\nInferência estatística e tomada de decisão\nPopulação, amostra, parâmetro e estatística\nVariabilidade amostral\nDistribuições amostrais\nIntrodução ao problema da estimação"
+    "text": "Conteúdo Programático\n\nParte 1. Fundamentos da Inferência Estatística\nComo os dados chegam até nós?\n\nInferência estatística e tomada de decisão\nPopulação, amostra, parâmetro e estatística\nVariabilidade amostral\nDistribuições amostrais\nIntrodução ao problema da estimação"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-1",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-1",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 2. Construção de Estimadores\nComo obter um estimador?\n\nConceitos de estimador e estimativa\nMétodo dos Momentos\nMétodo da Máxima Verossimilhança\nIntrodução à Inferência Bayesiana"
+    "text": "Conteúdo Programático\n\nParte 2. Construção de Estimadores\nComo obter um estimador?\n\nConceitos de estimador e estimativa\nMétodo dos Momentos\nMétodo da Máxima Verossimilhança\nIntrodução à Inferência Bayesiana"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-2",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-2",
     "title": "O problema da inferência estatística",
     "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 3. Avaliação de Estimadores\nComo saber se um estimador é bom?\n\nViés\nVariância\nErro Quadrático Médio\nConsistência\nEficiência\nInformação de Fisher\nLimite de Cramér–Rao"
+    "text": "Conteúdo Programático\n\nParte 3. Avaliação de Estimadores\nComo saber se um estimador é bom?\n\nViés\nVariância\nErro Quadrático Médio\nConsistência\nEficiência\nInformação de Fisher\nLimite de Cramér–Rao"
+  },
+  {
+    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-3",
+    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-3",
+    "title": "O problema da inferência estatística",
+    "section": "Conteúdo Programático",
+    "text": "Conteúdo Programático\n\nParte 4. Estrutura Teórica da Estimação\nQual é o melhor estimador possível?\n\nEstatísticas suficientes\nCritério da fatoração de Neyman–Fisher\nFamília exponencial\nCompletude\nEstimadores de Variância Uniformemente Mínima"
+  },
+  {
+    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-4",
+    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-4",
+    "title": "O problema da inferência estatística",
+    "section": "Conteúdo Programático",
+    "text": "Conteúdo Programático\n\nParte 5. Estimação por Intervalos\nComo quantificar a incerteza da estimação?\n\nQuantidades pivotais\nIntervalos de confiança exatos\nIntervalos de confiança assintóticos\nIntrodução aos métodos computacionais de construção de intervalos (Bootstrap)"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#avaliação",
@@ -417,880 +149,21 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#datas-importantes",
     "title": "O problema da inferência estatística",
     "section": "Datas Importantes",
-    "text": "Datas Importantes\n\n\n\n\n\n\n\nAvaliações (previsão):\n\n\n\n13/Nov/25 (quinta): Avaliação 1\n18/Dez/25 (quinta): Avaliação 2\n10/Fev/26 (terça): Avaliação 3\n12/Fev/26 (quinta): Avaliação Substitutiva\n\n\n\n\n\n\n\n\n\n\n\n\nNão haverá aula:\n\n\n\n08/Set/2026: Dia de N. Sra. da Vitória, padroeira de São Cristóvão (feriado municipal)\n25 e 27/Nov/25: XII SEMAC"
+    "text": "Datas Importantes\n\n\n\n\n\n\nNotaAvaliações (previsão):\n\n\n\n\n13/Nov/25 (quinta): Avaliação 1\n18/Dez/25 (quinta): Avaliação 2\n10/Fev/26 (terça): Avaliação 3\n12/Fev/26 (quinta): Avaliação Substitutiva\n\n\n\n\n\n\n\n\n\nImportanteNão haverá aula:\n\n\n\n\n08/Set/2026: Dia de N. Sra. da Vitória, padroeira de São Cristóvão (feriado municipal)\n25 e 27/Nov/25: XII SEMAC"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada",
     "title": "O problema da inferência estatística",
     "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada\nBásica"
+    "text": "Bibliografia Recomendada\n\nBásica"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada-1",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#bibliografia-recomendada-1",
     "title": "O problema da inferência estatística",
     "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada\nComplementar"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento",
-    "title": "O problema da inferência estatística",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nAs distribuições de probabilidade possuem parâmetros.\nExemplos:\n\nNormal(\\(\\mu, \\sigma^2\\))\nPoisson(\\(\\lambda\\))\nExponencial(\\(\\alpha\\))\n\nEssas distribuições são usadas para representar dados (e assim entender sua variabilidade e quantificar probabilidades)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-1",
-    "title": "O problema da inferência estatística",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nNormal(\\(\\mu, \\sigma^2\\))"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-2",
-    "title": "O problema da inferência estatística",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nPoisson(\\(\\lambda\\))"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-3",
-    "title": "O problema da inferência estatística",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nExponencial(\\(\\alpha\\))"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-4",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-4",
-    "title": "O problema da inferência estatística",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nO objetivo da inferência estatística é estimar os parâmetros das distribuições com base nos dados observados.\nIsso permite fazer afirmações sobre a população e quantificar a probabilidade de estarmos certos (ou errados)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-5",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#inferência-transformando-dados-em-conhecimento-5",
-    "title": "O problema da inferência estatística",
-    "section": "Inferência: transformando dados em conhecimento",
-    "text": "Inferência: transformando dados em conhecimento\n\nFonte: Adaptado de https://stats.libretexts.org/Courses/Lumen_Learning/Concepts_in_Statistics_(Lumen)/06%3A_Probability_and_Probability_Distributions/6.01%3A_Why_It_Matters-_Probability_and_Probability_Distributions"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\n\nDescreve o número de sucessos em uma sequência fixa de tentativas independentes.\nNotação: \\(X\\sim\\) Binomial(\\(n,p\\))\nParâmetros da distribuição:\n\n\\(n\\): número de tentativas\n\\(p\\): probabilidade de sucesso em cada tentativa, \\(0&lt;p&lt;1\\)\n\nFunção de probabilidade: \\[\nP(X=x) = \\binom{n}{p}p^x (1-p)^{n-x}, \\quad x=0,1,2,\\ldots,n\n\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-1",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\n\nPropriedades importantes:\n\nMédia: \\(E(X) = n p\\)\nVariância: \\(Var(X)=np(1-p)\\)\n\nModela pesquisas eleitorais (favorável ou não a um candidato), número de sinistros em uma carteira, etc."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-no-r",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-no-r",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Binomial no R ",
-    "text": "Distribuição Binomial no R \nConsidere \\(X\\sim\\) Binomial(\\(n,p\\)). Para calcular:\n\n\\(P(X=x)\\) use o comando dbinom(x, n, p).\n\\(P(X\\leq x)\\) use o comando pbinom(x, n, p).\nPara simular \\(r\\) ocorrências de uma binomial use rbinom(r, n, p)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-2",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\nExemplo 1.1\nSeja \\(X\\sim\\) Binomial(\\(n=10; p=0,\\!3\\)).\n\n\\(P(X=4) \\color{blue}{= \\binom{n}{p}p^x (1-p)^{n-x} = \\binom{10}{4}0,\\!3^4 (1-0,\\!3)^{10-4}}\\) \\(\\qquad\\qquad\\!\\color{blue}{= 0,\\!2001}\\)\n\nCálculo no R:\n\ndbinom(4, 10, 0.3)\n\n[1] 0.2001209\n\n\n\n\n\\(E(X)\\color{blue}{= 10\\cdot 0,\\!3=3}\\)\n\\(Var(X)\\color{blue}{= 10\\cdot 0,\\!3(1-0,\\!3)= 2,\\!1}\\)"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-binomial-3",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\nGráfico de \\(X\\sim\\) Binomial(\\(n=10; p=0,\\!3\\)):\n\nn &lt;- 10; p &lt;- 0.3\nprobabilidades &lt;- dbinom(0:n, n, p)\nbarplot(probabilidades, names.arg = 0:n,\n        xlab = \"Número de Sucessos\", ylab = \"Probabilidade\",\n        col = \"blue\", border = \"blue\", ylim = c(0,.25))"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\n\nExpressa a probabilidade de um número fixo de eventos ocorrer em um intervalo de tempo ou espaço, com uma taxa média conhecida e de forma independente.\nNotação: \\(X\\sim\\) Poisson(\\(\\lambda\\))\nParâmetro da distribuição:\n\n\\(\\lambda\\): taxa média de eventos por unidade de tempo ou espaço\n\nFunção de probabilidade: \\[\nP(X=x) = \\frac{e^{-\\lambda}\\lambda^x}{x!}, \\quad x=0,1,2,\\ldots\n\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-1",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\n\nPropriedade importante:\n\n\\(E(X) = Var(X) = \\lambda\\) (média e variância iguais)"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-no-r",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-no-r",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição de Poisson no R ",
-    "text": "Distribuição de Poisson no R \nConsidere \\(X\\sim\\) Poisson(\\(\\lambda\\)). Para calcular:\n\n\\(P(X=x)\\) use o comando dpois(x, lambda).\n\\(P(X\\leq x)\\) use o comando ppois(x, lambda).\nPara simular \\(r\\) ocorrências de uma Poisson use rpois(r, lambda)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-2",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\nExemplo 1.2\nSeja \\(X\\sim\\) Poisson(\\(\\lambda=6\\)).\n\n\\(P(X=4) \\color{blue}{= \\frac{e^{-\\lambda}\\lambda^x}{x!} = \\frac{e^{-6} 6^4}{4!} = 0,\\!1339}\\)\n\nCálculo no R:\n\ndpois(4, 6)\n\n[1] 0.1338526"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-de-poisson-3",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição de Poisson",
-    "text": "Distribuição de Poisson\nGráfico da distibuição de \\(X\\sim\\) Poisson(\\(\\lambda=6\\)):\n\nn &lt;- 20; lambda &lt;- 6\nprobabilidades &lt;- dpois(0:n, lambda)\nbarplot(probabilidades, names.arg = 0:n,\n        xlab = \"Número de Sucessos\", ylab = \"Probabilidade\",\n        col = \"blue\", border = \"blue\", ylim = c(0,.25))"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\n\nDescreve uma situação onde todos os resultados possíveis de uma variável aleatória têm a mesma probabilidade de ocorrer.\nNotação: \\(X\\sim\\) Uniforme(\\(a, b\\))\nParâmetros da distribuição:\n\n\\(a\\): limite inferior (mínimo)\n\\(b\\): limite superior (máximo)\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\frac{1}{b-a}, \\quad a\\leq x\\leq b\n\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-1",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\n\nPropriedades importantes:\n\nMédia: \\(E(X)=\\frac{a+b}{2}\\)\nVariância: \\(Var(X)=\\frac{(b-a)^2}{12}\\)\nA distribuição é simétrica em torno da média.\nA variável aleatória pode assumir qualquer valor entre \\(a\\) e \\(b\\)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-no-r",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-no-r",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Uniforme no R ",
-    "text": "Distribuição Uniforme no R \nConsidere \\(X\\sim\\) Uniforme(\\(a, b\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando punif(x, min=a, max=b).\nPara simular \\(r\\) ocorrências de uma uniforme use runif(r, min=a, max=b)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-2",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\nExemplo 1.3\nSeja \\(X\\sim\\) Uniforme(\\(a=1, b=7\\)).\n\n\\(P(X\\leq 6) \\color{blue}{= \\int_a^x\\frac{1}{b-a} dx = \\int_1^6 \\frac{1}{7-1} dx = \\int_1^6 \\frac{1}{6} dx}\\) \\(\\qquad\\qquad\\!\\color{blue}{= \\left[ \\frac{x}{6} \\right]_1^6 = 1 - \\frac{1}{6} =0,\\!8333}\\)\n\nCálculo no R:\n\npunif(6, min=1, max=7)\n\n[1] 0.8333333"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-uniforme-3",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Uniforme",
-    "text": "Distribuição Uniforme\nGráfico da distibuição de \\(X\\sim\\) Uniforme(\\(a=1, b=7\\)):\n\na &lt;- 1; b &lt;- 7\ncurve(dunif(x, min=a, max=b), from = -10, to = 10,\n      main = \"Uniforme(1, 7)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\n\nDistribuição contínua, simétrica, e em forma de sino.\nRepresenta muitas variáveis naturais e mensuráveis, como altura, peso, e notas de testes.\nNotação: \\(X\\sim\\) Normal(\\(\\mu, \\sigma^2\\))\nParâmetros da distribuição:\n\n\\(\\mu\\): média\n\\(\\sigma^2\\): variância\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}, \\quad -\\infty&lt;x&lt;\\infty, -\\infty&lt;\\mu&lt;\\infty, \\sigma^2&gt;0\n\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-1",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\n\nPropriedades importantes:\n\nÉ perfeitamente simétrica em torno da média.\nA maior parte dos dados está concentrada ao redor da média, com a probabilidade de eventos extremos diminuindo conforme a distância da média.\n68% dos dados estão dentro de \\(\\mu \\pm 1\\sigma^2\\).\n95% dos dados estão dentro de \\(\\mu \\pm 2\\sigma^2\\).\n99,7% dos dados estão dentro de \\(\\mu \\pm 3\\sigma^2\\)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-no-r",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-no-r",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Normal no R ",
-    "text": "Distribuição Normal no R \nConsidere \\(X\\sim\\) Normal(\\(\\mu, \\sigma^2\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando pnorm(x, mean=\\(\\color{slateblue}{\\mu}\\), sd=\\(\\color{slateblue}{\\sigma}\\)).\nPara simular \\(r\\) ocorrências de uma normal use rnorm(r, mean=\\(\\color{slateblue}{\\mu}\\), sd=\\(\\color{slateblue}{\\sigma}\\))."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-2",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\nExemplo 1.4\nSeja \\(X\\sim\\) Normal(\\(\\mu=0, \\sigma^2=4\\)).\n\n\\(P(X\\leq 1) \\color{blue}{= \\int_{-\\infty}^1 \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} dx}\\)\n\nCálculo no R:\n\npnorm(1, mean=0, sd=sqrt(4))\n\n[1] 0.6914625"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-normal-3",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Normal",
-    "text": "Distribuição Normal\nGráfico da distibuição de \\(X\\sim\\) Normal(\\(\\mu=0, \\sigma^2=4\\)):\n\nmu &lt;- 0; sigma &lt;- sqrt(4)\ncurve(dnorm(x, mean=mu, sd=sigma), from = -8, to = 8,\n      main = \"Normal(0, 4)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\n\nDistribuição contínua que é frequentemente usada para modelar o tempo de vida de equipamentos.\nNotação: \\(X\\sim\\) Exponencial(\\(\\alpha\\))\nParâmetro da distribuição:\n\n\\(\\alpha\\): taxa média de ocorrências de um evento por unidade de tempo.\n\nFunção de densidade de probabilidade: \\[\nf(x) = \\alpha e^{-\\alpha x}, \\quad x\\geq 0, \\alpha&gt;0\n\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-1",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\n\nPropriedades importantes:\n\nMédia: \\(E(X)=\\frac{1}{\\alpha}\\)\nVariância: \\(Var(X)=\\frac{1}{\\alpha^2}\\)\nA distribuição exponencial tem a propriedade de falta de memória, ou seja, a probabilidade de um evento futuro não depende do tempo já decorrido.\nO tempo entre eventos em um processo de Poisson é exponencialmente distribuído."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-no-r",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-no-r",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Exponencial no R ",
-    "text": "Distribuição Exponencial no R \nConsidere \\(X\\sim\\) Exponencial(\\(\\alpha\\)). Para calcular:\n\n\\(P(X\\leq x)\\) use o comando pexp(x, rate=\\(\\color{slateblue}{\\alpha}\\)).\nPara simular \\(r\\) ocorrências de uma Exponencial use rexp(r, rate=\\(\\color{slateblue}{\\alpha}\\))."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-2",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\nExemplo 1.4\nSeja \\(X\\sim\\) Exponencial(\\(\\alpha=2\\)).\n\n\\(P(X\\leq 1) \\color{blue}{= \\int_0^x \\alpha e^{-\\alpha x} dx = \\int_0^1 2 e^{-2 x} dx = \\left. - e^{-2x}\\right|_0^1}\\) \\(\\qquad\\qquad\\!\\color{blue}{= 1-e^{-2} = 0,\\!8647}\\)\n\nCálculo no R:\n\npexp(1, rate=2)\n\n[1] 0.8646647"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#distribuição-exponencial-3",
-    "title": "O problema da inferência estatística",
-    "section": "Distribuição Exponencial",
-    "text": "Distribuição Exponencial\nGráfico da distibuição de \\(X\\sim\\) Exponencial(\\(\\alpha=2\\)):\n\nalpha &lt;- 2\ncurve(dexp(x, rate=alpha), from = 0, to = 5,\n      main = \"Exponencial(2)\", xlab = \"x\", ylab = \"Densidade\",\n      lwd = 3, col = \"red\")"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
-    "title": "1. O Problema da Inferência Estatística",
-    "section": "",
-    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\n\n  \n\nVersão HTML\n\n\n\n  \n\nVersão PDF\n\n\n\n\nLista de Exercícios:",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Fundamentos da Inferência Estatística",
-      "1. O Problema da Inferência Estatística"
-    ]
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-3",
-    "title": "O problema da inferência estatística",
-    "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 4. Estrutura Teórica da Estimação\nQual é o melhor estimador possível?\n\nEstatísticas suficientes\nCritério da fatoração de Neyman–Fisher\nFamília exponencial\nCompletude\nEstimadores de Variância Uniformemente Mínima"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-4",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conteúdo-programático-4",
-    "title": "O problema da inferência estatística",
-    "section": "Conteúdo Programático",
-    "text": "Conteúdo Programático\nParte 5. Estimação por Intervalos\nComo quantificar a incerteza da estimação?\n\nQuantidades pivotais\nIntervalos de confiança exatos\nIntervalos de confiança assintóticos\nIntrodução aos métodos computacionais de construção de intervalos (Bootstrap)"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#você-foi-contratado-para-tomar-uma-decisão",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#você-foi-contratado-para-tomar-uma-decisão",
-    "title": "O problema da inferência estatística",
-    "section": "Você foi contratado para tomar uma decisão",
-    "text": "Você foi contratado para tomar uma decisão\n\nImagine que você trabalha para um instituto de pesquisa.\nSua missão é prever o resultado da próxima eleição presidencial.\nPergunta:\n\n\nComo você faria?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#você-foi-contratadoa-para-tomar-uma-decisão",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#você-foi-contratadoa-para-tomar-uma-decisão",
-    "title": "O problema da inferência estatística",
-    "section": "Você foi contratado(a) para tomar uma decisão",
-    "text": "Você foi contratado(a) para tomar uma decisão\n\nImagine que amanhã você começa a trabalhar em um instituto de pesquisa.\nSua missão é prever o resultado da próxima eleição presidencial.\nPergunta:\n\n\nComo prever o resultado da eleição sem entrevistar todos os eleitores?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#missões-diferentes-mesmo-desafio",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#missões-diferentes-mesmo-desafio",
-    "title": "O problema da inferência estatística",
-    "section": "Missões diferentes, mesmo desafio",
-    "text": "Missões diferentes, mesmo desafio\n\n\n\n\n\n🗳️ Pesquisa eleitoral\n\n\nPrever o resultado de uma eleição entrevistando cerca de 2.000 pessoas.\n\n\n\n\n\n\n\n\n\n\n⚙️ Controle de qualidade\n\n\nGarantir a qualidade de um lote com 1 milhão de parafusos examinando apenas 50.\n\n\n\n\n\n\n\n\n\n\n\n\n💉 Vacinas\n\n\nAvaliar se uma vacina funciona testando apenas alguns milhares de voluntários.\n\n\n\n\n\n\n\n\n\n\n🤖 Inteligência Artificial\n\n\nTreinar um modelo capaz de reconhecer milhões de imagens usando apenas uma parte delas."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#missões-diferentes-mesmo-desafio-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#missões-diferentes-mesmo-desafio-1",
-    "title": "O problema da inferência estatística",
-    "section": "Missões diferentes, mesmo desafio",
-    "text": "Missões diferentes, mesmo desafio\n\n\n\n\n\n\n\n\n🗳️ Pesquisa eleitoral\n\n\nPrever o resultado de uma eleição entrevistando cerca de 2.000 pessoas.\n\n\n\n\n\n\n\n\n\n\n⚙️ Controle de qualidade\n\n\nGarantir a qualidade de um lote com 1 milhão de parafusos examinando apenas 50.\n\n\n\n\n\n\n\n\n\n\n\n\n💉 Vacinas\n\n\nAvaliar se uma vacina funciona testando apenas alguns milhares de voluntários.\n\n\n\n\n\n\n\n\n\n\n🤖 Inteligência Artificial\n\n\nTreinar um modelo capaz de reconhecer milhões de imagens usando apenas uma parte delas."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-que-todas-essas-situações-têm-em-comum",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-que-todas-essas-situações-têm-em-comum",
-    "title": "O problema da inferência estatística",
-    "section": "O que todas essas situações têm em comum?",
-    "text": "O que todas essas situações têm em comum?\nPergunta O que todas essas situações têm em comum?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#missões-diferentes",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#missões-diferentes",
-    "title": "O problema da inferência estatística",
-    "section": "Missões diferentes",
-    "text": "Missões diferentes\n\n\n\n\n\n🗳️ Pesquisa eleitoral\n\n\nPrever o resultado de uma eleição entrevistando cerca de 2.000 pessoas. \\(\\phantom{aaaaa}\\) \\(\\phantom{aaaaaaaaaaaaaaaaaaaaa}\\)\n\n\n\n\n\n\n\n⚙️ Controle de qualidade\n\n\nGarantir a qualidade de um lote com 1 milhão de parafusos examinando apenas 50.\n\n\n\n\n\n\n\n\n\n💉 Vacinas\n\n\nAvaliar se uma vacina funciona testando apenas alguns milhares de voluntários. \\(\\phantom{aaaaa}\\) \\(\\phantom{aaaaaaaaaaaaaaaaaaaaa}\\)\n\n\n\n\n\n\n\n🤖 Inteligência Artificial\n\n\nTreinar um modelo capaz de reconhecer milhões de imagens usando apenas uma parte delas."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#problemas",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#problemas",
-    "title": "O problema da inferência estatística",
-    "section": "Problemas",
-    "text": "Problemas\n\n\n\n\n\n🗳️ Pesquisa eleitoral\n\n\nComo um instituto de pesquisa consegue prever o resultado de uma eleição entrevistando apenas 2.000 pessoas?\n\n\n\n\n\n\n\n⚙️ Controle de qualidade\n\n\nComo uma empresa garante a qualidade de um lote com 1 milhão de parafusos examinando apenas 50?\n\n\n\n\n\n\n\n\n\n💉 Vacinas\n\n\nComo um laboratório aprova uma vacina sem aplicá-la em toda a população? \\(\\phantom{aaaaa}\\) \\(\\phantom{aaaaaaaaaaaaaaaaaaaaa}\\)\n\n\n\n\n\n\n\n🤖 Inteligência Artificial\n\n\nComo sabemos qual é a precisão de um modelo de Inteligência Artificial sem testá-lo em todas as imagens do mundo?\n\n\n\n\n\nO que todas essas situações têm em comum?\nPor que simplesmente não observamos todos os dados?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-verdadeiro-obstáculo",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-verdadeiro-obstáculo",
-    "title": "O problema da inferência estatística",
-    "section": "O verdadeiro obstáculo",
-    "text": "O verdadeiro obstáculo"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-obstáculo",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-obstáculo",
-    "title": "O problema da inferência estatística",
-    "section": "O obstáculo",
-    "text": "O obstáculo\nColetar dados de toda a população em geral tem:\n\nCusto elevado (Coletar dados de 213 milhões de brasileiros)\nTempo insuficiente (A eleição acontece amanhã)\nImpossibilidade prática (Contar todos os peixes do oceano)\nO teste destrói o produto (Quebrar o parafuso para testá-lo)\nA população é infinita ou dinâmica (Novos usuários entram a todo instante numa rede social)\n\n\n\nPrecisamos tomar decisões sem observar toda a população."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário",
-    "text": "Cenário"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-que-você-espera",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-que-você-espera",
-    "title": "O problema da inferência estatística",
-    "section": "O que você espera?",
-    "text": "O que você espera?\n\nOs resultados serão exatamente iguais?\n\nSe não forem…\n\nQual pesquisa está errada?\nOu será que nenhuma está errada?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#como-isso-é-possível",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#como-isso-é-possível",
-    "title": "O problema da inferência estatística",
-    "section": "Como isso é possível?",
-    "text": "Como isso é possível?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#obstáculos",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#obstáculos",
-    "title": "O problema da inferência estatística",
-    "section": "Obstáculos",
-    "text": "Obstáculos\nPor que precisamos tomar decisões sem observar toda a população?\n\nCusto elevado (Coletar dados de 213 milhões de brasileiros)\nTempo insuficiente (A eleição acontece amanhã)\nImpossibilidade prática (Contar todos os peixes do oceano)\nO teste destrói o produto (Quebrar o parafuso para testá-lo)\nA população é infinita ou dinâmica (Novos usuários entram a todo instante numa rede social)\n\n\n\nPrecisamos tomar decisões sem observar toda a população."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#mais-problemas",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#mais-problemas",
-    "title": "O problema da inferência estatística",
-    "section": "Mais problemas",
-    "text": "Mais problemas\n\nDois pesquisadores fizeram pesquisas independentes. Ambos entrevistaram exatamente 2.000 pessoas e seguiram o mesmo método.\nOs resultados serão exatamente iguais?\nSe não forem, qual pesquisa está errada?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#variabilidade-amostral",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#variabilidade-amostral",
-    "title": "O problema da inferência estatística",
-    "section": "Variabilidade amostral",
-    "text": "Variabilidade amostral\n\nCada vez que uma amostra é obtida de uma mesma população, um resultado diferente é observado.\nEsse fenômeno recebe o nome de variabilidade amostral.\n\n\nAmostras diferentes produzem resultados diferentes."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#problemas-que-surgem-no-dia-a-dia",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#problemas-que-surgem-no-dia-a-dia",
-    "title": "O problema da inferência estatística",
-    "section": "Problemas que surgem no dia-a-dia",
-    "text": "Problemas que surgem no dia-a-dia\n\n\n\n\n\n🗳️ Pesquisa eleitoral\n\n\nComo um instituto de pesquisa consegue prever o resultado de uma eleição entrevistando apenas 2.000 pessoas?\n\n\n\n\n\n\n\n⚙️ Controle de qualidade\n\n\nComo uma empresa garante a qualidade de um lote com 1 milhão de parafusos examinando apenas 50?\n\n\n\n\n\n\n\n\n\n💉 Vacinas\n\n\nComo um laboratório aprova uma vacina sem aplicá-la em toda a população? \\(\\phantom{aaaaa}\\) \\(\\phantom{aaaaaaaaaaaaaaaaaaaaa}\\)\n\n\n\n\n\n\n\n🤖 Inteligência Artificial\n\n\nComo sabemos qual é a precisão de um modelo de Inteligência Artificial sem testá-lo em todas as imagens do mundo?\n\n\n\n\n\nO que todas essas situações têm em comum?\nPor que simplesmente não observamos todos os dados?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#as-amostras-resolvem-um-problema-mas-criam-outro",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#as-amostras-resolvem-um-problema-mas-criam-outro",
-    "title": "O problema da inferência estatística",
-    "section": "As amostras resolvem um problema… mas criam outro",
-    "text": "As amostras resolvem um problema… mas criam outro\nExemplo 1 — Pesquisa eleitoral\nDois institutos entrevistam exatamente 2.000 eleitores no mesmo dia.\n\n\n\nInstituto A\n\nInstituto B\n\n\n\n\nCandidato A: 52%\n\\(\\phantom{aaa}\\)\nCandidato A: 49%\n\n\nCandidato B: 48%\n\nCandidato B: 51%\n\n\n\n\nOs dois fizeram tudo corretamente.\nQuem está certo?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#toda-decisão-baseada-em-uma-amostra-é-incerta.",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#toda-decisão-baseada-em-uma-amostra-é-incerta.",
-    "title": "O problema da inferência estatística",
-    "section": "Toda decisão baseada em uma amostra é incerta.",
-    "text": "Toda decisão baseada em uma amostra é incerta."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#as-amostras-resolvem-um-problema-mas-criam-outro-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#as-amostras-resolvem-um-problema-mas-criam-outro-1",
-    "title": "O problema da inferência estatística",
-    "section": "As amostras resolvem um problema… mas criam outro",
-    "text": "As amostras resolvem um problema… mas criam outro\nExemplo 2 — Controle de qualidade\nDois engenheiros avaliam um lote de 1.000.000 de parafusos.\n\n\n\nEngenheiro A\n\nEngenheiro B\n\n\n\n\n2 defeituosos (4%)\n\\(\\phantom{aaa}\\)\n5 defeituosos (10%)\n\n\n\n\nOs dois seguiram exatamente o mesmo procedimento.\nQuem está certo?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#a-resposta",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#a-resposta",
-    "title": "O problema da inferência estatística",
-    "section": "A resposta",
-    "text": "A resposta\nNenhum dos pesquisadores está necessariamente errado.\n\nCada amostra representa a população de uma forma um pouco diferente.\nPor isso, resultados diferentes são esperados, mesmo quando o método é o mesmo.\nEsse fenômeno é chamado de Variabilidade amostral.\nConsequência:\n\n\nToda decisão baseada em uma amostra envolve incerteza."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#esse-fenômeno-tem-um-nome",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#esse-fenômeno-tem-um-nome",
-    "title": "O problema da inferência estatística",
-    "section": "Esse fenômeno tem um nome",
-    "text": "Esse fenômeno tem um nome"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#resposta",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#resposta",
-    "title": "O problema da inferência estatística",
-    "section": "Resposta",
-    "text": "Resposta\nNenhum dos pesquisadores está necessariamente errado.\n\nCada amostra é apenas uma das muitas amostras possíveis.\nPor isso, resultados diferentes são esperados, mesmo quando o método é o mesmo.\nEsse fenômeno é chamado de Variabilidade amostral."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#consequência",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#consequência",
-    "title": "O problema da inferência estatística",
-    "section": "Consequência",
-    "text": "Consequência\n\nToda decisão baseada em uma amostra envolve incerteza.\n\nEntão…\nComo podemos confiar em uma decisão baseada em dados que mudam a cada nova amostra?\n\n\nSe queremos tomar decisões apesar da incerteza, primeiro precisamos organizar o problema."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#primeiro-sobre-quem-queremos-aprender",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#primeiro-sobre-quem-queremos-aprender",
-    "title": "O problema da inferência estatística",
-    "section": "Primeiro: sobre quem queremos aprender?",
-    "text": "Primeiro: sobre quem queremos aprender?\n\nEstamos interessados em todos os eleitores? Todos os parafusos? Todos os pacientes?\n\n\nDefinição 1.1: População\nO conjunto de todos os elementos sobre os quais desejamos obter conhecimento."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#segundo-o-que-queremos-descobrir-sobre-essa-população",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#segundo-o-que-queremos-descobrir-sobre-essa-população",
-    "title": "O problema da inferência estatística",
-    "section": "Segundo: o que queremos descobrir sobre essa população?",
-    "text": "Segundo: o que queremos descobrir sobre essa população?\nNos exemplos anteriores, queríamos responder perguntas como:\n\nQuem vencerá a eleição?\nQual a proporção de parafusos defeituosos?\nA vacina funciona?\nQual é a precisão da IA?\n\nEssas perguntas envolvem alguma característica da população.\n\nDefinição 1.2: Parâmetro\nUma característica numérica da população."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#terceiro-mas-conseguimos-observar-toda-a-população",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#terceiro-mas-conseguimos-observar-toda-a-população",
-    "title": "O problema da inferência estatística",
-    "section": "Terceiro: mas conseguimos observar toda a população?",
-    "text": "Terceiro: mas conseguimos observar toda a população?\n\nNão. Observamos apenas uma parte dela.\n\nDefinição 1.3: Amostra\nUm subconjunto da população utilizado para obter informações sobre ela."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#quarto-então-o-que-conseguimos-calcular",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#quarto-então-o-que-conseguimos-calcular",
-    "title": "O problema da inferência estatística",
-    "section": "Quarto: então, o que conseguimos calcular?",
-    "text": "Quarto: então, o que conseguimos calcular?\n\nComo só temos acesso à amostra não conseguimos calcular o parâmetro.\nCalculamos uma medida usando os dados observados.\n\nDefinição 1.4: Estatística\nUma característica numérica calculada a partir da amostra."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#então-o-que-é-inferência-estatística",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#então-o-que-é-inferência-estatística",
-    "title": "O problema da inferência estatística",
-    "section": "Então, o que é Inferência Estatística?",
-    "text": "Então, o que é Inferência Estatística?\n\nA Inferência Estatística é o conjunto de ferramentas que nos permite tomar decisões apesar dessa incerteza.\n\nDefinição 1.5: Inferência Estatística\nConjunto de métodos que utiliza informações obtidas em uma amostra para produzir conhecimento e tomar decisões sobre uma população, quantificando a incerteza dessa conclusão. ."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#objetivo-da-inferência-estatística",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#objetivo-da-inferência-estatística",
-    "title": "O problema da inferência estatística",
-    "section": "Objetivo da Inferência Estatística",
-    "text": "Objetivo da Inferência Estatística\nUtilizar informações obtidas em uma amostra para aprender sobre características da população.\nA Inferência Estatística é o conjunto de ferramentas que nos permite tomar decisões apesar dessa incerteza."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#quarto-o-que-realmente-conseguimos-calcular",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#quarto-o-que-realmente-conseguimos-calcular",
-    "title": "O problema da inferência estatística",
-    "section": "Quarto: o que realmente conseguimos calcular?",
-    "text": "Quarto: o que realmente conseguimos calcular?\n\nComo só temos acesso à amostra não conseguimos calcular o parâmetro.\nCalculamos uma medida usando os dados observados.\n\nDefinição 1.4: Estatística\nUma característica numérica calculada a partir da amostra."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#pergutnas-norteadoras",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#pergutnas-norteadoras",
-    "title": "O problema da inferência estatística",
-    "section": "Pergutnas Norteadoras",
-    "text": "Pergutnas Norteadoras\n\nComo os dados chegam até nós?\nComo obter um estimador?\nComo saber se um estimador é bom?\nQual é o melhor estimador possível?\nComo quantificar a incerteza da estimação?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#mapa-da-disciplina-para-onde-vamos",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#mapa-da-disciplina-para-onde-vamos",
-    "title": "O problema da inferência estatística",
-    "section": "Mapa da Disciplina: Para Onde Vamos?",
-    "text": "Mapa da Disciplina: Para Onde Vamos?\n\n\n\n\n\nComo os dados chegam até nós?\nComo obter um estimador?\nComo saber se um estimador é bom?\nQual é o melhor estimador possível?\nComo quantificar a incerteza da estimação?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#tomada-de-decisão-sob-informação-parcial",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#tomada-de-decisão-sob-informação-parcial",
-    "title": "O problema da inferência estatística",
-    "section": "Tomada de Decisão Sob Informação Parcial",
-    "text": "Tomada de Decisão Sob Informação Parcial\nImagine a seguinte situação prática em Ciência Atuarial e Gestão de Riscos:\n\n\n\n\n\n\n\n📊 Precificação de Prêmio Puro em Seguros de Automóvel\n\n\nUm atuário precisa calcular o prêmio puro (valor justo) para uma apólice de seguro de automóveis. Para precificar corretamente e evitar a insolvência da seguradora, é preciso conhecer a taxa média anual de sinistros (\\(\\lambda\\)) de toda a população de condutores de uma região.\n\n\n\n\n\nÉ possível esperar e observar todos os motoristas potenciais do país antes de fixar o preço da apólice? Não.\nRazões:\n\nDinâmica do Mercado: O produto precisa ser precificado e comercializado no presente.\nEvolução Contínua da População: Novos condutores e novos veículos surgem a todo momento.\nCusto e Risco: Dados incompletos geram incerteza na constituição das Reservas Técnicas.\n\n\n\n\nConclusão: Somos forçados a precificar e tomar decisões sobre o todo observando apenas uma amostra de apólices históricas."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#precificação-de-prêmio-puro-em-seguros-de-automóvel",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#precificação-de-prêmio-puro-em-seguros-de-automóvel",
-    "title": "O problema da inferência estatística",
-    "section": "Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Precificação de Prêmio Puro em Seguros de Automóvel\nUm atuário precisa calcular o prêmio puro (valor justo) para uma apólice de seguro de automóveis. Para precificar corretamente e evitar a insolvência da seguradora, é preciso conhecer a taxa média anual de sinistros (\\(\\lambda\\)) de toda a população de condutores de uma região.\n\nÉ possível esperar e observar todos os motoristas potenciais do país antes de fixar o preço da apólice? Não.\nRazões:\n\nDinâmica do Mercado: O produto precisa ser precificado e comercializado no presente.\nEvolução Contínua da População: Novos condutores e novos veículos surgem a todo momento.\nCusto e Risco: Dados incompletos geram incerteza na constituição das Reservas Técnicas.\n\n\n\n\nConclusão: Somos forçados a precificar e tomar decisões sobre o todo observando apenas uma amostra de apólices históricas."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-1-precificação-de-prêmio-puro-em-seguros-de-automóvel",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-1-precificação-de-prêmio-puro-em-seguros-de-automóvel",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário 1: Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Cenário 1: Precificação de Prêmio Puro em Seguros de Automóvel\n\nRazões:\n\nComercialização imediata: A apólice precisa ser precificada e vendida antes que os sinistros ocorram.\nIncerteza sobre perdas futuras: As indenizações dependem de acidentes que ainda não aconteceram e, portanto, são desconhecidas no momento da precificação.\nPopulação dinâmica: Novos condutores, veículos e mudanças no perfil de risco alteram continuamente a população segurada."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-1-precificação-de-prêmio-puro-em-seguros-de-automóvel-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-1-precificação-de-prêmio-puro-em-seguros-de-automóvel-1",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário 1: Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Cenário 1: Precificação de Prêmio Puro em Seguros de Automóvel\n\nRazões:\n\nComercialização imediata: A apólice precisa ser precificada e vendida antes que os sinistros ocorram.\nIncerteza sobre perdas futuras: As indenizações dependem de acidentes que ainda não aconteceram e, portanto, são desconhecidas no momento da precificação.\nPopulação dinâmica: Novos condutores, veículos e mudanças no perfil de risco alteram continuamente a população segurada."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-1-precificação-de-prêmio-puro-em-seguros-de-automóvel-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-1-precificação-de-prêmio-puro-em-seguros-de-automóvel-2",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário 1: Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Cenário 1: Precificação de Prêmio Puro em Seguros de Automóvel\n\nConclusão: Somos forçados a precificar e tomar decisões sobre o comportamento da carteira de seguros, utilizando apenas uma amostra de dados históricos."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-2-avaliação-da-perda-de-clientes-em-uma-plataforma-de-assinatura",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-2-avaliação-da-perda-de-clientes-em-uma-plataforma-de-assinatura",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário 2: Avaliação da perda de clientes em uma plataforma de assinatura",
-    "text": "Cenário 2: Avaliação da perda de clientes em uma plataforma de assinatura\nImagine a seguinte situação prática em um ambiente profissional:\n\n\n\n\n\n\n\n💉 Eficácia de um Novo Fármaco\n\n\nVocê é o estatístico responsável por aprovar um tratamento na indústria farmacêutica. Você precisa afirmar se a proporção de cura \\(p\\) é superior a \\(80\\%\\).\n\n\n\n\n\nÉ possível aplicar o fármaco em toda a população humana antes da aprovação? Não.\nRazões:\n\nCusto e Tempo: Financeiramente e logisticamente inviável.\nImpossibilidade Prática/Ética: População potencial é hipotética ou infinita.\nDestruição do Elemento: Em ensaios industriais (ex: resistência de parafusos), o teste destrói a unidade.\n\n\n\n\nConclusão: Somos forçados a tomar decisões sobre o todo observando apenas uma parte."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-2-taxa-de-cancelamento-de-assinaturas",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-2-taxa-de-cancelamento-de-assinaturas",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário 2: Taxa de Cancelamento de Assinaturas",
-    "text": "Cenário 2: Taxa de Cancelamento de Assinaturas\nUma cientista de dados precisa avaliar se uma nova funcionalidade reduziu a taxa de cancelamento de assinaturas de um aplicativo. Para tomar essa decisão, é necessário conhecer a verdadeira taxa de cancelamento (\\(p\\)) de toda a população de usuários.\n\nÉ possível esperar que todos os usuários atuais e futuros decidam cancelar (ou não) suas assinaturas antes de avaliar o impacto da nova funcionalidade? Não."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-2-taxa-de-cancelamento-de-assinaturas-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-2-taxa-de-cancelamento-de-assinaturas-1",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário 2: Taxa de Cancelamento de Assinaturas",
-    "text": "Cenário 2: Taxa de Cancelamento de Assinaturas\n\nRazões:\n\nRiscos de Produto: Antes de disponibilizar uma nova funcionalidade para todos os usuários, é necessário avaliar seu impacto em uma parcela da base.\nIncerteza sobre o comportamento futuro: A decisão de cancelar depende das reações dos usuários, que ainda não ocorreram e, portanto, são desconhecidas no momento da avaliação.\nPopulação dinâmica: Novos usuários entram na plataforma continuamente, enquanto outros deixam de utilizá-la."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-problema-é-o-mesmo",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-problema-é-o-mesmo",
-    "title": "O problema da inferência estatística",
-    "section": "O problema é o mesmo",
-    "text": "O problema é o mesmo\nNas duas situações:\n\nNão é possível observar toda a população antes de tomar uma decisão.\nAs decisões precisam ser tomadas no presente.\nPrecisamos utilizar uma amostra para aprender sobre a população.\n\nInferência estatística é o processo de utilizar informações de uma amostra para tirar conclusões e tomar decisões sobre uma população."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel\nUm atuário precisa calcular o prêmio puro (valor justo) para uma apólice de seguro de automóveis. Para precificar corretamente e evitar a insolvência da seguradora, é preciso conhecer a taxa média anual de sinistros (\\(\\lambda\\)) de toda a população de condutores de uma região.\n\nÉ possível esperar que todas as indenizações sejam pagas aos segurados antes de fixar o preço da apólice? Não."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel-1",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel\n\nRazões:\n\nComercialização imediata: A apólice precisa ser precificada e vendida antes que os sinistros ocorram.\nIncerteza sobre perdas futuras: As indenizações dependem de acidentes que ainda não aconteceram e, portanto, são desconhecidas no momento da precificação.\nPopulação dinâmica: Novos condutores, veículos e mudanças no perfil de risco alteram continuamente a população segurada."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel-2",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel\n\n\n\n\n\n\n\n\nElemento do Problema\nNo Cenário do Seguro\nNa Inferência Estatística\n\n\n\n\nO que queremos saber?\nRisco real de acidentes da região\nParâmetro \\(\\theta = \\lambda\\) (Fixo, Desconhecido)\n\n\nO que observamos?\nHistórico de \\(n\\) apólices vendidas\nAmostra Aleatória \\(\\mathbf{X} = (X_1, \\dots, X_n)\\)\n\n\nO que calculamos?\nTaxa de \\(0{,}07\\) sinistros/ano\nEstimativa \\(\\widehat{\\lambda}\\) (Variável)"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisas-eleitorais",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisas-eleitorais",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Pesquisas Eleitorais",
-    "text": "Cenário: Pesquisas Eleitorais\nDois institutos de pesquisa contratados no mesmo dia realizam entrevistas independentes com \\(n = 2.000\\) eleitores da mesma cidade para estimar a proporção de intenção de voto (\\(p\\)) da Candidata X:\n\n\n\n\n\n\nInstituto Alfa\n\n\n\nEleitores favoráveis à Candidata X: \\(1.040\\)\nProporção amostral: \\(\\hat{p}_A = 0{,}52\\) (\\(52\\%\\))\nNotícia: “Candidata X venceria no 1º turno!”\n\n\n\n\n\n\n\n\n\n\nInstituto Beta\n\n\n\nEleitores favoráveis à Candidata X: \\(960\\)\nProporção amostral: \\(\\hat{p}_B = 0{,}48\\) (\\(48\\%\\))\nNotícia: “Haverá 2º turno na eleição!”"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisa-eleitoral",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisa-eleitoral",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Pesquisa Eleitoral",
-    "text": "Cenário: Pesquisa Eleitoral\nDois institutos de pesquisa contratados no mesmo dia realizam entrevistas independentes com \\(n = 2.000\\) eleitores da mesma cidade para estimar a proporção de intenção de voto (\\(p\\)) da Candidata X:\n\n\n\n\n\n\nInstituto Alfa\n\n\n\nEleitores favoráveis à Candidata X: \\(1.040\\)\nProporção amostral: \\(\\hat{p}_A = 0{,}52\\) (\\(52\\%\\))\nNotícia: “Candidata X venceria no 1º turno!”\n\n\n\n\n\n\n\n\n\n\nInstituto Beta\n\n\n\nEleitores favoráveis à Candidata X: \\(960\\)\nProporção amostral: \\(\\hat{p}_B = 0{,}48\\) (\\(48\\%\\))\nNotícia: “Haverá 2º turno na eleição!” \\(\\phantom{a}\\)"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisa-eleitoral-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisa-eleitoral-1",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Pesquisa Eleitoral",
-    "text": "Cenário: Pesquisa Eleitoral\n\nHouve erro ou má-fé na coleta de dados de algum dos institutos? Não.\nQual é a verdadeira proporção \\(p\\) de eleitores do Candidato X na população? Permanece desconhecida.\nPor que os institutos chegaram a conclusões opostas? Devido à Variabilidade Amostral."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisa-eleitoral-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-pesquisa-eleitoral-2",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Pesquisa Eleitoral",
-    "text": "Cenário: Pesquisa Eleitoral"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conclusão-amostras-diferentes-respostas-diferentes",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conclusão-amostras-diferentes-respostas-diferentes",
-    "title": "O problema da inferência estatística",
-    "section": "Conclusão: Amostras Diferentes, Respostas Diferentes",
-    "text": "Conclusão: Amostras Diferentes, Respostas Diferentes\n\n\n\n\n\n\n\nA Lição da Variabilidade Amostral\n\n\nUma amostra nunca reflete perfeitamente a população. Ela reflete a população mais o ruído da amostragem.\n\n\n\n\n\n\nSe tomarmos decisões olhando apenas para o número da amostra (\\(\\hat{p} = 0{,}52\\)), correremos o risco de errar feio.\nPrecisamos de ferramentas formais para passar de “eu acho que o Candidato X ganha” para “declaramos com 95% de confiança que o Candidato X tem entre 49,8% e 54,2% dos votos”."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conclusão-o-oposto-da-sorte-é-a-probabilidade",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conclusão-o-oposto-da-sorte-é-a-probabilidade",
-    "title": "O problema da inferência estatística",
-    "section": "Conclusão: O Oposto da “Sorte” é a Probabilidade",
-    "text": "Conclusão: O Oposto da “Sorte” é a Probabilidade\n\n\n\n\n\n\n\n\nElemento do Problema\nNo Cenário Eleitoral\nNa Matemática da Disciplina\n\n\n\n\nO que queremos saber?\nA intenção de voto real da cidade\nO Parâmetro \\(\\theta = p\\) (Fixo, Desconhecido)\n\n\nO que observamos?\nAs 2.000 pessoas entrevistadas\nA Amostra Aleatória \\(\\mathbf{X} = (X_1, \\dots, X_n)\\)\n\n\nO que calculamos?\n\\(52\\%\\) (Alfa) e \\(48\\%\\) (Beta)\nA Estimativa \\(t(\\mathbf{x}) = \\hat{p}\\) (Variável)\n\n\n\n\n\n\n\n\n\n\nSíntese\n\n\nNenhum instituto errou. A Inferência Estatística existe justamente para nos dizer quão perto \\(\\hat{p}\\) está de \\(p\\) e com qual nível de confiança podemos fazer uma afirmação sobre a eleição.\n\n\n\n\n\nOs dois institutos usaram métodos corretos, mas trabalharam com amostras distintas da mesma população.\nA variação nos resultados (\\(52\\%\\) vs \\(48\\%\\)) não é um erro, é a manifestação natural da Variabilidade Amostral.\nComo não podemos entrevistar todos os eleitores, a proporção real \\(p\\) permanece desconhecida.\n\n\n\n\n\n\n\n\nO Problema Central\n\n\nSe a amostra muda a cada coleta e os resultados oscilam, como um analista pode tomar uma decisão com rigor científico sem parecer que está apenas “chutando”?\n\n\n\n\n\n\nResposta: Precisamos de uma estrutura matemática que nos permita usar a amostra para estimar a verdade e medir a margem de erro. É aqui que entra a Inferência Estatística."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#transpondo-o-problema-atuarial-para-a-linguagem-estatística",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#transpondo-o-problema-atuarial-para-a-linguagem-estatística",
-    "title": "O problema da inferência estatística",
-    "section": "Transpondo o Problema Atuarial para a Linguagem Estatística",
-    "text": "Transpondo o Problema Atuarial para a Linguagem Estatística\nPara tomar decisões sob incerteza, precisamos traduzir a linguagem do negócio para o modelo probabilístico:\n\n\n\n\n\n\n\n\n\nDimensão do Problema\nNo Cenário Atuarial (Mundo Real)\nNa Linguagem da Inferência Estatística\nNotação / Modelo\n\n\n\n\nObjeto de Interesse\nRisco médio real de acidentes da região\nParâmetro Populacional\n\\(\\theta = \\lambda \\in (0, \\infty)\\)\n\n\nMecanismo Gerador\nOcorrência aleatória de sinistros por cliente\nDistribuição de Probabilidade\n\\(X_i \\sim \\text{Poisson}(\\lambda)\\)\n\n\nDados Observados\nHistórico de \\(n\\) apólices do ano anterior\nAmostra Aleatória (i.i.d.)\n\\(\\mathbf{X} = (X_1, X_2, \\dots, X_n)\\)\n\n\nRegra de Decisão\nFórmula para calcular a taxa da carteira\nEstatística / Estimador\n\\(T(\\mathbf{X}) = \\bar{X} = \\frac{1}{n}\\sum_{i=1}^n X_i\\)\n\n\nResultado Concreto\nO valor \\(0{,}07\\) sinistros/ano calculado hoje\nEstimativa Pontual\n\\(t(\\mathbf{x}) = \\bar{x} = 0{,}07\\)\n\n\nRisco de Decisão\nChance de insolvência ou perda de clientes\nErro Quadrático Médio / Viés\n\\(EQM(\\hat{\\lambda}) = E[(\\hat{\\lambda} - \\lambda)^2]\\)\n\n\n\n\n\n\n\n\n\n\n\n💡 O Que Mostramos aos Alunos com essa Tabela?\n\n\nO atuário não está apenas “calculando uma média”. Ele está utilizando uma Estimativa \\(t(\\mathbf{x})\\) gerada por uma Variável Aleatória chamativa (Estimador \\(T(\\mathbf{X})\\)), na tentativa de se aproximar de um Parâmetro Desconhecido (\\(\\lambda\\)) com o menor erro possível."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#cenário-precificação-de-prêmio-puro-em-seguros-de-automóvel-3",
-    "title": "O problema da inferência estatística",
-    "section": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel",
-    "text": "Cenário: Precificação de Prêmio Puro em Seguros de Automóvel\nQuestão central: Precificar uma apólice hoje para cobrir sinistros que só acontecerão no futuro.\nProbemas: - É impossível observar o comportamento futuro de todos os segurados. - Trabalhamos obrigatoriamente com uma amostra de dados passados. - Se a amostra não refletir a realidade populacional, a seguradora corre risco de insolvência ou perda de competitividade.\n\nLição 1: A amostra é nossa única janela para o futuro, mas ela é incompleta."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conclusão",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#conclusão",
-    "title": "O problema da inferência estatística",
-    "section": "Conclusão:",
-    "text": "Conclusão:\n\n\n\n\n\n\n\n\nElemento do Problema\nNo Cenário Eleitoral\nNa Inferência Estatística\n\n\n\n\nO que queremos saber?\nIntenção de voto real da cidade\nParâmetro \\(\\theta = p\\) (Fixo, Desconhecido)\n\n\nO que observamos?\n2.000 pessoas entrevistadas\nAmostra Aleatória \\((X_1, \\dots, X_n)\\)\n\n\nO que calculamos?\n\\(52\\%\\) (Alfa) e \\(48\\%\\) (Beta)\nEstimativa \\(\\widehat{p}\\) (Variável)\n\n\n\n\n\n\n\n\n\n\nSíntese\n\n\nNenhum instituto errou. A Inferência Estatística existe justamente para nos dizer quão perto \\(\\hat{p}\\) está de \\(p\\) e com qual nível de confiança podemos fazer uma afirmação sobre a eleição.\n\n\n\n\n\nOs dois institutos usaram métodos corretos, mas trabalharam com amostras distintas da mesma população.\nA variação nos resultados (\\(52\\%\\) vs \\(48\\%\\)) não é um erro, é a manifestação natural da Variabilidade Amostral.\nComo não podemos entrevistar todos os eleitores, a proporção real \\(p\\) permanece desconhecida.\n\n\n\n\n\n\n\n\nO Problema Central\n\n\nSe a amostra muda a cada coleta e os resultados oscilam, como um analista pode tomar uma decisão com rigor científico sem parecer que está apenas “chutando”?\n\n\n\n\n\n\nResposta: Precisamos de uma estrutura matemática que nos permita usar a amostra para estimar a verdade e medir a margem de erro. É aqui que entra a Inferência Estatística."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#estrutura-da-aula-de-hoje",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#estrutura-da-aula-de-hoje",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Estrutura da Aula de Hoje",
-    "text": "Estrutura da Aula de Hoje\n\n\n🎯 Objetivos de Aprendizagem\n\nMudança de Paradigma: Compreender a diferença fundamental entre Probabilidade e Inferência.\nMotivação Aplicada: Discutir tomadas de decisão sob informação parcial (Atuária e Pesquisas).\nFormalização Matemática: Domínio rigoroso dos conceitos até a Definição 1.3.6 de Bolfarine & Sandoval.\n\n\n📖 Tópicos Cobertos\n\nA Inversão do Raciocínio Probabilístico\nTipos de Problemas Inferenciais\nPopulação, Amostra e Verossimilhança\nEstatísticas, Espaço Paramétrico e Estimadores\nO “Mapa” da Disciplina (Para Onde Vamos?)"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-probabilidade-vs.-inferência",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-probabilidade-vs.-inferência",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Paradigma: Probabilidade vs. Inferência",
-    "text": "O Paradigma: Probabilidade vs. Inferência\nAté o semestre passado (Probabilidade), o fluxo de pensamento assumia um modelo completamente conhecido:\n\n\\[\\underbrace{\\text{Modelo / População } (\\theta \\text{ Conhecido})}_{\\text{Premissa Dado Dad}} \\xrightarrow{\\quad\\text{Dedução Probabilística}\\quad} \\underbrace{\\text{Comportamento da Amostra } (\\mathbf{X})}_{\\text{Cálculo de Proporções e Chances}}\\]\n\n\nA partir de hoje (Inferência Estatística), invertemos radicalmente o vetor do conhecimento:\n\n\n\\[\\underbrace{\\text{Amostra Observada } (\\mathbf{x} = (x_1, \\dots, x_n))}_{\\text{Dados Reais e Visíveis}} \\xrightarrow{\\quad\\text{Indução Inferencial}\\quad} \\underbrace{\\text{Características da População } (\\theta \\text{ Desconhecido})}_{\\text{A \"Verdade\" Oculta na Natureza}}\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#aplicação-1-precificação-de-risco-atuarial",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#aplicação-1-precificação-de-risco-atuarial",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Aplicação 1: Precificação de Risco Atuarial",
-    "text": "Aplicação 1: Precificação de Risco Atuarial\n\n\n\n\n\n\n\n📊 O Problema da Seguradora\n\n\nUm atuário precisa fixar o prêmio puro (valor cobrado) de uma apólice de seguros de veículos para o próximo ano. O custo depende da taxa média populacional de acidentes (\\(\\lambda\\)).\n\n\n\n\n\nO Dilema: É impossível esperar que todas as apólices do ano terminem para só então precificar a apólice no presente.\nIncerteza Perturbadora: Acidentes futuros são variáveis aleatórias. A população de motoristas muda continuamente.\nA Solução: Utilizar uma amostra de contratos passados \\(\\mathbf{x} = (x_1, \\dots, x_n)\\) para induzir a verdadeira taxa populacional \\(\\lambda\\)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#aplicação-2-o-conflito-da-variabilidade-amostral",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#aplicação-2-o-conflito-da-variabilidade-amostral",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Aplicação 2: O Conflito da Variabilidade Amostral",
-    "text": "Aplicação 2: O Conflito da Variabilidade Amostral\nDois institutos de pesquisa contratados no mesmo dia entrevistam amostras independentes de \\(n = 2.000\\) eleitores para estimar a proporção real de votos (\\(p\\)) do Candidato A:\n\n\n\n\n\n\n🏛️ Instituto Alfa\n\n\n\nFavoráveis: \\(1.040\\)\nEstimativa: \\(\\hat{p}_A = 0{,}52\\) (\\(52\\%\\))\nNotícia: “Candidato A vence no 1º turno!”\n\n\n\n\n\n\n\n\n\n\n🏛️ Instituto Beta\n\n\n\nFavoráveis: \\(960\\)\nEstimativa: \\(\\hat{p}_B = 0{,}48\\) (\\(48\\%\\))\nNotícia: “Eleição caminha para o 2º turno!”\n\n\n\n\n\n\n\n\nAlgum instituto errou? Não. A variação é fruto da Variabilidade Amostral.\nA verdadeira proporção \\(p\\) permanece desconhecida.\nDesafio: Como tomar decisões confiáveis quando a amostra oscila a cada coleta?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#a-definição-do-problema-inferencial",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#a-definição-do-problema-inferencial",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "A Definição do Problema Inferencial",
-    "text": "A Definição do Problema Inferencial\nConforme formalizado por Bolfarine & Sandoval[cite: 3]:\n\n\n\n\n\n\n\nDefinição 1.2.1 (Inferência Estatística)\n\n\nSeja \\(X\\) uma variável aleatória com função de densidade (f.d.p.) ou função de probabilidade (f.p.) denotada por \\(f(x|\\theta)\\), em que \\(\\theta\\) é um parâmetro desconhecido[cite: 3].\nChamamos de Inferência Estatística o problema que consiste em especificar um ou mais valores para \\(\\theta\\), baseado em um conjunto de valores observados de \\(X\\)[cite: 3].\n\n\n\n\n\n\nPressuposto Fundamental: Assumimos que a distribuição de \\(X\\) pertence a uma família conhecida de distribuições (família paramétrica), indexada e especificada pelo parâmetro \\(\\theta\\)[cite: 3]."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#divisão-clássica-dos-problemas-inferenciais",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#divisão-clássica-dos-problemas-inferenciais",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Divisão Clássica dos Problemas Inferenciais",
-    "text": "Divisão Clássica dos Problemas Inferenciais\nDiante do parâmetro desconhecido \\(\\theta\\), a disciplina divide-se em duas grandes abordagens[cite: 3]:\n\n\n1. Problemas de Estimação\nO objetivo é procurar valores numéricos ou faixas numéricas que representem adequadamente o parâmetro desconhecido \\(\\theta\\)[cite: 3]. - Estimação Pontual: Um único valor \\(\\hat{\\theta}\\). - Estimação Intervalar: Um intervalo \\((\\hat{\\theta}_{inf}, \\hat{\\theta}_{sup})\\) com nível de confiança associado.\n\n2. Testes de Hipóteses\nO objetivo é verificar a validade de afirmações sobre o parâmetro \\(\\theta\\)[cite: 3]. - Exemplo 1 (Eleitoral): \\(H_0: p \\le 0{,}50 \\quad \\text{vs} \\quad H_1: p &gt; 0{,}50\\)[cite: 3] - Exemplo 2 (Controle de Qualidade): Verificar se o peso médio \\(\\mu\\) de um pacote é \\(1\\text{ kg}\\): \\[H_0: \\mu = 1 \\quad \\text{vs} \\quad H_1: \\mu \\neq 1\\][cite: 3]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#população-e-amostra-aleatória",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#população-e-amostra-aleatória",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "População e Amostra Aleatória",
-    "text": "População e Amostra Aleatória\n\n\n\n\n\n\n\nDefinição 1.3.1 (População)\n\n\nO conjunto de valores de uma característica (observável) associada a uma coleção de indivíduos ou objetos de interesse é dito ser uma população[cite: 3].\n\n\n\n\n\n\n\n\n\n\n\n\nDefinição 1.3.2 (Amostra Aleatória)\n\n\nUma sequência \\(X_1, X_2, \\dots, X_n\\) de \\(n\\) variáveis aleatórias independentes e identicamente distribuídas (i.i.d.), cada uma com f.d.p. ou f.p. \\(f(x|\\theta)\\), é dita ser uma Amostra Aleatória (a.a.) de tamanho \\(n\\) da distribuição de \\(X\\)[cite: 3].\n\n\n\n\n\n\nDevido à independência e à mesma distribuição, a f.d.p. (ou f.p.) conjunta da amostra aleatória é dada pelo produto das marginais[cite: 3]: \\[f(x_1, \\dots, x_n | \\theta) = \\prod_{i=1}^{n} f(x_i | \\theta) = f(x_1|\\theta) \\cdots f(x_n|\\theta)\\][cite: 3]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#a-função-de-verossimilhança",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#a-função-de-verossimilhança",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "A Função de Verossimilhança",
-    "text": "A Função de Verossimilhança\nA f.d.p. conjunta dada pela Equação (1.3.1) do Bolfarine & Sandoval assume um papel de protagonismo quando invertemos a interpretação dos dados[cite: 3]:\n\n\n\n\n\n\n\n\nFunção de Verossimilhança (Likelihood)\n\n\nA função de densidade (ou probabilidade) conjunta avaliada no vetor de observações fixas \\(\\mathbf{x} = (x_1, \\dots, x_n)'\\) e reinterpretada como uma função do parâmetro \\(\\theta\\) é denominada Função de Verossimilhança de \\(\\theta\\)[cite: 3]:\n\\[L(\\theta; \\mathbf{x}) = \\prod_{i=1}^{n} f(x_i | \\theta)\\][cite: 3]\n\n\n\n\n\n\n\nInterpretação: \\(L(\\theta; \\mathbf{x})\\) mede o quão “plausível” ou “provável” é cada valor de \\(\\theta\\) ter gerado exatamente a amostra observada \\(\\mathbf{x}\\)[cite: 3].\nSerá a ferramenta central para a construção de estimadores pelo Método de Máxima Verossimilhança (MMV)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-conceito-de-estatística",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-conceito-de-estatística",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Conceito de Estatística",
-    "text": "O Conceito de Estatística\n\n\n\n\n\n\n\nDefinição 1.3.3 (Estatística)\n\n\nQualquer função da amostra que não depende de parâmetros desconhecidos é denominada uma estatística[cite: 3].\n\n\n\n\n\nDada a amostra aleatória \\(\\mathbf{X} = (X_1, \\dots, X_n)\\), uma estatística é uma função \\(T(\\mathbf{X}) = T(X_1, \\dots, X_n)\\) cuja regra de cálculo depende apenas das variáveis aleatórias da amostra e de constantes conhecidas[cite: 3].\n\n\n\n\n\n\n\n\n\n⚠️ Atenção!\n\n\nSe a expressão da função incluir o parâmetro desconhecido \\(\\theta\\), ela NÃO é uma estatística! - Exemplo: \\(T(\\mathbf{X}) = \\bar{X} - \\mu\\) não é estatística se \\(\\mu\\) for um parâmetro populacional desconhecido."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#exemplos-de-estatísticas-importantes",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#exemplos-de-estatísticas-importantes",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Exemplos de Estatísticas Importantes",
-    "text": "Exemplos de Estatísticas Importantes\n\n\n\n\n\n\n\nExemplo 1.3.1 (Bolfarine & Sandoval)\n\n\nSejam \\(X_1, \\dots, X_n\\) uma amostra aleatória da variável \\(X\\) com f.d.p. ou f.p. \\(f(x|\\theta)\\)[cite: 3]. São exemplos clássicos de estatísticas:\n\nMínimo amostral: \\(X_{(1)} = \\min(X_1, \\dots, X_n)\\)[cite: 3]\nMáximo amostral: \\(X_{(n)} = \\max(X_1, \\dots, X_n)\\)[cite: 3]\nMediana amostral: \\(\\tilde{X} = \\text{med}(X_1, \\dots, X_n)\\)[cite: 3]\nMédia amostral: \\(\\bar{X} = \\frac{1}{n} \\sum_{i=1}^n X_i\\)[cite: 3]\nVariância amostral (com divisor \\(n\\)): \\(\\hat{\\sigma}^2 = \\frac{1}{n} \\sum_{i=1}^n (X_i - \\bar{X})^2\\)[cite: 3]\n\n\n\n\n\n\nComo \\(X_1, \\dots, X_n\\) são variáveis aleatórias, toda estatística \\(T(\\mathbf{X})\\) também é uma variável aleatória e possui uma distribuição de probabilidade (chamada de Distribuição Amostral)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#espaço-paramétrico",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#espaço-paramétrico",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Espaço Paramétrico",
-    "text": "Espaço Paramétrico\n\n\n\n\n\n\n\nDefinição 1.3.4 (Espaço Paramétrico)\n\n\nO conjunto em que o parâmetro \\(\\theta\\) toma valores é denominado espaço paramétrico, denotado por \\(\\Theta\\)[cite: 3].\n\n\n\n\n\n\n\n\n\n\n\n\nExemplo 1.3.2 (Bolfarine & Sandoval)\n\n\nSejam \\(X_1, \\dots, X_n\\) uma a.a. da variável aleatória \\(X \\sim N(\\mu, \\sigma^2)\\)[cite: 3]:\n\n(i) Se \\(\\sigma^2 = 1\\) é conhecido, o parâmetro desconhecido é \\(\\theta = \\mu\\) e: \\[\\Theta = \\{\\mu : -\\infty &lt; \\mu &lt; \\infty\\} = \\mathbb{R}\\][cite: 3]\n(ii) Se \\(\\mu = 0\\) é conhecido, o parâmetro desconhecido é \\(\\theta = \\sigma^2\\) e: \\[\\Theta = \\{\\sigma^2 : \\sigma^2 &gt; 0\\} = \\mathbb{R}^+\\][cite: 3]\n(iii) Se \\(\\mu\\) e \\(\\sigma^2\\) são ambos desconhecidos, o vetor paramétrico é \\(\\theta = (\\mu, \\sigma^2)\\) e: \\[\\Theta = \\{(\\mu, \\sigma^2) : -\\infty &lt; \\mu &lt; \\infty, \\, \\sigma^2 &gt; 0\\} = \\mathbb{R} \\times \\mathbb{R}^+\\][cite: 3]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#estimadores-e-a-função-paramétrica-gtheta",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#estimadores-e-a-função-paramétrica-gtheta",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Estimadores e a Função Paramétrica \\(g(\\theta)\\)",
-    "text": "Estimadores e a Função Paramétrica \\(g(\\theta)\\)\n\n\n\n\n\n\n\nDefinição 1.3.5 (Estimador de \\(\\theta\\))\n\n\nQualquer estatística que assuma valores no espaço paramétrico \\(\\Theta\\) é um estimador para o parâmetro \\(\\theta\\)[cite: 3].\n\n\n\n\n\nEstimação de Funções do Parâmetro \\(g(\\theta)\\)\nEm muitas situações práticas, o nosso interesse não é estimar diretamente \\(\\theta\\), mas sim uma função \\(g(\\theta)\\)[cite: 3]. - Exemplo: Na Normal \\(N(\\mu, \\sigma^2)\\) com parâmetros \\(\\theta = (\\mu, \\sigma^2)\\), podemos desejar estimar apenas \\(g(\\theta) = \\mu\\), tratando \\(\\sigma^2\\) como um parâmetro de perturbação (ou ruído)[cite: 3].\n. . .\n\n\n\n\n\n\n\nDefinição 1.3.6 (Estimador de \\(g(\\theta)\\))\n\n\nQualquer estatística que assuma valores somente no conjunto dos possíveis valores de \\(g(\\theta)\\) é um estimador para \\(g(\\theta)\\)[cite: 3]."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#síntese-notacional-a-tríade-da-inferência",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#síntese-notacional-a-tríade-da-inferência",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Síntese Notacional: A Tríade da Inferência",
-    "text": "Síntese Notacional: A Tríade da Inferência\nPara encerrar a parte conceitual, vamos consolidar a transposição dos três mundos em uma única tabela:\n\n\n\n\n\n\n\n\n\nConceito\nNo Mundo Real (Aplicações)\nNa Teoria da Inferência\nNotação Matemática\n\n\n\n\nAlvo Desconhecido\nTaxa real de sinistros / Proporção de votos\nParâmetro ou \\(g(\\theta)\\)\n\\(\\theta \\in \\Theta\\)[cite: 3]\n\n\nColeta Teórica\nMecanismo de amostragem de \\(n\\) elementos\nAmostra Aleatória\n\\(\\mathbf{X} = (X_1, \\dots, X_n)\\)[cite: 3]\n\n\nRegra / Função\nFórmula aplicada à amostra abstrata\nEstimador\n\\(T(\\mathbf{X})\\) (V.A.)[cite: 3]\n\n\nDado Concreto\nO valor final calculado na planilha de dados\nEstimativa\n\\(t(\\mathbf{x}) \\in \\mathbb{R}\\)[cite: 3]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#as-grandes-perguntas-que-responderemos",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#as-grandes-perguntas-que-responderemos",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "As Grandes Perguntas que Responderemos",
-    "text": "As Grandes Perguntas que Responderemos\nNesta disciplina, atacaremos três grandes problemas matemáticos em sequência[cite: 3]:\n\n\nMétodos de Construção (Como propor um Estimador?):\n\nDada a amostragem \\(X \\sim f(x|\\theta)\\), como derivar analiticamente a função \\(T(\\mathbf{X})\\)?\nMétodos dos Momentos, Máxima Verossimilhança e Abordagem Bayesiana.\n\n\n\n\n\nAvaliação e Propriedades (Como saber se um Estimador é bom?):\n\nEm média ele acerta o alvo? \\(\\implies E[\\hat{\\theta}] = \\theta\\) (Não viciado)[cite: 3].\nQual o erro quadrático médio? \\(\\implies EQM[\\hat{\\theta}] = Var[\\hat{\\theta}] + B^2(\\hat{\\theta})\\)[cite: 3].\nQuando \\(n \\to \\infty\\), o erro vai a zero? \\(\\implies\\) (Consistência)[cite: 3].\n\n\n\n\n\nEstrutura Teórica Otimal (Qual o melhor estimador possível?):\n\nSuficiência, Família Exponencial, Informação de Fisher e o Limite de Cramér-Rao."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#provocação-para-a-próxima-aula",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#provocação-para-a-próxima-aula",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Provocação para a Próxima Aula",
-    "text": "Provocação para a Próxima Aula\n\n*“Calcular a média de um conjunto de dados é aritmética básica.\nA Inferência Estatística nos permite provar se essa média é o melhor estimador possível para a população e mensurar a probabilidade exata de estarmos errados.”*\n\n\n\n\n\n\n\n\n\n\n📚 Leitura Recomendada para Quinta-feira\n\n\nEstudar a Seção 1.3 do Bolfarine & Sandoval[cite: 3] (foco na Definição 1.3.7: Erro Quadrático Médio e Viés[cite: 3])."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#section",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#section",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "",
-    "text": "Dentro da caixa habita a distribuição \\(f(x \\mid \\theta)\\).\nO parâmetro \\(\\theta\\) é uma constante fixa, porém oculta.\nO Desafio: A Natureza nos deixa ver apenas pequenos pedaços da verdade (\\(\\mathbf{x}\\)).\n\n\n🔤 Rigor Notacional Importante\n\n\\(\\mathbf{X} = (X_1, \\dots, X_n)\\) [Maiúsculas]: Variáveis Aleatórias (Amostra teórica / evento futuro).\n\\(\\mathbf{x} = (x_1, \\dots, x_n)\\) [Minúsculas]: Números Reais Fixos (Os dados concretos coletados)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#slide-1-a-inversão-do-vetor-do-conhecimento",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#slide-1-a-inversão-do-vetor-do-conhecimento",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Slide 1: A Inversão do Vetor do Conhecimento",
-    "text": "Slide 1: A Inversão do Vetor do Conhecimento\n\n\n🎲 O Mundo da Probabilidade (Dedução)\n\nPartida: O modelo e o parâmetro \\(\\theta\\) são conhecidos (premissa dada).\nObjetivo: Prever a probabilidade de comportamentos da amostra futura.\nRaciocínio: Do Geral (População) para o Particular (Amostra).\n\n\n🎯 O Mundo da Inferência (Indução)\n\nPartida: Apenas os dados observados \\(\\mathbf{x} = (x_1, \\dots, x_n)\\) são visíveis.\nObjetivo: Desvendar o parâmetro oculto \\(\\theta\\) da caixa-preta da Natureza.\nRaciocínio: Do Particular (Amostra) para o Geral (População).\n\n\n\n\n\nPROBABILIDADE (Fluxo Direto)\n\n\n\n\n&lt;strong style=\"color: #2c3e50; font-size: 0.8em;\"&gt;POPULAÇÃO&lt;/strong&gt;&lt;br&gt;\n&lt;span style=\"font-size: 0.85em;\"&gt;$\\theta$ Conhecido&lt;/span&gt;\n\n\n➔\n\n\n&lt;strong style=\"color: #2c3e50; font-size: 0.8em;\"&gt;AMOSTRA&lt;/strong&gt;&lt;br&gt;\n&lt;span style=\"font-size: 0.85em;\"&gt;$\\mathbf{X}$ V.A.&lt;/span&gt;\n\n\n\nDedução: Prever a chance de certos dados ocorrerem.\n\n\n\nINFERÊNCIA (Fluxo Inverso)\n\n\n\n\n&lt;strong style=\"color: #d35400; font-size: 0.8em;\"&gt;DADOS REAIS&lt;/strong&gt;&lt;br&gt;\n&lt;span style=\"font-size: 0.85em;\"&gt;$\\mathbf{x}$ Observado&lt;/span&gt;\n\n\n➔\n\n\n&lt;strong style=\"color: #d35400; font-size: 0.8em;\"&gt;POPULAÇÃO&lt;/strong&gt;&lt;br&gt;\n&lt;span style=\"font-size: 0.85em;\"&gt;$\\theta$ Desconhecido&lt;/span&gt;\n\n\n\nIndução: Desvendar a causa oculta na Natureza."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#slide-2-a-caixa-preta-da-natureza-e-o-rigor-notacional",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#slide-2-a-caixa-preta-da-natureza-e-o-rigor-notacional",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Slide 2: A Caixa-Preta da Natureza e o Rigor Notacional",
-    "text": "Slide 2: A Caixa-Preta da Natureza e o Rigor Notacional\n\n\n📦 A Caixa-Preta da Natureza\n\nDentro da caixa habita a distribuição \\(f(x \\mid \\theta)\\).\nO parâmetro \\(\\theta\\) é uma constante fixa, porém oculta.\nO Desafio: A Natureza nos deixa ver apenas pequenos pedaços da verdade (\\(\\mathbf{x}\\)).\n\n\n🔤 Rigor Notacional Importante\n\n\\(\\mathbf{X} = (X_1, \\dots, X_n)\\) [Maiúsculas]: Variáveis Aleatórias (Amostra teórica / evento futuro).\n\\(\\mathbf{x} = (x_1, \\dots, x_n)\\) [Minúsculas]: Números Reais Fixos (Os dados concretos coletados).\n\n\n\n\nModelo Populacional Inobservável\n\n\n\\(f(x \\mid \\theta)\\)\n\n\nParâmetro \\(\\theta\\) \\(\\implies\\) A “Verdade” Oculta\n\n\n↓ AMOSTRAGEM ↓\n\n\n\nO QUE NÓS ENXERGAMOS:\n\n\n$\\mathbf{x} = (x_1, x_2, \\dots, x_n)$\n\n\nVetor de Dados Concretos / Planilha"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#probabilidade-vs.-inferência",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#probabilidade-vs.-inferência",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Probabilidade vs. Inferência",
-    "text": "Probabilidade vs. Inferência\nAté o semestre passado (Probabilidade), o fluxo de pensamento assumia um modelo (distribuição de probabilidade) completamente conhecido:\nProbabilidade (Dedução)\n\nPartida: O modelo e o parâmetro \\(\\theta\\) são conhecidos (premissa dada).\nObjetivo: Prever a probabilidade de comportamentos da amostra futura.\nRaciocínio: Do Geral (População) para o Particular (Amostra).\n\n\n\n\nA partir de hoje (Inferência Estatística), invertemos radicalmente o vetor do conhecimento:\n. . .\n\\[\\underbrace{\\text{Amostra Observada } (\\mathbf{x} = (x_1, \\dots, x_n))}_{\\text{Dados Reais e Visíveis}} \\xrightarrow{\\quad\\text{Indução Inferencial}\\quad} \\underbrace{\\text{Características da População } (\\theta \\text{ Desconhecido})}_{\\text{A \"Verdade\" Oculta na Natureza}}\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#probabilidade-dedução",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#probabilidade-dedução",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Probabilidade (Dedução)",
-    "text": "Probabilidade (Dedução)\nEnquanto estudávamos Probabilidade, o fluxo de pensamento assume um modelo (distribuição) completamente conhecido:\n\nPartida: O modelo e o parâmetro \\(\\theta\\) são conhecidos (premissa dada).\nObjetivo: Prever a probabilidade de comportamentos da amostra futura.\nRaciocínio: Do Geral (População) para o Particular (Amostra)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#inferência",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#inferência",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Inferência",
-    "text": "Inferência\n\nNa prática acadêmica e aplicada, a verdadeira distribuição de probabilidade \\(f(x\\vert{}\\theta)\\) que rege um fenômeno aleatório é caracterizada por um vetor de parâmetros \\(\\theta \\in \\Theta\\) desconhecido. Exemplos:\n\nA proporção populacional \\(p \\in (0,1)\\) de eleitores favoráveis a determinada candidata;\nA taxa populacional \\(\\lambda &gt; 0\\) de ocorrência de sinistros por ano.\n\nO parâmetro \\(\\theta\\) é assumido como uma quantidade constante e determinística, porém inobservável (latente).\nO pesquisador dispõe exclusivamente do vetor de observações \\(x = (x_1, x_2, \\dots, x_n)'\\), que representa a realização concreta (valores observados) da amostra aleatória \\(X = (X_1, X_2, \\dots, X_n)'\\).\n\nQuestão Central da Inferência: Dado o vetor de dados observados \\(x\\), qual o procedimento matematicamente sustentável para induzir o comportamento de \\(\\theta\\), e quais são os valores do espaço paramétrico \\(\\Theta\\) mais plausíveis sob o modelo probabilístico \\(f(x\\vert{}\\theta)\\)?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#inferência-indução",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#inferência-indução",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Inferência (Indução)",
-    "text": "Inferência (Indução)\nA partir de hoje (Inferência Estatística), invertemos radicalmente o conhecimento:\n\nPartida: Apenas os dados observados \\(\\mathbf{x} = (x_1, \\dots, x_n)\\) são visíveis.\nObjetivo: Desvendar o parâmetro oculto \\(\\theta\\) da caixa-preta da Natureza.\nRaciocínio: Do Particular (Amostra) para o Geral (População).\n\n\n\n\n\n\\[\\underbrace{\\text{Amostra Observada } (\\mathbf{x} = (x_1, \\dots, x_n))}_{\\text{Dados Reais e Visíveis}} \\xrightarrow{\\quad\\text{Indução Inferencial}\\quad} \\underbrace{\\text{Características da População } (\\theta \\text{ Desconhecido})}_{\\text{A \"Verdade\" Oculta na Natureza}}\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#probabilidade",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#probabilidade",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Probabilidade",
-    "text": "Probabilidade\nEnquanto estudávamos Probabilidade, o fluxo de pensamento assume um modelo (distribuição) completamente conhecido:\n\nPartida: O modelo e o parâmetro \\(\\theta\\) são conhecidos.\nObjetivo: Prever a probabilidade de comportamentos da amostra futura.\nRaciocínio: Do Geral (População) para o Particular (Amostra)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#inferência-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#inferência-1",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Inferência",
-    "text": "Inferência\n\nNa prática acadêmica e aplicada, a verdadeira distribuição de probabilidade \\(f(x\\vert{}\\theta)\\) que rege um fenômeno aleatório é caracterizada por um vetor de parâmetros \\(\\theta \\in \\Theta\\) desconhecido. Exemplos:\n\nA proporção populacional \\(p \\in (0,1)\\) de eleitores favoráveis a determinada candidata;\nA taxa populacional \\(\\lambda &gt; 0\\) de ocorrência de sinistros por ano.\n\nO parâmetro \\(\\theta\\) é assumido como uma quantidade constante e determinística, porém inobservável (latente).\nO pesquisador dispõe exclusivamente do vetor de observações \\(x = (x_1, x_2, \\dots, x_n)'\\), que representa a realização concreta (valores observados) da amostra aleatória \\(X = (X_1, X_2, \\dots, X_n)'\\).\n\nQuestão Central da Inferência: Dado o vetor de dados observados \\(x\\), qual o procedimento matematicamente sustentável para induzir o comportamento de \\(\\theta\\), e quais são os valores do espaço paramétrico \\(\\Theta\\) mais plausíveis sob o modelo probabilístico \\(f(x\\vert{}\\theta)\\)?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-probabilístico-dedução-a-partir-do-modelo",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-probabilístico-dedução-a-partir-do-modelo",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Paradigma Probabilístico: Dedução a partir do Modelo",
-    "text": "Paradigma Probabilístico: Dedução a partir do Modelo\nPremissa Fundamental (Modelo Especificado):A função de probabilidade ou de densidade \\(f(x\\vert{}\\theta)\\) da população e o parâmetro \\(\\theta \\in \\Theta\\) são tidos como completamente conhecidos ex-ante.Objetivo Analítico:Deducir o comportamento probabilístico de variáveis aleatórias antes da amostragem, calculando probabilidades associadas a eventos da amostra teórica \\(X = (X_1, \\dots, X_n)'\\).Vetor de Raciocínio (Dedução):Estruturação do pensamento do Geral para o Particular:\nEnquanto estudávamos Probabilidade, o fluxo de pensamento assume um modelo (distribuição) completamente conhecido:\n\nPartida: O modelo e o parâmetro \\(\\theta\\) são conhecidos.\nObjetivo: Prever a probabilidade de comportamentos da amostra futura.\nRaciocínio: Do Geral (População) para o Particular (Amostra)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-inferencial-indução-a-partir-dos-dados",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-inferencial-indução-a-partir-dos-dados",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Paradigma Inferencial: Indução a partir dos Dados",
-    "text": "Paradigma Inferencial: Indução a partir dos Dados\nPremissa Fundamental (Incerteza Paramétrica):Apenas a estrutura da família de distribuições \\(f(x\\vert{}\\theta)\\) é conhecida, enquanto o parâmetro \\(\\theta\\) permanece desconhecido e inobservável.Objetivo Analítico:Utilizar a realização concreta da amostra \\(x = (x_1, \\dots, x_n)'\\) para especificar um valor, um conjunto de valores plausíveis ou testar hipóteses sobre \\(\\theta\\).Vetor de Raciocínio (Indução):Inversão do fluxo de conhecimento, caminhando do Particular para o Geral:\nA partir de hoje (Inferência Estatística), invertemos radicalmente o conhecimento:\n\nPartida: Apenas os dados observados \\(\\mathbf{x} = (x_1, \\dots, x_n)\\) são visíveis.\nObjetivo: Desvendar o parâmetro oculto \\(\\theta\\) da caixa-preta da Natureza.\nRaciocínio: Do Particular (Amostra) para o Geral (População)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-problema-da-inferência",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-problema-da-inferência",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Problema da Inferência",
-    "text": "O Problema da Inferência\nDesconhecimento do Parâmetro\n\nA distribuição \\(f(x \\mid \\theta)\\) rege o fenômeno aleatório.\nO parâmetro \\(\\theta \\in \\Theta\\) é desconhecido e inobservável.\nAtuária: Taxa de sinistros \\(\\lambda &gt; 0\\) é desconhecida.\nEleições: Proporção de votos \\(p \\in (0,1)\\) é desconhecida.\nNa abordagem frequentista, \\(\\theta\\) é constante e fixo."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-ponto-de-partida",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-ponto-de-partida",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Ponto de Partida",
-    "text": "O Ponto de Partida\nDados e a Questão Central\n\nDispomos apenas do vetor de dados observados \\(x = (x_1, \\dots, x_n)'\\).\n\\(x\\) representa a realização concreta da amostra \\(X\\).\nObjetivo: Induzir o valor plausível do parâmetro \\(\\theta\\).\nComo escolher valores plausíveis no espaço paramétrico \\(\\Theta\\)?\nComo garantir sustentabilidade matemática para essa indução?"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-probabilístico",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-probabilístico",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Paradigma Probabilístico",
-    "text": "Paradigma Probabilístico\nDedução a Partir do Modelo\n\nPremissa: Modelo \\(f(x \\mid \\theta)\\) e parâmetro \\(\\theta\\) são conhecidos.\nObjetivo: Calcular probabilidades da amostra teórica \\(X\\).\nRaciocínio: Do Geral (População) para o Particular (Amostra).\n\n\\[\\text{Modelo } f(x \\mid \\theta) \\xrightarrow{\\quad\\text{Dedução}\\quad} \\text{Amostra } X\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-inferencial",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#paradigma-inferencial",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Paradigma Inferencial",
-    "text": "Paradigma Inferencial\nIndução a Partir dos Dados\n\nPremissa: Estrutura \\(f(x \\mid \\theta)\\) é conhecida, mas \\(\\theta\\) é desconhecido.\nObjetivo: Estimar \\(\\theta\\) ou testar hipóteses com dados \\(x\\).\nRaciocínio: Do Particular (Amostra) para o Geral (População).\n\n\\[\\text{Dados } x \\xrightarrow{\\quad\\text{Indução}\\quad} \\text{Parâmetro } \\theta \\in \\Theta\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\n\nNos estudos de Probabilidade, a distribuição probabilística da população é completamente conhecida.\n\nA função de probabilidade ou de densidade \\(f(x \\mid \\theta)\\) é especificada.\nO parâmetro \\(\\theta\\) da distribuição é conhecido.\nA única fonte de aleatoriedade é a amostra futura.\n\n\n\n\n\n\nObjetivo: determinar probabilidades associadas ao comportamento de uma amostra aleatória."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade-1",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\nExemplo: Ocorrência de Sinistros\n\nAssume-se que o número anual de sinistros de uma apólice segue uma distribuição de Poisson com média λ = 0,25 sinistros por ano, \\(X\\sim \\text{Poisson}(\\lambda=0{,}25)\\).\nA partir desse modelo, é possível calcular:\n\na probabilidade de uma apólice não registrar sinistros: \\(P(X=0)\\);\na probabilidade de ocorrer pelo menos um sinistro: \\(P(X\\geq 1)\\);\na probabilidade de uma carteira com milhares de apólices registrar mais de determinado número de sinistros.\n\nEm todos esses casos, a distribuição de probabilidade é conhecida e o objetivo é prever o comportamento de perdas futuras."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade-2",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade-2",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\nExemplo: Predição de Internações\n\nUma equipe resolve prever o tempo de permanência hospitalar de pacientes internados por complicações do diabetes usando a distribuição Lognormal, \\(T \\sim \\text{Lognormal}(\\mu,\\sigma^2)\\).\nEsse modelo permite determinar:\n\na probabilidade de uma internação durar mais de 15 dias;\no tempo médio esperado de ocupação dos leitos;\na proporção de pacientes com internações prolongadas;\na capacidade hospitalar necessária para atender à demanda prevista.\n\nComo a distribuição de probabilidade é completamente conhecida, é possível prever a utilização futura dos recursos hospitalares."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#exemplo-ocorrência-de-sinistros",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#exemplo-ocorrência-de-sinistros",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "Exemplo: Ocorrência de Sinistros",
-    "text": "Exemplo: Ocorrência de Sinistros\n\nAssume-se que o número anual de sinistros de uma apólice segue uma distribuição de Poisson com média λ = 0,25 sinistros por ano, \\(X\\sim \\text{Poisson}(\\lambda=0{,}25)\\).\nA partir desse modelo, é possível calcular:\n\na probabilidade de uma apólice não registrar sinistros: \\(P(X=0)\\);\na probabilidade de ocorrer pelo menos um sinistro: \\(P(X\\geq 1)\\);\na probabilidade de uma carteira com milhares de apólices registrar mais de determinado número de sinistros.\n\nEm todos esses casos, a distribuição de probabilidade é conhecida e o objetivo é prever o comportamento de perdas futuras."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/Untitled-1.html#o-paradigma-da-probabilidade-3",
-    "title": "O Problema Fundamental da Inferência Estatística",
-    "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\n\nNos dois exemplos o problema possui a mesma estrutura lógica:\n\n\n\n\n\nEssa forma de raciocínio caracteriza o Paradigma da Probabilidade."
+    "text": "Bibliografia Recomendada\n\nComplementar"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade",
@@ -1304,91 +177,35 @@
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-1",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\nExemplo: Ocorrência de Sinistros\n\nAssume-se que o número anual de sinistros de uma apólice segue uma distribuição de Poisson com média λ = 0,25 sinistros por ano, \\(X\\sim \\text{Poisson}(\\lambda=0{,}25)\\).\nA partir desse modelo, é possível calcular:\n\na probabilidade de uma apólice não registrar sinistros: \\(P(X=0)\\);\na probabilidade de ocorrer pelo menos um sinistro: \\(P(X\\geq 1)\\);\na probabilidade de uma carteira com milhares de apólices registrar mais de determinado número de sinistros.\n\nEm todos esses casos, a distribuição de probabilidade é conhecida e o objetivo é prever o comportamento de perdas futuras."
+    "text": "O Paradigma da Probabilidade\n\nExemplo: Ocorrência de Sinistros\n\nAssume-se que o número anual de sinistros de uma apólice segue uma distribuição de Poisson com média λ = 0,25 sinistros por ano, \\(X\\sim \\text{Poisson}(\\lambda=0{,}25)\\).\nA partir desse modelo, é possível calcular:\n\na probabilidade de uma apólice não registrar sinistros: \\(P(X=0)\\);\na probabilidade de ocorrer pelo menos um sinistro: \\(P(X\\geq 1)\\);\na probabilidade de uma carteira com milhares de apólices registrar mais de determinado número de sinistros.\n\nEm todos esses casos, a distribuição de probabilidade é conhecida e o objetivo é prever o comportamento de perdas futuras."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-2",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-2",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\nExemplo: Predição de Internações\n\nUma equipe resolve prever o tempo de permanência hospitalar de pacientes internados por complicações do diabetes usando a distribuição Lognormal, \\(T \\sim \\text{Lognormal}(\\mu,\\sigma^2)\\).\nEsse modelo permite determinar:\n\na probabilidade de uma internação durar mais de 15 dias;\no tempo médio esperado de ocupação dos leitos;\na proporção de pacientes com internações prolongadas;\na capacidade hospitalar necessária para atender à demanda prevista.\n\nComo a distribuição de probabilidade é completamente conhecida, é possível prever a utilização futura dos recursos hospitalares."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-3",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-probabilidade-3",
-    "title": "O problema da inferência estatística",
-    "section": "O Paradigma da Probabilidade",
-    "text": "O Paradigma da Probabilidade\n\nNos dois exemplos o problema possui a mesma estrutura lógica:\n\n\n\n\n\nEssa forma de raciocínio caracteriza o Paradigma da Probabilidade."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#para-formalizar-as-4-definições-fundamentais",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#para-formalizar-as-4-definições-fundamentais",
-    "title": "O problema da inferência estatística",
-    "section": "Para Formalizar: As 4 Definições Fundamentais",
-    "text": "Para Formalizar: As 4 Definições Fundamentais\nPara sairmos do senso comum e entrarmos no rigor matemático da disciplina, precisamos definir 4 elementos básicos:\n\n\nPopulação e Modelo: A variável \\(X \\sim f(x; \\theta)\\), onde \\(\\theta \\in \\Theta\\) é o Parâmetro (fixo e desconhecido).\nAmostra Aleatória (A.A.): Vetor de V.A.s \\(\\mathbf{X} = (X_1, X_2, \\dots, X_n)\\) i.i.d. provenientes de \\(f(x; \\theta)\\).\nEstatística: Qualquer função \\(T(\\mathbf{X})\\) da amostra aleatória que não depende do parâmetro desconhecido \\(\\theta\\).\nEstimador: Uma estatística \\(T(\\mathbf{X})\\) cuja finalidade é inferir o valor de \\(\\theta\\)."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#a-diferença-crucial-estimador-vs.-estimativa",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#a-diferença-crucial-estimador-vs.-estimativa",
-    "title": "O problema da inferência estatística",
-    "section": "A Diferença Crucial: Estimador vs. Estimativa",
-    "text": "A Diferença Crucial: Estimador vs. Estimativa\nUm dos erros mais comuns de estudantes no 4º período é confundir a variável aleatória com o valor calculado.\n\n\n🎲 Estimador \\(T(\\mathbf{X})\\)\n\nÉ uma Variável Aleatória!\nFunção da amostra teórica \\(\\mathbf{X} = (X_1, \\dots, X_n)\\).\nPossui média, variância e uma Distribuição Amostral.\nExemplo: \\(\\bar{X} = \\frac{1}{n} \\sum_{i=1}^n X_i\\)\n\n\n🎯 Estimativa \\(t(\\mathbf{x})\\)\n\nÉ um Número Real (uma concretização).\nCalculado a partir da amostra observada \\(\\mathbf{x} = (x_1, \\dots, x_n)\\).\nValor fixo para aquela amostra específica.\nExemplo: \\(\\bar{x} = 0{,}52\\) (\\(52\\%\\))"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-esquema-geral-da-inferência-estatística",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-esquema-geral-da-inferência-estatística",
-    "title": "O problema da inferência estatística",
-    "section": "O Esquema Geral da Inferência Estatística",
-    "text": "O Esquema Geral da Inferência Estatística\n\n\\[\\begin{array}{ccc}\n\\text{População } X \\sim f(x; \\theta) & \\xrightarrow{\\quad\\text{Amostragem i.i.d.}\\quad} & \\text{Amostra Aleatória } (X_1, \\dots, X_n) \\\\\n\\uparrow & & \\downarrow \\\\\n\\text{Parâmetro } \\theta \\text{ (Fixo, Desconhecido)} & \\xleftarrow[\\quad\\text{Avaliação / Métodos}\\quad]{} & \\text{Estimador } \\hat{\\theta} = T(X_1, \\dots, X_n) \\text{ (V.A.)}\n\\end{array}\\]"
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-roteiro-da-disciplina-o-que-veremos-em-inferência-i",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-roteiro-da-disciplina-o-que-veremos-em-inferência-i",
-    "title": "O problema da inferência estatística",
-    "section": "O Roteiro da Disciplina: O Que Veremos em Inferência I?",
-    "text": "O Roteiro da Disciplina: O Que Veremos em Inferência I?\nNas próximas 60 horas de curso, resolveremos 3 grandes problemas:\n\nConstrução: Como encontrar bons estimadores \\(T(\\mathbf{X})\\)?\n\nMétodo dos Momentos, Máxima Verossimilhança e Abordagem Bayesiana.\n\nPropriedades e Avaliação: Como provar matematicamente que \\(T(\\mathbf{X})\\) é um bom estimador?\n\nViés, Variância, Erro Quadrático Médio, Consistência e Limite de Cramér-Rao.\n\nIncerteza: Como construir Intervalos de Confiança exatos e assintóticos?\n\nMétodo da Quantidade Pivotal."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#provocação-para-a-próxima-aula",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#provocação-para-a-próxima-aula",
-    "title": "O problema da inferência estatística",
-    "section": "Provocação para a Próxima Aula",
-    "text": "Provocação para a Próxima Aula\n\n“Calcular a média ou a proporção de uma amostra é apenas aritmética.\nA Inferência Estatística nos ensina a provar se essa média é a melhor possível e a responder: qual é a probabilidade exata de estarmos redondamente enganados?”\n\n\n\n\n\n\n\n\n\n\nLeitura Recomendada\n\n\nCapítulo 1 de Bolfarine & Sandoval ou Capítulo 5 de Casella & Berger."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#section",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#section",
-    "title": "O problema da inferência estatística",
-    "section": "",
-    "text": "Síntese\n\n\nNenhum instituto errou. A Inferência Estatística existe justamente para nos dizer quão perto \\(\\hat{p}\\) está de \\(p\\) e com qual nível de confiança podemos fazer uma afirmação sobre a eleição.\n\n\n\n\n\nOs dois institutos usaram métodos corretos, mas trabalharam com amostras distintas da mesma população.\nA variação nos resultados (\\(52\\%\\) vs \\(48\\%\\)) não é um erro, é a manifestação natural da Variabilidade Amostral.\nComo não podemos entrevistar todos os eleitores, a proporção real \\(p\\) permanece desconhecida.\n\n\n\n\n\n\n\n\nO Problema Central\n\n\nSe a amostra muda a cada coleta e os resultados oscilam, como um analista pode tomar uma decisão com rigor científico sem parecer que está apenas “chutando”?\n\n\n\n\n\n\nResposta: Precisamos de uma estrutura matemática que nos permita usar a amostra para estimar a verdade e medir a margem de erro. É aqui que entra a Inferência Estatística."
+    "text": "O Paradigma da Probabilidade\n\nExemplo: Predição de Internações\n\nUma equipe resolve prever o tempo de permanência hospitalar de pacientes internados por complicações do diabetes usando a distribuição Lognormal, \\(T \\sim \\text{Lognormal}(\\mu,\\sigma^2)\\).\nEsse modelo permite determinar:\n\na probabilidade de uma internação durar mais de 15 dias;\no tempo médio esperado de ocupação dos leitos;\na proporção de pacientes com internações prolongadas;\na capacidade hospitalar necessária para atender à demanda prevista.\n\nComo a distribuição de probabilidade é completamente conhecida, é possível prever a utilização futura dos recursos hospitalares."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-1",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-1",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Inferência Estatística",
-    "text": "O Paradigma da Inferência Estatística\nExemplo: Estimativa da Ocorrência de Sinistros\n\nUma seguradora deseja estimar a frequência anual de sinistros de uma nova carteira de seguros, assumindo a distribuição de Poisson, \\(X\\sim \\text{Poisson}(\\lambda)\\), mas o parâmetro \\(\\lambda\\) é desconhecido.\nObserva-se milhares de apólices e obtém-se uma amostra histórica de sinistros.\nA partir dessa amostra, é possível:\n\nestimar a frequência média de sinistros (estimativa de \\(\\lambda\\));\nconstruir intervalos de confiança para a estimativa de \\(\\lambda\\);\ntestar hipóteses sobre mudanças na frequência;\ndefinir um prêmio compatível com o risco observado.\n\nAgora os dados vêm primeiro e o modelo é aprendido posteriormente."
+    "text": "O Paradigma da Inferência Estatística\n\nExemplo: Estimativa da Ocorrência de Sinistros\n\nUma seguradora deseja estimar a frequência anual de sinistros de uma nova carteira de seguros, assumindo a distribuição de Poisson, \\(X\\sim \\text{Poisson}(\\lambda)\\), mas o parâmetro \\(\\lambda\\) é desconhecido.\nObserva-se milhares de apólices e obtém-se uma amostra histórica de sinistros.\nA partir dessa amostra, é possível:\n\nestimar a frequência média de sinistros (estimativa de \\(\\lambda\\));\nconstruir intervalos de confiança para a estimativa de \\(\\lambda\\);\ntestar hipóteses sobre mudanças na frequência;\ndefinir um prêmio compatível com o risco observado.\n\nAgora os dados vêm primeiro e o modelo é aprendido posteriormente."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-2",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#o-paradigma-da-inferência-estatística-2",
     "title": "O problema da inferência estatística",
     "section": "O Paradigma da Inferência Estatística",
-    "text": "O Paradigma da Inferência Estatística\nExemplo: Predição de Internações\n\nUm hospital deseja conhecer o tempo médio de permanência de pacientes internados por diabetes. Assume-se \\(T\\sim \\text{Lognormal}(\\mu,\\sigma^2)\\), mas os parâmetros \\(\\mu\\) e \\(\\sigma^2\\) são desconhecidos.\nApós coletar uma amostra de pacientes internados, torna-se possível\n\nestimar o tempo médio de permanência \\(\\mu\\);\nestimar a variabilidade entre pacientes \\(\\sigma^2\\);\nconstruir intervalos de confiança para essas estimativas;\navaliar se houve mudança após uma intervenção clínica.\n\nPerceba que o modelo que busca replicar o comportamento da população é ajustado utilizando os dados observados."
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#comparação",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#comparação",
-    "title": "O problema da inferência estatística",
-    "section": "Comparação",
-    "text": "Comparação\nProbabilidade\n\n\n\nInferência Estatística"
+    "text": "O Paradigma da Inferência Estatística\n\nExemplo: Predição de Internações\n\nUm hospital deseja conhecer o tempo médio de permanência de pacientes internados por diabetes. Assume-se \\(T\\sim \\text{Lognormal}(\\mu,\\sigma^2)\\), mas os parâmetros \\(\\mu\\) e \\(\\sigma^2\\) são desconhecidos.\nApós coletar uma amostra de pacientes internados, torna-se possível\n\nestimar o tempo médio de permanência \\(\\mu\\);\nestimar a variabilidade entre pacientes \\(\\sigma^2\\);\nconstruir intervalos de confiança para essas estimativas;\navaliar se houve mudança após uma intervenção clínica.\n\nPerceba que o modelo que busca replicar o comportamento da população é ajustado utilizando os dados observados."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#paradigmas",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#paradigmas",
     "title": "O problema da inferência estatística",
     "section": "Paradigmas",
-    "text": "Paradigmas\nProbabilidade\n\n\n\nInferência Estatística"
+    "text": "Paradigmas\n\nProbabilidade\n\n\n\n\n\nInferência Estatística"
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#os-elementos-da-inferência-estatística",
@@ -1412,13 +229,6 @@
     "text": "População e Modelo Probabilístico\n\nConsidere uma população descrita por uma característica \\(X\\).\nAssume-se que sua distribuição seja dada por \\(f(x\\mid\\theta)\\), em que \\(\\theta\\) representa um ou mais parâmetros desconhecidos da população:\n\n\n\n\nModelo\nParâmetro\n\n\n\n\nBernoulli\n\\(p\\)\n\n\nPoisson\n\\(\\lambda\\)\n\n\nNormal\n\\(\\mu,\\sigma^2\\)\n\n\nExponencial\n\\(\\alpha\\)\n\n\n\n\nA Inferência Estatística busca aprender sobre esses parâmetros."
   },
   {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#parâmetros-populacionais",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#parâmetros-populacionais",
-    "title": "O problema da inferência estatística",
-    "section": "Parâmetros Populacionais",
-    "text": "Parâmetros Populacionais\nO modelo probabilístico depende de parâmetros desconhecidos."
-  },
-  {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#amostra-aleatória",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#amostra-aleatória",
     "title": "O problema da inferência estatística",
@@ -1426,18 +236,11 @@
     "text": "Amostra Aleatória\n\nComo a população completa geralmente não pode ser observada, obtém-se uma amostra aleatória composta por \\(n\\) observações independentes e identicamente distribuídas segundo o mesmo modelo probabilístico da população.\nFormalmente, uma amostra aleatória de tamanho \\(n\\) é definida como o vetor de variáveis aleatórias \\((X_1,\\ldots,X_n)\\), em que\n\n\\(X_1,\\ldots,X_n\\) são idependentes;\ncada \\(X_i\\) possui a mesma distribuição de \\(X\\).\n\nApós a coleta dos dados, observa-se uma realização particular dessa amostra, \\[\\mathbf{x}=(x_1,\\ldots,x_n),\\] que é toda a informação disponível sobre a população."
   },
   {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#amostra-aleatória-1",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#amostra-aleatória-1",
-    "title": "O problema da inferência estatística",
-    "section": "Amostra Aleatória",
-    "text": "Amostra Aleatória\n\nA amostra contém informação sobre o parâmetro desconhecido.\nEssa informação é sintetizada por funções da amostra, \\(T(X_1,\\ldots,X_n)\\), que chamamos de estatíticas.\nExemplos:\n\nMédia;\nMediana;\nVariância;\nMáximo;\nMínimo."
-  },
-  {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#estatísticas",
     "href": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#estatísticas",
     "title": "O problema da inferência estatística",
     "section": "Estatísticas",
-    "text": "Estatísticas\n\nAs informações contidas na amostra são resumidas por funções matemáticas denominadas estatísticas.\nUma estatística é qualquer função da amostra que não depende de parâmetros desconhecidos, \\(T=T(X_1​, \\ldots,X_n​)\\).\nEntre as estatísticas mais utilizadas, temos:\n\n\n\n\n\n\nMédia amostral;\nVariância amostral;\nMediana;\n\n\n\nMínimo e máximo;\nProporções amostrais.\n\n\n\nEssas quantidades são a base para praticamente todos os procedimentos inferenciais desenvolvidos ao longo da disciplina."
+    "text": "Estatísticas\n\nAs informações contidas na amostra são resumidas por funções matemáticas denominadas estatísticas.\nUma estatística é qualquer função da amostra que não depende de parâmetros desconhecidos, \\(T=T(X_1​, \\ldots,X_n​)\\).\nEntre as estatísticas mais utilizadas, temos:\n\n\n\n\n\n\nMédia amostral;\nVariância amostral;\nMediana;\n\n\n\nMínimo e máximo;\nProporções amostrais.\n\n\n\n\nEssas quantidades são a base para praticamente todos os procedimentos inferenciais desenvolvidos ao longo da disciplina."
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/slides/01-O_problema_da_inferencia_estatistica.html#estimadores-e-estimativas",
@@ -1461,88 +264,18 @@
     "text": "Síntese\n\nO processo inferencial pode ser resumido pela sequência lógica:"
   },
   {
+    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html",
+    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html",
+    "title": "O Método dos Momentos",
+    "section": "",
+    "text": "Considere duas situações:\n\nUm atuário precisa modelar o valor dos sinistros de uma seguradora e decide ajustar uma distribuição Gama ou Pareto.\nUm estatístico precisa modelar o número de pacientes que chegam ao pronto-socorro por hora por meio de uma distribuição Poisson.\n\nEm ambos os problemas, conhecemos o modelo probabilístico, mas desconhecemos seus parâmetros.\nComo podemos usar os dados observados para estimar esses parâmetros?\n\nPara isso podemos usar o Método dos Momentos."
+  },
+  {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#estimação-de-parâmetros",
     "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#estimação-de-parâmetros",
     "title": "O Método dos Momentos",
-    "section": "Estimação de Parâmetros",
-    "text": "Estimação de Parâmetros\n\nConsidere duas situações:\n\nUm atuário precisa modelar o valor dos sinistros de uma seguradora e decide ajustar uma distribuição Gama ou Pareto.\nUm estatístico precisa modelar o número de pacientes que chegam ao pronto-socorro por hora por meio de uma distribuição Poisson.\n\nEm ambos os problemas, conhecemos o modelo probabilístico, mas desconhecemos seus parâmetros.\nComo podemos usar os dados observados para estimar esses parâmetros?\n\nPara isso podemos usar o Método dos Momentos."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#filosofia-do-método-dos-momentos",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#filosofia-do-método-dos-momentos",
-    "title": "O Método dos Momentos",
-    "section": "Filosofia do Método dos Momentos",
-    "text": "Filosofia do Método dos Momentos\n“A população é desconhecida, e obtemos uma amostra. Assumimos então que as características da amostra (ou seja, as estatísticas) são boas aproximações para as características da população (parâmetros).”\n\nSe a média da população é \\(\\mu(\\theta)\\) (uma equação que envolve \\(\\theta\\)) e a média da amostra é \\(\\overline{X}\\), forçamos a igualdade: \\[\n\\mu(\\theta) = \\overline{X}\n\\]\n\nE resolvemos a equação para encontrar \\(\\theta\\)."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#definição-11.1-momentos-populacionais",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#definição-11.1-momentos-populacionais",
-    "title": "O Método dos Momentos",
-    "section": "Definição 11.1: Momentos Populacionais",
-    "text": "Definição 11.1: Momentos Populacionais\n\nOs momentos populacionais descrevem a “forma” teórica da distribuição. Eles são constantes que dependem dos parâmetros desconhecidos.\nSeja \\(X\\) uma v.a. com densidade \\(f(x|\\theta)\\). O \\(k\\)-ésimo momento populacional (ao redor da origem) é:\n\n\\[\n\\mu'_k(\\theta) = E[X^k] = \\begin{cases}\n\\int_{-\\infty}^{\\infty} x^k f(x|\\theta) dx & \\text{(Contínuo)} \\\\\n\\sum_{x} x^k P(X=x|\\theta) & \\text{(Discreto)}\n\\end{cases}\n\\]\n\n\n\n\n\n\nCasos Clássicos\n\n\n\n\\(k=1 \\implies \\mu'_1 = E[X]\\) (Média)\n\\(k=2 \\implies \\mu'_2 = E[X^2]\\) (Segundo momento, usado para variância)"
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#definição-11.2-momentos-amostrais",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#definição-11.2-momentos-amostrais",
-    "title": "O Método dos Momentos",
-    "section": "Definição 11.2: Momentos Amostrais",
-    "text": "Definição 11.2: Momentos Amostrais\n\nOs momentos amostrais são variáveis aleatórias calculadas a partir dos dados observados \\(X_1, \\dots, X_n\\). Eles não dependem de \\(\\theta\\).\nO \\(k\\)-ésimo momento amostral é:\n\n\\[\nM_k = \\frac{1}{n} \\sum_{i=1}^n X_i^k\n\\]\n\n\n\n\n\n\nConvergência\n\n\nPela Lei dos Grandes Números, sabemos que quando \\(n \\to \\infty\\): \\[M_k \\xrightarrow{P} \\mu'_k(\\theta)\\] Isso justifica o método!"
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos",
-    "title": "O Método dos Momentos",
-    "section": "O Método dos Momentos",
-    "text": "O Método dos Momentos\nConsidere um modelo com \\(k\\) parâmetros desconhecidos \\(\\theta_1, \\dots, \\theta_k\\).\nPasso 1: Calcule os \\(k\\) primeiros momentos teóricos: \\[E[X], E[X^2], \\dots, E[X^k]\\]\nPasso 2: Calcule os \\(k\\) primeiros momentos amostrais: \\[M_1 = \\overline{X}, \\quad M_2 = \\frac{1}{n}\\sum X_i^2, \\dots, M_k = \\frac{1}{n} \\sum X_i^k\\]"
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos-1",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos-1",
-    "title": "O Método dos Momentos",
-    "section": "O Método dos Momentos",
-    "text": "O Método dos Momentos\nPasso 3: Monte o sistema de equações igualando População = Amostra: \\[\\begin{cases} E[X] = M_1 \\\\ E[X^2] = M_2 \\\\ \\vdots \\\\ E[X^k] = M_k \\end{cases}\\]\nPasso 4: Resolva o sistema para \\(\\theta_1, \\dots, \\theta_k\\). As soluções são os estimadores \\(\\widehat{\\theta}_1, \\dots, \\widehat{\\theta}_k\\)."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.1",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.1",
-    "title": "O Método dos Momentos",
-    "section": "Exemplo 11.1",
-    "text": "Exemplo 11.1\nSeja \\(X \\sim \\text{Bernoulli}(p)\\). obtenha uma estimador para \\(p\\) pelo método dos momentos."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.2",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.2",
-    "title": "O Método dos Momentos",
-    "section": "Exemplo 11.2",
-    "text": "Exemplo 11.2\nSeja \\(X \\sim \\text{Gama}(\\alpha, \\beta)\\) onde \\(E[X] = \\alpha/\\beta\\) e \\(Var(X) = \\alpha/\\beta^2\\). Obtenha um estimador para \\(\\alpha\\) e \\(\\beta\\) pelo método dos momentos.\n\n\n\n\n\n\n\nDica\n\n\nUse a relação \\(E(X^2) = Var(X) + [E(X)]^2\\) para facilitar."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#quando-o-1º-momento-falha",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#quando-o-1º-momento-falha",
-    "title": "O Método dos Momentos",
-    "section": "Quando o 1º Momento Falha",
-    "text": "Quando o 1º Momento Falha\n\nSe um momento falhar, podemos tentar usar outro.\n\nExemplo 2.4\nConsidere \\(X \\sim \\text{Uniforme}(-\\theta, \\theta)\\). Obtenha o estimador pelo método dos momentos.\n\nTemos apenas um parâmetro (\\(\\theta\\)). O primeiro momento é \\[E[X] = \\frac{-\\theta + \\theta}{2} = 0\\]\nIgualar \\(0 = \\overline{X}\\) não nos ajuda a encontrar \\(\\theta\\).\n\nSolução: Vamos usar o próximo momento, \\(E[X^2]\\)."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.4",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.4",
-    "title": "O Método dos Momentos",
-    "section": "Exemplo 11.4",
-    "text": "Exemplo 11.4\nO valor dos sinistros de uma carteira de seguros segue uma distribuição de Pareto com parâmetro de forma \\(\\alpha &gt; 1\\) e parâmetro de escala (sinistro mínimo) conhecido \\(x_m = 1000\\). A densidade é \\(f(x) = \\frac{\\alpha x_m^\\alpha}{x^{\\alpha+1}}\\) para \\(x \\ge x_m\\). Estime \\(\\alpha\\) pelo método dos momentos.\n\n\n\n\n\n\nDica\n\n\nSe \\(X\\sim\\) Pareto(\\(\\alpha, x_m\\)), então \\(E(X) = \\alpha x_m/(\\alpha - 1)\\)."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes",
-    "title": "O Método dos Momentos",
-    "section": "Propriedades Importantes",
-    "text": "Propriedades Importantes\n\nConsistência: À medida que a amostra aumenta (\\(n\\to\\infty\\)), a probabilidade do estimador obtido pelo método dos momentos se afastar do verdadeiro parâmetro vai a zero.\n\nPela Lei dos Grandes Números, os momentos amostrais convergem para os populacionais, \\(\\widehat{\\theta} \\stackrel{P}{\\to} \\theta\\).\n\nViés: Frequentemente os estimadores obtidos pelo método dos momentos são viesados.\n\nFrequentemente \\(E(\\widehat{\\theta}_{\\!M\\!M})\\neq \\theta\\).\n\nEficiência: Geralmente os estimadores obtidos pelo método dos momentos têm variância maior que os estimadores de Máxima Verossimilhança. Ou seja, em geral não são eficientes."
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes-1",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes-1",
-    "title": "O Método dos Momentos",
-    "section": "Propriedades Importantes",
-    "text": "Propriedades Importantes\n\nSuficiência: O Método dos Momentos nem sempre gera estimadores suficientes.\n\nIsto é: O estimador pode “desperdiçar” informação. Nesses casos, ele não resume tudo o que a amostra tem a dizer sobre o parâmetro; houve perda de informação no processo.\n\nCusto Computacional: Por produzir equações geralmente simples, o custo computacional do método é baixo.\n\nÉ um ótimo valor inicial para algoritmos numéricos.\n\nExistencia: Se os momentos não existirem, não é possível obter um estimador por esse método."
+    "section": "",
+    "text": "Considere duas situações:\n\nUm atuário precisa modelar o valor dos sinistros de uma seguradora e decide ajustar uma distribuição Gama ou Pareto.\nUm estatístico precisa modelar o número de pacientes que chegam ao pronto-socorro por hora por meio de uma distribuição Poisson.\n\nEm ambos os problemas, conhecemos o modelo probabilístico, mas desconhecemos seus parâmetros.\nComo podemos usar os dados observados para estimar esses parâmetros?\n\nPara isso podemos usar o Método dos Momentos."
   },
   {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#a-ideia-do-método-dos-momentos",
@@ -1566,18 +299,25 @@
     "text": "Definição 2.2: Momentos Amostrais\n\nOs momentos amostrais são variáveis aleatórias calculadas a partir dos dados observados \\(X_1, \\dots, X_n\\). Eles não dependem de \\(\\theta\\).\nO \\(k\\)-ésimo momento amostral é: \\[M_k = \\frac{1}{n} \\sum_{i=1}^n X_i^k\\]\n\nNote que o primeiro momento amostral é \\(M_1=\\overline{X}.\\)\nPela Lei dos Grandes Números, sabemos que quando \\(n \\to \\infty\\): \\[M_k \\xrightarrow{P} E(X^k).\\]"
   },
   {
+    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos",
+    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos",
+    "title": "O Método dos Momentos",
+    "section": "O Método dos Momentos",
+    "text": "O Método dos Momentos\nConsidere um modelo com \\(k\\) parâmetros desconhecidos \\(\\theta_1, \\dots, \\theta_k\\).\nPasso 1: Calcule os \\(k\\) primeiros momentos teóricos: \\[E[X], E[X^2], \\dots, E[X^k]\\]\nPasso 2: Calcule os \\(k\\) primeiros momentos amostrais: \\[M_1 = \\overline{X}, \\quad M_2 = \\frac{1}{n}\\sum X_i^2, \\dots, M_k = \\frac{1}{n} \\sum X_i^k\\]"
+  },
+  {
+    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos-1",
+    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#o-método-dos-momentos-1",
+    "title": "O Método dos Momentos",
+    "section": "O Método dos Momentos",
+    "text": "O Método dos Momentos\nPasso 3: Monte o sistema de equações igualando População = Amostra: \\[\\begin{cases} E[X] = M_1 \\\\ E[X^2] = M_2 \\\\ \\vdots \\\\ E[X^k] = M_k \\end{cases}\\]\nPasso 4: Resolva o sistema para \\(\\theta_1, \\dots, \\theta_k\\). As soluções são os estimadores \\(\\widehat{\\theta}_1, \\dots, \\widehat{\\theta}_k\\)."
+  },
+  {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.1",
     "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.1",
     "title": "O Método dos Momentos",
     "section": "Exemplo 2.1",
     "text": "Exemplo 2.1\nConsidere uma amostra aleatória \\(X_1,\\ldots,X_n\\) de uma população tal que\n\\[\nX_i \\sim \\operatorname{Bernoulli}(p), \\qquad i=1,\\ldots,n,\n\\]\nem que \\(p\\) é desconhecido.\na) Utilizando o Método dos Momentos, obtenha um estimador para \\(p\\).\nb) Se, em uma amostra de \\(n=20\\) indivíduos, foram observados 14 sucessos, qual é a estimativa de \\(p\\) pelo método dos momentos?\n\nSe \\(X\\sim \\operatorname{Bernoulli}(p)\\):\n\n\\(P(X=x\\mid p)=p^x(1-p)^{1-x}\\), \\(x\\in\\{0,1\\}\\)\n\\(E(X) = p\\)\n\\(Var(X) = p(1-p)\\)"
-  },
-  {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.1-estimação-em-um-modelo-bernoulli",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.1-estimação-em-um-modelo-bernoulli",
-    "title": "O Método dos Momentos",
-    "section": "Exemplo 2.1 — Estimação em um modelo Bernoulli",
-    "text": "Exemplo 2.1 — Estimação em um modelo Bernoulli\nConsidere\n[ X (p), P(X=x)=px(1-p){1-x}, x{0,1}. ]\n\n\nPopulação\n[ p = 0{,}70 ]\n\n\nAmostra\n[ X_1,,X_{20} ]\n\n[ p = X ]\n\n\nSe (p) é desconhecido, como podemos estimá-lo a partir da amostra?"
   },
   {
     "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.2",
@@ -1594,29 +334,31 @@
     "text": "Exemplo 2.3\nConsidere uma amostra aleatória \\(X_1,\\ldots,X_n\\) de uma população tal que\n\\[\nX_i \\sim N(\\mu,\\sigma^2), \\qquad i=1,\\ldots,n,\n\\]\nem que \\(\\mu\\) e \\(\\sigma^2\\) são desconhecidos. Utilizando o Método dos Momentos, obtenha os estimadores de \\(\\mu\\) e \\(\\sigma^2\\).\n\n\n\n\nSe \\(X\\sim N(\\mu,\\sigma^2):\\) \\[\nf(x\\mid \\mu,\\sigma^2) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}},\n\\] para \\(-\\infty&lt;x&lt;\\infty\\)."
   },
   {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.2-1",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.2-1",
+    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#quando-o-1º-momento-falha",
+    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#quando-o-1º-momento-falha",
     "title": "O Método dos Momentos",
-    "section": "Exemplo 2.2",
-    "text": "Exemplo 2.2\nConsidere uma amostra aleatória \\(X_1,\\ldots,X_n\\) de uma população tal que \\[\nX_i \\sim \\operatorname{Exp}(\\theta), \\qquad i=1,\\ldots,n,\n\\] em que \\(\\theta&gt;0\\) é desconhecido.\na) Obtenha um estimador para \\(\\theta\\) pelo Método dos Momentos.\nb) Se, em uma amostra de \\(n=100\\) observações, foi obtida uma média amostral de \\(\\overline{X}=0{,}5155\\), qual é a estimativa de \\(\\theta\\)?\n\n\n\nSe \\(X\\sim \\operatorname{Exp}(\\theta):\\)\n\n\\(f(x\\mid\\theta)=\\theta e^{-\\theta x}\\), \\(x&gt;0\\)\n\\(E(X) = \\frac{1}{\\theta}\\)\n\\(Var(X) = \\frac{1}{\\theta^2}\\)"
+    "section": "Quando o 1º Momento Falha",
+    "text": "Quando o 1º Momento Falha\n\nSe um momento falhar, podemos tentar usar outro.\n\n\nExemplo 2.4\nConsidere \\(X \\sim \\text{Uniforme}(-\\theta, \\theta)\\). Obtenha o estimador pelo método dos momentos.\n\nTemos apenas um parâmetro (\\(\\theta\\)). O primeiro momento é \\[E[X] = \\frac{-\\theta + \\theta}{2} = 0\\]\nIgualar \\(0 = \\overline{X}\\) não nos ajuda a encontrar \\(\\theta\\).\n\nSolução: Vamos usar o próximo momento, \\(E[X^2]\\)."
   },
   {
-    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.4",
-    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-2.4",
+    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.4",
+    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#exemplo-11.4",
     "title": "O Método dos Momentos",
-    "section": "Exemplo 2.4",
-    "text": "Exemplo 2.4\nUm estatístico percebe que o erro de medição de um instrumento pode ser modelado por uma distribuição Uniforme(\\(a,b\\)). Uma amostra aleatória \\(X_1,\\ldots,X_n\\) é coletada.\na) Obtenha os estimadores de momentos de \\(a\\) e \\(b\\).\nb) A amostra teve \\(n=50\\) medições, \\(\\overline{X}=0{,}12\\) e \\(\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2=0{,}09.\\) Obtenha as estimativas de \\(a\\) e \\(b\\).\n\n\n\n\nPara \\(X\\sim\\operatorname{Uniforme}(a,b)\\):\n\n\\(E(X)=\\frac{a+b}{2}\\)\n\\(\\operatorname{Var}(X)=\\frac{(b-a)^2}{12}\\)"
+    "section": "Exemplo 11.4",
+    "text": "Exemplo 11.4\nO valor dos sinistros de uma carteira de seguros segue uma distribuição de Pareto com parâmetro de forma \\(\\alpha &gt; 1\\) e parâmetro de escala (sinistro mínimo) conhecido \\(x_m = 1000\\). A densidade é \\(f(x) = \\frac{\\alpha x_m^\\alpha}{x^{\\alpha+1}}\\) para \\(x \\ge x_m\\). Estime \\(\\alpha\\) pelo método dos momentos.\n\n\n\n\n\n\nDicaDica\n\n\n\nSe \\(X\\sim\\) Pareto(\\(\\alpha, x_m\\)), então \\(E(X) = \\alpha x_m/(\\alpha - 1)\\)."
   },
   {
-    "objectID": "aulas/02-Metodo_dos_momentos/conteudo.html",
-    "href": "aulas/02-Metodo_dos_momentos/conteudo.html",
-    "title": "2. O Método dos Momentos",
-    "section": "",
-    "text": "Nesta aula, apresentamos o primeiro método para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite encontrar estimadores para os parâmetros desconhecidos.\nSlides:\n\n\n  \n\nVersão HTML\n\n\n\n  \n\nVersão PDF\n\n\n\n\nLista de Exercícios:",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Fundamentos da Inferência Estatística",
-      "2. O Método dos Momentos"
-    ]
+    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes",
+    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes",
+    "title": "O Método dos Momentos",
+    "section": "Propriedades Importantes",
+    "text": "Propriedades Importantes\n\nConsistência: À medida que a amostra aumenta (\\(n\\to\\infty\\)), a probabilidade do estimador obtido pelo método dos momentos se afastar do verdadeiro parâmetro vai a zero.\n\nPela Lei dos Grandes Números, os momentos amostrais convergem para os populacionais, \\(\\widehat{\\theta} \\stackrel{P}{\\to} \\theta\\).\n\nViés: Frequentemente os estimadores obtidos pelo método dos momentos são viesados.\n\nFrequentemente \\(E(\\widehat{\\theta}_{\\!M\\!M})\\neq \\theta\\).\n\nEficiência: Geralmente os estimadores obtidos pelo método dos momentos têm variância maior que os estimadores de Máxima Verossimilhança. Ou seja, em geral não são eficientes."
+  },
+  {
+    "objectID": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes-1",
+    "href": "aulas/02-Metodo_dos_momentos/slides/02-Metodo_dos_momentos.html#propriedades-importantes-1",
+    "title": "O Método dos Momentos",
+    "section": "Propriedades Importantes",
+    "text": "Propriedades Importantes\n\nSuficiência: O Método dos Momentos nem sempre gera estimadores suficientes.\n\nIsto é: O estimador pode “desperdiçar” informação. Nesses casos, ele não resume tudo o que a amostra tem a dizer sobre o parâmetro; houve perda de informação no processo.\n\nCusto Computacional: Por produzir equações geralmente simples, o custo computacional do método é baixo.\n\nÉ um ótimo valor inicial para algoritmos numéricos.\n\nExistencia: Se os momentos não existirem, não é possível obter um estimador por esse método."
   }
 ]
