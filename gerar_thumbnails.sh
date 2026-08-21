@@ -1,24 +1,59 @@
 #!/bin/bash
 
-find aulas -type f -name "*.pdf" | while read -r PDF
+set -e
+
+echo ""
+echo "======================================"
+echo "Gerando thumbnails"
+echo "======================================"
+echo ""
+
+# ==================================================
+# THUMBNAILS DOS SLIDES
+# ==================================================
+
+find aulas -path "*/slides/*.pdf" -type f | while read -r PDF
 do
-    DIR=$(dirname "$PDF")
-    THUMB="$DIR/thumb.png"
+    BASE="${PDF%.pdf}"
+    THUMB="${BASE}.png"
 
-    if [ -f "$THUMB" ] && [ "$THUMB" -nt "$PDF" ]; then
-        continue
-    fi
-
-    echo "Gerando thumbnail: $PDF"
+    echo "→ Slide: $PDF"
 
     pdftoppm \
-        -f 1 \
-        -singlefile \
-        -png \
-        -r 120 \
-        "$PDF" \
-        "${THUMB%.png}"
+      -f 1 \
+      -singlefile \
+      -png \
+      -r 120 \
+      "$PDF" \
+      "$BASE"
+
+    echo "  ✓ $THUMB"
+done
+
+# ==================================================
+# THUMBNAILS DAS LISTAS DE EXERCÍCIOS
+# ==================================================
+
+find aulas -path "*/lista_de_exercicios/*.pdf" -type f | while read -r PDF
+do
+    BASE="${PDF%.pdf}"
+    THUMB="${BASE}.png"
+
+    echo "→ Lista: $PDF"
+
+    pdftoppm \
+      -f 1 \
+      -singlefile \
+      -png \
+      -r 120 \
+      "$PDF" \
+      "$BASE"
+
+    echo "  ✓ $THUMB"
 done
 
 echo ""
-echo "Thumbnails atualizadas."
+echo "======================================"
+echo "Thumbnails geradas."
+echo "======================================"
+echo ""
