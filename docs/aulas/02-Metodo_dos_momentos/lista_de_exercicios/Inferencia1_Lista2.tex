@@ -1,0 +1,143 @@
+\documentclass[20pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 2} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=2.\arabic*)]
+		
+		% Questão 1: Rayleigh
+		\item Sejam $X_1,\ldots,X_n$ uma amostra aleatória da distribuição Rayleigh com parâmetro de escala $\sigma > 0$. A função de densidade de probabilidade é dada por:
+		$$ f(x; \sigma) = \frac{x}{\sigma^2} e^{-\frac{x^2}{2\sigma^2}}, \quad x > 0 $$
+		Sabendo que o valor esperado dessa distribuição é $E(X) = \sigma \sqrt{\frac{\pi}{2}}$, obtenha o estimador de $\sigma$ pelo método dos momentos.
+		
+		% Questão 2: Uniforme Numérica
+		\item Uma amostra aleatória da distribuição Uniforme$(0,\theta)$ foi obtida, sendo observados os valores: 
+		$$3,05 \quad 2,03 \quad 3,63 \quad 0,18 \quad 4,57 \quad 0,66 \quad 4,51 \quad 0,83 \quad 1,70 \quad 4,80$$
+		Estime o valor de $\theta$ pelo método dos momentos. Com base nesse resultado, a estimativa faz sentido considerando que o máximo valor observado foi 4,80?
+		
+		% Questão 3: Poisson (Interpretação)
+		\item Em sete segundas-feiras consecutivas foram registrados $0, 1, 3, 4, 5, 2$ e $1$ acidentes em um cruzamento de duas vias. Assumindo que o número de acidentes segue uma distribuição de Poisson:
+		\begin{enumerate}
+			\item Estime o parâmetro $\lambda$ pelo método dos momentos.
+			\item Qual a probabilidade estimada de ocorrerem entre 2 e 3 acidentes (inclusive) neste cruzamento na próxima segunda-feira?
+		\end{enumerate}
+		
+		% Questão 4: Geométrica
+		\item Obtenha o estimador pelo método dos momentos para o parâmetro $p$ da distribuição Geométrica, cuja função de probabilidade é dada por $P(X=x) = (1-p)^{x-1}p$, para $x=1, 2, \ldots$.
+		
+		% Questão 5: Pareto (Caso simples)
+		\item Sejam $X_1,\ldots,X_n$ uma amostra aleatória a partir da f.d.p. $f(x)=\theta x^{-2}$, para $0<\theta\leq x<\infty$. Encontre o estimador do método dos momentos para $\theta$.
+		
+		% Questão 6: Gama (Sistema de Equações)
+		\item Considere uma amostra aleatória de uma distribuição Gama com parâmetros $\alpha$ e $\beta$, onde $E(X) = \alpha/\beta$ e $Var(X) = \alpha/\beta^2$. Demonstre que os estimadores de momentos são dados por:
+		$$ \widehat{\alpha}_{MM} = \frac{\overline{X}^2}{S^2} \quad \text{e} \quad \widehat{\beta}_{MM} = \frac{\overline{X}}{S^2} $$
+		onde $S^2 = \frac{1}{n}\sum (X_i - \overline{X})^2$ é a variância amostral (com denominador $n$).
+		
+		% Questão 7: Distribuição de Potência
+		\item Seja $X$ uma variável aleatória com função de densidade dada por $f(x) = \theta x^{\theta-1}$, para $0 < x < 1$ e $\theta > 0$. Obtenha o estimador de $\theta$ pelo método dos momentos.
+		
+		% Questão 8: Normal Inversa (Aplicação Atuarial)
+		\item A distribuição Normal Inversa é frequentemente utilizada em Ciências Atuariais para modelar o tempo até a ocorrência de um evento ou valores de sinistros. Sejam $X_1,\ldots,X_n$ uma amostra aleatória com f.d.p. dada por:
+		$$ f(x; \mu, \lambda) = \sqrt{\frac{\lambda}{2\pi x^3}} \exp\left( -\frac{\lambda(x-\mu)^2}{2\mu^2 x} \right), \quad x > 0. $$
+		Sabendo que os momentos populacionais são dados por:
+		$$ E(X) = \mu \quad \text{e} \quad Var(X) = \frac{\mu^3}{\lambda} $$
+		Obtenha os estimadores de $\mu$ e $\lambda$ pelo método dos momentos.
+		
+		% Questão 9: Exponencial Deslocada (2 parâmetros)
+		\item Considere a distribuição Exponencial Deslocada com f.d.p. dada por:
+		$$ f(x) = \lambda e^{-\lambda(x - \mu)}, \quad x \geq \mu, \quad \lambda > 0 $$
+		Sabendo que $E(X) = \mu + \frac{1}{\lambda}$ e $Var(X) = \frac{1}{\lambda^2}$, obtenha os estimadores de momentos para $\mu$ e $\lambda$.
+		
+		% Questão 10: Definição Básica
+		\item Explique, com suas palavras, a lógica fundamental do Princípio da Analogia (Substituição) utilizado no método dos momentos. Por que a Lei dos Grandes Números justifica esse procedimento?
+		
+		% Questão 11: Existência
+		\item Considere a distribuição de Cauchy, cuja f.d.p. é $f(x) = \frac{1}{\pi(1+x^2)}$, para $x \in \mathbb{R}$. É possível estimar o parâmetro de localização desta distribuição utilizando o método dos momentos tradicional? Justifique sua resposta baseando-se na definição de esperança matemática.
+		
+		% Questão 12: Falha do Método (Binomial Numérica)
+		\item Considere uma amostra simples de tamanho $n=4$ contendo os valores $x = \{0, 0, 10, 10\}$. Um analista propõe ajustar uma distribuição Binomial$(m, p)$ para esses dados, onde ambos os parâmetros são desconhecidos.
+		\begin{enumerate}
+			\item Calcule a média amostral ($\overline{X}$) e a variância amostral $\widehat{\sigma}^2=\sum_{i=1}^n(X_i-\overline{X})/n$.
+			\item Tente estimar $m$ e $p$ pelo método dos momentos.
+			\item O resultado faz sentido estatístico? O que isso prova sobre a confiabilidade do método dos momentos em relação ao espaço paramétrico?
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=2.\arabic*)]
+		
+	% Questão 2.1
+	\item $\widehat{\sigma}_{\!M\!M} = \frac{\overline{X}}{\sqrt{\frac{\pi}{2}}}$
+	
+	% Questão 2.2
+	\item $\widehat{\theta}_{\!M\!M} = 5{,}192$. Sim, a estimativa faz sentido pois $\widehat{\theta} > \max(X_i) = 4{,}80$, garantindo que todo o suporte observado esteja contido no intervalo $(0, \widehat{\theta})$.
+	
+	% Questão 2.3
+	\item \begin{enumerate}
+		\item $\widehat{\lambda}_{\!M\!M} = 2\!,29$
+		\item 0,4682
+	\end{enumerate}
+	
+	% Questão 2.4
+	\item $\widehat{p}_{\!M\!M}=1/\overline{X}$
+	
+	% Questão 2.5
+	\item Não há estimador pelo Método dos Momentos, pois a esperança matemática $E(X)$ não existe (a integral diverge para $\infty$).
+	
+	\end{enumerate}
+
+	\begin{enumerate}[label=2.\arabic*)]\setcounter{enumi}{6}
+	
+	% Questão 2.7
+	\item $\widehat{\theta}_{\!M\!M} = \frac{\overline{X}}{1-\overline{X}}$
+	
+	% Questão 2.8
+	\item $\widehat{\mu}_{\!M\!M} = \overline{X}$ e $\widehat{\lambda}_{\!M\!M} = \frac{n\overline{X}^3}{\sum_{i=1}^n (X_i - \overline{X})^2}$
+	
+	% Questão 2.9
+	\item $\widehat{\mu}_{\!M\!M} = \overline{X} - \sqrt{\frac{\sum_{i=1}^n (X_i-\overline{X})^2}{n}}$ e $\widehat{\lambda}_{\!M\!M} = \sqrt{\frac{n}{\sum_{i=1}^n (X_i-\overline{X})^2}}$
+	
+	% Questão 2.10
+	\item O Princípio da Analogia substitui os momentos populacionais $E(X^k)$ pelos momentos amostrais $\frac{1}{n}\sum X_i^k$. Isso se justifica pela Lei Forte dos Grandes Números, que garante a convergência quase certa da média amostral para a esperança populacional quando $n \to \infty$.
+	
+	% Questão 2.11
+	\item Não, pois a distribuição de Cauchy não possui esperança matemática definida.
+	
+	% Questão 2.12
+	\item \begin{enumerate}
+		\item $\overline{x} = 5$ e $\widehat{\sigma}^2 = 25$
+		\item $\widehat{p}_{\!M\!M} = -4$ e $\widehat{m}_{\!M\!M} = -5/4$
+		\item Não faz sentido. O Método dos Momentos não garante que os estimadores pertençam ao espaço paramétrico válido ($p \in [0,1]$ e $m \in \mathbb{Z}^+$).
+	\end{enumerate}
+	
+	\end{enumerate}
+	
+\end{document}

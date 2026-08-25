@@ -59,8 +59,7 @@ e resolvemos a equação para encontrar $\theta$.
 
 - Os momentos populacionais descrevem a "forma" teórica da distribuição. Eles são **constantes** que dependem dos parâmetros desconhecidos.
 
-- Seja $X$ uma variável aletória com densidade $f(x|\theta)$. O **$k$-ésimo momento populacional** (ao redor da origem) é:
-
+- O **$k$-ésimo momento populacional** (ao redor da origem) de uma v.a. $X$ é:
 $$
 \mu'_k(\theta) = E[X^k] = \begin{cases} 
 \int_{-\infty}^{\infty} x^k f(x|\theta) dx & \text{(Contínuo)} \\
@@ -68,9 +67,10 @@ $$
 \end{cases}
 $$
 
-- Casos Clássicos:
-  - $k=1 \implies \mu'_1 = E[X]$ (Média)
-  - $k=2 \implies \mu'_2 = E[X^2]$ (Segundo momento, usado para variância)
+Casos Clássicos:
+
+- $k=1 \implies \mu'_1 = E[X]$ (Média)
+- $k=2 \implies \mu'_2 = E[X^2]$ (Segundo momento, usado para variância)
 
 
 
@@ -154,7 +154,7 @@ $$
 
 <div style="color: #1f30cd;">
 
-Se a densidade da Exponencial é escrita dessa forma:
+Nesse caso:
 
 - $E(X) = \theta$
 - $Var(X) = \theta^2$
@@ -170,7 +170,7 @@ Se a densidade da Exponencial é escrita dessa forma:
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-height: 4
+#| fig-height: 3
 
 library(ggplot2)
 
@@ -406,15 +406,98 @@ $$E[X] = \frac{-\theta + \theta}{2} = 0$$
 
 
 
-## Exemplo 11.4
+## Exemplo 2.5
 
 O valor dos sinistros de uma carteira de seguros segue uma distribuição de Pareto com parâmetro de forma $\alpha > 1$ e parâmetro de escala (sinistro mínimo) conhecido $x_m = 1000$. A densidade é $f(x) = \frac{\alpha x_m^\alpha}{x^{\alpha+1}}$ para $x \ge x_m$. Estime $\alpha$ pelo método dos momentos.
 
-::: {.callout-tip}
-## Dica
-Se $X\sim$ Pareto($\alpha, x_m$), então $E(X) = \alpha x_m/(\alpha - 1)$.
+::: {.columns}
+
+::: {.column width="50%"}
+
+<div style="color: #1f30cd;">
+Se $X\sim$ Pareto($\alpha, x_m$):
+
+- $E(X) = \alpha x_m/(\alpha - 1)$.
+</div>
+
 :::
 
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: false
+#| fig-width: 8
+#| fig-height: 4.5
+
+library(ggplot2)
+
+set.seed(123)
+
+# Parâmetros da Pareto
+xm <- 1000
+alpha <- 2.5
+
+# Simulação dos valores dos sinistros
+n <- 1000
+
+u <- runif(n)
+x <- xm / (1 - u)^(1 / alpha)
+
+dados <- data.frame(x = x)
+
+# Curva da densidade teórica
+curva <- data.frame(
+  x = seq(xm, quantile(x, 0.99), length.out = 500)
+)
+
+curva$densidade <- alpha * xm^alpha / curva$x^(alpha + 1)
+
+# Gráfico
+ggplot(dados, aes(x = x)) +
+
+  # Histograma
+  geom_histogram(
+    aes(y = after_stat(density)),
+    bins = 35,
+    fill = "#5B9BD5",
+    color = "#1F4E79",
+    linewidth = 0.6
+  ) +
+
+  # Densidade Pareto
+  geom_line(
+    data = curva,
+    aes(x = x, y = densidade),
+    color = "#0B2E59",
+    linewidth = 1.3
+  ) +
+
+  labs(
+    x = "Valor do sinistro",
+    y = "Densidade",
+    title = "Distribuicao de Pareto",
+    subtitle = "Histograma dos sinistros e densidade teorica"
+  ) +
+
+  theme_minimal(base_size = 16) +
+
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(
+      color = "#D9E6F2",
+      linewidth = 0.4
+    ),
+    axis.title = element_text(color = "#1F4E79"),
+    axis.text = element_text(color = "#333333"),
+    plot.margin = margin(10, 15, 10, 10)
+  )
+```
+
+:::
+
+:::
 
 
 ## Propriedades Importantes

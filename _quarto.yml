@@ -33,6 +33,7 @@ website:                  # Configurações específicas do website
         contents:
           - href: aulas/01-O_problema_da_inferencia_estatistica/conteudo.qmd
           - href: aulas/02-Metodo_dos_momentos/conteudo.qmd
+          - href: aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.qmd
 
 format:                      # Configurações do formato HTML
   html:

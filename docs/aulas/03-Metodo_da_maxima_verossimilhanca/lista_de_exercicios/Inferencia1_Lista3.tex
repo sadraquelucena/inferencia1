@@ -1,0 +1,148 @@
+\documentclass[20pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 3} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=3.\arabic*)]
+		
+		% Questão 1
+		\item Sejam $X_1,\ldots,X_n$ uma amostra aleatória. Obtenha o EMV de $\theta$ para as seguintes distribuições:
+		\begin{enumerate}
+			\item $X \sim \text{Poisson}(\theta)$;
+			\item $X \sim \text{Geométrica}(\theta)$, onde $P(X=x) = (1-\theta)^{x-1}\theta$, para $x=1,2,\ldots$;
+			\item $X \sim \text{Exponencial}(\theta)$, com fdp $f(x)=\frac{1}{\theta} e^{-x/\theta}$, $x>0$ (parametrização pela média).
+		\end{enumerate}
+		
+		% Questão 2
+		\item Considere uma amostra aleatória $X_1, \ldots, X_n$ de uma população com densidade dada por:
+		$$ f(x|\theta) = \theta x^{\theta-1}, \quad 0 < x < 1, \quad \theta > 0. $$
+		Encontre o EMV de $\theta$.
+		
+		% Questão 3
+		\item Suponha que a velocidade de moléculas de um gás siga a distribuição de Maxwell-Boltzmann, com densidade:
+		$$ f(x) = \frac{x^2 e^{-x/(2\theta)}}{2\theta^3}, \quad x>0, \theta>0. $$
+		Obtenha o estimador de máxima verossimilhança de $\theta$.
+		
+		% Questão 4
+		\item Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição de Pareto, com densidade:
+		$$ f(x) = \theta k^\theta x^{-(\theta+1)}, \quad x \geq k, \quad \theta > 0, $$
+		onde $k > 0$ é uma constante conhecida.
+		Encontre o EMV de $\theta$.
+		
+		% Questão 5		
+		\item Seja $X_1, \ldots, X_n$ uma amostra de $N(\mu, \sigma^2)$.
+		\begin{enumerate}
+			\item Escreva a função de log-verossimilhança para o vetor $\boldsymbol{\theta} = (\mu, \sigma^2)$.
+			\item Derive e iguale a zero para encontrar o sistema de equações de score.
+			\item Mostre que $\widehat{\sigma}^2_{MV} = \frac{1}{n}\sum(X_i - \overline{X})^2$.
+		\end{enumerate}
+		
+		% Questão 6
+		\item Em economia, a distribuição Lognormal é frequentemente utilizada para modelar a renda de populações. Dizemos que $X \sim \text{Lognormal}(\mu, \sigma^2)$ se $Y = \log(X)$ segue uma distribuição Normal$(\mu, \sigma^2)$. A densidade de $X$ é dada por:
+		$$ f(x; \mu, \sigma^2) = \frac{1}{x\sqrt{2\pi\sigma^2}} \exp\left\{ -\frac{(\log x - \mu)^2}{2\sigma^2} \right\}, \quad x > 0. $$
+		Seja $X_1, \ldots, X_n$ uma amostra aleatória dessa população.		
+		\begin{enumerate}
+			\item Escreva a função de log-verossimilhança $\ell(\mu, \sigma^2)$.
+			\item Derive o sistema de equações de score para o vetor de parâmetros $\boldsymbol{\theta} = (\mu, \sigma^2)$.
+			\item Resolva o sistema e mostre que os estimadores de máxima verossimilhança são a média e a variância (viesada) dos logaritmos dos dados:
+			$$ \widehat{\mu} = \frac{1}{n}\sum_{i=1}^n \log(X_i) \quad \text{e} \quad \widehat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n (\log X_i - \widehat{\mu})^2. $$
+		\end{enumerate}
+		
+		% Questão 7
+		\item O número de falhas em um sistema de TI segue uma distribuição de Poisson. Em 4 semanas, foram observadas as seguintes quantidades de falhas: 2, 5, 3, 6.
+		\begin{enumerate}
+			\item Estime o parâmetro $\lambda$ (taxa semanal) por MV.
+			\item Estime a probabilidade de que na próxima semana não ocorra nenhuma falha ($P(X=0)$).
+		\end{enumerate}
+		
+		% Questão 8
+		\item Os tempos entre chegadas de clientes em uma loja (em minutos) foram:
+		$$ \text{2,5} \quad \text{1,8} \quad \text{4,0} \quad \text{0,5} \quad \text{3,2} $$
+		Assumindo distribuição Exponencial($\lambda$):
+		\begin{enumerate}
+			\item Obtenha a estimativa de MV para a taxa $\lambda$ e para a média $1/\lambda$.
+			\item Estime a probabilidade de um intervalo ser maior que 3 minutos.
+		\end{enumerate}
+		
+		% Questão 9
+		\item A função de verossimilhança $L(\theta; \mathbf{x})$ é frequentemente confundida com a função de densidade conjunta $f(\mathbf{x}; \theta)$. Explique a diferença fundamental entre as duas e por que a integral de $L(\theta; \mathbf{x})$ em relação a $\theta$ não é necessariamente igual a 1.
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=3.\arabic*)]
+		
+		% Questão 1
+		\item \begin{enumerate}
+			\item $\widehat{\theta}_{MV} = \overline{X}$
+			\item $\widehat{\theta}_{MV} = \frac{1}{\overline{X}}$
+			\item $\widehat{\theta}_{MV} = \overline{X}$
+		\end{enumerate}
+		
+		% Questão 2
+		\item $\widehat{\theta}_{MV} = \frac{-n}{\sum_{i=1}^n \log(X_i)}$
+		
+		% Questão 3
+		\item $\widehat{\theta}_{MV} = \frac{\overline{X}}{6}$
+		
+		% Questão 4
+		\item $\widehat{\theta}_{MV} = \frac{n}{\sum_{i=1}^n \log(X_i) - n\log(k)}$
+		
+		% Questão 5
+		\item \begin{enumerate}
+			\item $\ell(\mu, \sigma^2) = -\frac{n}{2}\log(2\pi) - \frac{n}{2}\log(\sigma^2) - \frac{1}{2\sigma^2}\sum_{i=1}^n (x_i - \mu)^2$
+		\end{enumerate}
+		
+		% Questão 6
+		\item \begin{enumerate}
+			\item $\ell(\mu, \sigma^2) = -\sum_{i=1}^n \log(x_i) - \frac{n}{2}\log(2\pi) - \frac{n}{2}\log(\sigma^2) - \frac{1}{2\sigma^2}\sum_{i=1}^n (\log x_i - \mu)^2$
+			\item Sistema de equações de score:
+			$$ \frac{\partial \ell}{\partial \mu} = \frac{1}{\sigma^2}\sum_{i=1}^n (\log x_i - \mu) = 0 $$
+			$$ \frac{\partial \ell}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2(\sigma^2)^2}\sum_{i=1}^n (\log x_i - \mu)^2 = 0 $$
+		\end{enumerate}
+		
+		% Questão 7
+		\item \begin{enumerate}
+			\item $\widehat{\lambda}_{MV} = \overline{x} = \frac{2 + 5 + 3 + 6}{4} = 4$ falhas/semana
+			\item $\widehat{P}(X=0) = e^{-4} \approx 0{,}0183 \quad (1{,}83\%)$
+		\end{enumerate}
+		
+		% Questão 8
+		\item \begin{enumerate}
+			\item Para a parametrização $f(x) = \lambda e^{-\lambda x}$, a taxa estimada é $\widehat{\lambda}_{MV} = \frac{1}{\overline{x}} = \frac{1}{2{,}4} \approx 0{,}4167$ clientes/minuto. A estimativa da média é $1/\widehat{\lambda} = \overline{x} = 2{,}4$ minutos.
+			\item $\widehat{P}(X > 3) = e^{-1{,}25} \approx 0{,}2865 \quad (28{,}65\%)$
+		\end{enumerate}
+		
+		% Questão 9
+		\item A função de densidade conjunta $f(\mathbf{x}; \theta)$ é uma função das observações $\mathbf{x}$ dado um parâmetro fixo $\theta$, satisfazendo $\int f(\mathbf{x}; \theta) d\mathbf{x} = 1$. Já a função de verossimilhança $L(\theta; \mathbf{x})$ enxerga a amostra observada $\mathbf{x}$ como constante e varia em função do parâmetro $\theta \in \Theta$. Como $L(\theta; \mathbf{x})$ não representa uma distribuição de probabilidade sobre o espaço paramétrico $\Theta$, sua integral $\int_\Theta L(\theta; \mathbf{x}) d\theta$ não tem a obrigação de integrar 1.
+		
+	\end{enumerate}
+	
+\end{document}

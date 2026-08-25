@@ -1,10 +1,15 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bem-vindo(a)!",
+    "objectID": "aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.html",
+    "href": "aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.html",
+    "title": "3. O Método da Máxima Verossimilhança",
     "section": "",
-    "text": "Bem-vindo(a)!\nEste espaço foi criado pelo Prof. Dr. Sadraque E. F. Lucena para centralizar todos os conteúdos, atividades e o cronograma da disciplina ESTAT0078 – Inferência I, ofertado pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe.\nAo longo do semestre, vamos construir juntos uma base sólida nos conceitos fundamentais da Inferência Estatística, explorando métodos para obter e avaliar estimadores pontuais e para construir de intervalos de confiança."
+    "text": "Nesta aula introduzimos o Método da Máxima Verossimilhança (MV), que é uma das abordagens mais fundamentais e robustas da estatística para a construção de estimadores.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Fundamentos da Inferência Estatística",
+      "3. O Método da Máxima Verossimilhança"
+    ]
   },
   {
     "objectID": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
@@ -17,6 +22,13 @@
       "Parte 1: Fundamentos da Inferência Estatística",
       "1. O Problema da Inferência Estatística"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bem-vindo(a)!",
+    "section": "",
+    "text": "Bem-vindo(a)!\nEste espaço foi criado pelo Prof. Dr. Sadraque E. F. Lucena para centralizar todos os conteúdos, atividades e o cronograma da disciplina ESTAT0078 – Inferência I, ofertado pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe.\nAo longo do semestre, vamos construir juntos uma base sólida nos conceitos fundamentais da Inferência Estatística, explorando métodos para obter e avaliar estimadores pontuais e para construir de intervalos de confiança."
   },
   {
     "objectID": "info.html",

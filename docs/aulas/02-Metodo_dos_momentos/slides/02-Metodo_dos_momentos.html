@@ -171,20 +171,17 @@
 <h2>Definição 2.1: Momentos Populacionais</h2>
 <ul>
 <li><p>Os momentos populacionais descrevem a “forma” teórica da distribuição. Eles são <strong>constantes</strong> que dependem dos parâmetros desconhecidos.</p></li>
-<li><p>Seja <span class="math inline">\(X\)</span> uma variável aletória com densidade <span class="math inline">\(f(x|\theta)\)</span>. O <strong><span class="math inline">\(k\)</span>-ésimo momento populacional</strong> (ao redor da origem) é:</p></li>
-</ul>
-<p><span class="math display">\[
+<li><p>O <strong><span class="math inline">\(k\)</span>-ésimo momento populacional</strong> (ao redor da origem) de uma v.a. <span class="math inline">\(X\)</span> é: <span class="math display">\[
 \mu'_k(\theta) = E[X^k] = \begin{cases}
 \int_{-\infty}^{\infty} x^k f(x|\theta) dx &amp; \text{(Contínuo)} \\
 \sum_{x} x^k P(X=x|\theta) &amp; \text{(Discreto)}
 \end{cases}
-\]</span></p>
-<ul>
-<li>Casos Clássicos:
+\]</span></p></li>
+</ul>
+<p>Casos Clássicos:</p>
 <ul>
 <li><span class="math inline">\(k=1 \implies \mu'_1 = E[X]\)</span> (Média)</li>
 <li><span class="math inline">\(k=2 \implies \mu'_2 = E[X^2]\)</span> (Segundo momento, usado para variância)</li>
-</ul></li>
 </ul>
 </section>
 <section id="definição-2.2-momentos-amostrais" class="slide level2">
@@ -237,7 +234,7 @@ f(x\mid \theta) = \frac{1}{\theta} e^{-\frac{x}{\theta}}, \quad x&gt;0, \theta&g
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="color: #1f30cd;">
-<p>Se a densidade da Exponencial é escrita dessa forma:</p>
+<p>Nesse caso:</p>
 <ul>
 <li><span class="math inline">\(E(X) = \theta\)</span></li>
 <li><span class="math inline">\(Var(X) = \theta^2\)</span></li>
@@ -296,22 +293,28 @@ f(x\mid \mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigm
 </ul>
 <p><strong>Solução:</strong> Vamos usar o próximo momento, <span class="math inline">\(E[X^2]\)</span>.</p>
 </section>
-<section id="exemplo-11.4" class="slide level2">
-<h2>Exemplo 11.4</h2>
+<section id="exemplo-2.5" class="slide level2">
+<h2>Exemplo 2.5</h2>
 <p>O valor dos sinistros de uma carteira de seguros segue uma distribuição de Pareto com parâmetro de forma <span class="math inline">\(\alpha &gt; 1\)</span> e parâmetro de escala (sinistro mínimo) conhecido <span class="math inline">\(x_m = 1000\)</span>. A densidade é <span class="math inline">\(f(x) = \frac{\alpha x_m^\alpha}{x^{\alpha+1}}\)</span> para <span class="math inline">\(x \ge x_m\)</span>. Estime <span class="math inline">\(\alpha\)</span> pelo método dos momentos.</p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="color: #1f30cd;">
+<p>Se <span class="math inline">\(X\sim\)</span> Pareto(<span class="math inline">\(\alpha, x_m\)</span>):</p>
+<ul>
+<li><span class="math inline">\(E(X) = \alpha x_m/(\alpha - 1)\)</span>.</li>
+</ul>
 </div>
-<p><strong>Dica</strong></p>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="02-Metodo_dos_momentos_files/figure-revealjs/unnamed-chunk-3-1.png" width="768"></p>
+</figure>
 </div>
-<div class="callout-content">
-<p>Se <span class="math inline">\(X\sim\)</span> Pareto(<span class="math inline">\(\alpha, x_m\)</span>), então <span class="math inline">\(E(X) = \alpha x_m/(\alpha - 1)\)</span>.</p>
 </div>
 </div>
-</div>
+</div></div>
 </section>
 <section id="propriedades-importantes" class="slide level2">
 <h2>Propriedades Importantes</h2>
