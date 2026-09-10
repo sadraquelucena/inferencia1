@@ -1,0 +1,98 @@
+---
+title: "Método de Máxima Verossimilhança -- Caso Multiparamétrico"
+subtitle: |
+  *Como estimar vários parâmetros simultaneamente?*
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    ESTAT0078 -- Inferência I<br>
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a><br>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1600
+    height: 900
+    margin: 0.1          # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_principal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+    pdf-separate-fragments: false # 'false' gera 1 página por slide. Se usar 'true', cada animação/fragmento vira uma página no PDF.
+
+lang: pt-BR
+---
+
+## Contextualização
+
+- Até agora, maximizamos funções de uma única variável ($L(\theta)$).
+- A maioria dos modelos reais possui vetores de parâmetros:
+  - Normal: $\boldsymbol{\theta} = (\mu, \sigma^2)$
+  - Gama: $\boldsymbol{\theta} = (\alpha, \beta)$
+  - Regressão Linear: $\boldsymbol{\theta} = (\beta_0, \beta_1, \sigma^2)$
+
+**Desafio:**
+
+- Não buscamos mais o topo de uma curva 2D, mas o **pico de uma superfície** (montanha) em múltiplas dimensões.
+
+---
+
+## MV: Caso Multiparamétrico
+
+- Seja $\boldsymbol{\theta} = (\theta_1, \ldots, \theta_r)$ um vetor de parâmetros. A função de verossimilhança é: $$ L(\boldsymbol{\theta}; \mathbf{x}) = \prod_{i=1}^n f(x_i; \theta_1, \ldots, \theta_r) $$
+
+---
+
+## MV: Caso Multiparamétrico
+
+- Para maximizar, precisamos anular o **Vetor Gradiente** (ou Vetor Score) da log-verossimilhança $\ell(\boldsymbol{\theta})$:
+$$
+  \nabla \ell(\boldsymbol{\theta}) = \begin{pmatrix} 
+    \frac{\partial \ell}{\partial \theta_1} \\ 
+    \vdots \\ 
+    \frac{\partial \ell}{\partial \theta_r} 
+  \end{pmatrix} = \begin{pmatrix} 
+    0 \\ 
+    \vdots \\ 
+    0 
+  \end{pmatrix}
+$$
+
+- Isso gera um **sistema de equações** para resolver.
+
+---
+
+## Exemplo 15.1:
+
+Seja $X \sim N(\mu, \sigma^2)$. Temos dois parâmetros desconhecidos: $\theta_1 = \mu$ e $\theta_2 = \sigma^2$. A densidade é
+$$
+  f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left\{ -\frac{1}{2\sigma^2}(x-\mu)^2 \right\}.
+$$
+
+Determine os estimadores de máxima verossimilhança de $\mu$ e $\sigma^2$.
+
+---
+
+## Análise Crítica: O Viés na Normal
+
+::: {.callout-important}
+## Ponto de Atenção!
+O Estimador de Máxima Verossimilhança da variância divide a soma dos quadrados por **$n$**.
+A Variância Amostral ($S^2$) divide por **$n-1$**.
+:::
+
+**Consequências:**
+
+1.  **Viés:** O estimador MV é **viesado**. Ele subestima a variância verdadeira em pequenas amostras ($E[\widehat{\sigma}^2] = \frac{n-1}{n}\sigma^2$).
+2.  **Consistência:** Quando $n \to \infty$, a diferença entre dividir por $n$ ou $n-1$ desaparece. Logo, ele é **consistente**.
+3.  **EQM:** Curiosamente, o estimador MV tem menor Erro Quadrático Médio que o $S^2$, apesar do viés.
+
+
+
+
+# Fim

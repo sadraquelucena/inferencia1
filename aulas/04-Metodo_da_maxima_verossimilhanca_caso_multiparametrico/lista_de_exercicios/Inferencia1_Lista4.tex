@@ -1,0 +1,203 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 4} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=4.\arabic*)]
+		
+		% Questão 1
+		\item Em economia, a distribuição Lognormal é frequentemente utilizada para modelar a renda de populações. Dizemos que $X \sim \text{Lognormal}(\mu, \sigma^2)$ se $Y = \ln(X)$ segue uma distribuição Normal$(\mu, \sigma^2)$. A densidade de $X$ é dada por:
+		$$ f(x; \mu, \sigma^2) = \frac{1}{x\sqrt{2\pi\sigma^2}} \exp\left\{ -\frac{(\ln x - \mu)^2}{2\sigma^2} \right\}, \quad x > 0. $$
+		Seja $X_1, \ldots, X_n$ uma amostra aleatória dessa população.		
+		\begin{enumerate}
+			\item Escreva a função de verossimilhança $L(\mu, \sigma^2)$.
+			\item Escreva a função de log-verossimilhança $\ell(\mu, \sigma^2)$.
+			\item Derive o sistema de equações de score para o vetor de parâmetros $\boldsymbol{\theta} = (\mu, \sigma^2)$.
+			\item Resolva o sistema e mostre que os estimadores de máxima verossimilhança são a média e a variância (viesada) dos logaritmos dos dados:
+			$$ \widehat{\mu} = \frac{1}{n}\sum_{i=1}^n \ln(X_i) \quad \text{e} \quad \widehat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n (\ln X_i - \widehat{\mu})^2. $$
+		\end{enumerate}
+		
+		% Questão 2
+		\item Considere uma amostra aleatória $X_1, \ldots, X_n$ de uma população com distribuição Gama($\alpha,\beta$), com $\alpha$ e $\beta$ desconhecidos. A função de densidade é dada por:
+		$$
+		f(x; \alpha, \beta) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x}, \quad x>0,\alpha>0,\beta>0.
+		$$
+		\begin{enumerate}
+			\item Escreva $L(\alpha,\beta)$.
+			\item Obtenha $\ell(\alpha,\beta)$.
+			\item Derive as equações de score para $\alpha$ e $\beta$ (lembre que $\frac{d}{d\alpha}\ln\Gamma(\alpha) = \psi(\alpha)$).
+			\item Determine $\hat\beta$.
+			\item Explique por que $\hat\alpha$ não possui, em geral, uma expressão analítica simples.
+		\end{enumerate}
+		
+		% Questão 3
+		\item Considere uma amostra aleatória $X_1,\ldots,X_n$ de uma população com distribuição
+		$U(\theta_1,\theta_2)$, com $\theta_1<\theta_2$. A função densidade é dada por
+		$$
+		f(x;\theta_1,\theta_2)=\frac{1}{\theta_2-\theta_1},
+		\qquad
+		\theta_1<x<\theta_2.
+		$$
+		
+		Os parâmetros $\theta_1$ e $\theta_2$ são desconhecidos.
+		
+		\begin{enumerate}
+			\item Reescreva $f(x;\theta_1,\theta_2)$ usando função indicadora.
+			\item Escreva a função de verossimilhança
+			$L(\theta_1,\theta_2)$ para uma amostra $x_1,\ldots,x_n$.
+			
+			\item Observe que a verossimilhança é positiva somente quando
+			todos os valores observados pertencem ao intervalo
+			$(\theta_1,\theta_2)$. Mostre que isso implica
+			
+			$$
+			\theta_1 < x_{(1)}
+			\qquad\text{e}\qquad
+			\theta_2 > x_{(n)},
+			$$
+			
+			onde $x_{(1)}$ e $x_{(n)}$ representam, respectivamente,
+			o menor e o maior valor observado na amostra.
+			
+			\item Para que a verossimilhança seja máxima, devemos escolher
+			$\theta_1$ e $\theta_2$ de modo que o intervalo
+			$(\theta_1,\theta_2)$ seja o menor possível, mantendo todos
+			os valores observados dentro dele. Explique por que isso implica
+			escolher $\theta_1$ e $\theta_2$ a partir dos valores
+			$x_{(1)}$ e $x_{(n)}$.
+			
+			\item Determine os estimadores de máxima verossimilhança
+			$\widehat{\theta}_1$ e $\widehat{\theta}_2$.
+			
+			\item Explique por que, nesse caso, os estimadores de máxima
+			verossimilhança não são obtidos anulando o gradiente da
+			log-verossimilhança.
+		\end{enumerate}
+		
+		% Questão 4
+		\item Considere uma amostra aleatória $X_1,\ldots,X_n$ de uma população com distribuição
+		$\operatorname{Beta}(\alpha,\beta)$, com $\alpha>0$ e $\beta>0$. A função densidade é dada por
+		$$
+		f(x; \alpha, \beta) = \frac{\Gamma(\alpha+\beta)}
+		{\Gamma(\alpha)\Gamma(\beta)}
+		x^{\alpha-1}(1-x)^{\beta-1},
+		\qquad 0<x<1.
+		$$
+		
+		Os parâmetros $\alpha$ e $\beta$ são desconhecidos. Considere a função digama definida por $\psi(t)=\frac{d}{dt}\log\Gamma(t)$.
+		
+		\begin{enumerate}
+			\item Escreva a função de verossimilhança $L(\alpha,\beta)$.
+			
+			\item Obtenha a função de log-verossimilhança
+			$\ell(\alpha,\beta)$.
+			
+			\item Obtenha as duas equações de score para $\alpha$ e $\beta$.
+			
+			\item Explique por que o sistema de equações obtido não possui,
+			em geral, uma solução analítica simples.
+			
+			\item Explique por que a obtenção dos estimadores de máxima
+			verossimilhança exige métodos numéricos.
+			
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=4.\arabic*)]
+		
+		% Questão 1
+		\item 
+		\begin{enumerate}[label=(\alph*)]
+			\item $L(\mu, \sigma^2) = (2\pi\sigma^2)^{-n/2} \left( \prod_{i=1}^n x_i \right)^{-1} \exp\left\{ -\frac{1}{2\sigma^2} \sum_{i=1}^n (\ln x_i - \mu)^2 \right\}$
+			\item $ \ell(\mu, \sigma^2) = -\frac{n}{2}\ln(2\pi) - \frac{n}{2}\ln(\sigma^2) - \sum_{i=1}^n \ln(x_i) - \frac{1}{2\sigma^2}\sum_{i=1}^n (\ln x_i - \mu)^2$
+			
+			\item $\frac{\partial \ell}{\partial \mu} = \frac{1}{\sigma^2}\sum_{i=1}^n (\ln x_i - \mu)$
+			
+			\vspace{1pt}
+			$\frac{\partial \ell}{\partial (\sigma^2)} = -\frac{n}{2\sigma^2} + \frac{1}{2(\sigma^2)^2}\sum_{i=1}^n (\ln x_i - \mu)^2$
+		\end{enumerate}
+		
+		% Questão 2
+		\item 
+		\begin{enumerate}
+			\item $ L(\alpha,\beta) = \frac{\beta^{n\alpha}}{(\Gamma(\alpha))^n} \left(\prod_{i=1}^n x_i\right)^{\alpha-1} e^{-\beta \sum_{i=1}^n x_i} $
+			
+			\item $ \ell(\alpha,\beta) = n\alpha \ln(\beta) - n\ln(\Gamma(\alpha)) + (\alpha-1)\sum_{i=1}^n \ln(x_i) - \beta \sum_{i=1}^n x_i $
+			
+			\item $ \frac{\partial \ell}{\partial \alpha} = n\ln(\beta) - n\psi(\alpha) + \sum_{i=1}^n \ln(x_i) $
+			
+			\vspace{1pt}			
+			$ \frac{\partial \ell}{\partial \beta} = \frac{n\alpha}{\beta} - \sum_{i=1}^n x_i $
+			
+			\item $\widehat{\beta} = \frac{\widehat{\alpha}}{\bar{X}} $
+			
+			\item Ao substituir $\widehat{\beta}$ na equação de score para $\alpha$ $\left(\frac{\partial \ell}{\partial \alpha} = 0\right)$, obtemos uma equação que envolve tanto a função digama $\psi(\alpha)$ quanto o logaritmo $\ln(\alpha)$. Essa é uma equação altamente não-linear. Devido à natureza dessas funções, é impossível isolar o $\widehat{\alpha}$ algebricamente para obter uma solução fechada (analítica). O EMV $\widehat{\alpha}$ é encontrado apenas por maximização numérica da função de log-verossimilhança.
+		\end{enumerate}
+		
+		% Questão 3
+		\item 
+		\begin{enumerate}
+			\item $f(x; \theta_1, \theta_2) = \frac{1}{\theta_2-\theta_1} I_{[\theta_1, \theta_2]}(x)$
+			
+			\item $ L(\theta_1,\theta_2) = \frac{1}{(\theta_2-\theta_1)^n} \prod_{i=1}^n I_{[\theta_1, \theta_2]}(x_i) $
+			
+			\item O produto das indicadoras $\prod_{i=1}^n I_{[\theta_1, \theta_2]}(x_i)$ vale 1 se e somente se $\theta_1 \le x_i \le \theta_2$ para todo $i = 1, \dots, n$. Isso equivale a dizer que $\theta_1$ deve ser menor ou igual ao menor valor da amostra ($x_{(1)}$) e $\theta_2$ deve ser maior ou igual ao maior valor da amostra ($x_{(n)}$). Logo, $\theta_1 \le x_{(1)}$ e $\theta_2 \ge x_{(n)}$.
+			
+			\item A função $L(\theta_1, \theta_2) = \frac{1}{(\theta_2-\theta_1)^n}$ é estritamente decrescente em relação à amplitude $(\theta_2-\theta_1)$. Portanto, para maximizar a verossimilhança, devemos minimizar essa amplitude. Respeitando as restrições $\theta_1 \le x_{(1)}$ e $\theta_2 \ge x_{(n)}$, a menor amplitude ocorre quando escolhemos $\theta_1$ o maior possível e $\theta_2$ o menor possível dentro desse intervalo válido.
+			
+			\item Deste raciocínio direto, concluímos que os estimadores de máxima verossimilhança são:
+			$$ \widehat{\theta}_1 = x_{(1)} \qquad \text{e} \qquad \widehat{\theta}_2 = x_{(n)} $$
+			
+			\item O suporte da distribuição (os limites onde $f(x) > 0$) depende diretamente dos parâmetros a serem estimados ($\theta_1$ e $\theta_2$). Com isso, as chamadas Condições de Regularidade de Cramér falham. A função de verossimilhança não é diferenciável nos pontos de máximo, e este máximo ocorre na fronteira do espaço paramétrico (determinada pela própria amostra), inviabilizando o uso de derivadas (gradiente zero) para encontrar o estimador.
+		\end{enumerate}
+		
+		\vspace{0.5cm}
+		% Questão 4
+		\item 
+		\begin{enumerate}[label=(\alph*)]
+			\item $ L(\alpha,\beta) = \left( \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} \right)^n \left(\prod_{i=1}^n x_i\right)^{\alpha-1} \left(\prod_{i=1}^n (1-x_i)\right)^{\beta-1} $
+			
+			\item $ \ell(\alpha,\beta) = n\ln\Gamma(\alpha+\beta) - n\ln\Gamma(\alpha) - n\ln\Gamma(\beta) + (\alpha-1)\sum_{i=1}^n \ln(x_i) + (\beta-1)\sum_{i=1}^n \ln(1-x_i) $
+			
+			\item $ \frac{\partial \ell}{\partial \alpha} = n\psi(\alpha+\beta) - n\psi(\alpha) + \sum_{i=1}^n \ln(x_i) = 0 $
+			
+			\vspace{1pt}
+			$ \frac{\partial \ell}{\partial \beta} = n\psi(\alpha+\beta) - n\psi(\beta) + \sum_{i=1}^n \ln(1-x_i) = 0 $
+			
+			\item As equações geradas pelas derivadas parciais não possuem uma solução analítica simples porque combinam termos lineares/aditivos das amostras com a função digama ($\psi$), que é uma função especial e não-linear. Devido à presença simultânea de $\psi(\alpha+\beta)$, $\psi(\alpha)$ e $\psi(\beta)$, é impossível encontrar uma manipulação algébrica que isole os parâmetros $\alpha$ e $\beta$.
+			
+			\item Como não é possível isolar $\alpha$ e $\beta$ explicitamente a partir das equações de score ($\frac{\partial \ell}{\partial \alpha} = 0$ e $\frac{\partial \ell}{\partial \beta} = 0$), devemos recorrer a algoritmos de aproximação iterativa (como os métodos de Newton-Raphson, Scoring de Fisher ou métodos de quase-Newton). Esses métodos numéricos partem de chutes iniciais e navegam pela superfície da log-verossimilhança até encontrarem o ponto máximo de forma aproximada.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+\end{document}

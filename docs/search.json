@@ -71,5 +71,17 @@
       "Parte 1: Fundamentos da Inferência Estatística",
       "2. O Método dos Momentos"
     ]
+  },
+  {
+    "objectID": "aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.html",
+    "href": "aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.html",
+    "title": "4. O Método da Máxima Verossimilhança – Caso Multiparamétrico",
+    "section": "",
+    "text": "Nesta aula, ampliamos o Método da Máxima Verossimilhança (MV) para situações em que o modelo possui mais de um parâmetro desconhecido.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Fundamentos da Inferência Estatística",
+      "4. O Método da Máxima Verossimilhança -- Caso Multiparamétrico"
+    ]
   }
 ]
