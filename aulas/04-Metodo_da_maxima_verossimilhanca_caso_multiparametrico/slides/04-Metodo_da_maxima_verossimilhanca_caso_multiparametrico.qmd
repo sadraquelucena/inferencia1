@@ -67,7 +67,7 @@ $$
 
 ---
 
-## Exemplo 15.1:
+## Exemplo 4.1
 
 Seja $X \sim N(\mu, \sigma^2)$. Temos dois parâmetros desconhecidos: $\theta_1 = \mu$ e $\theta_2 = \sigma^2$. A densidade é
 $$
