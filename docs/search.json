@@ -83,5 +83,17 @@
       "Parte 1: Fundamentos da Inferência Estatística",
       "4. O Método da Máxima Verossimilhança -- Caso Multiparamétrico"
     ]
+  },
+  {
+    "objectID": "aulas/05-Propriedades_EMVs/conteudo.html",
+    "href": "aulas/05-Propriedades_EMVs/conteudo.html",
+    "title": "5. Propriedades dos Estimadores de Máxima Verossimilhança",
+    "section": "",
+    "text": "Nesta aula, são apresentados os principais resultados assintóticos do Método de Máxima Verossimilhança, com destaque para o Princípio da Invariância, a distribuição assintótica do EMV e o Método Delta.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Fundamentos da Inferência Estatística",
+      "5. Propriedades dos Estimadores de Máxima Verossimilhança"
+    ]
   }
 ]

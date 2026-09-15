@@ -1,0 +1,158 @@
+---
+title: "Propriedades dos Estimadores de Máxima Verossimilhança"
+subtitle: |
+  *Como estimar vários parâmetros simultaneamente?*
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    ESTAT0078 -- Inferência I<br>
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a><br>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1600
+    height: 900
+    margin: 0.1          # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_principal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+    pdf-separate-fragments: false # 'false' gera 1 página por slide. Se usar 'true', cada animação/fragmento vira uma página no PDF.
+
+lang: pt-BR
+---
+
+## Introdução
+
+Por que o Método de Máxima Verossimilhança (MV) é considerado o método padrão na inferência estatística moderna?
+
+Diferente do Método dos Momentos, o MV possui propriedades teóricas ótimas para **grandes amostras**:
+
+1.  **Invariância:** Facilidade para estimar funções do parâmetro.
+2.  **Eficiência:** Garante a menor variância possível (assintoticamente).
+3.  **Normalidade:** Permite a construção fácil de intervalos de confiança.
+
+
+
+
+## Teorema 5.1: Princípio da Invariância
+
+- Este teorema resolve um problema prático: muitas vezes não queremos estimar $\theta$, mas uma função dele.
+
+- Seja $\widehat{\theta}$ o estimador de máxima verossimilhança de $\theta$. Se $g(\theta)$ é uma função bijetora (ou, sob certas condições, qualquer transformação), então o estimador de máxima verossimilhança de $g(\theta)$ é dado por:
+$$\widehat{g(\theta)} = g(\widehat{\theta}).$$
+
+- *Diferença Crucial:* O Método dos Momentos **não** garante isso (ex: $E[\overline{X}^2] \neq \mu^2$). Já o Método da Máxima Verossimilhança garante.
+
+
+
+
+## Exemplo 5.1
+
+Seja $X \sim \text{Bernoulli}(p)$. O EMV é $\widehat{p} = \overline{X}$. Qual o EMV da variância populacional $g(p) = p(1-p)$?
+
+
+
+
+## Exemplo 5.2
+
+Seja $X \sim \text{Exp}(\theta)$ com média $\theta$. A densidade é $f(x) = \frac{1}{\theta}e^{-x/\theta}$. O EMV é $\widehat{\theta} = \overline{X}$. Um atuário precisa estimar a probabilidade de um sinistro ocorrer após o tempo $t=1$:
+$$ S(1) = P(X > 1) = \int_{1}^{\infty} \frac{1}{\theta}e^{-x/\theta} dx = e^{-1/\theta}$$
+
+Qual o EMV de S(1)?
+
+
+
+
+## Distribuição em Grandes Amostras
+
+- Sob condições de regularidade, o EMV tem comportamento **Assintoticamente Normal**.
+
+- Quando $n \to \infty$:
+$$
+\sqrt{n}(\widehat{\theta} - \theta) \overset{d}{\longrightarrow} N\left(0, \frac{1}{I_1(\theta)}\right)
+$$
+
+- Ou, em termos de aproximação para amostras finitas:
+$$
+\widehat{\theta} \approx N\left(\theta, \frac{1}{n I_1(\theta)}\right)
+$$
+
+- $I_1(\theta) = -E\left[ \frac{\partial^2 \log f(X;\theta)}{\partial \theta^2} \right]$ é chamada de **Informação de Fisher Esperada (unitária)**.
+
+
+
+
+## Como obter a Informação de Fiser Esperada (unitária)
+
+A informação de Fisher esperada, para uma observação, é definida por $$I_1(\theta) = -E\left[ \frac{\partial^2 \log f(X;\theta)}{\partial \theta^2} \right]$$
+
+Para obtê-la:
+
+1. Obtenha a log-verossimilhança unitária: $\ell(\theta;x) = \log f(x;\theta)$
+2. Calcule a segunda derivada em relação a $\theta$: $\frac{\partial \ell^2(\theta;x)}{\partial \theta^2}$
+3. Calcule a esperança dessa segunda derivada: $E\left[ \frac{\partial^2\ell(\theta;X)}{\partial\theta^2} \right]$
+4. Tome o negativo dessa esperança: $I_1(\theta) = -E_\theta\left[ \frac{\partial^2\ell(\theta;X)}{\partial\theta^2} \right]$
+
+
+
+
+## Distribuição em Grandes Amostras
+
+- A variância $\frac{1}{n I_1(\theta)}$ é chamado **Limite Inferior de Cramér-Rao**.
+- Isso significa que o EMV é o estimador com menor variância possível, ou seja, é o mais preciso possível (entre os não-viesados) para grandes amostras.
+
+
+
+
+## Exemplo 5.4
+
+Seja $X \sim \text{Bernoulli}(p)$. EMV $\widehat{p} = \overline{X}$. Determine a distribuição assintótica do EMV de $p$.
+
+
+
+
+## Exemplo 5.5
+
+Seja $X \sim \text{Poisson}(\theta)$. EMV $\widehat{\theta} = \overline{X}$. Determine a distribuição assintótica do EMV de $\theta$.
+
+
+
+## O Método Delta
+
+- Como obter a distribuição assintótica de uma função $g(\widehat{\theta})$?
+- Usamos a expansão de Taylor de primeira ordem, técnica conhecida como **Método Delta**.
+
+- Se $\sqrt{n}(\widehat{\theta} - \theta) \to N(0, \sigma^2)$, então:
+$$
+\sqrt{n}(g(\widehat{\theta}) - g(\theta)) \overset{d}{\longrightarrow} N\left(0, [g'(\theta)]^2 \cdot \sigma^2\right)
+$$
+
+- Aplicando ao caso de MV:
+$$
+g(\widehat{\theta}) \approx N\left(g(\theta), \frac{[g'(\theta)]^2}{n I_1(\theta)}\right)
+$$
+
+
+
+## Exemplo 5.6
+
+Seja $X \sim \text{Bernoulli}(p)$. EMV $\widehat{p} = \overline{X}$. Determine a distribuição assintótica do EMV de $p(1-p)$.
+
+
+
+
+## Exemplo 5.7
+
+Seja $X \sim \text{Poisson}(\theta)$. EMV $\widehat{\theta} = \overline{X}$. Determine a distribuição assintótica do EMV de $g(\theta) = P(X=0) = e^{-\theta}$ (Probabilidade de zero ocorrências).
+
+
+
+
+# Fim
