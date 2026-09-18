@@ -24,179 +24,260 @@
 \end{minipage}
 
 \vspace{0.8cm}
-\begin{center} {\bf Lista de Exercícios 4} \end{center}
+\begin{center} {\bf Lista de Exercícios 5} \end{center}
 \vspace{0.8cm}
 
-	\begin{enumerate}[label=4.\arabic*)]
+	\begin{enumerate}[label=5.\arabic*)]
 		
 		% Questão 1
-		\item Em economia, a distribuição Lognormal é frequentemente utilizada para modelar a renda de populações. Dizemos que $X \sim \text{Lognormal}(\mu, \sigma^2)$ se $Y = \ln(X)$ segue uma distribuição Normal$(\mu, \sigma^2)$. A densidade de $X$ é dada por:
-		$$ f(x; \mu, \sigma^2) = \frac{1}{x\sqrt{2\pi\sigma^2}} \exp\left\{ -\frac{(\ln x - \mu)^2}{2\sigma^2} \right\}, \quad x > 0. $$
-		Seja $X_1, \ldots, X_n$ uma amostra aleatória dessa população.		
-		\begin{enumerate}
-			\item Escreva a função de verossimilhança $L(\mu, \sigma^2)$.
-			\item Escreva a função de log-verossimilhança $\ell(\mu, \sigma^2)$.
-			\item Derive o sistema de equações de score para o vetor de parâmetros $\boldsymbol{\theta} = (\mu, \sigma^2)$.
-			\item Resolva o sistema e mostre que os estimadores de máxima verossimilhança são a média e a variância (viesada) dos logaritmos dos dados:
-			$$ \widehat{\mu} = \frac{1}{n}\sum_{i=1}^n \ln(X_i) \quad \text{e} \quad \widehat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n (\ln X_i - \widehat{\mu})^2. $$
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Exponencial}(\lambda)$, com função densidade
+		\[
+		f(x;\lambda)=\lambda e^{-\lambda x},\qquad x>0,\quad \lambda>0.
+		\]
+		Considere $\widehat{\lambda}=1/\overline{X}$, o estimador de máxima verossimilhança de $\lambda$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine a informação de Fisher esperada para uma observação, $I_1(\lambda)$.
+			
+			\item Use a distribuição assintótica do EMV para obter uma aproximação para a distribuição de $\widehat{\lambda}$ quando $n$ é grande.
+			
+			\item Para $n=100$ e $\lambda=2$, determine aproximadamente a média e o desvio-padrão da distribuição assintótica de $\widehat{\lambda}$.
 		\end{enumerate}
 		
 		% Questão 2
-		\item Considere uma amostra aleatória $X_1, \ldots, X_n$ de uma população com distribuição Gama($\alpha,\beta$), com $\alpha$ e $\beta$ desconhecidos. A função de densidade é dada por:
-		$$
-		f(x; \alpha, \beta) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x}, \quad x>0,\alpha>0,\beta>0.
-		$$
-		\begin{enumerate}
-			\item Escreva $L(\alpha,\beta)$.
-			\item Obtenha $\ell(\alpha,\beta)$.
-			\item Derive as equações de score para $\alpha$ e $\beta$ (lembre que $\frac{d}{d\alpha}\ln\Gamma(\alpha) = \psi(\alpha)$).
-			\item Determine $\hat\beta$.
-			\item Explique por que $\hat\alpha$ não possui, em geral, uma expressão analítica simples.
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Normal}(\mu,\sigma^2)$, em que $\sigma^2$ é conhecida e $\mu$ é desconhecido. Sabe-se que o EMV de $\mu$ é $\widehat{\mu}=\overline{X}$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Calcule a informação de Fisher esperada para uma observação em relação a $\mu$.
+			
+			\item Obtenha a distribuição assintótica de $\widehat{\mu}$ a partir da informação de Fisher.
 		\end{enumerate}
 		
 		% Questão 3
-		\item Considere uma amostra aleatória $X_1,\ldots,X_n$ de uma população com distribuição
-		$U(\theta_1,\theta_2)$, com $\theta_1<\theta_2$. A função densidade é dada por
-		$$
-		f(x;\theta_1,\theta_2)=\frac{1}{\theta_2-\theta_1},
-		\qquad
-		\theta_1<x<\theta_2.
-		$$
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Poisson}(\lambda)$, com $\lambda>0$. O estimador de máxima verossimilhança de $\lambda$ é $\widehat{\lambda}=\overline{X}$.
 		
-		Os parâmetros $\theta_1$ e $\theta_2$ são desconhecidos.
+		Considere a quantidade
+		\[
+		g(\lambda)=\frac{1}{1+\lambda},
+		\]
+		que representa, por exemplo, uma função decrescente da intensidade média de ocorrências.
 		
-		\begin{enumerate}
-			\item Reescreva $f(x;\theta_1,\theta_2)$ usando função indicadora.
-			\item Escreva a função de verossimilhança
-			$L(\theta_1,\theta_2)$ para uma amostra $x_1,\ldots,x_n$.
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $g'(\lambda)$.
 			
-			\item Observe que a verossimilhança é positiva somente quando
-			todos os valores observados pertencem ao intervalo
-			$(\theta_1,\theta_2)$. Mostre que isso implica
+			\item Obtenha o estimador de máxima verossimilhança de $g(\lambda)$.
 			
-			$$
-			\theta_1 < x_{(1)}
-			\qquad\text{e}\qquad
-			\theta_2 > x_{(n)},
-			$$
+			\item Usando a informação de Fisher, determine a variância assintótica de $\widehat{\lambda}$.
 			
-			onde $x_{(1)}$ e $x_{(n)}$ representam, respectivamente,
-			o menor e o maior valor observado na amostra.
-			
-			\item Para que a verossimilhança seja máxima, devemos escolher
-			$\theta_1$ e $\theta_2$ de modo que o intervalo
-			$(\theta_1,\theta_2)$ seja o menor possível, mantendo todos
-			os valores observados dentro dele. Explique por que isso implica
-			escolher $\theta_1$ e $\theta_2$ a partir dos valores
-			$x_{(1)}$ e $x_{(n)}$.
-			
-			\item Determine os estimadores de máxima verossimilhança
-			$\widehat{\theta}_1$ e $\widehat{\theta}_2$.
-			
-			\item Explique por que, nesse caso, os estimadores de máxima
-			verossimilhança não são obtidos anulando o gradiente da
-			log-verossimilhança.
+			\item Aplique o método delta para obter a distribuição assintótica de $g(\widehat{\lambda})$.
 		\end{enumerate}
 		
 		% Questão 4
-		\item Considere uma amostra aleatória $X_1,\ldots,X_n$ de uma população com distribuição
-		$\operatorname{Beta}(\alpha,\beta)$, com $\alpha>0$ e $\beta>0$. A função densidade é dada por
-		$$
-		f(x; \alpha, \beta) = \frac{\Gamma(\alpha+\beta)}
-		{\Gamma(\alpha)\Gamma(\beta)}
-		x^{\alpha-1}(1-x)^{\beta-1},
-		\qquad 0<x<1.
-		$$
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Bernoulli}(p)$, com $0<p<1$, e seja $\widehat{p}=\overline{X}$ o EMV de $p$.
 		
-		Os parâmetros $\alpha$ e $\beta$ são desconhecidos. Considere a função digama definida por $\psi(t)=\frac{d}{dt}\log\Gamma(t)$.
+		Considere a transformação
+		\[
+		g(p)=\log\left(\frac{p}{1-p}\right).
+		\]
 		
-		\begin{enumerate}
-			\item Escreva a função de verossimilhança $L(\alpha,\beta)$.
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $g'(p)$.
 			
-			\item Obtenha a função de log-verossimilhança
-			$\ell(\alpha,\beta)$.
+			\item Determine o EMV de $g(p)$.
 			
-			\item Obtenha as duas equações de score para $\alpha$ e $\beta$.
+			\item Usando a informação de Fisher para uma observação, obtenha a distribuição assintótica do estimador obtido no item (b).
 			
-			\item Explique por que o sistema de equações obtido não possui,
-			em geral, uma solução analítica simples.
-			
-			\item Explique por que a obtenção dos estimadores de máxima
-			verossimilhança exige métodos numéricos.
-			
+			\item Para $p=0{,}40$ e $n=200$, calcule aproximadamente o erro-padrão assintótico desse estimador.
 		\end{enumerate}
 		
+		% Questão 5
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Gama}(\alpha,\beta)$, em que $\alpha>0$ é conhecido e $\beta>0$ é desconhecido, com parametrização pela taxa:
+		\[
+		f(x;\beta)=\frac{\beta^\alpha}{\Gamma(\alpha)}
+		x^{\alpha-1}e^{-\beta x},\qquad x>0.
+		\]
+		O EMV de $\beta$ é
+		\[
+		\widehat{\beta}=\frac{\alpha}{\overline{X}}.
+		\]
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine a log-verossimilhança correspondente a uma única observação.
+			
+			\item Calcule a segunda derivada da log-verossimilhança em relação a $\beta$.
+			
+			\item Determine a informação de Fisher esperada $I_1(\beta)$.
+			
+			\item Obtenha a distribuição assintótica de $\widehat{\beta}$.
+			
+			\item Para $\alpha=4$, $\beta=2$ e $n=100$, calcule aproximadamente o erro-padrão assintótico de $\widehat{\beta}$.
+		\end{enumerate}
+		
+		
+		% Questão 6
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Normal}(\mu,\sigma^2)$, com $\mu$ conhecido e $\sigma^2$ desconhecida. Considere
+		\[
+		f(x;\sigma^2)=
+		\frac{1}{\sqrt{2\pi\sigma^2}}
+		\exp\left\{
+		-\frac{(x-\mu)^2}{2\sigma^2}
+		\right\}.
+		\]
+		O estimador de máxima verossimilhança de $\sigma^2$ é
+		\[
+		\widehat{\sigma}^2=
+		\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2.
+		\]
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine a informação de Fisher esperada para uma observação em relação ao parâmetro $\sigma^2$.
+			
+			\item Obtenha a distribuição assintótica de $\widehat{\sigma}^2$.
+		\end{enumerate}
+		
+		
+		% Questão 7
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Normal}(\mu,\sigma^2)$, com $\sigma^2$ conhecida e $\mu>0$ desconhecido. O EMV de $\mu$ é $\widehat{\mu}=\overline{X}$.
+		
+		Considere a função
+		\[
+		g(\mu)=\sqrt{\mu}.
+		\]
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine o EMV de $g(\mu)$.
+			
+			\item Determine $g'(\mu)$.
+			
+			\item Usando o método delta, obtenha a distribuição assintótica de $\sqrt{\widehat{\mu}}$.
+			
+			\item Para $\mu=25$, $\sigma=5$ e $n=100$, calcule aproximadamente o erro-padrão assintótico de $\sqrt{\widehat{\mu}}$.
+		\end{enumerate}
+		
+		% Questão 8
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\operatorname{Poisson}(\lambda)$, com $\lambda>0$. Considere o estimador
+		\[
+		\widehat{\lambda}=\overline{X}.
+		\]
+		
+		Um pesquisador deseja estimar a probabilidade de que uma unidade observada apresente pelo menos duas ocorrências:
+		\[
+		g(\lambda)=P(X\geq 2)
+		=1-P(X=0)-P(X=1)
+		=1-e^{-\lambda}(1+\lambda).
+		\]
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $g'(\lambda)$.
+			
+			\item Usando o princípio da invariância, obtenha o estimador de máxima verossimilhança de $g(\lambda)$.
+			
+			\item Determine a informação de Fisher para uma observação.
+			
+			\item Usando o método delta, obtenha a distribuição assintótica do estimador obtido no item (b).
+			
+			\item Para $\lambda=1{,}5$ e $n=150$, calcule aproximadamente a variância assintótica e o erro-padrão do estimador da probabilidade $P(X\geq2)$.
+		\end{enumerate}
 	\end{enumerate}
 	
 	\newpage
 	
 	\noindent Respostas:
 	
-	\begin{enumerate}[label=4.\arabic*)]
+	\begin{enumerate}[label=5.\arabic*)]
 		
 		% Questão 1
 		\item 
 		\begin{enumerate}[label=(\alph*)]
-			\item $L(\mu, \sigma^2) = (2\pi\sigma^2)^{-n/2} \left( \prod_{i=1}^n x_i \right)^{-1} \exp\left\{ -\frac{1}{2\sigma^2} \sum_{i=1}^n (\ln x_i - \mu)^2 \right\}$
-			\item $ \ell(\mu, \sigma^2) = -\frac{n}{2}\ln(2\pi) - \frac{n}{2}\ln(\sigma^2) - \sum_{i=1}^n \ln(x_i) - \frac{1}{2\sigma^2}\sum_{i=1}^n (\ln x_i - \mu)^2$
+			\item $I_1(\lambda) = \frac{1}{\lambda^2}$
 			
-			\item $\frac{\partial \ell}{\partial \mu} = \frac{1}{\sigma^2}\sum_{i=1}^n (\ln x_i - \mu)$
-			
-			\vspace{1pt}
-			$\frac{\partial \ell}{\partial (\sigma^2)} = -\frac{n}{2\sigma^2} + \frac{1}{2(\sigma^2)^2}\sum_{i=1}^n (\ln x_i - \mu)^2$
+			\item $\sqrt{n}(\widehat{\lambda} - \lambda) \xrightarrow{d} \mathcal{N}\left( 0, \frac{1}{I_1(\lambda)} \right) = \mathcal{N}(0, \lambda^2)$. \quad Equivalentemente: $\widehat{\lambda} \stackrel{a}{\sim} \mathcal{N}\left( \lambda, \frac{\lambda^2}{n} \right)$
+			\item Média assintótica: $\mathbb{E}[\widehat{\lambda}] \approx \lambda = 2$\\
+			      Variância assintótica: $\operatorname{Var}(\widehat{\lambda}) \approx \frac{\lambda^2}{n} = 0{,}04$\\
+				  Desvio-padrão assintótico: $\operatorname{DP}(\widehat{\lambda}) = 0{,}2$
 		\end{enumerate}
 		
 		% Questão 2
 		\item 
 		\begin{enumerate}
-			\item $ L(\alpha,\beta) = \frac{\beta^{n\alpha}}{(\Gamma(\alpha))^n} \left(\prod_{i=1}^n x_i\right)^{\alpha-1} e^{-\beta \sum_{i=1}^n x_i} $
+			\item $I_1(\mu) = \frac{1}{\sigma^2}$
 			
-			\item $ \ell(\alpha,\beta) = n\alpha \ln(\beta) - n\ln(\Gamma(\alpha)) + (\alpha-1)\sum_{i=1}^n \ln(x_i) - \beta \sum_{i=1}^n x_i $
-			
-			\item $ \frac{\partial \ell}{\partial \alpha} = n\ln(\beta) - n\psi(\alpha) + \sum_{i=1}^n \ln(x_i) $
-			
-			\vspace{1pt}			
-			$ \frac{\partial \ell}{\partial \beta} = \frac{n\alpha}{\beta} - \sum_{i=1}^n x_i $
-			
-			\item $\widehat{\beta} = \frac{\widehat{\alpha}}{\bar{X}} $
-			
-			\item Ao substituir $\widehat{\beta}$ na equação de score para $\alpha$ $\left(\frac{\partial \ell}{\partial \alpha} = 0\right)$, obtemos uma equação que envolve tanto a função digama $\psi(\alpha)$ quanto o logaritmo $\ln(\alpha)$. Essa é uma equação altamente não-linear. Devido à natureza dessas funções, é impossível isolar o $\widehat{\alpha}$ algebricamente para obter uma solução fechada (analítica). O EMV $\widehat{\alpha}$ é encontrado apenas por maximização numérica da função de log-verossimilhança.
+			\item $\widehat{\mu} \stackrel{a}{\sim} \mathcal{N}\left( \mu, \frac{\sigma^2}{n} \right)$
 		\end{enumerate}
 		
 		% Questão 3
 		\item 
 		\begin{enumerate}
-			\item $f(x; \theta_1, \theta_2) = \frac{1}{\theta_2-\theta_1} I_{[\theta_1, \theta_2]}(x)$
+			\item $g'(\lambda) = -\frac{1}{(1+\lambda)^2}$
 			
-			\item $ L(\theta_1,\theta_2) = \frac{1}{(\theta_2-\theta_1)^n} \prod_{i=1}^n I_{[\theta_1, \theta_2]}(x_i) $
+			\item $\widehat{g(\lambda)} = \frac{1}{1+\overline{X}}$
 			
-			\item O produto das indicadoras $\prod_{i=1}^n I_{[\theta_1, \theta_2]}(x_i)$ vale 1 se e somente se $\theta_1 \le x_i \le \theta_2$ para todo $i = 1, \dots, n$. Isso equivale a dizer que $\theta_1$ deve ser menor ou igual ao menor valor da amostra ($x_{(1)}$) e $\theta_2$ deve ser maior ou igual ao maior valor da amostra ($x_{(n)}$). Logo, $\theta_1 \le x_{(1)}$ e $\theta_2 \ge x_{(n)}$.
+			\item $\operatorname{Var}_{ass}(\widehat{\lambda}) = \frac{1}{n I_1(\lambda)} = \frac{\lambda}{n}$
 			
-			\item A função $L(\theta_1, \theta_2) = \frac{1}{(\theta_2-\theta_1)^n}$ é estritamente decrescente em relação à amplitude $(\theta_2-\theta_1)$. Portanto, para maximizar a verossimilhança, devemos minimizar essa amplitude. Respeitando as restrições $\theta_1 \le x_{(1)}$ e $\theta_2 \ge x_{(n)}$, a menor amplitude ocorre quando escolhemos $\theta_1$ o maior possível e $\theta_2$ o menor possível dentro desse intervalo válido.
-			
-			\item Deste raciocínio direto, concluímos que os estimadores de máxima verossimilhança são:
-			$$ \widehat{\theta}_1 = x_{(1)} \qquad \text{e} \qquad \widehat{\theta}_2 = x_{(n)} $$
-			
-			\item O suporte da distribuição (os limites onde $f(x) > 0$) depende diretamente dos parâmetros a serem estimados ($\theta_1$ e $\theta_2$). Com isso, as chamadas Condições de Regularidade de Cramér falham. A função de verossimilhança não é diferenciável nos pontos de máximo, e este máximo ocorre na fronteira do espaço paramétrico (determinada pela própria amostra), inviabilizando o uso de derivadas (gradiente zero) para encontrar o estimador.
+			\item Pelo Método Delta, $g(\widehat{\lambda}) \stackrel{a}{\sim} \mathcal{N}\left( \frac{1}{1+\lambda}, \, \frac{\lambda}{n(1+\lambda)^4} \right)$
 		\end{enumerate}
 		
-		\vspace{0.5cm}
 		% Questão 4
 		\item 
 		\begin{enumerate}[label=(\alph*)]
-			\item $ L(\alpha,\beta) = \left( \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} \right)^n \left(\prod_{i=1}^n x_i\right)^{\alpha-1} \left(\prod_{i=1}^n (1-x_i)\right)^{\beta-1} $
+			\item $g'(p) = \frac{1}{p(1-p)}$
 			
-			\item $ \ell(\alpha,\beta) = n\ln\Gamma(\alpha+\beta) - n\ln\Gamma(\alpha) - n\ln\Gamma(\beta) + (\alpha-1)\sum_{i=1}^n \ln(x_i) + (\beta-1)\sum_{i=1}^n \ln(1-x_i) $
+			\item $\widehat{g(p)} = \log\left( \frac{\overline{X}}{1-\overline{X}} \right)$
 			
-			\item $ \frac{\partial \ell}{\partial \alpha} = n\psi(\alpha+\beta) - n\psi(\alpha) + \sum_{i=1}^n \ln(x_i) = 0 $
+			\item $\widehat{g(p)} \stackrel{a}{\sim} \mathcal{N}\left( \log\left(\frac{p}{1-p}\right), \, \frac{1}{n \, p(1-p)} \right)$
 			
-			\vspace{1pt}
-			$ \frac{\partial \ell}{\partial \beta} = n\psi(\alpha+\beta) - n\psi(\beta) + \sum_{i=1}^n \ln(1-x_i) = 0 $
-			
-			\item As equações geradas pelas derivadas parciais não possuem uma solução analítica simples porque combinam termos lineares/aditivos das amostras com a função digama ($\psi$), que é uma função especial e não-linear. Devido à presença simultânea de $\psi(\alpha+\beta)$, $\psi(\alpha)$ e $\psi(\beta)$, é impossível encontrar uma manipulação algébrica que isole os parâmetros $\alpha$ e $\beta$.
-			
-			\item Como não é possível isolar $\alpha$ e $\beta$ explicitamente a partir das equações de score ($\frac{\partial \ell}{\partial \alpha} = 0$ e $\frac{\partial \ell}{\partial \beta} = 0$), devemos recorrer a algoritmos de aproximação iterativa (como os métodos de Newton-Raphson, Scoring de Fisher ou métodos de quase-Newton). Esses métodos numéricos partem de chutes iniciais e navegam pela superfície da log-verossimilhança até encontrarem o ponto máximo de forma aproximada.
+			\item $\operatorname{Var}_{ass}(\widehat{g(p)}) \approx 0{,}020833$\\
+			O erro-padrão assintótico é a raiz quadrada da variância assintótica: $\operatorname{EP}_{ass}(\widehat{g(p)}) \approx 0{,}1443$
 		\end{enumerate}
+		
+		% Questão 5
+		\item 
+		\begin{enumerate}
+			\item $\ell_1(\beta) = \alpha\ln\beta - \ln\Gamma(\alpha) + (\alpha-1)\ln x - \beta x$
+			
+			\item $\frac{\partial \ell_1}{\partial \beta} = \frac{\alpha}{\beta} - x \implies \frac{\partial^2 \ell_1}{\partial \beta^2} = -\frac{\alpha}{\beta^2}$
+			
+			\item $I_1(\beta) = \frac{\alpha}{\beta^2}$
+			
+			\item $\widehat{\beta} \stackrel{a}{\sim} \mathcal{N}\left( \beta, \frac{\beta^2}{n\alpha} \right)$
+			
+			\item $\operatorname{Var}_{ass}(\widehat{\beta}) = \frac{4}{400} = 0{,}01 \implies \operatorname{EP}_{ass}(\widehat{\beta}) = 0{,}1$
+		\end{enumerate}
+		
+		% Questão 6
+		\item 
+		\begin{enumerate}
+			\item $I_1(\sigma^2) = \frac{1}{2\theta^2} = \frac{1}{2(\sigma^2)^2}$
+			
+			\item $\widehat{\sigma}^2 \stackrel{a}{\sim} \mathcal{N}\left( \sigma^2, \frac{2(\sigma^2)^2}{n} \right)$
+		\end{enumerate}
+		
+		% Questão 7
+		\item
+		\begin{enumerate}[label=(\alph*)]
+			\item Pelo princípio da invariância, $\widehat{g(\mu)} = \sqrt{\overline{X}}$
+			
+			\item$g'(\mu) = \frac{1}{2\sqrt{\mu}}$
+			
+			\item Pelo método delta, $\sqrt{\widehat{\mu}} \stackrel{a}{\sim} \mathcal{N}\left( \sqrt{\mu}, \, \frac{\sigma^2}{4n\mu} \right)$
+			
+			\item $\operatorname{Var}_{ass}(\sqrt{\widehat{\mu}}) = 0{,}0025 \implies \operatorname{EP}_{ass}(\sqrt{\widehat{\mu}}) = 0{,}05$
+		\end{enumerate}
+		
+		% Questão 8
+		\item
+		\begin{enumerate}[label=(\alph*)]
+			\item $g'(\lambda) = \lambda e^{-\lambda}$
+			
+			\item $\widehat{g(\lambda)} = 1 - e^{-\overline{X}}(1+\overline{X})$
+			
+			\item $I_1(\lambda) = \frac{1}{\lambda}$
+			
+			\item $g(\widehat{\lambda}) \stackrel{a}{\sim} \mathcal{N}\left( 1 - e^{-\lambda}(1+\lambda), \; \frac{\lambda^3 e^{-2\lambda}}{n} \right)$
+			
+			\item $\operatorname{Var}_{ass} \approx 0{,}0011202 \implies \operatorname{EP}_{ass} \approx 0{,}03347$
+		\end{enumerate}
+		
 		
 	\end{enumerate}
 	
