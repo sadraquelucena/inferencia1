@@ -29,13 +29,17 @@ website:                  # Configurações específicas do website
     
     - section: "Aulas"
       contents: 
-      - section: "Parte 1: Fundamentos da Inferência Estatística"
+      - section: "Parte 1: Fundamentos e Métodos de Estimação"
         contents:
           - href: aulas/01-O_problema_da_inferencia_estatistica/conteudo.qmd
           - href: aulas/02-Metodo_dos_momentos/conteudo.qmd
           - href: aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.qmd
           - href: aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.qmd
           - href: aulas/05-Propriedades_EMVs/conteudo.qmd
+      
+      - section: "Parte 2: Propriedades dos Estimadores"
+        contents:
+          - href: aulas/06-Vies_de_um_estimador/conteudo.qmd
 
 format:                      # Configurações do formato HTML
   html:

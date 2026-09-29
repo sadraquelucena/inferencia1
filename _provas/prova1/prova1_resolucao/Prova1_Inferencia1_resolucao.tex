@@ -1,0 +1,221 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{calligra}
+\usepackage{accents}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{minipage}[b]{0.1 \linewidth}
+	\includegraphics[width=1.4cm]{ufs_vertical_positiva.png}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.85 \linewidth}
+	\textsc{Universidade Federal de Sergipe}\\
+	\textsc{Departamento de Estatística e Ciências Atuariais}\\
+	Disciplina: Inferência I\\
+	Professor: Sadraque E.F. Lucena\\
+\end{minipage}
+
+\vskip 0.1in
+\begin{center}
+	\textsc{Primeira Avaliação}\\
+	\vskip .1in
+	\textbf{COLOQUE SEU NOME NA FOLHA DE RESPOSTAS!}
+\end{center}
+
+\noindent\hrulefill\\
+\vskip .001in
+\noindent {\bf Regras:} Esta prova terá duração máxima de 1 hora e 30 minutos. O uso de aparelhos eletrônicos, tais como celulares, \textit{tablets}, notebooks e relógios inteligentes {\bf não} é permitido. Apresente todos os detalhes de seus cálculos e de suas respostas de forma compreensível, organizada e {\bf legível}.  Explique qualquer `salto de fé'. Seja preciso(a)! \\ %É permitido o uso de calculadoras. As respostas devem ter 4 (quatro) casas decimais. 
+%\noindent {\bf Regras:} Esta prova deverá ser respondida à mão e \textbf{entregue em 30/01/2025 às 20h45 em sala de aula}. Outros meios de entrega não serão aceitos. Apresente todos os detalhes de seus cálculos e de suas respostas de forma compreensível, organizada e {\bf legível}.  Explique qualquer ``salto de fé''. Seja preciso(a)! Não esqueça de colocar seu nome nas folhas de resposta! \\ 
+
+\noindent\hrulefill\\
+
+\begin{enumerate}
+	\item Considere uma variável aleatória contínua $X$ com função de densidade de probabilidade dada por:
+	$$
+	  f(x;\theta) = \frac{2x}{\theta^2}, \quad 0 < x < \theta, ~\theta > 0
+	$$
+	Sabe-se que a esperança dessa distribuição é $E(X) = \frac{2}{3}\theta$.
+	\begin{enumerate}
+		\item Obtenha o estimador do parâmetro $\theta$ pelo Método dos Momentos ($\hat{\theta}_{MM}$). {\it (2,0 pontos)}
+		
+		\textcolor{blue}{
+		Pelo Método dos Momentos, iguala-se o primeiro momento populacional $E(X)$ ao primeiro momento amostral $\overline{X}$:
+		$$
+		  E(X) = \overline{X} \quad \implies \quad \frac{2}{3}\theta = \overline{X} \quad \implies \quad \boxed{\hat{\theta}_{MM} = \frac{3}{2}\overline{X}}
+		$$
+		}
+		
+		\item Em um estudo com $n = 30$ observações, a média amostral obtida foi $\overline{X} = 4{,}0$. Calcule a estimativa pontual de $\theta$. {\it (1,0 ponto)}
+		
+		\textcolor{blue}{
+			Substituindo o valor da média amostral $\overline{X} = 4{,}0$ na expressão do estimador:
+			$$
+			  \hat{\theta}_{MM} = \frac{3}{2}(4{,}0) = 6{,}0
+			$$
+			A estimativa pontual para $\theta$ é $6{,}0$.
+		}
+		
+	\end{enumerate}
+	
+	\item Seja $X_1, X_2, \dots, X_n$ uma amostra aleatória da distribuição com densidade dada por:
+	$$
+	  f(x;\theta) = (\theta + 1)x^\theta, \quad 0 < x < 1, \quad \theta > -1
+	$$
+	\begin{enumerate}
+		\item Apresente a função de verossimilhança $L(\theta)$. \textit{(1,0 ponto)}
+		
+		\textcolor{blue}{
+			Para uma amostra aleatória de variáveis independentes e identicamente distribuídas:
+			$$
+			  \begin{aligned}
+			    L(\theta) &= \prod_{i=1}^{n} f(x_i; \theta)\\
+			              &= \prod_{i=1}^{n} (\theta + 1)x_i^\theta\\
+			              &= (\theta + 1)^n \prod_{i=1}^{n} x_i^\theta\\
+			              &= (\theta + 1)^n \left( \prod_{i=1}^{n} x_i \right)^\theta	
+			  \end{aligned}
+			$$
+		}
+		
+		\item Escreva a função de log-verossimilhança $\ell(\theta)$. \textit{(1,0 ponto)}
+		
+		\textcolor{blue}{
+		    Aplicando o logaritmo natural em $L(\theta)$:
+		    $$
+		      \begin{aligned}
+		        \ell(\theta) &= \log L(\theta)\\
+		                     &= \log \left[ (\theta + 1)^n \left( \prod_{i=1}^{n} x_i \right)^\theta \right]\\
+		                     &= n \log(\theta + 1) + \theta \sum_{i=1}^{n} \log(x_i)
+		      \end{aligned}
+		    $$
+		}
+		
+		\item Determine a primeira derivada $\ell'(\theta)$ (função escore), iguale a zero e obtenha o Estimador de Máxima Verossimilhança $\widehat{\theta}$. \textit{(1,0 ponto)}
+		
+		\textcolor{blue}{
+			Calculando a derivada de $\ell(\theta)$ em relação a $\theta$:
+			$$
+			  \ell'(\theta) = \frac{d\ell}{d\theta} = \frac{n}{\theta + 1} + \sum_{i=1}^{n} \log(x_i)
+			$$
+			Igualando a função escore a zero para encontrar o ponto crítico:
+			$$
+			  \begin{aligned}
+			  	\frac{n}{\widehat{\theta} + 1} + \sum_{i=1}^{n} \log(x_i) = 0 &\implies \frac{n}{\widehat{\theta} + 1} = -\sum_{i=1}^{n} \log(x_i)\\
+			  	&\implies \theta + 1 = -\frac{n}{\sum_{i=1}^{n} \log(x_i)}\\
+			  	&\implies \widehat{\theta}_{MV} = -\frac{n}{\sum_{i=1}^{n} \log(x_i)} - 1
+			  \end{aligned}
+			$$
+		}
+		
+		\item Verifique a condição de segunda ordem no ponto crítico ($\ell''(\widehat{\theta}) < 0$) para confirmar que se trata de um máximo. \textit{(0,5 ponto)}
+		
+		\textcolor{blue}{
+			Derivando a função escore $\ell'(\theta)$ novamente em relação a $\theta$:
+			$$
+			  \ell''(\theta) = \frac{d}{d\theta} \left[ \frac{n}{\theta + 1} + \sum_{i=1}^{n} \log(x_i) \right] = -\frac{n}{(\theta + 1)^2}
+			$$
+			Como $n > 0$ e $(\theta + 1)^2 > 0$, tem-se que:
+			$$
+			  \ell''(\widehat{\theta}) = -\frac{n}{(\widehat{\theta} + 1)^2} < 0
+			$$
+			Confirmando que $\widehat{\theta}_{MV}$ é um ponto de máximo local e global.
+		}
+		
+		\item Se uma amostra de tamanho $n = 5$ gerou os dados de modo que $\sum_{i=1}^{5} \log(x_i) = -2{,}5$, qual é o valor numérico da estimativa de $\theta$? \textit{(0,5 ponto)}
+		
+		\textcolor{blue}{
+			Dados $n = 5$ e $\sum_{i=1}^{5} \log(x_i) = -2{,}5$:
+			$$
+			  \widehat{\theta} = -\frac{5}{-2{,}5} - 1 = 2 - 1 = 1{,}0
+			$$
+			A estimativa numérica de $\theta$ é $1{,}0$.
+		}
+		
+	\end{enumerate}
+	
+	\item Considere o mesmo modelo da Questão 2, com $f(x;\theta) = (\theta + 1)x^\theta$ para $0 < x < 1$.
+	\begin{enumerate}
+		\item Determine a Informação de Fisher esperada para uma única observação, $I_1(\theta) = -E\left[ \frac{\partial^2 \log f(X;\theta)}{\partial \theta^2} \right]$. \textit{(1,0 ponto)}
+		
+		\textcolor{blue}{
+			Para uma observação $X$, a log-densidade é:
+			$$
+			  \log f(X;\theta) = \log(\theta + 1) + \theta \log(X)
+			$$
+			Calculando as derivadas de primeira e segunda ordem:
+			\begin{itemize}
+				\item $\frac{\partial}{\partial \theta} \log f(X;\theta) = \frac{1}{\theta + 1} + \log(X)$
+				\item $\frac{\partial^2}{\partial \theta^2} \log f(X;\theta) = -\frac{1}{(\theta + 1)^2}$
+			\end{itemize}
+			A Informação de Fisher para uma observação é dada por:
+			$$
+			  I_1(\theta) = -E\left[ \frac{\partial^2 \log f(X;\theta)}{\partial \theta^2} \right] = -E\left[ -\frac{1}{(\theta + 1)^2} \right] = \frac{1}{(\theta + 1)^2}
+			$$
+		}
+		
+		\item Escreva a distribuição assintótica de $\hat{\theta}_{MV}$ para amostras grandes ($n \to \infty$). \textit{(0,5 ponto)}
+		
+		\textcolor{blue}{
+			Pela propriedade da Normalidade Assintótica dos Estimadores de Máxima Verossimilhança:
+			$$
+			  \widehat{\theta}_{MV} \xrightarrow{D} \mathcal{N}\left(\theta, \frac{1}{n I_1(\theta)}\right)
+			$$
+			Como $I_1(\theta) = \frac{1}{(\theta + 1)^2}$, a variância assintótica fica $\frac{(\theta + 1)^2}{n}$. Logo:
+			$$
+			  \widehat{\theta}_{MV} \xrightarrow{D} \mathcal{N}\left(\theta, \frac{(\theta + 1)^2}{n}\right)
+			$$
+			Ou equivalentemente: $\sqrt{n}(\widehat{\theta}_{MV} - \theta) \xrightarrow{D} \mathcal{N}(0, (\theta + 1)^2)$.
+		}
+		
+		\item Suponha que o interesse seja estimar a transformação $g(\theta) = \log(\theta + 1)$. Qual é o EMV de $g(\theta)$ pelo Princípio da Invariância? \textit{(0,5 ponto)}
+		
+		\textcolor{blue}{
+			Pelo Princípio da Invariância dos Estimadores de Máxima Verossimilhança, o EMV de qualquer função $g(\theta)$ é a própria função aplicada ao EMV de $\theta$:
+			$$
+			  \widehat{g(\theta)}_{MV} = g(\widehat{\theta}_{MV}) = \log(\widehat{\theta}_{MV} + 1)
+			$$
+		}
+		
+		\item Utilize o Método Delta para determinar a distribuição assintótica de $g(\hat{\theta}_{MV})$. \textit{(1,0 ponto)}
+		
+		\textcolor{blue}{
+			Pelo Método Delta, se $\sqrt{n}(\widehat{\theta}_{MV} - \theta) \xrightarrow{D} \mathcal{N}(0, \sigma^2(\theta))$, então:
+			$$
+			  \sqrt{n}\Big(g(\widehat{\theta}_{MV}) - g(\theta)\Big) \xrightarrow{D} \mathcal{N}\left(0, [g'(\theta)]^2 \cdot \sigma^2(\theta)\right)
+			$$
+			Identificando os termos:
+			\begin{itemize}
+				\item $g(\theta) = \log(\theta + 1) \implies g'(\theta) = \frac{1}{\theta + 1}$
+				\item $\sigma^2(\theta) = \frac{1}{I_1(\theta)} = (\theta + 1)^2$
+			\end{itemize}
+			Calculando a variância assintótica de $g(\widehat{\theta}_{MV})$:
+			$$
+			  \text{Var}_{ass}\big(g(\widehat{\theta}_{MV})\big) = \frac{[g'(\theta)]^2 \cdot \sigma^2(\theta)}{n} = \frac{\left( \frac{1}{\theta + 1} \right)^2 \cdot (\theta + 1)^2}{n} = \frac{1}{n}
+			$$
+			Portanto, a distribuição assintótica de $g(\widehat{\theta}_{MV})$ é:
+			$$
+			  g(\widehat{\theta}_{MV}) \xrightarrow{D} \mathcal{N}\left(\log(\theta + 1), \frac{1}{n}\right)
+			$$
+			Ou na forma padronizada: $\sqrt{n}\Big(\log(\widehat{\theta}_{MV} + 1) - \log(\theta + 1)\Big) \xrightarrow{D} \mathcal{N}(0, 1)$.
+		}
+		
+	\end{enumerate}
+\end{enumerate}
+
+\noindent\hrulefill\\
+
+\begin{center}
+	\textsc{Boa Prova!}
+	
+	\vspace{1cm}
+	\includegraphics[width=\textwidth]{tirinha.jpg}
+\end{center}
+
+
+\end{document}

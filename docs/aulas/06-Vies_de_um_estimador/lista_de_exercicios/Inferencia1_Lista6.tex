@@ -1,0 +1,220 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 6} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=6.\arabic*)]
+		
+		% Questão 1
+		\item Responda sem realizar cálculos.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Por que o viés é uma propriedade de um estimador e não de uma estimativa particular?
+			
+			\item Um estimador não viesado necessariamente produz estimativas próximas do verdadeiro valor do parâmetro? Justifique.
+			
+			\item Um estimador pode ser viesado e, ainda assim, ser considerado adequado para estimar um parâmetro? Explique.
+			
+			\item Qual é a diferença entre um estimador não viesado e um estimador assintoticamente não viesado?
+		\end{enumerate}
+		
+		% Questão 2
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória independente e identicamente distribuída de uma população com $E(X)=\mu$ e $Var(X)=\sigma^2$. Considere a classe de estimadores $\widehat{\mu} = a\overline{X}+b$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $E(\widehat{\mu})$.
+			
+			\item Determine o viés de $\widehat{\mu}$ para $\mu$
+			
+			\item Determine os valores de $a$ e $b$ para os quais $\widehat{\mu}$ é não viesado para todo $\mu\in\mathbb{R}$.
+			
+			\item Considere agora $\widehat{\mu}_1=\frac{n-1}{n}\overline{X}$. Determine seu viés e diga se ele é viesado para cima ou para baixo.
+			
+			\item O viés de $\widehat{\mu}_1$ desaparece quando $n$ aumenta? Justifique matematicamente.
+		\end{enumerate}
+		
+		% Questão 3
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição Exponencial com parâmetro $\theta>0$, cuja densidade é
+		$$
+		  f(x;\theta) = \frac{1}{\theta}e^{-x/\theta}, \qquad x>0.
+		$$
+		Sabe-se que $E(X)=\theta$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Obtenha o estimador de $\theta$ pelo Método dos Momentos.
+			
+			\item Obtenha o estimador de Máxima Verossimilhança de $\theta$.
+			
+			\item Determine o viés do estimador obtido em (a).
+			
+			\item O estimador de Máxima Verossimilhança é não viesado? Justifique.
+			
+			\item O que esse exemplo permite concluir sobre a relação entre o método utilizado para obter um estimador e a propriedade de não viés?
+		\end{enumerate}
+		
+		% Questão 4
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma população com média $\mu$, e suponha que $E(\overline X)=\mu$. Um pesquisador deseja estimar $\mu^2$ e propõe $\widehat{\mu^2}=\overline X^2$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Mostre que $ E(\overline X^2) = Var(\overline X)+[E(\overline X)]^2. $
+			
+			\item Supondo que $Var(X)=\sigma^2$, determine o viés de $\overline X^2$ como estimador de $\mu^2$.
+			
+			\item O resultado mostra que uma transformação de um estimador não viesado produz necessariamente um estimador não viesado do parâmetro transformado? Justifique.
+			
+			\item Considere agora $\widetilde{\mu^2} = \overline X^2-\frac{S^2}{n}$. Sob as condições usuais para $S^2$, mostre que $\widetilde{\mu^2}$ é não viesado para $\mu^2$.
+			
+			\item Explique por que esse resultado é relevante para a construção de novos estimadores.
+		\end{enumerate}
+		
+		% Questão 5
+		\item Seja $X_1,\ldots,X_n \overset{iid}{\sim} \text{Bernoulli}(p)$, $0<p<1$. Na Unidade 1, foi obtido o estimador de Máxima Verossimilhança $\widehat{p}_{MV} = \overline{X}$. Considere agora o interesse pelo parâmetro $\theta=p(1-p)$. Um estimador natural, obtido substituindo $p$ por seu estimador de Máxima Verossimilhança, é $\widehat{\theta} = \widehat{p}_{MV}(1-\widehat{p}_{MV})$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $E(\widehat\theta)$.
+			
+			\item Determine o viés de $\widehat\theta$ para $\theta=p(1-p)$.
+			
+			\item Determine a informação de Fisher esperada $I_1(\beta)$.
+			
+			\item O estimador $\widehat p_{MV}$ é não viesado para $p$. Por que isso não implica que $\widehat p_{MV}(1-\widehat p_{MV})$ seja não viesado para $p(1-p)$?
+			
+			\item Construa, a partir de $S^2$, um estimador não viesado para $p(1-p)$.
+		\end{enumerate}
+		
+		
+		% Questão 6
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma distribuição $\text{uniforme}(0,\theta)$, com $\theta>0$. A função de densidade é $f(x)=\frac{1}{\theta}$, $0<x<\theta$. O estimador de Máxima Verossimilhança é $\widehat{\theta} = X_{(n)}$, em que $X_{(n)} = \max\{X_1,\ldots,X_n\}$. A densidade de $X_{(n)}$ é
+		$$
+		  f_{X_{(n)}}(x) = \frac{n x^{n-1}}{\theta^n}, \quad 0<x<\theta.
+		$$
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $E(X_{(n)})$.
+			
+			\item Determine o viés de $\widehat\theta_{MV}$.
+			
+			\item O estimador de Máxima Verossimilhança é não viesado?
+			
+			\item Considere $\widetilde{\theta} = \frac{n+1}{n}X_{(n)}$. Mostre que $\widetilde{\theta}$ é não viesado para $\theta$.
+			
+			\item Mostre que o viés de $X_{(n)}$ tende a zero quando $n\to\infty$.
+			
+			\item Explique a diferença entre as conclusões obtidas para $X_{(n)}$ e $\widetilde\theta$ quanto ao viés.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=6.\arabic*)]
+		
+		% Questão 1
+		\item 
+		\begin{enumerate}[label=(\alph*)]
+			\item O viés é definido por $\text{Viés}(\widehat{\theta}) = E(\widehat{\theta}) - \theta$. A esperança matemática $E(\widehat{\theta})$ é uma média ponderada sobre todo o espaço amostral, refletindo o comportamento do estimador em repetidas amostragens. Por outro lado, uma estimativa particular é um único número real obtido a partir de uma amostra observada específica; ela não possui distribuição de probabilidade nem esperança matemática individual.
+			
+			\item Não necessariamente. A ausência de viés indica apenas que o estimador é correto em média ($E(\widehat{\theta}) = \theta$). Contudo, se o estimador possuir uma variância elevada ($\text{Var}(\widehat{\theta})$ grande), as estimativas obtidas a partir de amostras individuais podem estar frequentemente muito distantes do verdadeiro valor do parâmetro.
+			
+			\item Sim. Em inferência estatística, um critério fundamental para avaliar estimadores é o Erro Quadrático Médio, dado por $\text{EQM}(\widehat{\theta}) = \text{Var}(\widehat{\theta}) + [\text{Viés}(\widehat{\theta})]^2$. Um estimador viesado pode ser preferível se apresentar uma variância substancialmente menor do que a de estimadores não viesados, resultando em um $\text{EQM}$ global menor (\textit{trade-off} viés-variância).
+			
+			\item Um estimador é \textit{não viesado} quando $E(\widehat{\theta}_n) = \theta$ para qualquer tamanho de amostra finito $n \ge 1$. Ele é \textit{assintoticamente não viesado} se for viesado para amostras finitas, mas seu viés tende a zero à medida que o tamanho da amostra cresce infinitamente, isto é, $\lim_{n \to \infty} E(\widehat{\theta}_n) = \theta$.
+		\end{enumerate}
+		
+		% Questão 2
+		\item 
+		\begin{enumerate}
+			\item $E(\widehat{\mu}) = a\mu + b$
+			
+			\item $\text{Viés}(\widehat{\mu}) = (a-1)\mu + b$
+			
+			\item $a = 1$ e $b = 0$
+			
+			\item $\lim_{n \to \infty} \text{Viés}(\widehat{\mu}_1) = \lim_{n \to \infty} \left(-\frac{\mu}{n}\right) = 0$. Portanto, o viés desaparece assintoticamente.
+		\end{enumerate}
+		
+		% Questão 3
+		\item 
+		\begin{enumerate}
+			\item $\widehat{\theta}_{\text{MM}} = \overline{X}$
+			
+			\item $\widehat{\theta}_{\text{MV}} = \overline{X}$
+			
+			\item $\text{Viés}(\widehat{\theta}_{\text{MM}}) = 0$
+			
+			\item Sim, pois \(\widehat{\theta}_{\text{MV}} = \overline{X} = \widehat{\theta}_{\text{MM}}\). Como \(E(\widehat{\theta}_{\text{MV}}) = \theta\), temos \(\text{Viés}(\widehat{\theta}_{\text{MV}}) = 0\).
+			
+			\item Conclui-se que estimadores obtidos por métodos distintos (como Momentos e Máxima Verossimilhança) podem ser idênticos. Além disso, mostra que estimadores de Máxima Verossimilhança podem ser não viesados, porém a propriedade de não viés não é garantida automaticamente por nenhum método e deve ser sempre verificada.
+		\end{enumerate}
+		
+		% Questão 4
+		\item 
+		\begin{enumerate}[label=(\alph*)]\setcounter{enumii}{1}
+			\item $\text{Viés}(\overline{X}^2) = \frac{\sigma^2}{n}$
+			
+			\item Não. Embora $\overline{X}$ seja um estimador não viesado de $\mu$, a transformação não linear $g(t) = t^2$ gerou um estimador viesado para $g(\mu) = \mu^2$. Em geral, o operador esperança não comuta com funções não lineares, ou seja, $E[g(\widehat{\theta})] \neq g(E[\widehat{\theta}])$.
+			
+			\setcounter{enumii}{4}
+			
+			\item Este resultado ilustra o princípio da \textit{correção de viés}: quando um estimador natural possui um viés conhecido, é possível construir um novo estimador não viesado subtraindo do estimador original um estimador não viesado da quantidade de viés.
+		\end{enumerate}
+		
+		% Questão 5
+		\item 
+		\begin{enumerate}
+			\item $E(\widehat{\theta}) = \frac{n-1}{n}p(1-p)$
+			
+			\item $\text{Viés}(\widehat{\theta}) = -\frac{1}{n}p(1-p)$
+			
+			\item $I_1(p) = \frac{1}{p(1-p)}$
+			
+			\item A propriedade de não viés não é preservada sob transformações não lineares. A função $g(t) = t(1-t)$ é estritamente côncava. Pela Desigualdade de Jensen, $E[g(\overline{X})] < g(E[\overline{X}]) = p(1-p)$, resultando no viés negativo observado.
+			
+			\item A variância amostral corrigida é $S^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X})^2 = \frac{n}{n-1}\overline{X}(1-\overline{X})$.
+			Como $E(S^2) = \text{Var}(X) = p(1-p)$, o próprio $S^2$ é um estimador não viesado para $p(1-p)$.
+		\end{enumerate}
+		
+		% Questão 6
+		\item 
+		\begin{enumerate}
+			\item $E(X_{(n)}) = \frac{n}{n+1} \theta$
+			
+			\item $\text{Viés}(\widehat{\theta}_{\text{MV}}) = -\frac{\theta}{n+1}$
+			
+			\item Não, pois $\text{Viés}(\widehat{\theta}_{\text{MV}}) = -\frac{\theta}{n+1} \neq 0$ para qualquer $n$ finito. O estimador subestima sistematicamente $\theta$.
+			
+			\setcounter{enumii}{5}
+			
+			\item O estimador de Máxima Verossimilhança $X_{(n)}$ é viesado em amostras finitas ($n$ fixo) devido ao fato do máximo amostral nunca poder ultrapassar o valor real do parâmetro $\theta$, embora seja assintoticamente não viesado quando $n \to \infty$. Em contrapartida, o estimador corrigido $\widetilde{\theta}$ é não viesado exatamente para qualquer tamanho de amostra finito $n \ge 1$.
+		\end{enumerate}
+		
+		
+	\end{enumerate}
+	
+\end{document}

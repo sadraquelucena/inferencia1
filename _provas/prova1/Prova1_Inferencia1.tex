@@ -1,0 +1,81 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{calligra}
+\usepackage{accents}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{minipage}[b]{0.1 \linewidth}
+	\includegraphics[width=1.4cm]{ufs_vertical_positiva.png}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.85 \linewidth}
+	\textsc{Universidade Federal de Sergipe}\\
+	\textsc{Departamento de Estatística e Ciências Atuariais}\\
+	Disciplina: Inferência I\\
+	Professor: Sadraque E.F. Lucena\\
+\end{minipage}
+
+\vskip 0.1in
+\begin{center}
+	\textsc{Primeira Avaliação}\\
+	\vskip .1in
+	\textbf{COLOQUE SEU NOME NA FOLHA DE RESPOSTAS!}
+\end{center}
+
+\noindent\hrulefill\\
+\vskip .001in
+\noindent {\bf Regras:} Esta prova terá duração máxima de 1 hora e 30 minutos. O uso de aparelhos eletrônicos, tais como celulares, \textit{tablets}, notebooks e relógios inteligentes {\bf não} é permitido. Apresente todos os detalhes de seus cálculos e de suas respostas de forma compreensível, organizada e {\bf legível}.  Explique qualquer `salto de fé'. Seja preciso(a)! \\ %É permitido o uso de calculadoras. As respostas devem ter 4 (quatro) casas decimais. 
+%\noindent {\bf Regras:} Esta prova deverá ser respondida à mão e \textbf{entregue em 30/01/2025 às 20h45 em sala de aula}. Outros meios de entrega não serão aceitos. Apresente todos os detalhes de seus cálculos e de suas respostas de forma compreensível, organizada e {\bf legível}.  Explique qualquer ``salto de fé''. Seja preciso(a)! Não esqueça de colocar seu nome nas folhas de resposta! \\ 
+
+\noindent\hrulefill\\
+
+\begin{enumerate}
+	\item Considere uma variável aleatória contínua $X$ com função de densidade de probabilidade dada por:
+	$$
+	  f(x;\theta) = \frac{2x}{\theta^2}, \quad 0 < x < \theta, ~\theta > 0
+	$$
+	Sabe-se que a esperança dessa distribuição é $E(X) = \frac{2}{3}\theta$.
+	\begin{enumerate}
+		\item Obtenha o estimador do parâmetro $\theta$ pelo Método dos Momentos ($\hat{\theta}_{MM}$). {\it (2,0 pontos)}
+		\item Em um estudo com $n = 30$ observações, a média amostral obtida foi $\overline{X} = 4{,}0$. Calcule a estimativa pontual de $\theta$. {\it (1,0 ponto)}
+	\end{enumerate}
+	
+	\item Seja $X_1, X_2, \dots, X_n$ uma amostra aleatória da distribuição com densidade dada por:
+	$$
+	  f(x;\theta) = (\theta + 1)x^\theta, \quad 0 < x < 1, \quad \theta > -1
+	$$
+	\begin{enumerate}
+		\item Apresente a função de verossimilhança $L(\theta)$. \textit{(1,0 ponto)}
+		\item Escreva a função de log-verossimilhança $\ell(\theta)$. \textit{(1,0 ponto)}
+		\item Determine a primeira derivada $\ell'(\theta)$ (função escore), iguale a zero e obtenha o Estimador de Máxima Verossimilhança $\widehat{\theta}$. \textit{(1,0 ponto)}
+		\item Verifique a condição de segunda ordem no ponto crítico ($\ell''(\widehat{\theta}) < 0$) para confirmar que se trata de um máximo. \textit{(0,5 ponto)}
+		\item Se uma amostra de tamanho $n = 5$ gerou os dados de modo que $\sum_{i=1}^{5} \log(x_i) = -2{,}5$, qual é o valor numérico da estimativa de $\theta$? \textit{(0,5 ponto)} 
+	\end{enumerate}
+	
+	\item Considere o mesmo modelo da Questão 2, com $f(x;\theta) = (\theta + 1)x^\theta$ para $0 < x < 1$.
+	\begin{enumerate}
+		\item Determine a Informação de Fisher esperada para uma única observação, $I_1(\theta) = -E\left[ \frac{\partial^2 \log f(X;\theta)}{\partial \theta^2} \right]$. \textit{(1,0 ponto)}
+		\item Escreva a distribuição assintótica de $\hat{\theta}_{MV}$ para amostras grandes ($n \to \infty$). \textit{(0,5 ponto)}
+		\item Suponha que o interesse seja estimar a transformação $g(\theta) = \log(\theta + 1)$. Qual é o EMV de $g(\theta)$ pelo Princípio da Invariância? \textit{(0,5 ponto)}
+		\item Utilize o Método Delta para determinar a distribuição assintótica de $g(\hat{\theta}_{MV})$. \textit{(1,0 ponto)}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent\hrulefill\\
+
+\begin{center}
+	\textsc{Boa Prova!}
+	
+	\vspace{1cm}
+	\includegraphics[width=\textwidth]{tirinha.jpg}
+\end{center}
+
+
+\end{document}

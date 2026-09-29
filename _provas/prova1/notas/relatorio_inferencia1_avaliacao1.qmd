@@ -1,0 +1,134 @@
+---
+title: "Relatório Analítico de Desempenho da 1ª Avaliação"
+subtitle: |
+  | ESTAT0078 -- Inferência I
+  | Período 2025.2
+format:
+  pdf:
+    indent: 2em
+    margin-left: 2cm
+    margin-right: 2cm
+    margin-top: 2cm
+    margin-bottom: 2cm
+
+lang: pt-BR
+---
+
+\thispagestyle{empty}
+\vspace{-3em}
+
+A primeira avaliação da disciplina *ESTAT0078 – Inferência I* (2025.2) teve a participação de 39 dos 53 matriculados (73,6% de comparecimento). Os resultados mostram uma distribuição assimétrica: a média da turma foi 3,6 e a mediana 2,5, com notas que variaram de 0,0 a 10,0.
+
+O que mais chama a atenção nesses dados é a forte divisão no desempenho da turma. Foi observado que 30,8% dos presentes (12 alunos) tiraram nota igual ou superior a 5,0. Desses, 4 alunos (10,3% da turma) gabaritaram a prova com nota 10,0. A existência desse grupo — especialmente considerando que a prova foi realizada com permissão de consulta a um resumo pessoal — confirma que a avaliação estava adequada. Isso demonstra que era perfeitamente possível resolver todas as questões para quem dominava o assunto e sabia utilizar o material de apoio.
+
+Por outro lado, os indicadores apontam para uma turma muito heterogênea. O desvio padrão de 3,6 gerou um coeficiente de variação de 100%, o que significa que a média não reflete o "aluno típico", dada a falta de uniformidade. Como mostra o gráfico de notas (@fig-hist-boxplot), temos na mesma sala alunos com domínio total e um grupo grande com dificuldades significativas. Diante disso, e sabendo que a memorização de fórmulas não foi o impeditivo (devido à consulta), torna-se necessário investigar se essas travas são conceituais (da própria Inferência) ou se vêm de lacunas de base matemática, para que se possa traçar estratégias de recuperação para o restante do semestre.
+
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-cap: "Histograma e boxplot das notas da primeira avaliação."
+#| label: fig-hist-boxplot
+#| fig-width: 5.5
+#| fig-height: 3.8
+
+library(tidyverse)
+
+notas <- readxl::read_xls("/home/sadraque/Documentos/UFS/Disciplinas/2025.2/Inferencia 1/provas/prova1/notas/notas_ESTAT0078_T01_20252.xls",
+                       skip = 9) |>
+  mutate(prova1 = as.numeric(`Unid. 1`)) |>
+  select(prova1)
+
+#legenda <- c(paste("Mínimo:", sprintf("%.1f", min(notas$prova1))),
+#             paste("Média:", sprintf("%.1f", mean(notas$prova1))),
+#             paste("Mediana:", sprintf("%.1f", median(notas$prova1))),
+#             paste("Máximo:", sprintf("%.1f", max(notas$prova1))),
+#             paste("Desvio padrão:", sprintf("%.1f", sd(notas$prova1))))
+
+fig1 <- ggplot(data = notas, mapping = aes(x = prova1)) +
+  geom_histogram(breaks = hist(notas$prova1, plot = F)$breaks,
+                 fill = "#4682B4",    # cor das barras
+                 col = "white") +     # cor das bordas
+  labs(
+    x = "",    # Título do eixo x
+    y = "Frequência"     # Título do eixo y
+  ) + 
+#  annotate(
+#    geom = "text",
+#    x = min(notas$prova1)-1, # Posição x no canto esquerdo
+#    y = max(hist(notas$prova1, plot = FALSE)$counts) * 0.9, # Posição y no topo
+#    label = paste(legenda, collapse = "\n"), # Cola a legenda com quebras de linha
+#    size = 5,
+#    hjust = 0,
+#    color = "#2E5E8A"   # Cor do texto da legenda
+#  ) +
+  scale_x_continuous(
+    breaks = seq(0, 10, by = 2),
+    limits = c(0,10)
+  ) + # Define os breaks de 0 a 10, de 2 em 2
+  scale_y_continuous(
+    breaks = seq(0,10,2)
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(), # Remove os rótulos do eixo x
+  )
+#fig1
+
+fig2 <- ggplot(data = notas, mapping = aes(x = 1, y = prova1)) +
+  geom_boxplot(
+    width = 0.1,
+    fill = "#4682B4",
+    color = "#4682B4",
+    alpha = .5
+  ) +
+  stat_boxplot(
+    geom ='errorbar',
+    width = 0.08,
+    color = "#4682B4"
+  ) +
+  geom_jitter(
+    color = "#4682B4",
+    width = 0.05,
+    size = .5
+  ) +
+  labs(
+    x = '',
+    y = 'Notas'
+  ) +
+  scale_y_continuous(
+    breaks = 0:10,
+    limits = c(0,10)
+  ) +
+  theme_minimal() +
+  coord_flip() +
+  theme(
+    axis.text.y = element_blank(),  # Remove os rótulos do eixo y (horizontal após flip)
+    axis.ticks.y = element_blank(), # Remove as marcas do eixo y (horizontal após flip)
+    #axis.line.x = element_line(color = "black"), # Mantém a linha do eixo x (vertical após flip)
+    panel.grid.major.y = element_blank(), # Remove as linhas de grade do eixo y (horizontal após flip)
+    panel.grid.minor.y = element_blank()  # Remove as linhas de grade menores do eixo y
+  )
+#fig2
+
+library(patchwork)
+fig1 / fig2 +
+  plot_layout(
+    nrow = 2,
+    heights = c(12, 1)
+  ) +
+  plot_annotation(
+#    title = "Notas da Primeira Avaliação",
+    theme = theme(
+      plot.title = element_text(
+        color = "#4682B4",
+        size = 20,
+        hjust = 0.5)
+    )
+  )
+```
+
+
+
+
