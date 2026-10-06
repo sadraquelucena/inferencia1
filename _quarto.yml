@@ -40,6 +40,7 @@ website:                  # Configurações específicas do website
       - section: "Parte 2: Propriedades dos Estimadores"
         contents:
           - href: aulas/06-Vies_de_um_estimador/conteudo.qmd
+          - href: aulas/7-EQM_de_um_estimador/conteudo.qmd
 
 format:                      # Configurações do formato HTML
   html:

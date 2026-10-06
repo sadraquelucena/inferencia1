@@ -2,7 +2,7 @@
 title: "Relatório Analítico de Desempenho da 1ª Avaliação"
 subtitle: |
   | ESTAT0078 -- Inferência I
-  | Período 2025.2
+  | Período 2026.2
 format:
   pdf:
     indent: 2em
@@ -14,15 +14,87 @@ format:
 lang: pt-BR
 ---
 
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+
+library(tidyverse)
+
+# Obtém o caminho do arquivo .qmd que está sendo renderizado
+arquivo <- knitr::current_input()
+
+# Extrai o diretório onde o arquivo .qmd está localizado
+diretorio <- dirname(arquivo)
+
+# Importa a planilha de notas localizada no mesmo diretório do código
+notas <- readxl::read_xls(
+  file.path(diretorio, "notas_ESTAT0078_T01_20262.xls"),
+  skip = 9
+) |>
+  filter(if_any(everything(), \(x) !is.na(x))) |> # elimina linhas completas de NA
+  mutate(prova1 = as.numeric(`Unid. 1`)) |>
+  select(prova1)
+
+# Função para apresentar números com vírgula como separador decimal
+numero <- function(x, casas = 1) {
+  scales::number(
+    x,
+    decimal.mark = ",",
+    accuracy = 10^-casas
+  )
+}
+
+# Função para apresentar proporções como porcentagens
+percentual <- function(x) {
+  scales::percent(
+    x,
+    accuracy = 0.1,
+    decimal.mark = ","
+  )
+}
+
+# Indicadores de participação
+n_matriculados <- nrow(notas)
+n_participantes <- sum(!is.na(notas$prova1))
+n_ausentes <- sum(is.na(notas$prova1))
+p_participacao <- n_participantes / n_matriculados
+
+# Indicadores de desempenho
+media <- mean(notas$prova1, na.rm = TRUE)
+mediana <- median(notas$prova1, na.rm = TRUE)
+desvio_padrao <- sd(notas$prova1, na.rm = TRUE)
+minimo <- min(notas$prova1, na.rm = TRUE)
+maximo <- max(notas$prova1, na.rm = TRUE)
+
+q1 <- quantile(notas$prova1, 0.25, na.rm = TRUE)
+q3 <- quantile(notas$prova1, 0.75, na.rm = TRUE)
+nq3 <- sum(notas$prova1 < q3, na.rm = TRUE)
+
+menor5 <- sum(notas$prova1 < 5, na.rm = TRUE)
+p_menor5 <- mean(notas$prova1 < 5, na.rm = TRUE)
+
+# Indicadores relacionados às notas zero
+n_zeros <- sum(notas$prova1 == 0, na.rm = TRUE)
+p_zeros <- n_zeros / n_participantes
+
+# Frequência das notas
+frequencia_notas <- notas |>
+  filter(!is.na(prova1)) |>
+  count(prova1, name = "frequencia")
+
+```
+
 \thispagestyle{empty}
 \vspace{-3em}
 
-A primeira avaliação da disciplina *ESTAT0078 – Inferência I* (2025.2) teve a participação de 39 dos 53 matriculados (73,6% de comparecimento). Os resultados mostram uma distribuição assimétrica: a média da turma foi 3,6 e a mediana 2,5, com notas que variaram de 0,0 a 10,0.
 
-O que mais chama a atenção nesses dados é a forte divisão no desempenho da turma. Foi observado que 30,8% dos presentes (12 alunos) tiraram nota igual ou superior a 5,0. Desses, 4 alunos (10,3% da turma) gabaritaram a prova com nota 10,0. A existência desse grupo — especialmente considerando que a prova foi realizada com permissão de consulta a um resumo pessoal — confirma que a avaliação estava adequada. Isso demonstra que era perfeitamente possível resolver todas as questões para quem dominava o assunto e sabia utilizar o material de apoio.
+A primeira avaliação da disciplina *ESTAT0078 – Inferência I* (2026.2) contou com a participação de `r n_participantes` dos `r n_matriculados` estudantes matriculados, correspondendo a `r percentual(p_participacao)` de participação.
 
-Por outro lado, os indicadores apontam para uma turma muito heterogênea. O desvio padrão de 3,6 gerou um coeficiente de variação de 100%, o que significa que a média não reflete o "aluno típico", dada a falta de uniformidade. Como mostra o gráfico de notas (@fig-hist-boxplot), temos na mesma sala alunos com domínio total e um grupo grande com dificuldades significativas. Diante disso, e sabendo que a memorização de fórmulas não foi o impeditivo (devido à consulta), torna-se necessário investigar se essas travas são conceituais (da própria Inferência) ou se vêm de lacunas de base matemática, para que se possa traçar estratégias de recuperação para o restante do semestre.
+Entre os estudantes que fizeram a avaliação, a média das notas foi `r numero(media)`, enquanto a mediana foi `r numero(mediana)`. As notas variaram de `r numero(minimo)` a `r numero(maximo)`, com desvio-padrão de `r numero(desvio_padrao)`. Foi observada uma elevada concentração de notas zero: `r n_zeros` dos `r n_participantes` (`r percentual(p_zeros)`) obtiveram essa pontuação. A concentração de notas baixas também foi expressiva: `r nq3` estudantes (75%) obtiveram nota inferior a `r q3`, e 
+`r menor5` estudantes (`r percentual(p_menor5)`) obtiveram nota inferior a 5,0. Apenas `r n_participantes - menor5` estudantes (`r percentual(1 - p_menor5)`) tiveram notas superiores ou iguais a 5,0.
 
+A @fig-hist-boxplot apresenta a distribuição das notas da primeira avaliação por meio do histograma e do boxplot.
 
 ```{r}
 #| echo: false
@@ -32,43 +104,28 @@ Por outro lado, os indicadores apontam para uma turma muito heterogênea. O desv
 #| label: fig-hist-boxplot
 #| fig-width: 5.5
 #| fig-height: 3.8
-
-library(tidyverse)
-
-notas <- readxl::read_xls("/home/sadraque/Documentos/UFS/Disciplinas/2025.2/Inferencia 1/provas/prova1/notas/notas_ESTAT0078_T01_20252.xls",
-                       skip = 9) |>
-  mutate(prova1 = as.numeric(`Unid. 1`)) |>
-  select(prova1)
-
-#legenda <- c(paste("Mínimo:", sprintf("%.1f", min(notas$prova1))),
-#             paste("Média:", sprintf("%.1f", mean(notas$prova1))),
-#             paste("Mediana:", sprintf("%.1f", median(notas$prova1))),
-#             paste("Máximo:", sprintf("%.1f", max(notas$prova1))),
-#             paste("Desvio padrão:", sprintf("%.1f", sd(notas$prova1))))
-
+#| 
 fig1 <- ggplot(data = notas, mapping = aes(x = prova1)) +
   geom_histogram(breaks = hist(notas$prova1, plot = F)$breaks,
                  fill = "#4682B4",    # cor das barras
                  col = "white") +     # cor das bordas
+  stat_bin(
+    breaks = hist(notas$prova1, plot = FALSE)$breaks,
+    geom = "text",
+    aes(label = after_stat(count)),
+    vjust = -0.5
+  ) +
   labs(
     x = "",    # Título do eixo x
     y = "Frequência"     # Título do eixo y
   ) + 
-#  annotate(
-#    geom = "text",
-#    x = min(notas$prova1)-1, # Posição x no canto esquerdo
-#    y = max(hist(notas$prova1, plot = FALSE)$counts) * 0.9, # Posição y no topo
-#    label = paste(legenda, collapse = "\n"), # Cola a legenda com quebras de linha
-#    size = 5,
-#    hjust = 0,
-#    color = "#2E5E8A"   # Cor do texto da legenda
-#  ) +
   scale_x_continuous(
     breaks = seq(0, 10, by = 2),
     limits = c(0,10)
   ) + # Define os breaks de 0 a 10, de 2 em 2
   scale_y_continuous(
-    breaks = seq(0,10,2)
+    breaks = seq(0,30,2),
+    limits = c(0,30)
   ) +
   theme_minimal() +
   theme(
@@ -129,6 +186,4 @@ fig1 / fig2 +
   )
 ```
 
-
-
-
+Qualitativamente, foram observadas dificuldades na manipulação de frações e no tratamento de produtórios. Também foram identificadas dificuldades na obtenção da informação de Fisher esperada para uma única observação, na determinação da distribuição assintótica do estimador de máxima verossimilhança e na aplicação do princípio da invariância e do método delta.
