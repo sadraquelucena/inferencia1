@@ -1,0 +1,80 @@
+---
+title: "7. Erro Quadrático Médio de Um Estimador"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+
+
+Nesta aula, continuamos avaliando a qualidade de estimadores. Agora, introduzimos uma medida mais completa: o Erro Quadrático Médio (EQM). Veremos que o EQM pode ser decomposto em duas componentes: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso "trade-off" (troca) entre viés e variância na escolha de um bom estimador.
+
+
+Slides:
+
+
+```{r}
+#| echo: false
+#| eval: true
+
+# Pega o nome do arquivos html e pdf automaticamente
+html_slide <- list.files("slides", pattern = "\\.html$", full.names = FALSE)
+pdf_slide  <- list.files("slides", pattern = "\\.pdf$", full.names = FALSE)
+png_slide <- sub("\\.pdf$", ".png", pdf_slide)
+lista <- list.files("lista_de_exercicios", pattern = "\\.pdf$", full.names = FALSE)
+png_lista <- sub("\\.pdf$", ".png", lista)
+```
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+
+<a href="slides/`r html_slide`"
+   target="_blank"
+   class="thumb html-slide">
+<img
+  src="slides/`r png_slide`"
+  alt="Slides da aula em HTML"
+  class="img-fluid">
+</a>
+<p class="text-center">Slides da aula em HTML</p>
+
+:::
+
+::: {.g-col-12 .g-col-md-4}
+
+<a href="slides/`r pdf_slide`"
+   target="_blank"
+   class="thumb pdf-slide">
+<img
+  src="slides/`r png_slide`"
+  alt="Slides da aula em PDF"
+  class="img-fluid">
+</a>
+<p class="text-center">Slides da aula em PDF</p>
+
+:::
+
+
+::::
+
+---
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-3}
+
+<a href="lista_de_exercicios/`r lista`"
+   target="_blank"
+   class="thumb pdf-lista">
+<img
+  src="lista_de_exercicios/`r png_lista`"
+  class="img-fluid">
+</a>
+
+:::
+
+::::

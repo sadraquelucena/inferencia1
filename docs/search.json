@@ -7,51 +7,46 @@
     "text": "Bem-vindo(a)!\nEste espaço foi criado pelo Prof. Dr. Sadraque E. F. Lucena para centralizar todos os conteúdos, atividades e o cronograma da disciplina ESTAT0078 – Inferência I, ofertado pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe.\nAo longo do semestre, vamos construir juntos uma base sólida nos conceitos fundamentais da Inferência Estatística, explorando métodos para obter e avaliar estimadores pontuais e para construir de intervalos de confiança."
   },
   {
-    "objectID": "aulas/7-EQM_de_um_estimador/conteudo.html",
-    "href": "aulas/7-EQM_de_um_estimador/conteudo.html",
+    "objectID": "aulas/08-/conteudo.html",
+    "href": "aulas/08-/conteudo.html",
     "title": "7. Erro Quadrático Médio de Um Estimador",
     "section": "",
-    "text": "Nesta aula, continuamos avaliando a qualidade de estimadores. Agora, introduzimos uma medida mais completa: o Erro Quadrático Médio (EQM). Veremos que o EQM pode ser decomposto em duas componentes: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso “trade-off” (troca) entre viés e variância na escolha de um bom estimador.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Nesta aula, continuamos avaliando a qualidade de estimadores. Agora, introduzimos uma medida mais completa: o Erro Quadrático Médio (EQM). Veremos que o EQM pode ser decomposto em duas componentes: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso “trade-off” (troca) entre viés e variância na escolha de um bom estimador.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:"
+  },
+  {
+    "objectID": "aulas/06-Vies_de_um_estimador/conteudo.html",
+    "href": "aulas/06-Vies_de_um_estimador/conteudo.html",
+    "title": "6. Viés de Um Estimador",
+    "section": "",
+    "text": "Nesta aula, investigamos a primeira e mais intuitiva propriedade de um bom estimador: a ausência de viés (ou vício). Utilizando a analogia do “tiro ao alvo”, exploramos o que significa para as estimativas de um estimador serem, em média, precisas e certeiras.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 2: Propriedades dos Estimadores",
-      "7. Erro Quadrático Médio de Um Estimador"
+      "6. Viés de Um Estimador"
     ]
   },
   {
-    "objectID": "aulas/05-Propriedades_EMVs/conteudo.html",
-    "href": "aulas/05-Propriedades_EMVs/conteudo.html",
-    "title": "5. Propriedades dos Estimadores de Máxima Verossimilhança",
+    "objectID": "aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.html",
+    "href": "aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.html",
+    "title": "4. O Método da Máxima Verossimilhança – Caso Multiparamétrico",
     "section": "",
-    "text": "Nesta aula, são apresentados os principais resultados assintóticos do Método de Máxima Verossimilhança, com destaque para o Princípio da Invariância, a distribuição assintótica do EMV e o Método Delta.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Nesta aula, ampliamos o Método da Máxima Verossimilhança (MV) para situações em que o modelo possui mais de um parâmetro desconhecido.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 1: Fundamentos e Métodos de Estimação",
-      "5. Propriedades dos Estimadores de Máxima Verossimilhança"
+      "4. O Método da Máxima Verossimilhança -- Caso Multiparamétrico"
     ]
   },
   {
-    "objectID": "aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.html",
-    "href": "aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.html",
-    "title": "3. O Método da Máxima Verossimilhança",
+    "objectID": "aulas/02-Metodo_dos_momentos/conteudo.html",
+    "href": "aulas/02-Metodo_dos_momentos/conteudo.html",
+    "title": "2. O Método dos Momentos",
     "section": "",
-    "text": "Nesta aula introduzimos o Método da Máxima Verossimilhança (MV), que é uma das abordagens mais fundamentais e robustas da estatística para a construção de estimadores.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Nesta aula, apresentamos o primeiro método para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite encontrar estimadores para os parâmetros desconhecidos.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 1: Fundamentos e Métodos de Estimação",
-      "3. O Método da Máxima Verossimilhança"
-    ]
-  },
-  {
-    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
-    "href": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
-    "title": "1. O Problema da Inferência Estatística",
-    "section": "",
-    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Fundamentos e Métodos de Estimação",
-      "1. O Problema da Inferência Estatística"
+      "2. O Método dos Momentos"
     ]
   },
   {
@@ -85,39 +80,51 @@
     ]
   },
   {
-    "objectID": "aulas/02-Metodo_dos_momentos/conteudo.html",
-    "href": "aulas/02-Metodo_dos_momentos/conteudo.html",
-    "title": "2. O Método dos Momentos",
+    "objectID": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
+    "href": "aulas/01-O_problema_da_inferencia_estatistica/conteudo.html",
+    "title": "1. O Problema da Inferência Estatística",
     "section": "",
-    "text": "Nesta aula, apresentamos o primeiro método para a obtenção de estimadores: o Método dos Momentos. A lógica por trás deste método é intuitiva e elegante: ele postula que os momentos de uma amostra devem ser bons estimadores para os momentos correspondentes da população. Ao igualar essas quantidades, criamos um sistema de equações que nos permite encontrar estimadores para os parâmetros desconhecidos.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Sejam bem-vindos(as) à Inferência I!\nNa primeira aula, traçamos nosso “plano de voo” para o semestre: conversamos sobre os objetivos da disciplina, os temas que vamos explorar, o formato das avaliações e os canais de comunicação. Para já aquecer os motores, mergulhamos em uma revisão fundamental de algumas das principais distribuições de probabilidade e cálculos práticos no R. Assim, preparamos o terreno para os desafios de estimação que vêm pela frente.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 1: Fundamentos e Métodos de Estimação",
-      "2. O Método dos Momentos"
+      "1. O Problema da Inferência Estatística"
     ]
   },
   {
-    "objectID": "aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.html",
-    "href": "aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.html",
-    "title": "4. O Método da Máxima Verossimilhança – Caso Multiparamétrico",
+    "objectID": "aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.html",
+    "href": "aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.html",
+    "title": "3. O Método da Máxima Verossimilhança",
     "section": "",
-    "text": "Nesta aula, ampliamos o Método da Máxima Verossimilhança (MV) para situações em que o modelo possui mais de um parâmetro desconhecido.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Nesta aula introduzimos o Método da Máxima Verossimilhança (MV), que é uma das abordagens mais fundamentais e robustas da estatística para a construção de estimadores.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 1: Fundamentos e Métodos de Estimação",
-      "4. O Método da Máxima Verossimilhança -- Caso Multiparamétrico"
+      "3. O Método da Máxima Verossimilhança"
     ]
   },
   {
-    "objectID": "aulas/06-Vies_de_um_estimador/conteudo.html",
-    "href": "aulas/06-Vies_de_um_estimador/conteudo.html",
-    "title": "6. Viés de Um Estimador",
+    "objectID": "aulas/05-Propriedades_EMVs/conteudo.html",
+    "href": "aulas/05-Propriedades_EMVs/conteudo.html",
+    "title": "5. Propriedades dos Estimadores de Máxima Verossimilhança",
     "section": "",
-    "text": "Nesta aula, investigamos a primeira e mais intuitiva propriedade de um bom estimador: a ausência de viés (ou vício). Utilizando a analogia do “tiro ao alvo”, exploramos o que significa para as estimativas de um estimador serem, em média, precisas e certeiras.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "text": "Nesta aula, são apresentados os principais resultados assintóticos do Método de Máxima Verossimilhança, com destaque para o Princípio da Invariância, a distribuição assintótica do EMV e o Método Delta.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Fundamentos e Métodos de Estimação",
+      "5. Propriedades dos Estimadores de Máxima Verossimilhança"
+    ]
+  },
+  {
+    "objectID": "aulas/07-EQM_de_um_estimador/conteudo.html",
+    "href": "aulas/07-EQM_de_um_estimador/conteudo.html",
+    "title": "7. Erro Quadrático Médio de Um Estimador",
+    "section": "",
+    "text": "Nesta aula, continuamos avaliando a qualidade de estimadores. Agora, introduzimos uma medida mais completa: o Erro Quadrático Médio (EQM). Veremos que o EQM pode ser decomposto em duas componentes: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso “trade-off” (troca) entre viés e variância na escolha de um bom estimador.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
     "crumbs": [
       "Aulas",
       "Parte 2: Propriedades dos Estimadores",
-      "6. Viés de Um Estimador"
+      "7. Erro Quadrático Médio de Um Estimador"
     ]
   }
 ]
