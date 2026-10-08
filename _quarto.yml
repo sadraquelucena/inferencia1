@@ -41,6 +41,8 @@ website:                  # Configurações específicas do website
         contents:
           - href: aulas/06-Vies_de_um_estimador/conteudo.qmd
           - href: aulas/07-EQM_de_um_estimador/conteudo.qmd
+          - href: aulas/08-Eficiencia_de_um_estimador/conteudo.qmd
+          
 
 format:                      # Configurações do formato HTML
   html:

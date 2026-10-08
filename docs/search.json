@@ -7,11 +7,16 @@
     "text": "Bem-vindo(a)!\nEste espaço foi criado pelo Prof. Dr. Sadraque E. F. Lucena para centralizar todos os conteúdos, atividades e o cronograma da disciplina ESTAT0078 – Inferência I, ofertado pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe.\nAo longo do semestre, vamos construir juntos uma base sólida nos conceitos fundamentais da Inferência Estatística, explorando métodos para obter e avaliar estimadores pontuais e para construir de intervalos de confiança."
   },
   {
-    "objectID": "aulas/08-/conteudo.html",
-    "href": "aulas/08-/conteudo.html",
-    "title": "7. Erro Quadrático Médio de Um Estimador",
+    "objectID": "aulas/08-Eficiencia_de_um_estimador/conteudo.html",
+    "href": "aulas/08-Eficiencia_de_um_estimador/conteudo.html",
+    "title": "8. Eficiência de Um Estimador",
     "section": "",
-    "text": "Nesta aula, continuamos avaliando a qualidade de estimadores. Agora, introduzimos uma medida mais completa: o Erro Quadrático Médio (EQM). Veremos que o EQM pode ser decomposto em duas componentes: a variância do estimador (que mede sua precisão ou consistência) e o seu viés ao quadrado (que mede sua acurácia ou exatidão). Compreender essa relação é fundamental para entender o famoso “trade-off” (troca) entre viés e variância na escolha de um bom estimador.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:"
+    "text": "Nesta aula, discutimos as propriedades dos estimadores pontuais focando no conceito de eficiência. Investigamos se existe um limite fundamental para a precisão (variância) que um estimador não viesado pode alcançar.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Propriedades dos Estimadores",
+      "8. Eficiência de Um Estimador"
+    ]
   },
   {
     "objectID": "aulas/06-Vies_de_um_estimador/conteudo.html",

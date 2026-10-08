@@ -1,0 +1,194 @@
+---
+title: "Eficiência de um Estimador"
+subtitle: |
+  *Quão bom um estimador pode ser?*
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    ESTAT0078 -- Inferência I<br>
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a><br>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1600
+    height: 900
+    margin: 0.1          # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_principal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+    pdf-separate-fragments: false # 'false' gera 1 página por slide. Se usar 'true', cada animação/fragmento vira uma página no PDF.
+
+lang: pt-BR
+---
+
+##
+
+- Suponha que obtivemos várias amostras e calculamos, para cada uma delas,
+as estimativas de $\theta$ fornecidas por quatro estimadores.
+
+::::{.columns}
+:::{.column width=50%}
+```{r}
+#| echo: false
+#| eval: true
+#| fig-height: 8
+
+set.seed(123)
+
+estimador1 <- rnorm(50, 5, 3)
+estimador2 <- rnorm(50, 8, 3)
+estimador3 <- rnorm(50, 5, 1)
+estimador4 <- rnorm(50, 5, 5)
+
+estimadores_nome <- rep(c("estimador1","estimador2","estimador3","estimador4"), times = c(length(estimador1),length(estimador2),length(estimador3),length(estimador4)))
+estimadores_valores <- c(estimador1,estimador2,estimador3,estimador4)
+
+est <- data.frame(estimadores=estimadores_nome, valores=estimadores_valores)
+
+library(ggplot2)
+
+ggplot(est, aes(x = estimadores, y = valores)) +
+  stat_boxplot(geom = "errorbar", width = 0.5, size = 1.2) +
+  geom_boxplot(aes(fill = estimadores), outlier.shape = NA, size = 1.2) +
+  geom_jitter(color = "black", aes(fill = estimadores), size = 1.5, width = 0.2) +
+  geom_hline(yintercept = 4.8, color = "red", linewidth = 1.5, linetype = "dashed") +
+  annotate("text", x = 4.5, y = 5.7, label = expression(theta), color = "red",
+    size = 10, fontface = "bold") +
+  labs(x = "", y = "") +
+  #theme(legend.position = "none") +
+  guides(fill = "none") +
+  theme_minimal() +
+  theme(
+    axis.title.x = element_text(size = 16),
+    axis.title.y = element_text(size = 16),
+    axis.text.x = element_text(size = 20, color = "black")
+  ) +
+  scale_fill_brewer(palette = "Pastel1")
+```
+:::
+:::{.column width=3%}
+
+:::
+:::{.column width=47%}
+- O estimador 2 deve ser descartado por ter viés.
+- Entre os estimadores não viesados, o estimador 3 é preferível por apresentar menor variância (maior precisão).
+- Mas será que existe algum estimador não viesado que tenha variância menor que o estimador 3?
+- Ou seja, existe um **limite inferior** para a variância
+dos estimadores não viesados de $\theta$?
+:::
+::::
+
+
+
+
+## Qual é a menor variância possível?
+
+- Se $\widehat{\theta}$ é um estimador não viesado de $\theta$, podemos determinar um **limite inferior** para sua variância.
+- É possível mostrar que **nenhum estimador não viesado de $\theta$ tem variância inferior a um limite $LI(\theta)$**. Matematicamente:
+$$
+  Var(\widehat{\theta}) \geq LI(\theta).
+$$
+
+- Esse limite é chamado de **Limite inferior de Cramér-Rao**.
+
+
+
+
+## Definição 8.1: Limite Inferior de Cramér-Rao
+
+- Seja $\ell = \log f(x|\theta)$ a função de log-verossimilhança individual.
+- Definimos o **limite inferior de Cramér-Rao** como $\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}$
+$$
+  LI(\theta) = \frac{1}{n\,I_F(\theta)},
+$$
+em que $I_F(\theta) = E\left[ \left( \frac{\partial\ell}{\partial \theta} \right)^{\!2} \right]$ é a *informação de Fisher*.
+
+- Sob certas condições de regularidade (basicamente, o suporte não depende de $\theta$ e é possível trocar a ordem das operações de derivação e integração) podemos escrever
+$$
+  I_F(\theta) = -E\left[ \frac{\partial^2 \ell}{\partial\theta^2.} \right].
+$$
+
+
+
+
+## Passos para calcular $LI(\theta)$
+
+
+1. Obtenha a função de log-verossimihança individual: $\ell = \log f(x|\theta)$.
+2. Determine a segunda derivada em relação ao parâmetro $\theta$: $\ell'' = \frac{\partial^2 \ell}{\partial \theta^2}$
+3. Obtenha a informação de Fisher: $E[\ell'']$
+4. Calcule o limite inferior de Cramér-Rao: $LI(\theta) = \frac{1}{-nE[\ell'']}$
+
+
+
+
+## Exemplo 8.1
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de $X\sim N(\mu,\sigma^2)$, em que $\sigma^2$ é conhecido. Obtenha o limite inferior de Cramér-Rao para os estimadores não viesados de $\mu$.
+
+<br><br>
+
+- **Lembrete:** Se $X\sim N(\mu,\sigma^2)$, então $f(x) = (2\pi\sigma^2)^{-1/2} e^{-\frac{(x-\mu)^2}{2\sigma^2}}, ~ -\infty<x<\infty$
+
+
+
+
+## Definição 8.2: Eficiência de um estimador
+
+- Suponha que $\widehat{\theta}$ seja não viesado para o parâmetro $\theta$.
+- Chamamos de **eficiência do estimador** $\widehat{\theta}$ o quociente $\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}$
+$$
+  e(\widehat{\theta}) = \frac{LI(\theta)}{Var(\widehat{\theta})}.
+$$
+
+- Como $Var(\widehat{\theta})\geq LI(\theta)$, temos
+$$
+0<e(\widehat{\theta})\leq1.
+$$
+
+- Note que $LI(\theta)=Var(\widehat{\theta})\implies e(\widehat{\theta})=1$.
+  - Nesse caso $\widehat{\theta}$ é chamado **eficiente**.
+
+
+
+
+## Exemplo 8.2
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de $X\sim N(\mu,\sigma^2)$, em que $\sigma^2$ é conhecido. No exemplo 8.1 verificamos que $LI(\mu) = \sigma^2/n$. Verifique se o estimador não viesado $\overline{X}$ é eficiente para $\mu$.
+
+
+
+
+## Exemplo 8.3
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim \text{Poisson}(\theta)$. Verifique se $\overline{X}$ é eficiente para $\theta$.
+
+<br><br>
+
+- **Lembrete:** Se $X\sim \text{Poisson}(\theta)$, então $f(x) = \frac{e^{-\theta}\theta^x}{x!}, ~ x=0,1,2,\ldots$
+
+
+
+
+## Exemplo 8.4
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim \text{Geométrica}(p)$. Verifique se $\overline{X}$ é eficiente para $p$.
+
+<br><br>
+
+- **Lembrete:** Se $X\sim \text{Geométrica}(p)$, então
+  - $f(x) = (1-p)^{x} p, ~ x=0,1, 2, 3\ldots$
+  - $E(X) = \frac{1-p}{p}$
+  - $Var(X)=\frac{1-p}{p^2}$
+
+
+
+
+# Fim

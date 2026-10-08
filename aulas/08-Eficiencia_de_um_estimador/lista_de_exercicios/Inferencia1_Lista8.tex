@@ -1,0 +1,234 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 8} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=8.\arabic*)]
+		
+		% Questão 1
+		\item
+		A desigualdade de Cramér--Rao estabelece um limite inferior para a variância de estimadores não viesados. Explique, com suas próprias palavras:
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item o que significa dizer que $Var(\widehat{\theta}) \geq LI(\theta)$.
+			
+			\item por que o limite inferior de Cramér-Rao não significa que exista necessariamente um estimador que atinja esse limite.
+			
+			\item qual é a interpretação estatística da igualdade $Var(\widehat{\theta}) = LI(\theta)$.
+		\end{enumerate}
+		
+		
+		% Questão 2
+		\item
+		Considere a definição de eficiência de um estimador não viesado: $e(\widehat{\theta}) = \frac{LI(\theta)}{Var(\widehat{\theta})}$. Explique, sem realizar cálculos, por que:
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item a eficiência de um estimador não viesado pertence ao intervalo $(0,1]$.
+			
+			\item um estimador eficiente é aquele que apresenta a menor variância possível dentro das condições do limite de Cramér-Rao.
+			
+			\item um estimador viesado não pode ser classificado como eficiente segundo essa definição, embora isso não signifique que ele seja necessariamente um estimador ruim.
+			
+			\item a eficiência de um estimador é uma medida diferente do erro quadrático médio.
+		\end{enumerate}
+		
+		
+		% Questão 3
+		\item
+		Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim\text{Bernoulli}(p)$. Verifique se $\overline{X}$ é eficiente para estimar $p$:
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine a função de log-verossimilhança individual.
+			
+			\item Obtenha a informação de Fisher $I_F(p)$.
+			
+			\item Determine o limite inferior de Cramér-Rao para os estimadores não viesados de $p$.
+			
+			\item Determine $Var(\overline{X})$.
+			
+			\item Calcule a eficiência de $\overline{X}$ e conclua se ele é eficiente para $p$.
+		\end{enumerate}
+		
+		
+		% Questão 4
+		\item
+		Seja $X_1,\ldots,X_n$ uma amostra aleatória da variável aleatória $X\sim\text{Binomial}(2,\theta)$, cuja função de probabilidade é dada por 
+		$$
+		  f(x|\theta) = \binom{2}{x}\theta^x(1-\theta)^{2-x}, x=0,1,2,
+		$$
+		com $E(X)=2\theta$ e $Var(X)=2\theta(1-\theta)$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Encontre a informação de Fisher $I_F(\theta)$.
+			
+			\item Encontre o limite inferior de Cramér-Rao para os estimadores não viesados de $\theta$.
+			
+			\item Verifique se $\overline{X}$ é eficiente para estimar $\theta$.
+			
+			\item Verifique se $\overline{X}/2$ é eficiente para estimar $\theta$.
+			
+			\item Compare os dois estimadores em termos de viés e variância.
+		\end{enumerate}
+		
+		
+		% Questão 5
+		\item
+		Seja $X_1,\ldots,X_n$ uma amostra aleatória da variável aleatória $X\sim\text{Exponencial}(\lambda)$, com função densidade de probabilidade
+		$$
+		  f(x|\lambda) = \frac{1}{\lambda}e^{-x/\lambda}, x>0,
+		$$
+		em que $E(X)=\lambda$ e $Var(X)=\lambda^2$. Considere o estimador $T=\frac{X_1+2X_2}{3}$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine a informação de Fisher $I_F(\lambda)$.
+			
+			\item Encontre o limite inferior de Cramér--Rao para os estimadores não viesados de $\lambda$.
+			
+			\item Verifique se $T$ é não viesado para $\lambda$.
+			
+			\item Determine $Var(T)$.
+			
+			\item Verifique se $T$ é eficiente para estimar $\lambda$.
+			
+			\item Verifique se $\overline{X}$ é eficiente para estimar $\lambda$.
+		\end{enumerate}
+		
+		
+		% Questão 6
+		\item
+		Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma variável $X\sim\text{Gamma}(\alpha,\theta)$, parametrizada pela forma $\alpha>0$ e escala $\theta>0$, em que $\alpha$ é conhecida. Sua função densidade é dada por
+		$$
+		f(x|\theta) = \frac{1}{\Gamma(\alpha)\theta^\alpha} x^{\alpha-1}e^{-x/\theta},\qquad x>0,
+		$$
+		e $E(X)=\alpha\theta$ e $Var(X)=\alpha\theta^2$. Considere o estimador $\widehat{\theta} = \frac{\overline{X}}{\alpha}$.
+		
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine a função de log-verossimilhança individual.
+			
+			\item Obtenha a informação de Fisher $I_F(\theta)$.
+			
+			\item Determine o limite inferior de Cramér--Rao para os estimadores não viesados de $\theta$.
+			
+			\item Verifique se $\widehat{\theta}$ é não viesado para $\theta$.
+			
+			\item Determine $Var(\widehat{\theta})$.
+			
+			\item Calcule a eficiência de $\widehat{\theta}$ e conclua se ele é eficiente para $\theta$.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=8.\arabic*)]
+		
+		% Questão 1
+		\item 
+		\begin{enumerate}
+			\item Significa que, sob as condições de regularidade de Cramér--Rao, a variância de qualquer estimador não viesado $\widehat{\theta}$ do parâmetro $\theta$ possui uma cota inferior $LI(\theta) = \frac{1}{n I_F(\theta)}$. Trata-se do limite teórico máximo de precisão (menor dispersão) que um estimador não viesado pode alcançar a partir de uma amostra aleatória de tamanho $n$.
+			
+			\item O limite de Cramér--Rao estabelece uma cota inferior para a variância, mas a existência de um estimador não viesado que atinja exatamente esse limite exige que a derivada da função de log-verossimilhança possa ser expressa na forma $\frac{\partial \ln L(\theta; \mathbf{X})}{\partial \theta} = A(\theta) [\widehat{\theta}(\mathbf{X}) - \theta]$, condição associada às famílias exponenciais. Quando essa condição de fatoração não é satisfeita, a menor variância possível entre todos os estimadores não viesados será estritamente maior do que $LI(\theta)$.
+			
+			\item A igualdade $Var(\widehat{\theta}) = LI(\theta)$ indica que o estimador não viesado $\widehat{\theta}$ atingiu a menor variância teoricamente possível para a quantidade de informação disponível na amostra. Nesse caso, $\widehat{\theta}$ possui eficiência igual a $1$ ($100\%$) e é um estimador não viesado de variância mínima (ENVUM).
+		\end{enumerate}
+		
+		% Questão 2
+		\item 
+		\begin{enumerate}
+			\item Como o limite inferior de Cramér--Rao estabelece que $Var(\widehat{\theta}) \ge LI(\theta) > 0$ para qualquer estimador não viesado, o numerador $LI(\theta)$ é positivo e nunca excede o denominador $Var(\widehat{\theta})$. Portanto, a razão $e(\widehat{\theta}) = \frac{LI(\theta)}{Var(\widehat{\theta})}$ satisfaz sempre $0 < e(\widehat{\theta}) \le 1$.
+			
+			\item O valor máximo de eficiência é $e(\widehat{\theta}) = 1$, atingido quando $Var(\widehat{\theta}) = LI(\theta)$. Como $LI(\theta)$ é a menor variância teoricamente possível sob as condições do limite de Cramér--Rao, o estimador eficiente é aquele que possui a menor variância dentre todos os estimadores não viesados.
+			
+			\item A definição $e(\widehat{\theta}) = \frac{LI(\theta)}{Var(\widehat{\theta})}$ pressupõe que $E(\widehat{\theta}) = \theta$. Para estimadores viesados, a cota de Cramér--Rao inclui a derivada do viés: $LI_b(\theta) = \frac{[1 + b'(\theta)]^2}{n I_F(\theta)}$. Contudo, um estimador viesado pode ter variância tão pequena que seu Erro Quadrático Médio ($EQM = Var + B^2$) seja menor do que o de qualquer estimador não viesado, sendo preferível em termos de precisão global.
+			
+			\item A eficiência é uma medida relativa e adimensional em $(0,1]$ que avalia o quão próxima a variância de um estimador *não viesado* está da cota inferior insuperável de Cramér--Rao. Já o Erro Quadrático Médio ($EQM(\widehat{\theta}) = E[(\widehat{\theta}-\theta)^2] = Var(\widehat{\theta}) + B^2(\widehat{\theta})$) é uma medida absoluta do erro total de estimação, que combina a variabilidade com o quadrado do viés.
+		\end{enumerate}
+		
+		% Questão 3
+		\item 
+		\begin{enumerate}[label=(\alph*)]
+			\item $\ell = x \log p + (1-x) \log(1-p)$
+			
+			\item $I_F(p) = \frac{1}{p(1-p)}$
+			
+			\item $LI(p) = \frac{p(1-p)}{n}$
+			
+			\item $Var(\overline{X}) = \frac{p(1-p)}{n}$
+			
+			\item $e(\overline{X}) = 1$. $\overline{X}$ é um estimador eficiente para $p$.
+		\end{enumerate}
+		
+		% Questão 4
+		\item 
+		\begin{enumerate}[label=(\alph*)]
+			\item $I_F(\theta) = \frac{2}{\theta(1-\theta)}$
+			
+			\item $LI(\theta) = \frac{\theta(1-\theta)}{2n}$
+			
+			\item Como $\overline{X}$ é viesado para $\theta$, não é eficiente para estimar $\theta$.
+			
+			\item $\overline{X}/2$ é eficiente para estimar $\theta$.
+			
+			\item $\overline{X}/2$ é superior a $\overline{X}$ sob ambos os critérios, pois é não viesado e possui variância quatro vezes menor.
+		\end{enumerate}
+		
+		% Questão 5
+		\item 
+		\begin{enumerate}[label=(\alph*)]
+			\item $I_F(\lambda) = \frac{1}{\lambda^2}$
+			
+			\item $LI(\lambda) = \frac{\lambda^2}{n}$
+			
+			\item $T$ é não viesado para $\lambda$.
+			
+			\item $Var(T) = \frac{5\lambda^2}{9}$
+			
+			\item $T$ não é eficiente.
+			
+			\item $\overline{X}$ é eficiente para estimar $\lambda$.
+		\end{enumerate}
+		
+		% Questão 6
+		\item 
+		\begin{enumerate}[label=(\alph*)]
+			\item $\ell = -\ln \Gamma(\alpha) - \alpha \ln \theta + (\alpha-1)\ln x - \frac{x}{\theta}$
+			
+			\item $I_F(\theta) = \frac{\alpha}{\theta^2}$
+			
+			\item $LI(\theta) = \frac{1}{n I_F(\theta)} = \frac{\theta^2}{n\alpha}$
+			
+			\item $\widehat{\theta}$ é não viesado para $\theta$.
+			
+			\item $Var(\widehat{\theta}) = \frac{\theta^2}{n\alpha}$
+			
+			\item $e(\widehat{\theta}) = 1$ e é um estimador eficiente para $\theta$.
+		\end{enumerate}
+	\end{enumerate}
+	
+\end{document}
