@@ -123,8 +123,8 @@ $$
 
 1. Obtenha a função de log-verossimihança individual: $\ell = \log f(x|\theta)$.
 2. Determine a segunda derivada em relação ao parâmetro $\theta$: $\ell'' = \frac{\partial^2 \ell}{\partial \theta^2}$
-3. Obtenha a informação de Fisher: $E[\ell'']$
-4. Calcule o limite inferior de Cramér-Rao: $LI(\theta) = \frac{1}{-nE[\ell'']}$
+3. Obtenha a informação de Fisher: $I_F(\theta) = -E[\ell'']$
+4. Calcule o limite inferior de Cramér-Rao: $LI(\theta) = \frac{1}{nI_F(\theta)}$
 
 
 
