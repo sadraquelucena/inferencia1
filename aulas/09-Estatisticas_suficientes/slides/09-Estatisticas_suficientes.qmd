@@ -1,0 +1,116 @@
+---
+title: "Estatísticas Suficientes"
+subtitle: |
+  *Como resumir a amostra sem perder nenhuma informação sobre o parâmetro?*
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    ESTAT0078 -- Inferência I<br>
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a><br>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1600
+    height: 900
+    margin: 0.1          # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_principal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+    pdf-separate-fragments: false # 'false' gera 1 página por slide. Se usar 'true', cada animação/fragmento vira uma página no PDF.
+
+lang: pt-BR
+---
+
+## Definição 9.1: Estatística Suficiente
+
+Dizemos que a estatística $T = T(X_1, \ldots, X_n)$ é suficiente para $\theta$, quando a distribuição condicional de $X_1, \ldots, X_n$ dado $T$ for independente de $\theta$.
+
+- **Intuição:** Se a amostra não traz nada novo sobre o parâmetro $\theta$ depois que sabemos $T$, é porque $T$ já absorveu toda a informação sobre $\theta$ contida na amostra.
+
+- **Exemplo intuitivo:** Desempenho do Aluno no Semestre ao longo do período.
+  - Suficiente $\rightarrow$ A soma (ou a média) das 3 notas
+  - Não Suficiente $\rightarrow$ Guardar apenas a maior nota (joga fora a informação sobre a consistência e o desempenho global do aluno)
+
+
+
+
+## Verificação via Distribuição Condicional
+
+Para verificarmos se $T$ é uma estatística suficiente para $\theta$ no caso discreto:
+
+1. Calculamos a probabilidade condicional:
+$$P(X_1=x_1,\ldots,X_n=x_n \mid T=t) = \frac{P(X_1=x_1,\ldots,X_n=x_n)}{P(T=t)}$$
+    
+2. Se a expressão resultante **não envolver $\theta$**, conclui-se que $T$ é suficiente para $\theta$.
+
+
+
+
+## Exemplo 9.1
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição de Bernoulli ($\theta$). Verifique se $T = \sum\limits_{i=1}^n X_i$ é suficiente para $\theta$.
+			
+<br><br>
+
+::: {style="color: #0303bd;"}
+
+Lembretes:
+
+1. $X\sim \text{Bernoulli}(p)$: $P(X=x)=p^x(1-p)^{1-x}$, $x=0,1$.
+2. A soma de $n$ v.a. de Bernoulli($p$) tem distribuição Binomial($n,p$).
+3. $Y\sim\text{Binomial}(n,p)$: $P(Y=y)=\binom{n}{y} p^y (1-p)^{n-y}$, $y=0,1,2,\ldots,n$.
+
+:::
+
+
+
+
+## Exemplo 9.2
+
+Considere o exemplo anterior, com $n=3$ e $T = X_1 + 2 X_2 + X_3$. Verifique que $T$ não é suficiente para $\theta$.
+		
+<br><br>
+
+::: {style="color: #0303bd;"}
+
+- **Dica:** Considere $X_1=1$, $X_2=0$ e $X_3=1$.
+
+:::
+
+
+
+## Exemplo 9.3
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição de Poisson com parâmetro $\theta$. Verifique se $T=\sum\limits_{i=1}^n X_i$ é suficiente para $\theta$.
+			
+<br><br>
+
+::: {style="color: #0303bd;"}
+
+Lembrete:
+
+- $X\sim$ Poisson($\theta$): $P(X=x)=\frac{e^{-\theta}\theta^x}{x!}$, $x=0,1,2,\ldots$
+
+:::
+
+
+
+
+## Próximo Passo: Teorema da Fatoração
+
+E se a distribuição for **contínua** (ex: Normal, Exponencial)?
+
+* O cálculo da densidade condicional $f_{\mathbf{X}|T}(\mathbf{x}|t)$ pode ser extremamente trabalhoso ou algebricamente complexo.
+* **Na próxima aula:** Veremos o **Teorema da Fatoração de Neyman-Fisher**, que nos permite identificar estatísticas suficientes por simples inspeção da função de verossimilhança!
+
+
+
+
+# Fim

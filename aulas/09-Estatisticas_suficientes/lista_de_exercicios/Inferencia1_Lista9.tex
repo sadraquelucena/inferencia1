@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 9} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=9.\arabic*)]
+		
+		% Questão 1
+		\item
+		Explique, sem fazer cálculos, o que significa dizer que uma estatística $T$ é suficiente para um parâmetro $\theta$. Como a distribuição condicional da amostra dado $T$ ajuda a verificar se $T$ é suficiente?
+		
+		% Questão 2
+		\item
+		Sejam $X_1$ e $X_2$ variáveis aleatórias independentes, ambas com distribuição de Bernoulli de parâmetro $\theta$, em que $0<\theta<1$. Considere $T=X_1+X_2$.
+		\begin{enumerate}[label=(\alph*)]
+			\item Escreva a função de probabilidade conjunta de $X_1$ e $X_2$.
+			\item Determine $P(T=1)$.
+			\item Calcule $P(X_1=1,X_2=0\mid T=1)$.
+			\item Calcule $P(X_1=0,X_2=1\mid T=1)$.
+			\item Com base nos resultados, o que se pode concluir sobre a suficiência de $T$ para $\theta$?
+		\end{enumerate}
+		
+		% Questão 3
+		\item
+		Sejam $X_1$ e $X_2$ independentes, com distribuição geométrica de parâmetro $\theta$, cuja função de probabilidade é
+		$$
+		P(X_i=x)=\theta(1-\theta)^x,\qquad x=0,1,2,\ldots,\quad 0<\theta<1.
+		$$
+		Considere $T=X_1+X_2$. Para uma amostra observada $(x_1,x_2)$, com $x_1+x_2=t$:
+		\begin{enumerate}[label=(\alph*)]
+			\item Escreva $P(X_1=x_1,X_2=x_2)$.
+			\item Mostre que $P(T=t)=(t+1)\theta^2(1-\theta)^t$.
+			\item Calcule $P(X_1=x_1,X_2=x_2\mid T=t)$.
+			\item A probabilidade condicional encontrada depende de $\theta$? Conclua se $T$ é suficiente.
+		\end{enumerate}
+		
+		% Questão 4
+		\item
+		Sejam $X_1$ e $X_2$ independentes, com distribuição de Bernoulli de parâmetro $\theta$, em que $0<\theta<1$. Considere $T=\max(X_1,X_2)$.
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $P(T=1)$.
+			\item Calcule $P(X_1=1,X_2=0\mid T=1)$.
+			\item Calcule $P(X_1=1,X_2=1\mid T=1)$.
+			\item Compare as expressões obtidas e decida se $T$ é suficiente para $\theta$.
+		\end{enumerate}
+		
+		% Questão 5
+		\item
+		Sejam $X_1$ e $X_2$ independentes, com função de probabilidade
+		$$
+		P(X_i=0)=\theta,\qquad P(X_i=1)=1-\theta,\qquad 0<\theta<1.
+		$$
+		Considere $T=\mathbb{I}(X_1=X_2)$, que vale $1$ quando as observações são iguais e $0$ quando são diferentes.
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine $P(T=1)$.
+			\item Calcule $P(X_1=0,X_2=0\mid T=1)$.
+			\item Calcule $P(X_1=1,X_2=1\mid T=1)$.
+			\item A distribuição condicional da amostra dado $T=1$ depende de $\theta$? Conclua se $T$ é suficiente.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=9.\arabic*)]
+		
+		% Questão 1
+		\item $T$ é suficiente quando a distribuição condicional da amostra dado $T$ não depende do parâmetro $\theta$. Nesse caso, depois de conhecido $T$, a amostra não fornece informação adicional sobre $\theta$.
+		
+		% Questão 2
+		\item
+		\begin{enumerate}[label=(\alph*)]
+			\item $P(X_1=x_1,X_2=x_2)=\theta^{x_1+x_2}(1-\theta)^{2-x_1-x_2}$, para $x_1,x_2\in\{0,1\}$.
+			\item $P(T=1)=2\theta(1-\theta)$.
+			\item $\frac{\theta(1-\theta)}{2\theta(1-\theta)}=\frac12$.
+			\item $\frac{\theta(1-\theta)}{2\theta(1-\theta)}=\frac12$.
+			\item As probabilidades condicionais não dependem de $\theta$; $T$ é suficiente.
+		\end{enumerate}
+		
+		% Questão 3
+		\item
+		\begin{enumerate}[label=(\alph*)]
+			\item $P(X_1=x_1,X_2=x_2)=\theta^2(1-\theta)^{x_1+x_2}$.
+			\item Há $t+1$ pares não negativos com soma $t$, cada um com probabilidade $\theta^2(1-\theta)^t$. Logo, $P(T=t)=(t+1)\theta^2(1-\theta)^t$.
+			\item $\frac{\theta^2(1-\theta)^t}{(t+1)\theta^2(1-\theta)^t}=\frac{1}{t+1}$.
+			\item Não depende de $\theta$; $T$ é suficiente.
+		\end{enumerate}
+		
+		% Questão 4
+		\item
+		\begin{enumerate}[label=(\alph*)]
+			\item $P(T=1)=1-(1-\theta)^2=2\theta-\theta^2$.
+			\item $\frac{\theta(1-\theta)}{2\theta-\theta^2}=\frac{1-\theta}{2-\theta}$.
+			\item $\frac{\theta^2}{2\theta-\theta^2}=\frac{\theta}{2-\theta}$.
+			\item As probabilidades dependem de $\theta$; $T$ não é suficiente.
+		\end{enumerate}
+		
+		% Questão 5
+		\item
+		\begin{enumerate}[label=(\alph*)]
+			\item $P(T=1)=\theta^2+(1-\theta)^2$.
+			\item $\frac{\theta^2}{\theta^2+(1-\theta)^2}$.
+			\item $\frac{(1-\theta)^2}{\theta^2+(1-\theta)^2}$.
+			\item As probabilidades dependem de $\theta$; $T$ não é suficiente.
+		\end{enumerate}
+	\end{enumerate}
+	
+\end{document}
