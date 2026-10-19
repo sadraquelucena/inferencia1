@@ -1,0 +1,138 @@
+---
+title: "Critério da Farotação de Neyman"
+subtitle: |
+  *Como identificar uma estatística suficiente pela função de verossimilhança?*
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    ESTAT0078 -- Inferência I<br>
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a><br>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1600
+    height: 900
+    margin: 0.1          # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_principal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+    pdf-separate-fragments: false # 'false' gera 1 página por slide. Se usar 'true', cada animação/fragmento vira uma página no PDF.
+
+lang: pt-BR
+---
+
+##
+
+- Na aula anterior, vimos que uma estatística $T=T(X_1,\ldots,X_n)$ é suficiente para $\theta$ quando a distribuição condicional da amostra $(X_1,\ldots,X_n)$, dado $T$, não depende de $\theta$.
+  - Intuitivamente, depois de conhecermos $T$, os detalhes restantes da amostra não fornecem informação adicional sobre $\theta$.
+- Nesta aula, estudaremos um critério equivalente que permite identificar estatísticas suficientes diretamente pela função de verossimilhança.
+
+
+
+
+## Teorema 10.1: Critério da Fatoração de Neyman
+
+Sejam $\underset{\widetilde{\phantom{aa}}}{X} = X_1, \ldots, X_n$ uma amostra aleatória da distribuição da variável aleatória $X$ com função de densidade (ou de probabilidade) $f(x)$ e função de verossimilhança $L(\theta; \underset{\widetilde{\phantom{a}}}{x})$. A estatística $T=T(\mathbf X)$ é suficiente para $\theta$ se, e somente se, a verossimilhança puder ser escrita na forma			
+$$
+  L(\theta; \underset{\widetilde{\phantom{a}}}{x}) = h(x_1,\ldots,x_n) g_\theta(T(x_1,\ldots,x_n)),
+$$
+
+:::: {.columns}
+
+::: {.column width=15%}
+em que
+:::
+
+::: {.column width=85%}
+
+-   $h(x_1,\ldots,x_n)$ só envolve $x_1,\ldots,x_n$ (não envolve $\theta$);
+-   $g_\theta(T(x_1,\ldots,x_n))$ envolve $\theta$ e $T(x_1,\ldots,x_n)$.
+				
+-   **Prova:** Livro do Bolfarine, pág. 22.
+:::
+
+::::
+
+
+## Exemplo 10.1
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição de Poisson com parâmetro $\theta$. Use o critério da fatoração para mostrar que $T(\underset{\widetilde{\phantom{a}}}{x})=\sum\limits_{i=1}^n X_i$ é suficiente para $\theta$.
+
+<br><br>
+
+::: {style="color: #0303bd;"}
+
+Lembrete:
+
+- $X\sim$ Poisson($\theta$): $f(x)=\frac{e^{-\theta}\theta^x}{x!}$, $x=0,1,2,\ldots$
+
+:::
+
+
+
+
+## Exemplo 10.2
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da variável $X\sim U(0,\theta)$. Encontre uma estatística suficiente para $\theta$ usando o critério da fatoração.
+
+<br><br>
+
+::: {style="color: #0303bd;"}
+
+Lembrete:
+
+- $X\sim U(a,b)$:
+$$
+  f(x)=\frac{1}{b-a} I_{(a,b)}(x) \quad \text{em que} \quad I_{(a,b)}(x) = \begin{cases}
+				1, & a<x<b,\\
+				0, & \text{caso contrário}.
+				\end{cases}
+$$
+
+:::
+
+
+
+
+## Exemplo 10.3
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição $N(\mu,1)$. Encontre uma estatística suficiente para $\mu$ usando o critério da fatoração.
+
+<br><br>
+
+::: {style="color: #0303bd;"}
+
+Lembrete:
+
+- $X\sim N(\mu,\sigma^2)$: $f(x)=\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} ,~ -\infty<x<\infty$
+
+:::
+
+
+
+
+## Exemplo 10.4
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória da distribuição Bernoulli$(\theta)$. Encontre uma estatística suficiente para $\theta$ usando o critério da fatoração.
+
+<br><br>
+
+::: {style="color: #0303bd;"}
+
+
+Lembrete:
+
+- $X\sim \text{Bernoulli}(\theta)$: $f(x)=\theta^x (1-\theta)^{1-x}, ~ x = 0,1$
+
+:::
+
+
+
+
+# Fim

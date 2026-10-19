@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 10} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=10.\arabic*)]
+		
+		% Questão 1
+		\item
+		Seja $X_1,\ldots,X_n$ uma amostra aleatória de uma variável aleatória $X$. Em cada item, determine uma estatística suficiente para o parâmetro indicado, utilizando o Critério da Fatoração de Neyman. Apresente a função de verossimilhança e identifique explicitamente os fatores $h(\underset{\widetilde{\phantom{a}}}{x})$ e $g_\theta(T(\underset{\widetilde{\phantom{a}}}{x}))$.
+		\begin{enumerate}[label=\alph*)]
+			\item $X\sim\operatorname{Binomial}(2,\theta)$, com $0<\theta<1$.
+			\item $X$ tem densidade $f(x;\theta)=\theta x^{\theta-1},\qquad 0<x<1,\quad \theta>0$.
+			\item $X\sim\operatorname{Exponencial}(\theta)$, com densidade $f(x;\theta)=\frac{1}{\theta}e^{-x/\theta},\qquad x>0,\quad \theta>0$.
+			\item $X\sim N(0,\sigma^2)$, em que $\sigma^2>0$ é desconhecido.
+			\item $P(X=x;\theta)=\theta(1-\theta)^{x-1},\qquad
+			x=1,2,\ldots,\quad 0<\theta<1$.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=10.\arabic*)]
+		
+		% Questão 1
+		\item 
+		\begin{enumerate}
+			\item $T(\underset{\widetilde{\phantom{a}}}{x}) = \sum\limits_{i=1}^n X_i$\\
+			$h(\underset{\widetilde{\phantom{a}}}{x}) = \prod\limits_{i=1}^n \binom{2}{x_i}$\\
+			$g_\theta(T(\underset{\widetilde{\phantom{a}}}{x})) = \theta^{\sum\limits_{i=1}^n X_i} (1-\theta)^{2n - \sum\limits_{i=1}^n X_i}$
+			
+			\item $T(\underset{\widetilde{\phantom{a}}}{x}) = \prod\limits_{i=1}^n X_i$\\
+			$h(\underset{\widetilde{\phantom{a}}}{x}) = 1$\\
+			$g_\theta(T(\underset{\widetilde{\phantom{a}}}{x})) = \theta^n \left( \prod\limits_{i=1}^n X_i \right)^{\theta-1}$
+			
+			\item $T(\underset{\widetilde{\phantom{a}}}{x}) = \sum\limits_{i=1}^n X_i$\\
+			$h(\underset{\widetilde{\phantom{a}}}{x}) = 1$\\
+			$g_\theta(T(\underset{\widetilde{\phantom{a}}}{x})) = \frac{1}{\theta^n} \exp\left( -\frac{\sum\limits_{i=1}^n X_i}{\theta} \right)$
+			
+			\item $T(\underset{\widetilde{\phantom{a}}}{x}) = \sum\limits_{i=1}^n X_i^2$\\
+			$h(\underset{\widetilde{\phantom{a}}}{x}) = (2\pi)^{-n/2}$\\
+			$g_{\sigma^2}(T(\underset{\widetilde{\phantom{a}}}{x})) = (\sigma^2)^{-n/2} \exp\left( -\frac{\sum\limits_{i=1}^n X_i^2}{2\sigma^2} \right)$
+			
+			\item $T(\underset{\widetilde{\phantom{a}}}{x}) = \sum\limits_{i=1}^n x_i$\\
+			$h(\underset{\widetilde{\phantom{a}}}{x}) = 1$\\
+			$g_\theta(T(\underset{\widetilde{\phantom{a}}}{x})) = \theta^n (1-\theta)^{\sum\limits_{i=1}^n x_i - n}$\
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+\end{document}

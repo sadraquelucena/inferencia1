@@ -43,6 +43,7 @@ website:                  # Configurações específicas do website
           - href: aulas/07-EQM_de_um_estimador/conteudo.qmd
           - href: aulas/08-Eficiencia_de_um_estimador/conteudo.qmd
           - href: aulas/09-Estatisticas_suficientes/conteudo.qmd
+          - href: aulas/10-Criterio_da_fatoração_de_Neyman/conteudo.qmd
           
 
 format:                      # Configurações do formato HTML
