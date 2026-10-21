@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 11} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=11.\arabic*)]
+		
+		% Questão 1
+		\item Seja $X_1,\ldots,X_n$ uma amostra aleatória da variável aleatória $X$. Encontre  estatísticas conjuntamente suficientes considerando as distribuições a seguir:
+		\begin{enumerate}
+			\item $X\sim$ Gama Inversa($\alpha,\beta$): $f(x) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{-(\alpha+1)} e^{-\beta/x}$, $x>0$, $\alpha,\beta>0$
+			\item $X\sim$ Beta($\alpha,\beta$): $f(x) = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1}(1-x)^{\beta-1}$, $0<x<1$, $\alpha,\beta>0$
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=11.\arabic*)]
+		
+		% Questão 1
+		\item 
+		\begin{enumerate}
+			\item $\left(\prod\limits_{i=1}^n x_i, \sum\limits_{i=1}^n x_i \right)$ são conjuntamente suficientes para $(\alpha,\beta)$.
+			
+			\item $\left(\prod\limits_{i=1}^n x_i, \prod\limits_{i=1}^n (1-x_i) \right)$ são conjuntamente suficientes para $(\alpha,\beta)$.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+\end{document}
