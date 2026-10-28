@@ -28,7 +28,7 @@ format:
 lang: pt-BR
 ---
 
-## Teorema 8.1: Critério da Fatoração de Neyman
+## Teorema 11.1: Critério da Fatoração de Neyman
 
 Sejam $\underset{\sim}{X} = X_1, \ldots, X_n$ uma amostra aleatória independente e identicamente distribuída (i.i.d.) de uma distribuição com função de probabilidade ou de densidade $f(x; \theta)$, em que $\theta$ representa o parâmetro ou vetor de parâmetros desconhecidos. Uma estatística $T(\underset{\sim}{X}) = \left(T_1(\underset{\sim}{X}), \ldots, T_r(\underset{\sim}{X}) \right)$ é conjuntamente suficiente para $\theta$, se, e somente se, a função de verossimilhança puder ser fatorada na forma
 $$
@@ -42,7 +42,7 @@ em que
 
 
 
-## Exemplo 8.1
+## Exemplo 11.1
 
 Seja $X_1, \ldots, X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X\sim N(\mu,\sigma^2)$. Use o critério da fatoração para determinar duas estatísticas conjuntamente suficientes $(\mu,\sigma^2)$.
 			
@@ -59,7 +59,7 @@ Lembrete:
 
 
 
-## Exemplo 8.2
+## Exemplo 11.2
 
 Seja $X_1, \ldots, X_n$ uma amostra aleatória da variável aleatória $X$ com distribuição Gama$(\alpha,\beta)$. Encontre uma estatística conjuntamente suficiente para $(\alpha,\beta)$.
 			
@@ -76,7 +76,7 @@ Lembrete:
 
 
 
-## Definição 8.1
+## Definição 11.1
 
 Dizemos que duas estatísticas $T_1$ e $T_2$ são equivalentes se existir uma relação 1:1 entre elas.
 
@@ -89,9 +89,9 @@ Dizemos que duas estatísticas $T_1$ e $T_2$ são equivalentes se existir uma re
 
 
 
-## Exemplo 8.3
+## Exemplo 11.3
 
-Considerando o Exemplo 8.1, $\overline{X} = \frac{\sum\limits_{i=1}^n X_i}{n}$ é suficiente para $\mu$?
+Considerando o Exemplo 11.1, $\overline{X} = \frac{\sum\limits_{i=1}^n X_i}{n}$ é suficiente para $\mu$?
 
 
 
