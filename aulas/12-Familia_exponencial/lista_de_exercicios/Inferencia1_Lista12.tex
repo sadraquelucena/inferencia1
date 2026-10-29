@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 12} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=12.\arabic*)]
+		
+		% Questão 1
+		\item Verifique se as distribuições a seguir pertencem à família exponencial. Em caso afirmativo, identifique cada uma das funções $c(\theta)$, $T(x)$, $d(\theta)$ e $S(x)$. Para as distribuições que pertencem à família exponencial, indique as estatísticas suficientes.
+		\begin{enumerate}
+			\item $X\sim$ Poisson($\theta$), $\theta>0$.
+			\item $X\sim$ Exponencial($\theta$), de forma que $E(X)=\theta$.
+			\item $X\sim$ Geométrica($\theta$), $\theta\in(0,1)$.
+			\item $X\sim$ Gama($r,\theta$), $r,\theta>0$, $E(X)=r\theta$.
+			\item $X\sim$ Beta($\theta,1$), $\theta>0$.
+			\item $X\sim$ Normal($0,\sigma^2$), $\sigma^2>0$.
+			\item $X\sim$ Normal Inversa($\mu,\lambda$), $\mu,\lambda>0$.
+			\item $X\sim$ Beta($\alpha,\beta$), $\alpha,\beta>0$.
+			\item $X\sim$ Uniforme($0,\theta$), $\theta>0$.
+			\item $f(x) = \frac{e^{-\theta} \theta^x}{x!(1-e^{-\theta})}$, $x=1,2,\ldots,\theta>0$.
+			\item $f(x) = \frac{1}{\lambda}e^{-\frac{1}{\lambda}(x-\mu)}$, $\mu\leq x<\infty$.
+			\item $f(x) = \frac{\log(\theta)\, \theta^x}{\theta-1}$, $\theta>1$, $0\leq x\leq 1$.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=12.\arabic*)]
+		
+		% Questão 1
+		\item 
+		\begin{enumerate}
+			% a
+			\item $c(\theta) = \log(\theta)$\\
+			      $T(x) = x$\\
+			      $d(\theta)=-\theta$\\
+			      $S(x) = -\log(x!)$\\
+			      Estatística suficiente: $T(\underset{\sim}{X}) = \sum\limits_{i=1}^n X_i$
+			
+			% b
+			\item $c(\theta) = -\frac{1}{\theta}$\\
+			      $T(x) = x$\\
+			      $d(\theta)= -\log(\theta)$\\
+			      $S(x) = 0$\\
+			      Estatística suficiente: $T(\underset{\sim}{X}) = \sum\limits_{i=1}^n X_i$
+			
+			% c
+			\item $c(\theta) = \log(1-\theta)$\\
+			      $T(x) = x$\\
+			      $d(\theta)= \log(\theta)$\\
+			      $S(x) = 0$\\
+			      Estatística suficiente: $T(\underset{\sim}{X}) = \sum\limits_{i=1}^n X_i$
+			
+			% d
+			\item $c(r,\theta) = \left(-\frac{1}{\theta}, r-1\right)$\\
+			      $T(x) = \left(x, \log(x)\right)$\\
+			      $d(r,\theta)= -r \log(\theta) - \log(\Gamma(r))$\\
+			      $S(x) = (r-1)\log(x) - \log(\Gamma(r))$\\
+				  Estatística suficiente: $T(\underset{\sim}{X}) = \left(\sum\limits_{i=1}^n X_i, \sum\limits_{i=1}^n \log(X_i)\right)$
+			
+			% e
+			\item $c(\theta) = \theta-1$\\
+			      $T(x) = \log(x)$\\
+			      $d(\theta)= \log(\theta)$\\
+			      $S(x) = 0$\\
+				  Estatística suficiente: $T(\underset{\sim}{X}) = \sum\limits_{i=1}^n \log(X_i)$
+			
+			% f
+			\item $c(\sigma^2) = -\frac{1}{2\sigma^2}$\\
+			      $T(x) = x^2$\\
+			      $d(\sigma^2)= -\frac{1}{2}\log(\sigma^2)$\\
+			      $S(x) = -\frac{1}{2}\log(2\pi)$\\
+				  Estatística suficiente: $T(\underset{\sim}{X}) = \sum\limits_{i=1}^n X_i^2$
+			
+			% g
+			\item $c(\mu,\lambda) = \left(-\frac{\lambda}{2\mu^2}, -\frac{\lambda}{2}\right)$\\
+			      $T(x) = (x, \frac{1}{x})$\\
+			      $d(\mu,\lambda)= \frac{\lambda}{\mu} + \frac{1}{2}\log(\lambda)$\\
+			      $S(x) = -\frac{1}{2}\log(2\pi x^3)$\\
+				  Estatística suficiente: $T(\underset{\sim}{X}) = \left(\sum\limits_{i=1}^n X_i, \sum\limits_{i=1}^n\frac{1}{X_i}\right)$
+			
+			% h
+			\item $c(\alpha,\beta) = (\alpha-1, \beta-1)$\\
+			      $T(x) = (\log(x), \log(1-x))$,\\
+			      $d(\alpha,\beta)= \log(\Gamma(\alpha+\beta))-\log(\Gamma(\alpha)) - \log(\Gamma(\beta))$\\
+			      $S(x) = 0$\\
+				  Estatística suficiente: $T(\underset{\sim}{X}) = \left(\sum\limits_{i=1}^n \log(X_i), \sum\limits_{i=1}^n \log(1-X_i)\right)$
+			
+			% i
+			\item Não pertence.
+			
+			% j
+			\item $c(\theta) = \log(\theta)$\\
+			      $T(x) = x$\\
+			      $d(\theta)= -\theta-\log(1-e^{-\theta})$\\
+			      $S(x) = -\log(x!)$\\
+				  Estatística suficiente: $T(\underset{\sim}{X}) = \sum\limits_{i=1}^n X_i$
+			
+			% k
+			\item Não pertence
+			
+			% l
+			\item $c(\theta) = \log(\theta)$\\
+			      $T(x) = x$\\
+			      $d(\theta)= \log(\log(\theta))-\log(\theta-1)$\\
+			      $S(x) = 0$\\
+				  Estatística suficiente: $T(\underset{\sim}{X}) = \sum\limits_{i=1}^n X_i$
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+\end{document}

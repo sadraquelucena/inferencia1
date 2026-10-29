@@ -45,6 +45,7 @@ website:                  # Configurações específicas do website
           - href: aulas/09-Estatisticas_suficientes/conteudo.qmd
           - href: aulas/10-Criterio_da_fatoração_de_Neyman/conteudo.qmd
           - href: aulas/11-Criterio_da_fatoracao_caso_multiparametrico/conteudo.qmd
+          - href: aulas/12-Familia_exponencial/conteudo.qmd
           
 
 format:                      # Configurações do formato HTML
