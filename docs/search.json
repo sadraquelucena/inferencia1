@@ -9,13 +9,13 @@
   {
     "objectID": "aulas/13-Estatistica_completa_e_ENVVUM/conteudo.html",
     "href": "aulas/13-Estatistica_completa_e_ENVVUM/conteudo.html",
-    "title": "12. Família Exponencial",
+    "title": "13. Estatística Completa e ENVVUM",
     "section": "",
-    "text": "Nesta aula, estudaremos a família exponencial unidimensional e multidimensional e aprenderemos a identificar se uma distribuição pertence a essa família.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF",
+    "text": "Nesta aula, é abordado o conceito de Estatística Completa e sua combinação com a suficiência por meio do Teorema de Lehmann-Scheffé para obter o estimador não viesado de variância uniformemente mínima (ENVVUM).\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF",
     "crumbs": [
       "Aulas",
       "Parte 2: Propriedades dos Estimadores",
-      "12. Família Exponencial"
+      "13. Estatística Completa e ENVVUM"
     ]
   },
   {
