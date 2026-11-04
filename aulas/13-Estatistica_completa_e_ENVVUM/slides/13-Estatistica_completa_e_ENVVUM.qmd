@@ -109,7 +109,7 @@ então $T(x)$ é suficiente para $\theta$.
 
 ## Teorema 13.2: Teorema de Lehmann-Scheffé
 
-Sejam $X_1,\ldots,X_n$ uma amostra aleatória de $X$ com f.d.p. (ou f.p.) $f(x)$. Seja $T$ uma estatística suficiente e completa. Seja $S$ um estimador não viciado de $\theta$. Então $\widehat{\theta}=E(S|T)$ é o \textcolor{bluep}{estimador não viciado de variância uniformemente mínima (ENVVUM)} para $\theta$.
+Sejam $X_1,\ldots,X_n$ uma amostra aleatória de $X$ com f.d.p. (ou f.p.) $f(x)$. Seja $T$ uma estatística suficiente e completa. Seja $S$ um estimador não viciado de $\theta$. Então $\widehat{\theta}=E(S|T)$ é o *estimador não viciado de variância uniformemente mínima (ENVVUM)* para $\theta$.
 			
 <br>
 -   Prova no livro do Bolfarine, pág. 31.
