@@ -59,3 +59,22 @@ png_lista <- sub("\\.pdf$", ".png", lista)
 
 ::::
 
+---
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-3}
+
+<a href="lista_de_exercicios/`r lista`"
+   target="_blank"
+   class="thumb pdf-lista">
+<img
+  src="lista_de_exercicios/`r png_lista`"
+  class="img-fluid">
+</a>
+
+:::
+
+::::
