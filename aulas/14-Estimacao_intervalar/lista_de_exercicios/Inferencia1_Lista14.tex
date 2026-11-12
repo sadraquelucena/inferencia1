@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 14} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=14.\arabic*)]
+		
+		% Questão 1
+		\item Explique a diferença fundamental entre uma Estatística e uma Quantidade Pivotal. Por que não podemos usar uma Estatística diretamente para construir um intervalo de confiança sem transformá-la em um pivô?
+		
+		% Questão 2
+		\item Considere uma amostra de uma população $N(\mu, \sigma^2)$. Se o objetivo é construir um intervalo para a média $\mu$, explique por que a quantidade $Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}}$ deixa de ser pivotal se o valor de $\sigma^2$ for desconhecido.
+		
+		% Questão 3
+		\item Após coletar os dados e realizar os cálculos, um atuário chega ao intervalo de confiança $[850, 1.150]$ para o valor médio de sinistros, com 95\% de confiança. Avalie a afirmação: ``\textit{Existe uma probabilidade de 95\% de que a verdadeira média populacional esteja contida entre 850 e 1.150.}'' Ela está correta? Justifique sua resposta.
+		
+		% Questão 4
+		\item Mantendo todos os outros fatores constantes (mesma variância e mesma média amostral), descreva o que acontece com a amplitude (largura) do intervalo de confiança quando:
+		\begin{enumerate}
+			\item Aumentamos o nível de confiança (ex: de 90\% para 99\%).
+			\item Aumentamos o tamanho da amostra ($n$).
+		\end{enumerate}
+		
+		% Questão 5
+		\item A altura de ondas em oceanografia segue uma distribuição de Rayleigh com parâmetro $\sigma$. Sabe-se que se $X \sim Rayleigh(\sigma)$, então $Q = \frac{X^2}{\sigma^2} \sim \chi^2_2$ (Qui-quadrado com 2 graus de liberdade). Se observarmos uma única onda com $x = 4$ metros, monte o IC de 95\% para o parâmetro $\sigma$. (Dados: $\chi^2_{2; 0,025} = 0,05$ e $\chi^2_{2; 0,975} = 7,38$).
+		
+		% Questão 6
+		\item A distribuição de Pareto é muito usada em Atuária para modelar grandes perdas. Seja $X$ uma perda que segue uma Pareto com parâmetro de forma $\alpha$ (e mínimo 1), tal que $f(x; \alpha) = \alpha x^{-(\alpha+1)}$. Sabe-se que $Q = \alpha \cdot \log(X)$ segue uma distribuição Exponencial de média 1. Para uma perda observada $x = 10$, isole $\alpha$ e encontre um IC de 90\% para esse parâmetro. (Dica: Para $Exp(1)$, os quantis de 5\% e 95\% são $0,051$ e $2,99$).
+		
+		% Questão 7
+		\item O tempo de falha de um sensor segue uma Weibull com parâmetro de escala $\lambda$ e forma $k=2$ (conhecido). A quantidade $Q = (X/\lambda)^2$ segue uma distribuição Exponencial de média 1. Se o sensor falhou em $x = 100$ horas, determine o IC de 95\% para o parâmetro de escala $\lambda$.
+		
+		% Questão 8
+		\item A distribuição de Cauchy é famosa por não ter média definida, mas possui um parâmetro de localização $\theta$. Se $X \sim Cauchy(\theta, 1)$, então $Q = X - \theta$ segue uma distribuição Cauchy Padrão (livre de $\theta$).Se os quantis de 2,5\% e 97,5\% da Cauchy Padrão são $-12,7$ e $12,7$, e observamos $x = 5$, qual o IC de 95\% para o centro da distribuição $\theta$?
+		
+		% Questão 9
+		\item Se $X$ segue uma Log-Normal, então $Y = \log(X)$ segue uma $N(\mu, \sigma^2)$. Suponha $\sigma^2 = 1$ conhecido.Mostre que $Q = \log(X) - \mu$ é uma quantidade pivotal e use-a para montar a fórmula do IC para $\mu$ baseado em uma única observação $X$.
+		
+		% Questão 10
+		\item Em um processo de Poisson, o tempo até a $k$-ésima ocorrência segue uma distribuição Gama. Para $k=2$ (fixo), a variável $X$ tem densidade que depende de um parâmetro de taxa $\beta$. Sabe-se que $Q = 2\beta X \sim \chi^2_4$. Se o segundo evento ocorreu no tempo $x = 15$, monte o IC de 90\% para a taxa $\beta$. (Dados: $\chi^2_{4; 0,05} = 0,71$ e $\chi^2_{4; 0,95} = 9,49$).
+		
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=14.\arabic*)]\setcounter{enumi}{2}
+		
+		% Questão 3
+		\item A afirmação está incorreta.
+		
+		% Questão 4
+		\item \begin{enumerate}
+			\item A amplitude aumenta.
+			\item A amplitude diminui.
+		\end{enumerate}
+		
+		% Questão 5
+		\item $IC(\sigma; 95\%) = [1,47 ; 17,89]$ metros.
+		
+		% Questão 6
+		\item $IC(\alpha; 90\%) = [0,022 \, ; \, 1,30]$
+		
+		% Questão 7
+		\item $IC(\lambda; 95\%) = [52,06 \, ; \, 632,45]$ horas.
+		
+		% Questão 8
+		\item $IC(\theta; 95\%) = [-7,7 \, ; \, 17,7]$
+		
+		% Questão 9
+		\item $IC(\mu) = [\log(X) - z_{\alpha/2} \, , \, \log(X) + z_{\alpha/2}]$
+		
+		% Questão 10
+		\item $IC(\beta; 90\%) = [0,024 \, ; \, 0,316]$
+		
+	\end{enumerate}
+	
+\end{document}

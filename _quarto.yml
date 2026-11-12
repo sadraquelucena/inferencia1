@@ -47,6 +47,10 @@ website:                  # Configurações específicas do website
           - href: aulas/11-Criterio_da_fatoracao_caso_multiparametrico/conteudo.qmd
           - href: aulas/12-Familia_exponencial/conteudo.qmd
           - href: aulas/13-Estatistica_completa_e_ENVVUM/conteudo.qmd
+
+      - section: "Parte 3: Intervalos de Confiança"
+        contents:
+          - href: aulas/14-Estimacao_intervalar/conteudo.qmd
           
 
 format:                      # Configurações do formato HTML

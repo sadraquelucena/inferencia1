@@ -1,0 +1,157 @@
+---
+title: "Estimação Intervalar: O Método da Quantidade Pivotal"
+subtitle: |
+  *O caminho da distribuição amostral ao intervalo de confiança*
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    ESTAT0078 -- Inferência I<br>
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <a href="http://sadraquelucena.github.io/inferencia1" style="font-size:.8em;">http://sadraquelucena.github.io/inferencia1</a><br>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1600
+    height: 900
+    margin: 0.1          # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_principal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+    pdf-separate-fragments: false # 'false' gera 1 página por slide. Se usar 'true', cada animação/fragmento vira uma página no PDF.
+
+lang: pt-BR
+---
+
+## Introdução
+
+- **Estimativa Pontual ($\hat{\theta}$):**
+  - Um único valor numérico baseado na amostra.
+  - *Limitação:* Não indica precisão ou incerteza da estimativa.
+- **Estimativa Intervalar:**
+  - Um intervalo de valores plausíveis $[L(\mathbf{X}), U(\mathbf{X})]$.
+  - Os limites são funções da amostra (variáveis aleatórias).
+- **Exemplo:** Se você estima que o custo médio de um sinistro de uma seguradora é R$ 1.000,00 e baseia todo o seu fundo de reserva nisso, qualquer variação para cima quebra a empresa.
+- O **Intervalo de Confiança** quantifica essa incerteza, permitindo uma gestão de riscos mais robusta.
+
+
+
+
+## Objetivo da Estimação Intervalar
+
+- **Construção do Intervalo:**
+  - Encontrar duas estatísticas, $L(\mathbf{X})$ e $U(\mathbf{X})$, tais que:
+  $$P[L(\mathbf{X}) \leq \theta \leq U(\mathbf{X})] = 1 - \alpha$$
+- **Nível de Confiança ($1 - \alpha$):**
+  - É a probabilidada priori (antes da coleta dos dados) de que o intervalo contenha o verdadeiro valor do parâmetro $\theta$.
+- **Significância ($\alpha$):**
+  - A probabilidade do intervalo construído não conter o parâmetro, ou seja, probabilidade de erro.
+
+
+
+
+## Definição 16.1: Quantidade Pivotal
+
+Uma variável aleatória $Q(X_1, \ldots, X_n; \theta) = Q(\mathbf{X}; \theta)$ é dita ser uma quantidade pivotal para o parâmetro $\theta$ se sua distribuição de probabilidade **não depende** de $\theta$.
+
+- **Diferença Fundamental:**
+  - **Estatística:** Não pode conter $\theta$. Conseguimos calcular o seu valor numérico apenas com os dados da amostra.
+    - Exemplo: $\overline{X}=\frac{\sum_{i=1}^n X_i}{n}$.
+  - **Quantidade Pivotal:** Deve conter o parâmetro, mas sua distribuição deve ser livre dele.
+    - Exemplo: $Z=\frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim N(0,1)$.
+
+
+
+
+
+## Exemplo 16.1
+
+Considere $X_1, \ldots, X_n$ uma amostra aleatória de $X\sim N(\mu, \sigma^2)$. As equações abaixo são quantidades pivotais para o parâmetro de interesse?
+
+a) $\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$. (Dica: A distribuição depende de $\mu$?)
+
+b) $S^2 \sim \frac{\sigma^2}{n-1} \chi^2_{n-1}$. (Dica: A distribuição depende de $\sigma^2$?)
+
+c) $Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim N(0,1)$ (com $\sigma$ conhecido).
+
+d) $Q = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}$.
+
+e) $D = \bar{X} - \mu \sim N(0, \sigma^2/n)$
+
+
+
+
+
+## Passos para Obter um Intervalo de Confiança
+
+- **Passo 1:** Selecione uma **Quantidade Pivotal** $Q(\mathbf{X}, \theta)$ com distribuição conhecida.
+- **Passo 2:** Escolha o nível de confiança $1-\alpha$ (ex: $1-\alpha = 0,95$) e encontre os valores críticos $\lambda_1$ e $\lambda_2$, tais que: $$P(\lambda_1 \leq Q(\mathbf{X}, \theta) \leq \lambda_2) = 1-\alpha.$$
+- **Passo 3:** Use álgebra para isolar o parâmetro $\theta$ no centro da desigualdade.
+- **Resultado:** $P(L(\mathbf{X}) \leq \theta \leq U(\mathbf{X})) = 1-\alpha$.
+  - $L(\mathbf{X})$ e $U(\mathbf{X})$ são os limites do intervalo de confiança.
+
+
+
+
+
+## Exemplo 16.2
+
+Seja $X_1, \ldots, X_n$ uma amostra aleatória de $X \sim N(\mu, \sigma^2)$ com $\sigma^2$ conhecido. Encontre um intervalo de confiança para $\mu$ usando a quantidade pivotal $Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim N(0, 1)$.
+
+
+
+
+
+## Exemplo 16.3
+
+Sejam $X_1, \dots, X_n$ uma amostra aleatória de $X \sim Exponencial(\theta)$. Utilize a quantidade pivotal $Q = 2\theta \sum X_i \sim \chi^2_{2n}$ para obter um intervalo de confiança para $\theta$.
+
+
+
+
+
+## Exemplo 16.4
+
+Seja $X \sim U(0, \theta)$ uma única observação. Use a quantidade pivotal $Q = X/\theta \sim U(0,1)$ e monte um intervalo de confiança de 95% para $\theta$.
+
+
+
+
+
+## Cuidado com a Interpretação
+
+O nível de confiança ($1-\alpha$) mostra em que porcentagem das vezes o intervalo obtido vai conter o verdadeiro valor do parâmetro $\theta$ se você repetir o experimento várias vezes.
+
+<br>
+
+Imagine que o parâmetro $\theta$ é um alvo fixo no chão e o Intervalo de Confiança é uma argola que você lança.
+
+- Antes de lançar a argola, a posição onde ele vai cair é uma variável aleatória.
+  - **Probabilidade:** Existe 95% de chance da argola cair "cercando" o alvo.
+- Depois que a argola foi lançada, ela cercou ou não o alvo. Não há mais "95% de chance".
+  - **Confiança:** O "95%" refere-se à precisão do seu braço (o método), não à posição do alvo.
+
+- **Conclusão:** O alvo ($\theta$) nunca se mexe. É a argola (o intervalo) que é lançado e pode ou não capturá-lo. Por isso, após os cálculos, trocamos a palavra **Probabilidade** pela palavra **Confiança**.
+
+
+
+
+## Cuidado com a Interpretação
+
+Suponha que um intervalode confiança para um parâmetro foi [10, 20].
+
+| Interpretação | Frase |
+|---------------|--------------------------------------------------------------|
+| ERRADO | "Existe 95% de probabilidade de θ estar entre 10 e 20."|
+| CORRETO | "Este intervalo foi construído por um método que, em 95% das vezes, produz intervalos que contêm o verdadeiro parâmetro." |
+| CORRETO | "Temos 95% de confiança de que o parâmetro θ esteja no intervalo [10,20]."|
+
+
+
+
+# Fim
