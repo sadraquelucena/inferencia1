@@ -9,6 +9,7 @@ project:            # Configurações gerais do projeto Quarto
     - index.qmd
     - info.qmd
     - aulas/*/conteudo.qmd
+    - tabelas/tabelas.qmd
 
 website:                  # Configurações específicas do website
   bread-crumbs: false     # Oculta: Início > Aula 01 > Distribuições
@@ -17,8 +18,8 @@ website:                  # Configurações específicas do website
   favicon: img/inferencia1-logo-sem-borda.png  # ícone da aba
   
   sidebar:                # Configuração da barra lateral
-    style: docked         # Estilo fixo
-    collapse-level: 4     # mostrar todos os níveis
+    style: "docked"       # Estilo fixo
+    collapse-level: 2     # mostrar todos os níveis
     search: false         # Esconde a caixa de pesquisa da sidebar
     border: false         # Remove a borda vertical da sidebar
     logo: img/inferencia1-logo-sem-borda.png  # Logo exibido na parte superior da sidebar
@@ -29,28 +30,31 @@ website:                  # Configurações específicas do website
     
     - section: "Aulas"
       contents: 
-      - section: "Parte 1: Fundamentos e Métodos de Estimação"
-        contents:
-          - href: aulas/01-O_problema_da_inferencia_estatistica/conteudo.qmd
-          - href: aulas/02-Metodo_dos_momentos/conteudo.qmd
-          - href: aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.qmd
-          - href: aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.qmd
-          - href: aulas/05-Propriedades_EMVs/conteudo.qmd
+        - section: "Parte 1: Fundamentos e Métodos de Estimação"
+          contents:
+            - href: aulas/01-O_problema_da_inferencia_estatistica/conteudo.qmd
+            - href: aulas/02-Metodo_dos_momentos/conteudo.qmd
+            - href: aulas/03-Metodo_da_maxima_verossimilhanca/conteudo.qmd
+            - href: aulas/04-Metodo_da_maxima_verossimilhanca_caso_multiparametrico/conteudo.qmd
+            - href: aulas/05-Propriedades_EMVs/conteudo.qmd
       
-      - section: "Parte 2: Propriedades dos Estimadores"
-        contents:
-          - href: aulas/06-Vies_de_um_estimador/conteudo.qmd
-          - href: aulas/07-EQM_de_um_estimador/conteudo.qmd
-          - href: aulas/08-Eficiencia_de_um_estimador/conteudo.qmd
-          - href: aulas/09-Estatisticas_suficientes/conteudo.qmd
-          - href: aulas/10-Criterio_da_fatoração_de_Neyman/conteudo.qmd
-          - href: aulas/11-Criterio_da_fatoracao_caso_multiparametrico/conteudo.qmd
-          - href: aulas/12-Familia_exponencial/conteudo.qmd
-          - href: aulas/13-Estatistica_completa_e_ENVVUM/conteudo.qmd
+        - section: "Parte 2: Propriedades dos Estimadores"
+          contents:
+            - href: aulas/06-Vies_de_um_estimador/conteudo.qmd
+            - href: aulas/07-EQM_de_um_estimador/conteudo.qmd
+            - href: aulas/08-Eficiencia_de_um_estimador/conteudo.qmd
+            - href: aulas/09-Estatisticas_suficientes/conteudo.qmd
+            - href: aulas/10-Criterio_da_fatoração_de_Neyman/conteudo.qmd
+            - href: aulas/11-Criterio_da_fatoracao_caso_multiparametrico/conteudo.qmd
+            - href: aulas/12-Familia_exponencial/conteudo.qmd
+            - href: aulas/13-Estatistica_completa_e_ENVVUM/conteudo.qmd
 
-      - section: "Parte 3: Intervalos de Confiança"
-        contents:
-          - href: aulas/14-Estimacao_intervalar/conteudo.qmd
+        - section: "Parte 3: Intervalos de Confiança"
+          contents:
+            - href: aulas/14-Estimacao_intervalar/conteudo.qmd
+            - href: aulas/15-IC_para_media/conteudo.qmd
+
+        - href: tabelas/tabelas.qmd
           
 
 format:                      # Configurações do formato HTML
@@ -62,3 +66,4 @@ format:                      # Configurações do formato HTML
 
 resources:
   - aulas/**
+  - tabelas/**

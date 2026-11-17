@@ -1,0 +1,160 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 15} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=15.\arabic*)]
+		
+		% Questão 1
+		\item Explique por que a expressão $Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}}$ é considerada uma quantidade pivotal quando $\sigma$ é conhecido, mas deixa de ser pivotal se $\sigma$ for desconhecido. O que define, matematicamente, se uma função é uma quantidade pivotal?
+		
+		% Questão 2
+		\item Um pesquisador possui uma amostra de apenas $n = 10$ observações de uma população com forte assimetria à direita. Ele pretende construir um intervalo de confiança para a média utilizando a distribuição $t$ de Student. Avalie se esta decisão é correta. O Teorema Central do Limite (TCL) o protege neste caso? Justifique.
+		
+		% Questão 3
+		\item Avalie a seguinte afirmação feita por um analista: ``\textit{Após calcular o IC de 95\% para o tempo médio de atendimento como sendo [15, 25] minutos, posso afirmar que existe uma probabilidade de 95\% de que a média populacional $\mu$ esteja dentro deste intervalo.}" Explique por que essa frase é tecnicamente incorreta na estatística frequentista e proponha a correção.
+		
+		% Questão 4
+		\item Descreva o efeito na amplitude (largura) do intervalo de confiança para a média quando:
+		\begin{enumerate}
+			\item O nível de confiança aumenta de 90\% para 99\%.
+			\item O tamanho da amostra ($n$) é quadruplicado, mantendo o desvio padrão constante.
+			\item A variabilidade dos dados (desvio padrão) aumenta.
+		\end{enumerate}
+		
+		% Questão 5
+		\item Uma máquina de envase de refrigerantes está configurada para operar com um desvio padrão populacional conhecido de 0,05 litros. Uma amostra de 16 garrafas apresentou média 1,98 litros. Assumindo normalidade, determine o IC de 95\% para a média real de envase.
+		
+		% Questão 6
+		\item Uma cooperativa de crédito deseja estimar o valor médio dos empréstimos rurais. Uma amostra aleatória de 25 contratos revelou uma média de R\$ 45.000,00 com desvio padrão de R\$ 10.000,00. Assumindo que os valores seguem uma distribuição normal, construa o IC de 95\% para $\mu$.
+		
+		% Questão 7
+		\item Um estudo sobre o tempo de vida de lâmpadas LED coletou uma amostra de 100 unidades. A média observada foi de 50.000 horas com desvio padrão de 2.000 horas. Embora o fabricante não garanta a normalidade da população, explique por que é possível construir um intervalo de confiança para a média neste caso e calcule o IC de 99\%.
+		
+		% Questão 8
+		\item Um engenheiro de produção analisa o tempo de secagem de uma nova resina. Ele coletou uma amostra de 16 corpos de prova e obteve uma média de 40 minutos. Considere dois cenários:
+		\begin{itemize}
+			\item[Cenário A:] Sabe-se por testes anteriores que o desvio padrão populacional é 8 minutos.
+			\item [Cenário B:] O desvio padrão populacional é desconhecido, e o desvio padrão calculado da amostra foi 8 minutos.
+		\end{itemize}
+		\begin{enumerate}
+			\item Calcule o IC de 95\% para ambos os cenários.
+			\item Compare as amplitudes (larguras) dos dois intervalos. Qual deles é mais largo? Explique o porquê disso ocorrer sob a ótica da incerteza.
+		\end{enumerate}
+		
+		% Questão 9
+		\item Um analista calculou dois intervalos de confiança para o mesmo conjunto de dados (população normal com $\sigma$ desconhecido):
+		\begin{center}
+			Intervalo A: [45,2 ; 54,8] \qquad\qquad Intervalo B: [43,1 ; 56,9]
+		\end{center}
+		Um dos intervalos foi calculado com 90\% de confiança e o outro com 95\%. Identifique qual é qual, justificando sua resposta com base na relação entre nível de confiança e precisão.
+		
+		% Questão 10
+		\item Uma seguradora observou $n = 15$ sinistros de automóveis e obteve $\sum x_i = 30.000$ e $\sum x_i^2 = 64.000.000$.
+		\begin{enumerate}
+			\item Quais os requisitos para se construir um IC para a média nesse caso?
+			\item Calcule a média amostral ($\overline{x}$) e o desvio padrão amostral ($s$).
+			\item Determine o IC de 95\% para o custo médio dos sinistros, assumindo que a população é normal.
+		\end{enumerate}
+		
+		% Questão 11
+		\item Os dados da amostra a seguir vêm de uma distribuição normal. Obtenha no R uma IC de 90\%, 95\% e 99\%. (Lembre que no R o separador de casas decimais é ponto ``.")
+		$$ 12{,}5 \quad 14{,}9 \quad 13{,}3 \quad 12{,}6 \quad 11{,}0 \quad 13{,}2 \quad 15{,}9 \quad 10{,}3 \quad 19{,}3 \quad 13{,}9 $$
+		
+		% Questão 12
+		\item Um analista financeiro deseja estimar o retorno médio mensal de uma carteira de investimentos. Para isso, selecionou aleatoriamente 12 meses de operação e registrou os seguintes retornos mensais (em \%):
+		$$
+		0{,}8 \quad 1{,}2 \quad 1{,}5 \quad 0{,}9 \quad 1{,}8 \quad 1{,}1 \quad 1{,}4 \quad 0{,}7 \quad	1{,}6  \quad 1{,}3 \quad 1{,}0 \quad 1{,}7
+		$$
+		Considerando que os retornos mensais seguem aproximadamente uma distribuição Normal e adotando um nível de confiança de 95\%, construa um intervalo de confiança para o retorno médio mensal da carteira.
+		
+		% Questão 13
+		\item Uma instituição financeira deseja estimar o valor médio dos empréstimos pessoais concedidos aos seus clientes. Uma amostra aleatória de 15 contratos apresentou os seguintes valores (em milhares de reais):
+		$$
+		  3{,}2 \quad 4{,}5 \quad 5{,}1 \quad 6{,}8 \quad 4{,}0 \quad 7{,}2 \quad 5{,}5 \quad 3{,}8 \quad 8{,}1 \quad 6{,}0 \quad 4{,}7 \quad 5{,}9 \quad 7{,}5 \quad 4{,}3 \quad 6{,}4
+		$$
+		Considerando que os valores dos empréstimos seguem aproximadamente uma distribuição Normal e adotando um nível de confiança de 90\%, construa um intervalo de confiança para o valor médio populacional dos empréstimos.
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=15.\arabic*)]\setcounter{enumi}{1}
+		
+		% Questão 2
+		\item A decisão é incorreta.
+		
+		\setcounter{enumi}{3}
+		
+		% Questão 4
+		\item 
+		\begin{enumerate}
+			\item Aumenta.
+			\item Diminui pela metade.
+			\item Aumenta.
+		\end{enumerate}
+		
+		% Questão 5
+		\item $[1,\!9555 \, ; \, 2,\!0045]$ litros.
+		
+		% Questão 6
+		\item $[R\$ 40.872,\!00 \, ; \, R\$ 49.128,\!00]$
+		
+		% Questão 7
+		\item $[49.484,\!8 \, ; \, 50.515,\!2]$ horas.
+		
+		% Questão 8
+		\item \begin{enumerate}
+			\item Cenário A: [36,08; 43,92] minutos.\\ Cenário B: [35,74; 44,26] minutos.
+			\item O Cenário B (Distribuição $t$) produz um intervalo mais largo que o Cenário A (Distribuição $Z$).
+		\end{enumerate}
+		
+		% Questão 9
+		\item O Intervalo B é o de 95\% e o Intervalo A é o de 90\%.
+		
+		% Questão 10
+		\item 
+		\begin{enumerate}
+			\item População normal.
+			\item $\overline{x} = 2.000$ e $s \approx 534,52$
+			\item $[1.704,\!01 \, ; \, 2.295,\!99]$
+		\end{enumerate}
+		
+		% Questão 11
+		\item $[12{,}20; 15{,}18]$\\
+		      $[11{,}85; 15{,}53]$\\
+		      $[11{,}05; 16{,}33]$
+		
+		% Questão 12
+		\item Com 95\% de confiança, o retorno médio da carteira está entre 1,02\% e 1,48\%.
+		
+		% Questão 13
+		\item Com 90\% de confiança, o valor médio dos empréstimos está entre 4,87 e 6,20 milhares de reais, ou seja, entre R\$ 4.870,00 e R\$ 6.200,00.
+	\end{enumerate}
+	
+\end{document}

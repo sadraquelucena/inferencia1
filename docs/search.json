@@ -7,6 +7,17 @@
     "text": "Bem-vindo(a)!\nEste espaço foi criado pelo Prof. Dr. Sadraque E. F. Lucena para centralizar todos os conteúdos, atividades e o cronograma da disciplina ESTAT0078 – Inferência I, ofertado pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe.\nAo longo do semestre, vamos construir juntos uma base sólida nos conceitos fundamentais da Inferência Estatística, explorando métodos para obter e avaliar estimadores pontuais e para construir de intervalos de confiança."
   },
   {
+    "objectID": "tabelas/tabelas.html",
+    "href": "tabelas/tabelas.html",
+    "title": "Tabelas",
+    "section": "",
+    "text": "Acesse aqui as tabelas estatísticas mais importantes para o nosso curso de Inferência. Elas serão ferramentas essenciais para a resolução de exercícios e para as avaliações da disciplina.\n\n\n  \n\nTabela Normal\n\n\n\n  \n\nTabela t\n\n\n\n  \n\nTabela Qui-quadrado",
+    "crumbs": [
+      "Aulas",
+      "Tabelas"
+    ]
+  },
+  {
     "objectID": "aulas/14-Estimacao_intervalar/conteudo.html",
     "href": "aulas/14-Estimacao_intervalar/conteudo.html",
     "title": "14. Estimação intervalar",
@@ -202,6 +213,18 @@
       "Aulas",
       "Parte 2: Propriedades dos Estimadores",
       "13. Estatística Completa e ENVVUM"
+    ]
+  },
+  {
+    "objectID": "aulas/15-IC_para_media/conteudo.html",
+    "href": "aulas/15-IC_para_media/conteudo.html",
+    "title": "15. Intervalos de Confiança para a Média",
+    "section": "",
+    "text": "Nesta aula, são desenvolvidos os fundamentos da construção de intervalos de confiança para a média populacional, utilizando a distribuição t de Student e a quantidade pivotal para quantificar a incerteza da estimação a partir de dados amostrais.\nSlides:\n\n\n  \n\nSlides da aula em HTML\n\n\n\n  \n\nSlides da aula em PDF\n\n\n\n\nLista de Exercícios:",
+    "crumbs": [
+      "Aulas",
+      "Parte 3: Intervalos de Confiança",
+      "15. Intervalos de Confiança para a Média"
     ]
   }
 ]
