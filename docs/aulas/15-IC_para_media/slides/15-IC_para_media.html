@@ -378,10 +378,19 @@
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 297.8652</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a>DescTools<span class="sc">::</span><span class="fu">MeanCI</span>(x, <span class="at">conf.level =</span> <span class="fl">0.9</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(x, <span class="at">conf.level =</span> <span class="fl">0.9</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>    mean   lwr.ci   upr.ci 
-1239.730 1055.098 1424.362 </code></pre>
+<pre><code>
+    One Sample t-test
+
+data:  x
+t = 12.486, df = 8, p-value = 1.583e-06
+alternative hypothesis: true mean is not equal to 0
+90 percent confidence interval:
+ 1055.098 1424.362
+sample estimates:
+mean of x 
+  1239.73 </code></pre>
 </div>
 </div>
 </section>
@@ -393,32 +402,20 @@
 <h2>Exemplo 17.3</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">12345</span>) <span class="co"># Fixando a semente para sempre gerar os mesmos valores</span></span>
-<span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean=</span><span class="dv">450</span>, <span class="at">sd=</span><span class="dv">120</span>),<span class="dv">2</span>) <span class="co"># dados</span></span>
-<span id="cb7-3"><a href="" aria-hidden="true" tabindex="-1"></a>x</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean=</span><span class="dv">450</span>, <span class="at">sd=</span><span class="dv">120</span>), <span class="dv">2</span>) <span class="co"># dados</span></span>
+<span id="cb7-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(x, <span class="at">conf.level =</span> <span class="fl">0.99</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] 520.26 535.14 436.88 395.58 522.71 231.85 525.61 416.86 415.90 339.68
- [11] 436.05 668.08 494.48 512.43 359.94 548.03 343.64 410.21 584.49 485.85
- [21] 543.55 624.69 372.68 263.62 258.27 666.61 392.20 524.45 523.45 430.52
- [31] 547.42 713.62 695.90 645.89 480.51 508.94 411.11 250.55 662.13 453.10
- [41] 585.42 164.36 322.77 562.46 552.53 625.29 280.43 518.09 519.98 293.18
- [51] 385.15 683.72 456.43 492.20 369.48 483.35 532.94 548.86 707.41 168.37
- [61] 467.95 288.90 516.40 640.80 379.57 230.11 556.58 641.22 512.02 294.52
- [71] 456.55 355.84 324.08 729.66 618.32 563.11 549.15 352.62 507.15 572.55
- [81] 527.45 575.18 413.48 747.25 566.55 674.05 530.65 413.05 514.38 548.98
- [91] 334.33 347.39 676.43 402.98 332.32 532.48 389.39 708.93 378.02 366.65</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 479.4234</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(x)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 133.7678</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a>DescTools<span class="sc">::</span><span class="fu">MeanCI</span>(x, <span class="at">conf.level =</span> <span class="fl">0.99</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>    mean   lwr.ci   upr.ci 
-479.4234 444.2906 514.5562 </code></pre>
+<pre><code>
+    One Sample t-test
+
+data:  x
+t = 35.84, df = 99, p-value &lt; 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+99 percent confidence interval:
+ 444.2906 514.5562
+sample estimates:
+mean of x 
+ 479.4234 </code></pre>
 </div>
 </div>
 </section>

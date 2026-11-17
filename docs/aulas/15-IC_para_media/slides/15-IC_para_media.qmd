@@ -196,7 +196,7 @@ No R podemos usar a função `MeanCI` do pacote `DescTools`:
 x <- c(1031.86, 1130.95, 1667.61, 1221.15, 1238.79, 1714.52, 1338.27, 820.48, 993.94)
 mean(x)
 sd(x)
-DescTools::MeanCI(x, conf.level = 0.9)
+t.test(x, conf.level = 0.9)
 ```
 
 
@@ -215,11 +215,8 @@ Uma operadora de cartões de crédito deseja estimar o gasto médio mensal em la
 #| eval: true
 
 set.seed(12345) # Fixando a semente para sempre gerar os mesmos valores
-x <- round(rnorm(100, mean=450, sd=120),2) # dados
-x
-mean(x)
-sd(x)
-DescTools::MeanCI(x, conf.level = 0.99)
+x <- round(rnorm(100, mean=450, sd=120), 2) # dados
+t.test(x, conf.level = 0.99)
 ```
 
 
