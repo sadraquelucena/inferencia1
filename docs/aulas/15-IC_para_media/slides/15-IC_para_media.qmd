@@ -187,7 +187,7 @@ A média dessa amostra foi de $1239{,}73$ reais e o desvio padrão de $297{,}865
 
 ## Exemplo 17.2
 
-No R podemos usar a função `MeanCI` do pacote `DescTools`:
+No R podemos usar a função `t.test`:
 
 ```{r}
 #| echo: true
