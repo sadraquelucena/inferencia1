@@ -353,20 +353,20 @@
 </tbody>
 </table>
 </section>
-<section id="exemplo-17.1" class="slide level2">
-<h2>Exemplo 17.1</h2>
+<section id="exemplo-15.1" class="slide level2">
+<h2>Exemplo 15.1</h2>
 <p>Uma indústria de laticínios produz embalagens de manteiga cujo peso segue uma distribuição normal. O controle de qualidade afirma que o desvio padrão histórico é de <span class="math inline">\(10g\)</span>. Uma amostra de <span class="math inline">\(25\)</span> embalagens revelou um peso médio de <span class="math inline">\(505g\)</span>. Construa um IC de 95% para o peso médio real (<span class="math inline">\(\mu\)</span>).</p>
 </section>
-<section id="exemplo-17.2" class="slide level2">
-<h2>Exemplo 17.2</h2>
+<section id="exemplo-15.2" class="slide level2">
+<h2>Exemplo 15.2</h2>
 <p>Um atuário analisa o custo de sinistros de um novo produto de seguro. Como o produto é novo, não se conhece a variância populacional. Foi obtida uma amostra aleatória de <span class="math inline">\(9\)</span> processos (em reais):</p>
 <p><br></p>
 <p><span class="math display">\[103{,}86 \quad 1130{,}95 \quad 1667{,}61 \quad 1221{,}15 \quad 1238{,}79 \quad 1714{,}52 \quad 1338{,}27 \quad 820{,}48 \quad 993{,}94\]</span></p>
 <p><br></p>
 <p>A média dessa amostra foi de <span class="math inline">\(1239{,}73\)</span> reais e o desvio padrão de <span class="math inline">\(297{,}8652\)</span> reais. Assumindo normalidade, determine o IC de 90% para a média dos sinistros.</p>
 </section>
-<section id="exemplo-17.2-1" class="slide level2">
-<h2>Exemplo 17.2</h2>
+<section id="exemplo-15.2-1" class="slide level2">
+<h2>Exemplo 15.2</h2>
 <p>No R podemos usar a função <code>MeanCI</code> do pacote <code>DescTools</code>:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1031.86</span>, <span class="fl">1130.95</span>, <span class="fl">1667.61</span>, <span class="fl">1221.15</span>, <span class="fl">1238.79</span>, <span class="fl">1714.52</span>, <span class="fl">1338.27</span>, <span class="fl">820.48</span>, <span class="fl">993.94</span>)</span>
@@ -385,12 +385,12 @@
 </div>
 </div>
 </section>
-<section id="exemplo-17.3" class="slide level2">
-<h2>Exemplo 17.3</h2>
+<section id="exemplo-15.3" class="slide level2">
+<h2>Exemplo 15.3</h2>
 <p>Uma operadora de cartões de crédito deseja estimar o gasto médio mensal em lazer dos seus usuários. Sabe-se que a distribuição de gastos costuma ser muito assimétrica (muitas pessoas gastam pouco, poucas pessoas gastam muito). Uma amostra aleatória de <span class="math inline">\(100\)</span> usuários apresentou uma média de <span class="math inline">\(R\$ 479{,}42\)</span> e um desvio padrão de <span class="math inline">\(R\$ 133{,}77\)</span>. Construa um IC de 99% para a média populacional <span class="math inline">\(\mu\)</span>.</p>
 </section>
-<section id="exemplo-17.3-1" class="slide level2">
-<h2>Exemplo 17.3</h2>
+<section id="exemplo-15.3-1" class="slide level2">
+<h2>Exemplo 15.3</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">12345</span>) <span class="co"># Fixando a semente para sempre gerar os mesmos valores</span></span>
 <span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean=</span><span class="dv">450</span>, <span class="at">sd=</span><span class="dv">120</span>),<span class="dv">2</span>) <span class="co"># dados</span></span>

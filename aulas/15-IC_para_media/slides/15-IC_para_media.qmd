@@ -162,14 +162,14 @@ Desenvolvida por William Gosset (pseudônimo *Student*) em 1908.
 
 
 
-## Exemplo 17.1
+## Exemplo 15.1
 
 Uma indústria de laticínios produz embalagens de manteiga cujo peso segue uma distribuição normal. O controle de qualidade afirma que o desvio padrão histórico é de $10g$. Uma amostra de $25$ embalagens revelou um peso médio de $505g$. Construa um IC de 95% para o peso médio real ($\mu$).
 
 
 
 
-## Exemplo 17.2
+## Exemplo 15.2
 
 Um atuário analisa o custo de sinistros de um novo produto de seguro. Como o produto é novo, não se conhece a variância populacional. Foi obtida uma amostra aleatória de $9$ processos (em reais):
 
@@ -185,7 +185,7 @@ A média dessa amostra foi de $1239{,}73$ reais e o desvio padrão de $297{,}865
 
 
 
-## Exemplo 17.2
+## Exemplo 15.2
 
 No R podemos usar a função `MeanCI` do pacote `DescTools`:
 
@@ -201,14 +201,14 @@ DescTools::MeanCI(x, conf.level = 0.9)
 
 
 
-## Exemplo 17.3
+## Exemplo 15.3
 
 Uma operadora de cartões de crédito deseja estimar o gasto médio mensal em lazer dos seus usuários. Sabe-se que a distribuição de gastos costuma ser muito assimétrica (muitas pessoas gastam pouco, poucas pessoas gastam muito). Uma amostra aleatória de $100$ usuários apresentou uma média de $R\$ 479{,}42$ e um desvio padrão de $R\$ 133{,}77$. Construa um IC de 99% para a média populacional $\mu$.
 
 
 
 
-## Exemplo 17.3
+## Exemplo 15.3
 
 ```{r}
 #| echo: true

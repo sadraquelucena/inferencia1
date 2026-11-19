@@ -1,0 +1,130 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 16} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=16.\arabic*)]
+		
+		% Questão 1
+		\item Diferente dos intervalos para a média ($\mu$) e para a proporção ($p$ via Wald), o intervalo de confiança para a variância ($\sigma^2$) não é simétrico em torno da estimativa pontual (ou seja, $\text{Estimativa} \pm \text{Erro}$).
+		Explique, utilizando o formato da distribuição Qui-quadrado, por que isso ocorre e como isso afeta a construção dos limites inferior e superior.
+		
+		% Questão 2
+		\item Um analista financeiro possui uma amostra grande ($n=1000$) de retornos de um ativo. Ele sabe que a distribuição dos retornos é leptocúrtica (caudas pesadas) e não-normal. Ele decide calcular um IC de 95\% para a variância usando a fórmula baseada na Qui-quadrado, argumentando que ``\textit{como $n$ é grande, o Teorema Central do Limite garante a validade}''. Ele está correto? Explique por que a inferência para a variância difere da inferência para a média neste aspecto.
+		
+		% Questão 3
+		\item Para estimar proporções, utilizamos a aproximação Normal (Método de Wald). No entanto, essa aproximação falha em certas situações. Cite a regra prática que deve ser verificada antes de usar esse método. O que acontece com a cobertura do intervalo se tentarmos estimar a prevalência de uma doença muito rara ($p \approx 0,001$) com uma amostra pequena ($n=50$)?
+		
+		% Questão 4
+		\item Por que, para uma seguradora, o limite superior do intervalo de confiança da variância dos sinistros é mais preocupante do que o limite inferior? Relacione sua resposta com o conceito de ``probabilidade de ruína'' ou necessidade de capital de reserva.
+		
+		% Questão 5
+		\item Uma indústria farmacêutica monitora a precisão de uma máquina de dosagem. Uma amostra de 20 comprimidos indicou uma variância de 0,15 $\text{mg}^2$. Supondo que a dosagem segue uma distribuição Normal, construa um IC de 95\% para a variância populacional.
+		
+		% Questão 6
+		\item\label{q6} Em uma pesquisa de mercado com 500 consumidores, 320 afirmaram preferir comprar online a comprar em lojas físicas.
+		\begin{enumerate}
+			\item Verifique se o método de Wald é aplicável.
+			\item Calcule o IC de 95\% para a proporção real de consumidores digitais.
+		\end{enumerate}
+		
+		% Questão 7
+		\item Utilizando os mesmos dados da Questão \ref{q6}, um segundo estatístico calculou um intervalo de confiança e obteve $[0,605 ; 0,675]$. Sem fazer contas complexas, determine se o nível de confiança usado por ele foi maior ou menor que 95\%. Justifique sua resposta baseando-se na amplitude do intervalo.
+		
+		% Questão 8
+		\item Um investidor exige que o desvio padrão ($\sigma$) da rentabilidade de um fundo não exceda 5\%. Uma amostra de 25 meses do fundo apresentou uma variância amostral $S^2 = 16\%^2$ (ou seja, $s=4\%$).
+		\begin{enumerate}
+			\item Calcule o IC de 90\% para a variância e, em seguida, converta-o para um intervalo para o desvio padrão.
+			\item Com base no limite superior deste intervalo, podemos garantir (com 90\% de confiança) que o risco está abaixo do teto de 5\% exigido pelo investidor?
+		\end{enumerate}
+		
+		% Questão 9
+		\item Um auditor está revisando relatórios de 3 departamentos que calcularam ICs para proporções usando o método de Wald (Normal). Identifique em quais casos o uso da fórmula foi inadequado e justifique:
+		\begin{enumerate}
+			\item Dept. A: $n=100$, sucessos=50.
+			\item Dept. B: $n=20$, sucessos=2.
+			\item Dept. C: $n=1000$, sucessos=995.
+		\end{enumerate}
+		
+		% Questão 10
+		\item Uma seguradora de saúde analisa a taxa de cancelamento (Churn) de seus contratos. Em uma amostra de 200 clientes, 18 cancelaram o plano.
+		\begin{enumerate}
+			\item Estime a proporção pontual $\widehat{p}$.
+			\item Construa um IC de 95\% para a taxa real de cancelamento.
+			\item A diretoria definiu que, se a taxa de cancelamento real puder ser superior a 12\%, uma força-tarefa de retenção deve ser criada. Com base no seu intervalo, você recomendaria a criação da força-tarefa? Por quê?
+		\end{enumerate}
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=16.\arabic*)]\setcounter{enumi}{1}
+		
+		% Questão 2
+		\item Incorreto.
+		
+		\setcounter{enumi}{4}
+		
+		% Questão 5
+		\item $[0,\!087 ; 0,\!320]$.
+		
+		% Questão 6
+		\item 
+		\begin{enumerate}
+			\item Sim.
+			\item $[0,\!598 ; 0,\!682]$.
+		\end{enumerate}
+		
+		% Questão 7
+		\item O intervalo do estatístico $[0,605 ; 0,675]$ tem amplitude 0,07. O intervalo de 95\% (questão \ref{q6} tem amplitude 0,084. Intervalo mais estreito significa menor confiança.
+		
+		% Questão 8
+		\item 
+		\begin{enumerate}
+			\item $IC(\sigma^2) = [10,\!54; 27,\!73]$. $IC(\sigma) = [3,\!25\% ; 5,\!27\%]$.
+			\item Não podemos garantir. O limite superior (5,27\%) ultrapassa o teto de 5\%.
+		\end{enumerate}
+		
+		% Questão 9
+		\item 
+		\begin{enumerate}
+			\item Ok.
+			\item Inadequado.
+			\item Inadequado.
+		\end{enumerate}
+		
+		% Questão 10
+		\item 
+		\begin{enumerate}
+			\item $\widehat{p} = 0,09$.
+			\item $[0,\!05; 0,\!13]$.
+			\item Sim, criar força-tarefa.
+		\end{enumerate}
+	\end{enumerate}
+	
+\end{document}
