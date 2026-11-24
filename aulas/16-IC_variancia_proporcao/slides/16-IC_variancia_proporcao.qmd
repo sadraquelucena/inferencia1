@@ -62,7 +62,7 @@ $$P(\chi^2_{\alpha/2} \le \frac{(n-1)S^2}{\sigma^2} \le \chi^2_{1-\alpha/2}) = 1
 
 Ao isolar $\sigma^2$ (invertendo as frações), obtemos:
 
-$$IC(\sigma^2; 1-\alpha) = \left[ \frac{(n-1)S^2}{\chi^2_{1-\alpha/2}} \; ; \; \frac{(n-1)S^2}{\chi^2_{\alpha/2}} \right]$$
+$$IC(\sigma^2; 1-\alpha) = \left[ \frac{(n-1)S^2}{\chi^2_{1-\alpha/2;n-1}} \; ; \; \frac{(n-1)S^2}{\chi^2_{\alpha/2;n-1}} \right]$$
 
 - Note que o valor *maior* da tabela fica no denominador do limite *inferior*, e vice-versa.
 

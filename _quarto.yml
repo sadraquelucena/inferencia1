@@ -54,6 +54,7 @@ website:                  # Configurações específicas do website
             - href: aulas/14-Estimacao_intervalar/conteudo.qmd
             - href: aulas/15-IC_para_media/conteudo.qmd
             - href: aulas/16-IC_variancia_proporcao/conteudo.qmd
+            - href: aulas/17-Precisao_e_tamanho_de_amostra/conteudo.qmd
 
         - href: tabelas/tabelas.qmd
           

@@ -1,0 +1,128 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvips]{graphicx}           
+\usepackage[portuges]{babel}           
+\usepackage{color}            
+\usepackage[latin1]{inputenc}           
+\usepackage[normalem]{ulem}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\topmargin}{-8pt}
+\setlength{\oddsidemargin}{0mm}
+\usepackage{amsmath,amsfonts, amssymb}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\begin{document}
+
+  \begin{minipage}[b]{0.1 \linewidth}
+     \includegraphics[width=.9cm]{ufs_vertical_positiva.png}
+  \end{minipage}\hfill	
+  \begin{minipage}[b]{0.85 \linewidth}
+	       \textsc{\large Universidade Federal de Sergipe}\\
+	       \textsc{\large Departamento de Estatística e Ciências Atuariais}\\
+	       Disciplina: ESTAT0078 -- Inferência I\\
+	       Professor: Sadraque E. F. Lucena
+\end{minipage}
+
+\vspace{0.8cm}
+\begin{center} {\bf Lista de Exercícios 17} \end{center}
+\vspace{0.8cm}
+
+	\begin{enumerate}[label=17.\arabic*)]
+		
+		% Questão 1
+		\item Um gestor solicita que você reduza a margem de erro de uma pesquisa pela metade (ex: de 4\% para 2\%), mantendo o mesmo nível de confiança. Baseando-se na fórmula do tamanho amostral, explique quantas vezes o tamanho da amostra deve aumentar para atender a esse pedido. Isso é linear ou quadrático?
+		
+		% Questão 2
+		\item Para calcular o tamanho da amostra para estimar a média ($\mu$), a fórmula exige o valor de $\sigma$ (desvio padrão populacional). Porém, se ainda não coletamos a amostra, não temos como calcular $S$. Cite e explique brevemente três estratégia para obter uma estimativa de $\sigma$ antes da pesquisa começar.
+		
+		% Questão 3
+		\item Ao planejar uma pesquisa de proporção sem informações prévias, utilizamos $p=0,5$ na fórmula.
+		\begin{enumerate}
+			\item Por que o valor 0,5 é escolhido estatisticamente? (Pense na variância).
+			\item Qual é a consequência prática (em termos de custos e tamanho de amostra) de usar esse valor se a proporção real for, na verdade, muito pequena (ex: $p=0,05$)?
+		\end{enumerate}
+		
+		% Questão 4
+		\item A maioria das fórmulas assume população infinita. No entanto, existe um fator de correção para populações finitas. Qual é a "Regra de Bolso" (percentual da população) que utilizamos para decidir se vale a pena ou não aplicar a fórmula de correção? Por que, intuitivamente, precisamos de menos dados quando a população é pequena e a amostra é grande em relação a ela?
+		
+		% Questão 5
+		\item Uma indústria farmacêutica precisa estimar o tempo médio de dissolução de um novo comprimido. Um estudo piloto indicou que o desvio padrão é 4 minutos. Quantos comprimidos devem ser testados para que a estimativa tenha um erro máximo de 1 minuto com 95\% de confiança?
+		
+		% Questão 6
+		\item\label{q6} Um candidato a prefeito quer encomendar uma pesquisa eleitoral. Ele exige uma margem de erro de 2\% (0,02) com 95\% de confiança. Como não há pesquisas anteriores confiáveis, qual deve ser o tamanho da amostra?
+		
+		% Questão 7
+		\item Refaça o cálculo da questão anterior (Erro=2\%, Conf=95\%), mas agora assuma que o candidato já possui uma pesquisa do mês passado indicando que ele tem cerca de 15\% ($p \approx 0,15$) das intenções de voto. 		Quantas entrevistas foram "economizadas" graças a essa informação prévia em comparação com o cenário conservador da Questão \ref{q6}?
+		
+		% Questão 8
+		\item Um engenheiro de materiais quer estimar a resistência de um concreto ($\sigma = 5$ MPa) com erro de 1 MPa.
+		\begin{enumerate}
+			\item Calcule $n$ para 95\% de confiança.
+			\item Calcule $n$ para 99\% de confiança.
+			\item Em termos percentuais, quanto aumenta o tamanho da amostra ao subirmos a confiança de 95\% para 99\%?
+		\end{enumerate}
+		
+		% Questão 9
+		\item Uma empresa tem $N = 500$ funcionários e o RH quer estimar a proporção de insatisfação com o plano de saúde.
+		\begin{enumerate}
+			\item Calcule o tamanho da amostra ($n$) assumindo população infinita, erro de 5\% e confiança de 95\% (use $p=0,5$).
+			\item Verifique se a razão $n/N$ justifica a correção.
+			\item Calcule o tamanho final ajustado ($n_{\text{final}}$).
+		\end{enumerate}
+		
+		% Questão 10
+		\item Um cliente tem um orçamento fixo que permite coletar no máximo $n = 100$ amostras. Ele quer estimar a média de um processo onde $\sigma = 20$. Se ele insiste em manter a confiança em 95\%, qual será a margem de erro ($E$) que ele terá que aceitar? Ele conseguirá atingir uma meta de erro menor que 3 unidades?
+	\end{enumerate}
+	
+	\newpage
+	
+	\noindent Respostas:
+	
+	\begin{enumerate}[label=17.\arabic*)]
+		
+		% Questão 1
+		\item A relação é quadrática inversa. Para reduzir o erro pela metade ($E/2$), o tamanho da amostra deve ser multiplicado por 4 ($2^2$).
+		
+		% Questão 2
+		\item Amostra piloto, literatura/histórico (estudos similares) e amplitude/4.
+		
+		% Questão 3
+		\item 
+		\begin{enumerate}
+			\item Porque maximiza a variância, garantindo o tamanho máximo necessário.
+			\item Se o $p$ real for baixo, usar 0,5 superestima o $n$, gastando mais dinheiro do que o necessário.
+		\end{enumerate}
+		
+		% Questão 4
+		\item Usamos se $n/N > 0,\!05$.
+		
+		% Questão 5
+		\item 62 comprimidos.
+		
+		% Questão 6
+		\item 2.401 eleitores.
+		
+		% Questão 7
+		\item $2401 - 1225 = 1176$ entrevistas a menos.
+		
+		% Questão 8
+		\item Um engenheiro de materiais quer estimar a resistência de um concreto ($\sigma = 5$ MPa) com erro de 1 MPa.
+		\begin{enumerate}
+			\item $96,\!04 \rightarrow 97$.
+			\item $165,\!89 \rightarrow 166$
+			\item Aumento de aproximadamente 71\%.
+		\end{enumerate}
+		
+		% Questão 9
+		\item 
+		\begin{enumerate}
+			\item $384,\!16 \rightarrow 385$
+			\item Justifica.
+			\item $217,\!7 \rightarrow$ 218 funcionários.
+		\end{enumerate}
+		
+		% Questão 10
+		\item O erro será 3,92. Ele não conseguirá atingir a meta de erro menor que 3 (pois $3,\!92 > 3$).
+	\end{enumerate}
+	
+\end{document}
